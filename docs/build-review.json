@@ -1,0 +1,65 @@
+{
+  "source": "4209926913dc33626ccb69bf9ccb34901f50f0a4",
+  "runtimeSource": "4209926913dc33626ccb69bf9ccb34901f50f0a4",
+  "node": "26.7.0",
+  "npm": "12.0.1",
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "platform": "WSL2 Linux 6.18.54.1-microsoft-standard-WSL2",
+  "freshArchive": true,
+  "freshNpmCi": true,
+  "check": {
+    "lint": true,
+    "strictTypecheck": true,
+    "tests": 8,
+    "build": true
+  },
+  "files": [
+    {
+      "path": "assets/main-C7-5KG6S.js",
+      "bytes": 38905,
+      "sha256": "b8e85687a0d6ddb7af6ebe17de7ab2b6bbbc051039990aa758e422c9c9986603"
+    },
+    {
+      "path": "assets/main-tGNh2i3-.css",
+      "bytes": 16043,
+      "sha256": "eb9988c3bae0c43fea4805627a74d2c63afa15085167f5df286cab9154b8b52b"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 252,
+      "sha256": "7d2537517a21b00b09acab68534fadca8a86192aec5e1914accd3e1628303c67"
+    },
+    {
+      "path": "fonts/Atkinson-OFL.txt",
+      "bytes": 4431,
+      "sha256": "aca6a428580965d2297d1b718042dd427c2a9443ece3b0d02d758e161e0c4030"
+    },
+    {
+      "path": "fonts/AtkinsonHyperlegibleNext.ttf",
+      "bytes": 114552,
+      "sha256": "5a455d1cfa099b601ab70751bb9673e8fe1854dc4500c80e1a220d0d75e31745"
+    },
+    {
+      "path": "fonts/NotoSerif-OFL.txt",
+      "bytes": 4396,
+      "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a"
+    },
+    {
+      "path": "fonts/NotoSerif-Regular.ttf",
+      "bytes": 444064,
+      "sha256": "5473d2e43bdd018ee124a4addba8091fd0a29894b121cbb741023af6549662b6"
+    },
+    {
+      "path": "index.html",
+      "bytes": 17562,
+      "sha256": "7e8f3879ab599d98fdcb96fb544293b0525712e9df82ed89efa6c5b6fd86e6b0"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 3147,
+      "sha256": "c32d6a7b6c6549b6544451441ac137ddfd6951564bee74bf0890ca99a46717d2"
+    }
+  ],
+  "byteIdenticalToWorkingBuild": true
+}

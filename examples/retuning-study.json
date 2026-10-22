@@ -1,0 +1,326 @@
+{
+  "format": "sammu-study-v1",
+  "edition": "cf03122b7f3329e6403f1a6db987d0174479cda64c31f2fdff84998ca0d0b32c",
+  "experiment": "https://antonsoo.github.io/sammu/?start=isartum&a=440&companions=octave&sound=plucked&moves=TT#bench",
+  "model": "An audible fourths-and-fifths realization, not a recovered ancient performance. Six designated pairs are set to frequency ratios 4/3 or 3/2. Reference pitch, numerical precision, sound colour and the companion-string octave/unison choice are modern settings. The tablets do not record frequencies in hertz or these fractions.",
+  "settings": {
+    "start": 0,
+    "reference": 440,
+    "companion": "octave",
+    "colour": "plucked"
+  },
+  "moves": "TT",
+  "snapshots": [
+    {
+      "step": 0,
+      "action": "initial",
+      "tuning": "isartum",
+      "name": "išartum",
+      "namedClearPair": [
+        2,
+        6
+      ],
+      "diagnosticUnclearPair": [
+        5,
+        2
+      ],
+      "changed": [],
+      "strings": [
+        {
+          "string": 1,
+          "ratioToInitialFirstString": "1/1",
+          "hertz": 440,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 2,
+          "ratioToInitialFirstString": "243/256",
+          "hertz": 417.65625,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 3,
+          "ratioToInitialFirstString": "27/32",
+          "hertz": 371.25,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 4,
+          "ratioToInitialFirstString": "3/4",
+          "hertz": 330,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 5,
+          "ratioToInitialFirstString": "2/3",
+          "hertz": 293.3333333333333,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 6,
+          "ratioToInitialFirstString": "81/128",
+          "hertz": 278.4375,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 7,
+          "ratioToInitialFirstString": "9/16",
+          "hertz": 247.5,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 8,
+          "ratioToInitialFirstString": "1/2",
+          "hertz": 220,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 9,
+          "ratioToInitialFirstString": "243/512",
+          "hertz": 208.828125,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        }
+      ]
+    },
+    {
+      "step": 1,
+      "action": "tighten",
+      "tuning": "qablitum",
+      "name": "qablītum",
+      "namedClearPair": [
+        5,
+        2
+      ],
+      "diagnosticUnclearPair": [
+        1,
+        5
+      ],
+      "changed": [
+        5
+      ],
+      "strings": [
+        {
+          "string": 1,
+          "ratioToInitialFirstString": "1/1",
+          "hertz": 440,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 2,
+          "ratioToInitialFirstString": "243/256",
+          "hertz": 417.65625,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 3,
+          "ratioToInitialFirstString": "27/32",
+          "hertz": 371.25,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 4,
+          "ratioToInitialFirstString": "3/4",
+          "hertz": 330,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 5,
+          "ratioToInitialFirstString": "729/1024",
+          "hertz": 313.2421875,
+          "shiftRatio": "2187/2048",
+          "shiftCents": 113.68500605771192
+        },
+        {
+          "string": 6,
+          "ratioToInitialFirstString": "81/128",
+          "hertz": 278.4375,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 7,
+          "ratioToInitialFirstString": "9/16",
+          "hertz": 247.5,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 8,
+          "ratioToInitialFirstString": "1/2",
+          "hertz": 220,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 9,
+          "ratioToInitialFirstString": "243/512",
+          "hertz": 208.828125,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "action": "tighten",
+      "tuning": "nis-tuhrim",
+      "name": "nīš tuḫrim",
+      "namedClearPair": [
+        1,
+        5
+      ],
+      "diagnosticUnclearPair": [
+        4,
+        1
+      ],
+      "changed": [
+        1,
+        8
+      ],
+      "strings": [
+        {
+          "string": 1,
+          "ratioToInitialFirstString": "2187/2048",
+          "hertz": 469.86328125,
+          "shiftRatio": "2187/2048",
+          "shiftCents": 113.68500605771192
+        },
+        {
+          "string": 2,
+          "ratioToInitialFirstString": "243/256",
+          "hertz": 417.65625,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 3,
+          "ratioToInitialFirstString": "27/32",
+          "hertz": 371.25,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 4,
+          "ratioToInitialFirstString": "3/4",
+          "hertz": 330,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 5,
+          "ratioToInitialFirstString": "729/1024",
+          "hertz": 313.2421875,
+          "shiftRatio": "2187/2048",
+          "shiftCents": 113.68500605771192
+        },
+        {
+          "string": 6,
+          "ratioToInitialFirstString": "81/128",
+          "hertz": 278.4375,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 7,
+          "ratioToInitialFirstString": "9/16",
+          "hertz": 247.5,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 8,
+          "ratioToInitialFirstString": "2187/4096",
+          "hertz": 234.931640625,
+          "shiftRatio": "2187/2048",
+          "shiftCents": 113.68500605771192
+        },
+        {
+          "string": 9,
+          "ratioToInitialFirstString": "243/512",
+          "hertz": 208.828125,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "title": "Before, then after: strings 1 + 5",
+    "colour": "plucked",
+    "notes": [
+      {
+        "string": 1,
+        "hz": 440,
+        "start": 0,
+        "duration": 1.7
+      },
+      {
+        "string": 5,
+        "hz": 313.2421875,
+        "start": 0,
+        "duration": 1.7
+      },
+      {
+        "string": 1,
+        "hz": 469.86328125,
+        "start": 2.05,
+        "duration": 1.7
+      },
+      {
+        "string": 5,
+        "hz": 313.2421875,
+        "start": 2.05,
+        "duration": 1.7
+      }
+    ],
+    "duration": 3.87,
+    "format": "mono PCM16 WAV",
+    "sampleRate": 48000,
+    "synthesis": "Amplitude 0.13 per tone; one or six normalized sine partials; 12 ms attack, 40 ms release; six-partial colour decays exponentially."
+  },
+  "sources": [
+    {
+      "id": "mirelman2013",
+      "title": "Sam Mirelman · Tuning Procedures in Ancient Iraq (2013)",
+      "url": "https://journal.iftawm.org/previous/vol2no2/mirelman/",
+      "note": "Analytical Approaches to World Music 2(2), 43–56. String names: p. 46; two manuscripts and uncertain instrument: pp. 47–48; preserved/restored clauses: pp. 49–52; seven tunings: fig. 5, p. 52; tightening: pp. 53–54."
+    },
+    {
+      "id": "rahn2022",
+      "title": "Jay Rahn · Was Mesopotamian Tuning Diatonic? A Parsimonious Answer (2022)",
+      "url": "https://mtosmt.org/issues/mto.22.28.1/mto.22.28.1.rahn.html",
+      "note": "Music Theory Online 28.1. DOI 10.30535/mto.28.1.7. Paragraphs 9–16 distinguish physical strings from later pitch concepts and explain the reversible seven-name network; later sections examine assumptions behind an audible reconstruction."
+    },
+    {
+      "id": "mirelmanKrispijn2009",
+      "title": "Sam Mirelman & Theo J. H. Krispijn · The Old Babylonian tuning text UET VI/3 899 (2009)",
+      "url": "https://doi.org/10.1017/S0021088900000735",
+      "note": "Iraq 71, 43–52. Edition of the second manuscript. Read with UET VII 74; the two witnesses are separate tablets, not joining fragments of one tablet."
+    },
+    {
+      "id": "uet74",
+      "title": "CDLI P347039 · UET VII 74",
+      "url": "https://cdli.earth/artifacts/347039",
+      "note": "Catalogue record for one tuning manuscript from Ur, Old Babylonian period. The British Museum witness discussed by Mirelman is a cast; do not infer the original tablet’s present location from the catalogue’s collection field."
+    },
+    {
+      "id": "cbs10996",
+      "title": "CDLI P254475 · CBS 10996",
+      "url": "https://cdli.earth/artifacts/254475",
+      "note": "Later witness for named string pairs. The catalogue checked on 22 October 2026 assigns Middle Babylonian, approximately 1400–1100 BCE; Mirelman (2013) used an older Neo-Babylonian dating. Combining witnesses is a scholarly reconstruction across time."
+    }
+  ]
+}

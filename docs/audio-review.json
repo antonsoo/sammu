@@ -1,0 +1,279 @@
+{
+  "passed": true,
+  "wav_files": 40,
+  "wav_samples": 7430400,
+  "live_buffers": 4,
+  "max_wav_sample_error": 1.526900754347804e-5,
+  "max_live_sample_error": 1.1147137185529843e-8,
+  "wav_tolerance": 2e-5,
+  "live_tolerance": 1e-7,
+  "method": "Independent Fraction source fixture and NumPy whole-signal synthesis; played AudioBuffer samples, not speaker output",
+  "files": [
+    {
+      "file": "chromium-desktop-last-plucked.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5259733349513166e-5
+    },
+    {
+      "file": "chromium-desktop-study-audio.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.526105556538121e-5
+    },
+    {
+      "file": "chromium-desktop-last-sine.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5266143797987297e-5
+    },
+    {
+      "file": "chromium-phone-last-plucked.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5259733349513166e-5
+    },
+    {
+      "file": "chromium-phone-study-audio.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.526105556538121e-5
+    },
+    {
+      "file": "chromium-phone-last-sine.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5266143797987297e-5
+    },
+    {
+      "file": "matrix-0-sine-L.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5262285780012763e-5
+    },
+    {
+      "file": "matrix-0-sine-T.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.526900754347804e-5
+    },
+    {
+      "file": "matrix-0-plucked-L.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5260559899653997e-5
+    },
+    {
+      "file": "matrix-0-plucked-T.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5260559899653997e-5
+    },
+    {
+      "file": "matrix-1-sine-L.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5265195078162375e-5
+    },
+    {
+      "file": "matrix-1-sine-T.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5266143870651394e-5
+    },
+    {
+      "file": "matrix-1-plucked-L.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5260841205788633e-5
+    },
+    {
+      "file": "matrix-1-plucked-T.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5259602338581896e-5
+    },
+    {
+      "file": "matrix-2-sine-L.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5263411072635735e-5
+    },
+    {
+      "file": "matrix-2-sine-T.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5266055806650858e-5
+    },
+    {
+      "file": "matrix-2-plucked-L.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5260106017912778e-5
+    },
+    {
+      "file": "matrix-2-plucked-T.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5260106017912778e-5
+    },
+    {
+      "file": "matrix-3-sine-L.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5262510463270873e-5
+    },
+    {
+      "file": "matrix-3-sine-T.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5268394148532094e-5
+    },
+    {
+      "file": "matrix-3-plucked-L.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5259086837554614e-5
+    },
+    {
+      "file": "matrix-3-plucked-T.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.526042163191299e-5
+    },
+    {
+      "file": "matrix-4-sine-L.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5265283837356813e-5
+    },
+    {
+      "file": "matrix-4-sine-T.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5265283837356813e-5
+    },
+    {
+      "file": "matrix-4-plucked-L.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5263324892711427e-5
+    },
+    {
+      "file": "matrix-4-plucked-T.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5263324892711427e-5
+    },
+    {
+      "file": "matrix-5-sine-L.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5268935440071463e-5
+    },
+    {
+      "file": "matrix-5-sine-T.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5268935440071463e-5
+    },
+    {
+      "file": "matrix-5-plucked-L.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.526082435178433e-5
+    },
+    {
+      "file": "matrix-5-plucked-T.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5259897384010956e-5
+    },
+    {
+      "file": "matrix-6-sine-L.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.526381922842268e-5
+    },
+    {
+      "file": "matrix-6-sine-T.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.526381922842268e-5
+    },
+    {
+      "file": "matrix-6-plucked-L.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.525977601665729e-5
+    },
+    {
+      "file": "matrix-6-plucked-T.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.525932971416233e-5
+    },
+    {
+      "file": "firefox-desktop-last-plucked.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5259733349513166e-5
+    },
+    {
+      "file": "firefox-desktop-study-audio.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.526105556538121e-5
+    },
+    {
+      "file": "firefox-desktop-last-sine.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5266143797987297e-5
+    },
+    {
+      "file": "firefox-phone-last-plucked.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5259733349513166e-5
+    },
+    {
+      "file": "firefox-phone-study-audio.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.526105556538121e-5
+    },
+    {
+      "file": "firefox-phone-last-sine.wav",
+      "notes": 4,
+      "samples": 185760,
+      "max_absolute_sample_error": 1.5266143797987297e-5
+    }
+  ],
+  "live": [
+    {
+      "file": "chromium-desktop-live.f32",
+      "sample_rate": 44100,
+      "samples": 170667,
+      "max_absolute_sample_error": 1.1147137185529843e-8
+    },
+    {
+      "file": "chromium-phone-live.f32",
+      "sample_rate": 44100,
+      "samples": 170667,
+      "max_absolute_sample_error": 1.1147137185529843e-8
+    },
+    {
+      "file": "firefox-desktop-live.f32",
+      "sample_rate": 44100,
+      "samples": 170667,
+      "max_absolute_sample_error": 1.1147137185529843e-8
+    },
+    {
+      "file": "firefox-phone-live.f32",
+      "sample_rate": 44100,
+      "samples": 170667,
+      "max_absolute_sample_error": 1.1147137185529843e-8
+    }
+  ]
+}

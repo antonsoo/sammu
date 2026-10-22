@@ -1,0 +1,8 @@
+{
+  "states": 812,
+  "exact_string_pitches": 7308,
+  "shortest_routes": 49,
+  "max_moves": 28,
+  "method": "Fraction Gaussian elimination of prime-exponent constraints; independent source fixture; BFS routes",
+  "passed": true
+}
