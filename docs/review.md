@@ -64,4 +64,14 @@ Use an isolated Python environment where required by your system. The exact tuni
 
 The workshop is an original executable explanation of a scholarly reconstruction. It is not a cuneiform edition, a recovered composition, a reconstruction of a particular excavated instrument, or a formal proof of historical musical practice. The source words, companion-string relationships, exact ratios, sound colour and reference pitch have the distinctions described in the app and source ledger.
 
-The review establishes the named local source and build. Publication, when performed, is recorded separately so a clean build is not mistaken for verified hosted bytes. No registry release or tag is implied.
+The local review establishes the named source and build. The published workshop has a separate receipt below. No registry release or tag is implied.
+
+## Published workshop
+
+The source is public at [antonsoo/sammu](https://github.com/antonsoo/sammu), and the workshop is live at [antonsoo.github.io/sammu](https://antonsoo.github.io/sammu/). The initial published source is `c671f39ca9405933132831a0a2f88c4f568f47af`; runtime inputs remain those of `4209926`. Pages branch commit: `50f1c4d1ab964b63fb2ce24bf32246a00365d3db`.
+
+All nine canonical public file URLs, plus the directory alias, match the reviewed build by SHA-256 without query-string cache busting. Four full hosted workflows repeated the local desktop/phone exercises in Chromium and Firefox, including offline operation and native saved studies. The forty hosted WAV downloads and their JSON audio plans are byte-identical to the independently measured local corpus. See [publication bytes and audio comparisons](publication-review.json) and [hosted browser workflows](hosted-review.json).
+
+The README’s clone, install and development commands were also run in a new public clone. Four styled development-mode browser workflows verified the responsive bench, audio, stop and undo with no console or page errors; [receipt](development-review.json). This is separate from the production and hosted evidence.
+
+Suggested repository description: Hear an ancient Mesopotamian retuning procedure, one string at a time, with exact pitches and source notes. Topics: mesopotamia, akkadian, music-theory, microtonal, web-audio, education, typescript.

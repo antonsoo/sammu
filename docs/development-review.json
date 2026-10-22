@@ -1,0 +1,70 @@
+{
+  "base": "http://127.0.0.1:4384/sammu/",
+  "records": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "layout": {
+        "font": "Atkinson, sans-serif",
+        "background": "rgba(0, 0, 0, 0)",
+        "rootBackground": "rgb(244, 241, 233)",
+        "grid": "grid",
+        "overflow": false,
+        "columns": 2
+      },
+      "retuning": true,
+      "audio": true,
+      "undo": true,
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "width": 375,
+      "layout": {
+        "font": "Atkinson, sans-serif",
+        "background": "rgba(0, 0, 0, 0)",
+        "rootBackground": "rgb(244, 241, 233)",
+        "grid": "grid",
+        "overflow": false,
+        "columns": 1
+      },
+      "retuning": true,
+      "audio": true,
+      "undo": true,
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "width": 1440,
+      "layout": {
+        "font": "Atkinson, sans-serif",
+        "background": "rgba(0, 0, 0, 0)",
+        "rootBackground": "rgb(244, 241, 233)",
+        "grid": "grid",
+        "overflow": false,
+        "columns": 2
+      },
+      "retuning": true,
+      "audio": true,
+      "undo": true,
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "width": 375,
+      "layout": {
+        "font": "Atkinson, sans-serif",
+        "background": "rgba(0, 0, 0, 0)",
+        "rootBackground": "rgb(244, 241, 233)",
+        "grid": "grid",
+        "overflow": false,
+        "columns": 1
+      },
+      "retuning": true,
+      "audio": true,
+      "undo": true,
+      "errors": []
+    }
+  ],
+  "passed": true
+}

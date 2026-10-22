@@ -1,0 +1,283 @@
+{
+  "source": "c671f39ca9405933132831a0a2f88c4f568f47af",
+  "runtimeSource": "4209926913dc33626ccb69bf9ccb34901f50f0a4",
+  "pages": "50f1c4d1ab964b63fb2ce24bf32246a00365d3db",
+  "sourceUrl": "https://github.com/antonsoo/sammu",
+  "site": "https://antonsoo.github.io/sammu/",
+  "canonicalBytes": {
+    "checkedAt": "2026-10-22T11:05:13.833Z",
+    "base": "https://antonsoo.github.io/sammu/",
+    "runtimeSource": "4209926913dc33626ccb69bf9ccb34901f50f0a4",
+    "files": [
+      {
+        "path": "assets/main-C7-5KG6S.js",
+        "bytes": 38905,
+        "sha256": "b8e85687a0d6ddb7af6ebe17de7ab2b6bbbc051039990aa758e422c9c9986603",
+        "url": "https://antonsoo.github.io/sammu/assets/main-C7-5KG6S.js",
+        "status": 200
+      },
+      {
+        "path": "assets/main-tGNh2i3-.css",
+        "bytes": 16043,
+        "sha256": "eb9988c3bae0c43fea4805627a74d2c63afa15085167f5df286cab9154b8b52b",
+        "url": "https://antonsoo.github.io/sammu/assets/main-tGNh2i3-.css",
+        "status": 200
+      },
+      {
+        "path": "favicon.svg",
+        "bytes": 252,
+        "sha256": "7d2537517a21b00b09acab68534fadca8a86192aec5e1914accd3e1628303c67",
+        "url": "https://antonsoo.github.io/sammu/favicon.svg",
+        "status": 200
+      },
+      {
+        "path": "fonts/Atkinson-OFL.txt",
+        "bytes": 4431,
+        "sha256": "aca6a428580965d2297d1b718042dd427c2a9443ece3b0d02d758e161e0c4030",
+        "url": "https://antonsoo.github.io/sammu/fonts/Atkinson-OFL.txt",
+        "status": 200
+      },
+      {
+        "path": "fonts/AtkinsonHyperlegibleNext.ttf",
+        "bytes": 114552,
+        "sha256": "5a455d1cfa099b601ab70751bb9673e8fe1854dc4500c80e1a220d0d75e31745",
+        "url": "https://antonsoo.github.io/sammu/fonts/AtkinsonHyperlegibleNext.ttf",
+        "status": 200
+      },
+      {
+        "path": "fonts/NotoSerif-OFL.txt",
+        "bytes": 4396,
+        "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+        "url": "https://antonsoo.github.io/sammu/fonts/NotoSerif-OFL.txt",
+        "status": 200
+      },
+      {
+        "path": "fonts/NotoSerif-Regular.ttf",
+        "bytes": 444064,
+        "sha256": "5473d2e43bdd018ee124a4addba8091fd0a29894b121cbb741023af6549662b6",
+        "url": "https://antonsoo.github.io/sammu/fonts/NotoSerif-Regular.ttf",
+        "status": 200
+      },
+      {
+        "path": "index.html",
+        "bytes": 17562,
+        "sha256": "7e8f3879ab599d98fdcb96fb544293b0525712e9df82ed89efa6c5b6fd86e6b0",
+        "url": "https://antonsoo.github.io/sammu/index.html",
+        "status": 200
+      },
+      {
+        "path": "sw.js",
+        "bytes": 3147,
+        "sha256": "c32d6a7b6c6549b6544451441ac137ddfd6951564bee74bf0890ca99a46717d2",
+        "url": "https://antonsoo.github.io/sammu/sw.js",
+        "status": 200
+      }
+    ],
+    "directoryAliasMatches": true,
+    "queryCacheBust": false,
+    "passed": true
+  },
+  "hostedAudioMatchesLocalReview": [
+    {
+      "wav": "chromium-desktop-last-plucked.wav",
+      "sha256": "3010135728ecfc0dd6a2483aea6d5eef31efb29285749873d889f291b2b83f2f",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "chromium-desktop-study-audio.wav",
+      "sha256": "5b86732b28f9df8c2a7b133ad9fac4f53bb183cf16ba4a5de1b832f0a808fed1",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "chromium-desktop-last-sine.wav",
+      "sha256": "9b8d0b46e7b9d3e2a799b000e408a6aed9cbe871c02bcd15acec0e8294c38e55",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "chromium-phone-last-plucked.wav",
+      "sha256": "3010135728ecfc0dd6a2483aea6d5eef31efb29285749873d889f291b2b83f2f",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "chromium-phone-study-audio.wav",
+      "sha256": "5b86732b28f9df8c2a7b133ad9fac4f53bb183cf16ba4a5de1b832f0a808fed1",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "chromium-phone-last-sine.wav",
+      "sha256": "9b8d0b46e7b9d3e2a799b000e408a6aed9cbe871c02bcd15acec0e8294c38e55",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-0-sine-L.wav",
+      "sha256": "65afa91fb93fe176fa138e217262a066d2601d85646c205358cdcc5c833781fe",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-0-sine-T.wav",
+      "sha256": "f642a1a46ad3490160acb60d79fe69bb4544cfebb4678c5d0e69d95e3582cbdf",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-0-plucked-L.wav",
+      "sha256": "e9e9cd026a74784a4cffcc73df4c96141b3b2057a743256a1e1fb42f2fdc374e",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-0-plucked-T.wav",
+      "sha256": "3f6025fdfab779dd60356de3ed80eef2165b2731ed9a1264616366ad793db77a",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-1-sine-L.wav",
+      "sha256": "7c9f294a85d5c971c36c6dce6014b64ca5c8182c6af2283eb9d2938f01a1d22f",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-1-sine-T.wav",
+      "sha256": "a54fa1ae477ff146d7f598bd1e58822a57f8bfb99d8cd050bd972b99295a420b",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-1-plucked-L.wav",
+      "sha256": "d3520d46bcbc1046dcedba8b497d90b8a468d8a4c63c7ee23cb465046f4d9f64",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-1-plucked-T.wav",
+      "sha256": "268c4eeb0306dc62b9836c3df85d163827ea3dc14bec52f7db8e3a3ec022d74a",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-2-sine-L.wav",
+      "sha256": "b4d6ec350d6c0890de5f6aaa55adf88e3b267117422d2cc4794a87f70e2680b3",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-2-sine-T.wav",
+      "sha256": "cff21196addb7d85e0ee82585532727523013f21943d495611992fbd6ee116a5",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-2-plucked-L.wav",
+      "sha256": "c48f03eaa1bd634cd7b2408ae5ccd9b187efc0d5fda234343d1a4a7df3076c12",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-2-plucked-T.wav",
+      "sha256": "3c0d9d486da422ef3ea3e70d0fc5db7bec2392135fc0260fd00a653874f096b6",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-3-sine-L.wav",
+      "sha256": "19349196a450ff180c01d62334a2393edd69862d5d88c5f7459fd6e5b12672c0",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-3-sine-T.wav",
+      "sha256": "68cfc4d8b3b2e48261ce68203263ad112ab70a6b7d4d77be3765133277f5d7aa",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-3-plucked-L.wav",
+      "sha256": "0aef3d999a7ee6bcfdbd3dab29dd30e0522e78c77544ac89eb991cc339bbf88d",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-3-plucked-T.wav",
+      "sha256": "1db390f71b8ba15b89b09afe0855c0fa59c1be283a44dccc26d05024cb3aa6d4",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-4-sine-L.wav",
+      "sha256": "67202d70bd32727d73ed4234f6b52ab1bb46b3cd60be1b1aeaaa6189353c0004",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-4-sine-T.wav",
+      "sha256": "9115df23e34b62bdfc77c961e5b56cb5ec6029239d359d9eaa18f91f1a73b30a",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-4-plucked-L.wav",
+      "sha256": "046d78c467187eac782e73a026a3e49c68cf8ba89a02f5ede99cf4e4454b8e32",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-4-plucked-T.wav",
+      "sha256": "e74551af4633d3dd7e70420a5e126a9b8788e4741adae181bc99331ff55f2556",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-5-sine-L.wav",
+      "sha256": "81687aaff3cf00d5519d5484960a935d0a5171e30e321918c46003af18fcdc8a",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-5-sine-T.wav",
+      "sha256": "52762919951eabfa9356f93046fd8d270b62c12f933ca37c48d016f38315651b",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-5-plucked-L.wav",
+      "sha256": "05a501230cd4cdff075b0cb624ae805abd00406afdf674025111a8250742f4c2",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-5-plucked-T.wav",
+      "sha256": "2fa7c69816f12dd7e3570fad8bbd5932952cd0381a07463f2b5663fb2717027b",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-6-sine-L.wav",
+      "sha256": "2995294d5bac7a545da4f759d3b7290b7882dbabfbddb7ad9f4db64a746cf19d",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-6-sine-T.wav",
+      "sha256": "291a62fc7be33bb4828175b2a655a15fa92d14189b8aea6d01359a31a21cdd98",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-6-plucked-L.wav",
+      "sha256": "4bfdc4d3f2ad4fb4639815163eb656d726b2f9677696ad485863cad67e7787a1",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "matrix-6-plucked-T.wav",
+      "sha256": "d15ce946e5d012cc6f08162144586621a02a2d281aa6c602f2754648f75daa53",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "firefox-desktop-last-plucked.wav",
+      "sha256": "3010135728ecfc0dd6a2483aea6d5eef31efb29285749873d889f291b2b83f2f",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "firefox-desktop-study-audio.wav",
+      "sha256": "5b86732b28f9df8c2a7b133ad9fac4f53bb183cf16ba4a5de1b832f0a808fed1",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "firefox-desktop-last-sine.wav",
+      "sha256": "9b8d0b46e7b9d3e2a799b000e408a6aed9cbe871c02bcd15acec0e8294c38e55",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "firefox-phone-last-plucked.wav",
+      "sha256": "3010135728ecfc0dd6a2483aea6d5eef31efb29285749873d889f291b2b83f2f",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "firefox-phone-study-audio.wav",
+      "sha256": "5b86732b28f9df8c2a7b133ad9fac4f53bb183cf16ba4a5de1b832f0a808fed1",
+      "sameAsIndependentLocalReview": true
+    },
+    {
+      "wav": "firefox-phone-last-sine.wav",
+      "sha256": "9b8d0b46e7b9d3e2a799b000e408a6aed9cbe871c02bcd15acec0e8294c38e55",
+      "sameAsIndependentLocalReview": true
+    }
+  ],
+  "scope": "Source Git and GitHub Pages only; no registry release or tag."
+}
