@@ -239,6 +239,15 @@ try {
           assert.equal(embeddedRecord.practice.settings.amount, 110);
           assert.equal(embeddedRecord.moves, "LL");
           assert.equal(await native.locator(".study-words dt").count(), 9);
+          assert.equal(
+            await native.getByRole("heading", { name: "The last change’s overtones" }).count(),
+            0,
+          );
+          assert.ok(
+            (await native.locator("main").textContent()).includes(
+              "equally loud, steady sine tones",
+            ),
+          );
           assert.equal(await native.locator(".study-clause").count(), 3);
           assert.ok((await native.locator(".study-words").textContent()).includes("nasāḫum"));
           const encoded = await native.locator("audio").getAttribute("src");

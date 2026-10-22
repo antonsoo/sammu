@@ -100,9 +100,9 @@ export function study(
 <p class="model">${html(MODEL_STATEMENT)}</p>
 <p class="screen-only">This file includes its fonts, diagram, audio and numerical record. Open it offline, or use your browser’s Print command to save a PDF. External source links need a connection.</p>
 ${practice ? `<section aria-label="Your listening practice"><h2>Your tentative adjustment</h2>${practiceReading(session, practice)}<p><a href="${html(practiceLink(session, practice))}">Reopen this listening practice</a></p></section><h2>Underlying exact tuning, before the preview</h2>` : ""}<div class="desktop-diagram">${pitchDiagram(session)}</div>${compactDiagram}<h2>Hear the experiment</h2>
-<p>${html(plan.title)}. Each sound is synthetic.</p>
+<p>${html(plan.title)}. Each sound is synthetic.${practice ? (practice.listen === "partials" ? " The two selected partials are isolated as equally loud, steady sine tones." : " Both strings use six decaying sine partials; the base bench’s sound setting is kept separately.") : ""}</p>
 <audio controls preload="none" src="data:audio/wav;base64,${base64(wav(plan))}">
-</audio>${session.moves.length ? `<h2>The last change’s overtones</h2>${overtoneDiagram(session)}<p>Marks are the sine partials in this synthetic sound. A guide connects partials at exactly the same frequency; it does not establish what the ancient term “clear” meant.</p>` : ""}<h2>Current pitches</h2>
+</audio>${!practice && session.moves.length ? `<h2>The last change’s overtones</h2>${overtoneDiagram(session)}<p>Marks are the sine partials in this synthetic sound. A guide connects partials at exactly the same frequency; it does not establish what the ancient term “clear” meant.</p>` : ""}<h2>Current pitches</h2>
 <p>Exact ratios are relative to the initial first string, not a new reference after every move. Shifts compare each string with its own initial pitch.</p>
 <section class="scroll" tabindex="0" aria-label="Current string pitches">
 <table>
