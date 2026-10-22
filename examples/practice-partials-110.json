@@ -1,0 +1,386 @@
+{
+  "format": "sammu-study-v1",
+  "edition": "80387d6a91467cbf1cb37888655e94574aea4c313564b39c6fcac0a348de47de",
+  "experiment": "https://antonsoo.github.io/sammu/?start=isartum&a=440&companions=octave&sound=sine&moves=LL#bench",
+  "model": "An audible fourths-and-fifths realization, not a recovered ancient performance. Six designated pairs are set to frequency ratios 4/3 or 3/2. Reference pitch, numerical precision, sound colour and the companion-string octave/unison choice are modern settings. The tablets do not record frequencies in hertz or these fractions.",
+  "settings": {
+    "start": 0,
+    "reference": 440,
+    "companion": "octave",
+    "colour": "sine"
+  },
+  "moves": "LL",
+  "snapshots": [
+    {
+      "step": 0,
+      "action": "initial",
+      "tuning": "isartum",
+      "name": "išartum",
+      "namedClearPair": [
+        2,
+        6
+      ],
+      "diagnosticUnclearPair": [
+        5,
+        2
+      ],
+      "changed": [],
+      "strings": [
+        {
+          "string": 1,
+          "ratioToInitialFirstString": "1/1",
+          "hertz": 440,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 2,
+          "ratioToInitialFirstString": "243/256",
+          "hertz": 417.65625,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 3,
+          "ratioToInitialFirstString": "27/32",
+          "hertz": 371.25,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 4,
+          "ratioToInitialFirstString": "3/4",
+          "hertz": 330,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 5,
+          "ratioToInitialFirstString": "2/3",
+          "hertz": 293.3333333333333,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 6,
+          "ratioToInitialFirstString": "81/128",
+          "hertz": 278.4375,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 7,
+          "ratioToInitialFirstString": "9/16",
+          "hertz": 247.5,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 8,
+          "ratioToInitialFirstString": "1/2",
+          "hertz": 220,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 9,
+          "ratioToInitialFirstString": "243/512",
+          "hertz": 208.828125,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        }
+      ]
+    },
+    {
+      "step": 1,
+      "action": "loosen",
+      "tuning": "kitmum",
+      "name": "kitmum",
+      "namedClearPair": [
+        6,
+        3
+      ],
+      "diagnosticUnclearPair": [
+        2,
+        6
+      ],
+      "changed": [
+        2,
+        9
+      ],
+      "strings": [
+        {
+          "string": 1,
+          "ratioToInitialFirstString": "1/1",
+          "hertz": 440,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 2,
+          "ratioToInitialFirstString": "8/9",
+          "hertz": 391.1111111111111,
+          "shiftRatio": "2048/2187",
+          "shiftCents": -113.68500605771199
+        },
+        {
+          "string": 3,
+          "ratioToInitialFirstString": "27/32",
+          "hertz": 371.25,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 4,
+          "ratioToInitialFirstString": "3/4",
+          "hertz": 330,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 5,
+          "ratioToInitialFirstString": "2/3",
+          "hertz": 293.3333333333333,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 6,
+          "ratioToInitialFirstString": "81/128",
+          "hertz": 278.4375,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 7,
+          "ratioToInitialFirstString": "9/16",
+          "hertz": 247.5,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 8,
+          "ratioToInitialFirstString": "1/2",
+          "hertz": 220,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 9,
+          "ratioToInitialFirstString": "4/9",
+          "hertz": 195.55555555555554,
+          "shiftRatio": "2048/2187",
+          "shiftCents": -113.68500605771199
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "action": "loosen",
+      "tuning": "embubum",
+      "name": "embūbum",
+      "namedClearPair": [
+        3,
+        7
+      ],
+      "diagnosticUnclearPair": [
+        6,
+        3
+      ],
+      "changed": [
+        6
+      ],
+      "strings": [
+        {
+          "string": 1,
+          "ratioToInitialFirstString": "1/1",
+          "hertz": 440,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 2,
+          "ratioToInitialFirstString": "8/9",
+          "hertz": 391.1111111111111,
+          "shiftRatio": "2048/2187",
+          "shiftCents": -113.68500605771199
+        },
+        {
+          "string": 3,
+          "ratioToInitialFirstString": "27/32",
+          "hertz": 371.25,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 4,
+          "ratioToInitialFirstString": "3/4",
+          "hertz": 330,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 5,
+          "ratioToInitialFirstString": "2/3",
+          "hertz": 293.3333333333333,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 6,
+          "ratioToInitialFirstString": "16/27",
+          "hertz": 260.7407407407407,
+          "shiftRatio": "2048/2187",
+          "shiftCents": -113.68500605771199
+        },
+        {
+          "string": 7,
+          "ratioToInitialFirstString": "9/16",
+          "hertz": 247.5,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 8,
+          "ratioToInitialFirstString": "1/2",
+          "hertz": 220,
+          "shiftRatio": "1/1",
+          "shiftCents": 0
+        },
+        {
+          "string": 9,
+          "ratioToInitialFirstString": "4/9",
+          "hertz": 195.55555555555554,
+          "shiftRatio": "2048/2187",
+          "shiftCents": -113.68500605771199
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "title": "Unchanged, then your adjustment: strings 6 + 3, isolated partials",
+    "colour": "sine",
+    "notes": [
+      {
+        "string": 6,
+        "hz": 1042.9629629629628,
+        "start": 0,
+        "duration": 5,
+        "partial": 4
+      },
+      {
+        "string": 3,
+        "hz": 1113.75,
+        "start": 0,
+        "duration": 5,
+        "partial": 3
+      },
+      {
+        "string": 6,
+        "hz": 1042.9629629629628,
+        "start": 5.35,
+        "duration": 5,
+        "partial": 4
+      },
+      {
+        "string": 3,
+        "hz": 1045.1853187924858,
+        "start": 5.35,
+        "duration": 5,
+        "partial": 3
+      }
+    ],
+    "duration": 10.469999999999999,
+    "format": "mono PCM16 WAV",
+    "sampleRate": 48000,
+    "synthesis": "Amplitude 0.13 per tone; one or six normalized sine partials; 12 ms attack, 40 ms release; six-partial colour decays exponentially."
+  },
+  "sources": [
+    {
+      "id": "mirelman2013",
+      "title": "Sam Mirelman · Tuning Procedures in Ancient Iraq (2013)",
+      "url": "https://journal.iftawm.org/previous/vol2no2/mirelman/",
+      "note": "Analytical Approaches to World Music 2(2), 43–56. String names: p. 46; two manuscripts and uncertain instrument: pp. 47–48; preserved/restored clauses: pp. 49–52; seven tunings: fig. 5, p. 52; tightening: pp. 53–54."
+    },
+    {
+      "id": "rahn2022",
+      "title": "Jay Rahn · Was Mesopotamian Tuning Diatonic? A Parsimonious Answer (2022)",
+      "url": "https://mtosmt.org/issues/mto.22.28.1/mto.22.28.1.rahn.html",
+      "note": "Music Theory Online 28.1. DOI 10.30535/mto.28.1.7. Paragraphs 9–16 distinguish physical strings from later pitch concepts and explain the reversible seven-name network; later sections examine assumptions behind an audible reconstruction."
+    },
+    {
+      "id": "mirelmanKrispijn2009",
+      "title": "Sam Mirelman & Theo J. H. Krispijn · The Old Babylonian tuning text UET VI/3 899 (2009)",
+      "url": "https://doi.org/10.1017/S0021088900000735",
+      "note": "Iraq 71, 43–52. Edition of the second manuscript. Read with UET VII 74; the two witnesses are separate tablets, not joining fragments of one tablet."
+    },
+    {
+      "id": "uet74",
+      "title": "CDLI P347039 · UET VII 74",
+      "url": "https://cdli.earth/artifacts/347039",
+      "note": "Catalogue record for one tuning manuscript from Ur, Old Babylonian period. The British Museum witness discussed by Mirelman is a cast; do not infer the original tablet’s present location from the catalogue’s collection field."
+    },
+    {
+      "id": "cbs10996",
+      "title": "CDLI P254475 · CBS 10996",
+      "url": "https://cdli.earth/artifacts/254475",
+      "note": "Later witness for named string pairs. The catalogue checked on 22 October 2026 assigns Middle Babylonian, approximately 1400–1100 BCE; Mirelman (2013) used an older Neo-Babylonian dating. Combining witnesses is a scholarly reconstruction across time."
+    },
+    {
+      "id": "hoyrup2017",
+      "title": "Jens Høyrup · Algebra in Cuneiform, Appendix B (2017)",
+      "url": "https://mprl-series.mpg.de/textbooks/2/12/index.html",
+      "note": "Key to Vocabulary and Standard Translations: šumma, ‘if’. This is lexical support from a study of mathematical texts, not another witness to the musical procedure. The action verbs are discussed by Rahn (2022), paragraph 45."
+    }
+  ],
+  "practice": {
+    "settings": {
+      "direction": "L",
+      "amount": 110,
+      "listen": "partials",
+      "revealed": true
+    },
+    "preview": {
+      "tuning": "embūbum",
+      "pair": [
+        6,
+        3
+      ],
+      "changed": [
+        3
+      ],
+      "direction": "L",
+      "amount": 110,
+      "signedAmount": -110,
+      "exactTargetChosen": false,
+      "targetAmount": 113.68500605771199,
+      "targetFactor": "2048/2187",
+      "destination": "pītum",
+      "errorFromTargetCents": -3.6850060577119876,
+      "before": [
+        260.7407407407407,
+        371.25
+      ],
+      "after": [
+        260.7407407407407,
+        348.3951062641619
+      ],
+      "harmonic": [
+        4,
+        3
+      ],
+      "beforePartials": [
+        1042.9629629629628,
+        1113.75
+      ],
+      "afterPartials": [
+        1042.9629629629628,
+        1045.1853187924858
+      ],
+      "partialDifferenceHz": 2.2223558295229395
+    },
+    "experiment": "https://antonsoo.github.io/sammu/practice.html?start=isartum&a=440&companions=octave&sound=sine&moves=LL&turn=L&cents=110&listen=partials&reveal=1#practice",
+    "synthesis": "The full practice pair has six decaying sine partials. Isolated mode balances two selected partial frequencies as steady sine tones.",
+    "status": "Tentative modern listening setting; the underlying exact tuning is unchanged."
+  }
+}

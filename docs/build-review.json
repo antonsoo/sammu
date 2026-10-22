@@ -1,8 +1,8 @@
 {
-  "source": "4209926913dc33626ccb69bf9ccb34901f50f0a4",
-  "runtimeSource": "4209926913dc33626ccb69bf9ccb34901f50f0a4",
-  "node": "26.7.0",
-  "npm": "12.0.1",
+  "source": "45319eb67076ecbad2338bb0f92d7c0cfb20da21",
+  "runtimeSource": "45319eb67076ecbad2338bb0f92d7c0cfb20da21",
+  "node": "24.21.0",
+  "npm": "11.19.0",
   "python": "3.12.3",
   "numpy": "2.4.4",
   "platform": "WSL2 Linux 6.18.54.1-microsoft-standard-WSL2",
@@ -11,19 +11,34 @@
   "check": {
     "lint": true,
     "strictTypecheck": true,
-    "tests": 8,
+    "tests": 13,
     "build": true
   },
   "files": [
     {
-      "path": "assets/main-C7-5KG6S.js",
-      "bytes": 38905,
-      "sha256": "b8e85687a0d6ddb7af6ebe17de7ab2b6bbbc051039990aa758e422c9c9986603"
+      "path": "assets/main-DfjZv9OU.js",
+      "bytes": 10268,
+      "sha256": "c4887c3fbbff62910ab0c277111a92cb4f7aa01d0aa4647be68c82fe8371f6e6"
     },
     {
-      "path": "assets/main-tGNh2i3-.css",
-      "bytes": 16043,
-      "sha256": "eb9988c3bae0c43fea4805627a74d2c63afa15085167f5df286cab9154b8b52b"
+      "path": "assets/practice-C4hf9I29.js",
+      "bytes": 5561,
+      "sha256": "9425802416c7f2f2deca00cf959ca3e2585b145530631538f5a05debfcdcff06"
+    },
+    {
+      "path": "assets/practice-DSOpFAys.css",
+      "bytes": 5907,
+      "sha256": "3a2425020d87b80da80b1dd8a0dbdea939248649ceec9d90f02ff30acfe4481b"
+    },
+    {
+      "path": "assets/study-BLHHzp9_.js",
+      "bytes": 39202,
+      "sha256": "895b20ba8c492d3ee81b644875446c3c14066d70b072497df08b1b212e3a4450"
+    },
+    {
+      "path": "assets/study-DDuBUp75.css",
+      "bytes": 16136,
+      "sha256": "4833aa1cc081d7bcceb0952402e2d90407295591f50bac1389f7539351faf882"
     },
     {
       "path": "favicon.svg",
@@ -52,21 +67,25 @@
     },
     {
       "path": "index.html",
-      "bytes": 17562,
-      "sha256": "7e8f3879ab599d98fdcb96fb544293b0525712e9df82ed89efa6c5b6fd86e6b0"
+      "bytes": 17795,
+      "sha256": "1ca370f265154c428f14aaee69e967b6ffa6bfafca4576de9b103947edb9f2d1"
+    },
+    {
+      "path": "practice.html",
+      "bytes": 9561,
+      "sha256": "91960ea475104bbe0641a44d152f1ff8b9cbc8e01a96b60626b2023b381d8e0e"
     },
     {
       "path": "sw.js",
-      "bytes": 3147,
-      "sha256": "c32d6a7b6c6549b6544451441ac137ddfd6951564bee74bf0890ca99a46717d2"
+      "bytes": 3629,
+      "sha256": "f81c5a6dc36a9df03da75feb3aafea2593dafdba166a7887faa1e832bff2ccb7"
     }
   ],
-  "byteIdenticalToWorkingBuild": true,
-  "node24Compatibility": {
-    "node": "24.21.0",
-    "freshNpmCi": true,
+  "byteIdenticalToNode26Build": true,
+  "node26Compatibility": {
+    "node": "26.7.0",
     "check": true,
-    "exactOracle": true,
-    "allNineOutputFilesByteIdentical": true
+    "allThirteenOutputFilesByteIdentical": true,
+    "npm": "12.0.1"
   }
 }

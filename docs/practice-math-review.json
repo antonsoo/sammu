@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "cases": 672,
+  "note_frequencies_and_times": 2688,
+  "tolerance": 1e-9,
+  "method": "Independent Fraction source fixture and 60-digit Decimal exponentials; tentative previews kept separate from exact base"
+}

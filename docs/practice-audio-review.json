@@ -1,0 +1,427 @@
+{
+  "passed": true,
+  "wav_files": 60,
+  "wav_samples": 30153600,
+  "live_buffers": 8,
+  "max_wav_sample_error": 1.5273906005364157e-5,
+  "max_live_sample_error": 2.2321278825288005e-8,
+  "wav_tolerance": 2e-5,
+  "live_tolerance": 1e-7,
+  "method": "Independent Fraction source fixture and NumPy whole-signal synthesis; played AudioBuffer samples, not speaker output",
+  "files": [
+    {
+      "file": "chromium-desktop-practice.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5270155627300497e-5
+    },
+    {
+      "file": "chromium-phone-practice.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5270155627300497e-5
+    },
+    {
+      "file": "matrix-0-L-pair-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526119616834798e-5
+    },
+    {
+      "file": "matrix-0-L-pair-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526024252890279e-5
+    },
+    {
+      "file": "matrix-0-L-partials-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5270641631121018e-5
+    },
+    {
+      "file": "matrix-0-L-partials-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526988254196837e-5
+    },
+    {
+      "file": "matrix-0-T-pair-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5260263680788588e-5
+    },
+    {
+      "file": "matrix-0-T-pair-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5262619141170886e-5
+    },
+    {
+      "file": "matrix-0-T-partials-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526988254196837e-5
+    },
+    {
+      "file": "matrix-0-T-partials-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526988254196837e-5
+    },
+    {
+      "file": "matrix-1-L-pair-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5262228619278284e-5
+    },
+    {
+      "file": "matrix-1-L-pair-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5262228619278284e-5
+    },
+    {
+      "file": "matrix-1-L-partials-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.527064193429517e-5
+    },
+    {
+      "file": "matrix-1-L-partials-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526988254196837e-5
+    },
+    {
+      "file": "matrix-1-T-pair-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5262228619278284e-5
+    },
+    {
+      "file": "matrix-1-T-pair-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5262228619278284e-5
+    },
+    {
+      "file": "matrix-1-T-partials-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526988254196837e-5
+    },
+    {
+      "file": "matrix-1-T-partials-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526988254196837e-5
+    },
+    {
+      "file": "matrix-2-L-pair-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526324907755172e-5
+    },
+    {
+      "file": "matrix-2-L-pair-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526073365383518e-5
+    },
+    {
+      "file": "matrix-2-L-partials-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5268718549565907e-5
+    },
+    {
+      "file": "matrix-2-L-partials-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5268718549565907e-5
+    },
+    {
+      "file": "matrix-2-T-pair-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526073365383518e-5
+    },
+    {
+      "file": "matrix-2-T-pair-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526073365383518e-5
+    },
+    {
+      "file": "matrix-2-T-partials-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5268718549565907e-5
+    },
+    {
+      "file": "matrix-2-T-partials-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5268718549565907e-5
+    },
+    {
+      "file": "matrix-3-L-pair-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5261497344362662e-5
+    },
+    {
+      "file": "matrix-3-L-pair-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5261497344362662e-5
+    },
+    {
+      "file": "matrix-3-L-partials-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5268718511457502e-5
+    },
+    {
+      "file": "matrix-3-L-partials-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5268718511457502e-5
+    },
+    {
+      "file": "matrix-3-T-pair-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5261497344362662e-5
+    },
+    {
+      "file": "matrix-3-T-pair-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5261497344362662e-5
+    },
+    {
+      "file": "matrix-3-T-partials-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5268718511457502e-5
+    },
+    {
+      "file": "matrix-3-T-partials-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5268718511457502e-5
+    },
+    {
+      "file": "matrix-4-L-pair-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5262327721393687e-5
+    },
+    {
+      "file": "matrix-4-L-pair-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5262529117460177e-5
+    },
+    {
+      "file": "matrix-4-L-partials-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5268718511457502e-5
+    },
+    {
+      "file": "matrix-4-L-partials-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5268718511457502e-5
+    },
+    {
+      "file": "matrix-4-T-pair-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5262327721393687e-5
+    },
+    {
+      "file": "matrix-4-T-pair-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526232893588053e-5
+    },
+    {
+      "file": "matrix-4-T-partials-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5268718511457502e-5
+    },
+    {
+      "file": "matrix-4-T-partials-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5268718511457502e-5
+    },
+    {
+      "file": "matrix-5-L-pair-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5262196387699767e-5
+    },
+    {
+      "file": "matrix-5-L-pair-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5267532592899702e-5
+    },
+    {
+      "file": "matrix-5-L-partials-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526984824901101e-5
+    },
+    {
+      "file": "matrix-5-L-partials-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526984824901101e-5
+    },
+    {
+      "file": "matrix-5-T-pair-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5261497731164364e-5
+    },
+    {
+      "file": "matrix-5-T-pair-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5261497731164364e-5
+    },
+    {
+      "file": "matrix-5-T-partials-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526984824901101e-5
+    },
+    {
+      "file": "matrix-5-T-partials-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526984824901101e-5
+    },
+    {
+      "file": "matrix-6-L-pair-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.526076219016126e-5
+    },
+    {
+      "file": "matrix-6-L-pair-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5260845231360176e-5
+    },
+    {
+      "file": "matrix-6-L-partials-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.527064171988335e-5
+    },
+    {
+      "file": "matrix-6-L-partials-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5270098023989487e-5
+    },
+    {
+      "file": "matrix-6-T-pair-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5261931109789018e-5
+    },
+    {
+      "file": "matrix-6-T-pair-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5267361060777862e-5
+    },
+    {
+      "file": "matrix-6-T-partials-110.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5270098023989487e-5
+    },
+    {
+      "file": "matrix-6-T-partials-target.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5273906005364157e-5
+    },
+    {
+      "file": "firefox-desktop-practice.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5270155627300497e-5
+    },
+    {
+      "file": "firefox-phone-practice.wav",
+      "notes": 4,
+      "samples": 502560,
+      "max_absolute_sample_error": 1.5270155627300497e-5
+    }
+  ],
+  "live": [
+    {
+      "file": "chromium-desktop-comparison.f32",
+      "sample_rate": 44100,
+      "samples": 461727,
+      "max_absolute_sample_error": 2.2321278825288005e-8
+    },
+    {
+      "file": "chromium-desktop-target.f32",
+      "sample_rate": 44100,
+      "samples": 225792,
+      "kind": "exact model reference; tentative setting unchanged",
+      "max_absolute_sample_error": 1.4899957045955148e-8
+    },
+    {
+      "file": "chromium-phone-comparison.f32",
+      "sample_rate": 44100,
+      "samples": 461727,
+      "max_absolute_sample_error": 2.2321278825288005e-8
+    },
+    {
+      "file": "chromium-phone-target.f32",
+      "sample_rate": 44100,
+      "samples": 225792,
+      "kind": "exact model reference; tentative setting unchanged",
+      "max_absolute_sample_error": 1.4899957045955148e-8
+    },
+    {
+      "file": "firefox-desktop-comparison.f32",
+      "sample_rate": 44100,
+      "samples": 461727,
+      "max_absolute_sample_error": 2.2321278825288005e-8
+    },
+    {
+      "file": "firefox-desktop-target.f32",
+      "sample_rate": 44100,
+      "samples": 225792,
+      "kind": "exact model reference; tentative setting unchanged",
+      "max_absolute_sample_error": 1.4899957045955148e-8
+    },
+    {
+      "file": "firefox-phone-comparison.f32",
+      "sample_rate": 44100,
+      "samples": 461727,
+      "max_absolute_sample_error": 2.2321278825288005e-8
+    },
+    {
+      "file": "firefox-phone-target.f32",
+      "sample_rate": 44100,
+      "samples": 225792,
+      "kind": "exact model reference; tentative setting unchanged",
+      "max_absolute_sample_error": 1.4899957045955148e-8
+    }
+  ]
+}

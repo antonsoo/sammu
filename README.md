@@ -11,6 +11,8 @@ A tuning name tells you how strings relate; it does not fix their absolute pitch
 
 [Open the workshop](https://antonsoo.github.io/sammu/) · [Try seven loosening steps](https://antonsoo.github.io/sammu/?start=isartum&a=440&companions=octave&sound=plucked&moves=LLLLLLL#cycle) · [Sources and interpretation](docs/sources.md)
 
+[Practice retuning by ear](https://antonsoo.github.io/sammu/practice.html): adjust the prescribed string while listening, then reveal the two partials that the model brings into alignment. Your tentative setting stays separate from the exact tuning. The exercise offers a full synthetic pair, isolated partials, a before/after comparison and a separately played model reference. It does not assign a hearing score.
+
 ## Start locally
 
 Requires Node.js 24 or later.
@@ -33,10 +35,11 @@ npm run preview
 - Play the current diagnostic pair, the tuning’s named clear pair, or any of nine individual strings. Two explicitly synthetic sounds expose the role of upper partials.
 - Loosen or tighten the string selected by the reconstructed procedure. Strings 1 + 8 and 2 + 9 change together. Undo restores exact pitches.
 - Compare the same physical pair before and after the last action. The overtone diagram marks coinciding partials using exact rational equality.
+- Practice a tentative adjustment with a keyboard or slider, hide the measurements while listening, and inspect the frequency gap afterward. Apply the exact procedure only when you choose to return to the main bench.
 - Plan a route to another named tuning. Any destination is at most three operations away; applying a route executes the actual retuning steps.
 - Complete a seven-step cycle and hear the difference between a returning name and a returning frequency. No pitch is silently normalized between tunings.
 - Inspect every exact fraction and every action, or share a bounded URL containing the initial settings and complete move sequence.
-- Save a standalone HTML study with embedded fonts, audio, original diagrams, all intermediate pitches, assumptions, source notes and font licenses. Print it to PDF, or download CSV, JSON, WAV and SVG separately.
+- Save a standalone HTML study with embedded fonts, audio, original diagrams, all intermediate pitches, nine Akkadian word notes, three source-preservation cases and font licenses. The practice worksheet also records your tentative adjustment separately. Print either to PDF, or download the individual records and audio.
 - Use the workshop offline after its complete edition has been saved. The external scholarly articles and museum records remain online links.
 
 ## How the realization works
@@ -90,14 +93,17 @@ The instrument’s precise identification is uncertain. The two companion-string
 ```sh
 npm run check
 npm run verify:tuning
+npm run verify:practice
 npm run test:browser -- /tmp/sammu-review/browser.json
+npm run test:practice -- /tmp/sammu-practice-review/browser.json
 python3 -m pip install -r scripts/requirements-audio.txt
 python3 scripts/audio-oracle.py /tmp/sammu-review/browser.json
+python3 scripts/audio-oracle.py /tmp/sammu-practice-review/browser.json
 ```
 
 The browser script uses Playwright’s installed Chromium and Firefox. On a new machine, install its browsers with `npx playwright install --with-deps chromium firefox` first. Python 3.12 and NumPy 2.4.4 are used for the audio review; the exact-ratio oracle needs only Python’s standard library. For an isolated Python environment, install the requirements in a venv rather than the system environment.
 
-The exact-ratio oracle uses Gaussian elimination on prime-exponent constraints, an independent source-order fixture, and breadth-first route search. It checks 812 states, 7,308 string pitches and all 49 shortest routes. Browser review exercises keyboard retuning, focus preservation, history navigation, source details, real downloads, native saved studies and offline operation in both engines at 1440 px and 375 px. The audio oracle independently reconstructs the expected notes and synthesizes every sample of downloaded WAVs and captured live buffers. [The retained review](docs/review.md) gives the measured results and their limits.
+The exact-ratio oracle uses Gaussian elimination on prime-exponent constraints, an independent source-order fixture, and breadth-first route search. It checks 812 states, 7,308 string pitches and all 49 shortest routes. A separate practice oracle checks 672 tentative settings against exact fractions and high-precision exponentials. Browser review exercises keyboard retuning, focus preservation, history navigation, source details, real downloads, native saved studies and offline operation in both engines at 1440 px and 375 px. The audio oracle independently reconstructs the expected notes and synthesizes every sample of downloaded WAVs and captured live buffers. [The original workshop review](docs/review.md) and [the practice review](docs/practice-review.md) give the measured results and their limits.
 
 ## Contributing
 

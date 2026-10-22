@@ -1,0 +1,95 @@
+{
+  "phase": "before",
+  "oldFileCount": 9,
+  "newFileCount": 13,
+  "records": [
+    {
+      "engine": "chromium",
+      "mode": "hold",
+      "oldEdition": "cf03122b7f3329e6403f1a6db987d0174479cda64c31f2fdff84998ca0d0b32c",
+      "newEdition": "fbca78fa3db63ea912822736ab12cdc077f4598ca8c68d62b1735ca914715b69",
+      "before": "Offline edition is updating. Reload online to finish.",
+      "workerAfter": {
+        "type": "SAMMU_EDITION",
+        "edition": "fbca78fa3db63ea912822736ab12cdc077f4598ca8c68d62b1735ca914715b69",
+        "complete": true
+      },
+      "after": "Offline edition is updating. Reload online to finish.",
+      "automaticallyAcknowledged": false,
+      "staleReplyIgnored": false,
+      "wrongHttp200Responses": [],
+      "expectedIntegrityConsoleErrors": [],
+      "offlinePracticeAndMain": true,
+      "offlineWorksheetSaved": true
+    },
+    {
+      "engine": "chromium",
+      "mode": "wrong",
+      "oldEdition": "cf03122b7f3329e6403f1a6db987d0174479cda64c31f2fdff84998ca0d0b32c",
+      "newEdition": "fbca78fa3db63ea912822736ab12cdc077f4598ca8c68d62b1735ca914715b69",
+      "before": "Offline edition is updating. Reload online to finish.",
+      "workerAfter": {
+        "type": "SAMMU_EDITION",
+        "edition": "fbca78fa3db63ea912822736ab12cdc077f4598ca8c68d62b1735ca914715b69",
+        "complete": true
+      },
+      "after": "Offline edition is updating. Reload online to finish.",
+      "automaticallyAcknowledged": false,
+      "staleReplyIgnored": false,
+      "wrongHttp200Responses": [
+        {
+          "url": "/sammu/practice.html",
+          "status": 200,
+          "oldEntryInsteadOfNewPractice": true
+        }
+      ],
+      "expectedIntegrityConsoleErrors": [],
+      "offlinePracticeAndMain": true,
+      "offlineWorksheetSaved": true
+    },
+    {
+      "engine": "firefox",
+      "mode": "hold",
+      "oldEdition": "cf03122b7f3329e6403f1a6db987d0174479cda64c31f2fdff84998ca0d0b32c",
+      "newEdition": "fbca78fa3db63ea912822736ab12cdc077f4598ca8c68d62b1735ca914715b69",
+      "before": "Offline edition is updating. Reload online to finish.",
+      "workerAfter": {
+        "type": "SAMMU_EDITION",
+        "edition": "fbca78fa3db63ea912822736ab12cdc077f4598ca8c68d62b1735ca914715b69",
+        "complete": true
+      },
+      "after": "Offline edition is updating. Reload online to finish.",
+      "automaticallyAcknowledged": false,
+      "staleReplyIgnored": false,
+      "wrongHttp200Responses": [],
+      "expectedIntegrityConsoleErrors": [],
+      "offlinePracticeAndMain": true,
+      "offlineWorksheetSaved": true
+    },
+    {
+      "engine": "firefox",
+      "mode": "wrong",
+      "oldEdition": "cf03122b7f3329e6403f1a6db987d0174479cda64c31f2fdff84998ca0d0b32c",
+      "newEdition": "fbca78fa3db63ea912822736ab12cdc077f4598ca8c68d62b1735ca914715b69",
+      "before": "Offline edition is updating. Reload online to finish.",
+      "workerAfter": {
+        "type": "SAMMU_EDITION",
+        "edition": "fbca78fa3db63ea912822736ab12cdc077f4598ca8c68d62b1735ca914715b69",
+        "complete": true
+      },
+      "after": "Offline edition is updating. Reload online to finish.",
+      "automaticallyAcknowledged": false,
+      "staleReplyIgnored": false,
+      "wrongHttp200Responses": [
+        {
+          "url": "/sammu/practice.html",
+          "status": 200,
+          "oldEntryInsteadOfNewPractice": true
+        }
+      ],
+      "expectedIntegrityConsoleErrors": [],
+      "offlinePracticeAndMain": true,
+      "offlineWorksheetSaved": true
+    }
+  ]
+}

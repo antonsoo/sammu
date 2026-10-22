@@ -1,5 +1,7 @@
 # Retuning workshop review
 
+This receipt describes the initial edition. The later [practice and offline-upgrade review](practice-review.md) records the current build and its separate regression checks.
+
 ## What can be learned
 
 The first operation makes a named pair clear by changing string 2 and its companion 9. A different pair becomes unclear, and the tuning name changes from išartum to kitmum. Comparing the same physical pair makes that action audible; substituting a different pair would hide it.
@@ -16,7 +18,7 @@ Environment: Node.js 26.7.0, npm 12.0.1, Python 3.12.3, NumPy 2.4.4, WSL2 Linux 
 
 | Check                                 | Observed result                                                                                                                             | Receipt                                                  |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| Fresh installation and complete check | Lint, strict typecheck, eight tests and production build passed                                                                             | [Build](build-review.json)                               |
+| Fresh installation and complete check | Lint, strict typecheck, eight tests and production build passed                                                                             | [Build](initial-build-review.json)                       |
 | Independent exact constraints         | 812 states and 7,308 string pitches; two companion models, seven starting tunings, both directions through 28 moves; all 49 shortest routes | [Tuning](tuning-review.json)                             |
 | Browser workflows                     | Chromium and Firefox, each at 1440 × 1000 and 375 × 900                                                                                     | [Browser](browser-review.json)                           |
 | Real keyboard controls                | Skip link, Enter to retune, focus preservation, undo, history Back, goal routes, bounded sequence recovery and focusable scrolling tables   | [Browser](browser-review.json)                           |
@@ -27,7 +29,7 @@ Environment: Node.js 26.7.0, npm 12.0.1, Python 3.12.3, NumPy 2.4.4, WSL2 Linux 
 | Page and policy errors                | No page errors, console errors, CSP violations or external requests in the reviewed app workflows                                           | [Browser](browser-review.json)                           |
 | Downloaded audio                      | 40 WAVs, 7,430,400 samples independently reconstructed and synthesized                                                                      | [Audio](audio-review.json)                               |
 | Live audio buffers                    | Four actual played buffers, including the engines’ different sample rates                                                                   | [Audio](audio-review.json)                               |
-| Complete static output                | Nine files, 643,352 bytes before HTTP compression; no runtime package dependencies                                                          | [Build](build-review.json)                               |
+| Complete static output                | Nine files, 643,352 bytes before HTTP compression; no runtime package dependencies                                                          | [Build](initial-build-review.json)                       |
 
 The audio oracle rebuilds the expected note frequencies from the independent source fixture and exact rational constraints. NumPy then synthesizes a separate signal, checking every sample, including envelope timing and the silent before/after gap. The largest normalized sample error is `1.526900754347804e-5` for PCM16 WAVs against a `2e-5` bound, and `1.1147137185529843e-8` for live buffers against `1e-7`. These establish digital signal agreement, not the output of a physical speaker or an ancient instrument.
 

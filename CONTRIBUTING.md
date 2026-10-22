@@ -4,6 +4,8 @@ Use Node.js 24 or later, run `npm ci`, then `npm run dev`. The static site uses 
 
 Before submitting a change, run `npm run check` and `npm run verify:tuning`. For audio, layout, navigation or export changes, also run `npm run test:browser -- /tmp/sammu-review/browser.json` and `python3 scripts/audio-oracle.py /tmp/sammu-review/browser.json` with the pinned NumPy requirement installed. See the README for browser installation on a new machine.
 
+For practice or shared export changes, also run `npm run verify:practice`, `npm run test:practice -- /tmp/sammu-practice-review/browser.json`, and the audio oracle with that second browser receipt. The practice has a tentative numeric preview and an exact base: preserve both in its URL and exported record. Its isolated-partial sound and full six-partial sound must agree with the displayed frequency rulers. Changing a preview while audio permission is pending must cancel that playback.
+
 Check the actual workshop and native HTML export at desktop and 375 px widths in Chromium and Firefox. Inspect new screenshots. Keep live playback finite, stoppable and tied to the same audio plan as downloaded WAVs. Keep focus on controls after state changes and make horizontally scrolling tables reachable by keyboard.
 
 Historical changes need a source, a precise location within it, preservation information where relevant, and a clear distinction between evidence and model. Add a different numerical interpretation as a named model rather than silently changing the existing one. Do not supply invented ancient text, pronunciation, instrument samples, or archaeological detail.
