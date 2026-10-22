@@ -1,0 +1,101 @@
+{
+  "checkedAt": "2026-10-22T12:23:36.904Z",
+  "base": "https://antonsoo.github.io/sammu/",
+  "runtimeSource": "45319eb67076ecbad2338bb0f92d7c0cfb20da21",
+  "files": [
+    {
+      "path": "assets/main-DfjZv9OU.js",
+      "bytes": 10268,
+      "sha256": "c4887c3fbbff62910ab0c277111a92cb4f7aa01d0aa4647be68c82fe8371f6e6",
+      "url": "https://antonsoo.github.io/sammu/assets/main-DfjZv9OU.js",
+      "status": 200
+    },
+    {
+      "path": "assets/practice-C4hf9I29.js",
+      "bytes": 5561,
+      "sha256": "9425802416c7f2f2deca00cf959ca3e2585b145530631538f5a05debfcdcff06",
+      "url": "https://antonsoo.github.io/sammu/assets/practice-C4hf9I29.js",
+      "status": 200
+    },
+    {
+      "path": "assets/practice-DSOpFAys.css",
+      "bytes": 5907,
+      "sha256": "3a2425020d87b80da80b1dd8a0dbdea939248649ceec9d90f02ff30acfe4481b",
+      "url": "https://antonsoo.github.io/sammu/assets/practice-DSOpFAys.css",
+      "status": 200
+    },
+    {
+      "path": "assets/study-BLHHzp9_.js",
+      "bytes": 39202,
+      "sha256": "895b20ba8c492d3ee81b644875446c3c14066d70b072497df08b1b212e3a4450",
+      "url": "https://antonsoo.github.io/sammu/assets/study-BLHHzp9_.js",
+      "status": 200
+    },
+    {
+      "path": "assets/study-DDuBUp75.css",
+      "bytes": 16136,
+      "sha256": "4833aa1cc081d7bcceb0952402e2d90407295591f50bac1389f7539351faf882",
+      "url": "https://antonsoo.github.io/sammu/assets/study-DDuBUp75.css",
+      "status": 200
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 252,
+      "sha256": "7d2537517a21b00b09acab68534fadca8a86192aec5e1914accd3e1628303c67",
+      "url": "https://antonsoo.github.io/sammu/favicon.svg",
+      "status": 200
+    },
+    {
+      "path": "fonts/Atkinson-OFL.txt",
+      "bytes": 4431,
+      "sha256": "aca6a428580965d2297d1b718042dd427c2a9443ece3b0d02d758e161e0c4030",
+      "url": "https://antonsoo.github.io/sammu/fonts/Atkinson-OFL.txt",
+      "status": 200
+    },
+    {
+      "path": "fonts/AtkinsonHyperlegibleNext.ttf",
+      "bytes": 114552,
+      "sha256": "5a455d1cfa099b601ab70751bb9673e8fe1854dc4500c80e1a220d0d75e31745",
+      "url": "https://antonsoo.github.io/sammu/fonts/AtkinsonHyperlegibleNext.ttf",
+      "status": 200
+    },
+    {
+      "path": "fonts/NotoSerif-OFL.txt",
+      "bytes": 4396,
+      "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+      "url": "https://antonsoo.github.io/sammu/fonts/NotoSerif-OFL.txt",
+      "status": 200
+    },
+    {
+      "path": "fonts/NotoSerif-Regular.ttf",
+      "bytes": 444064,
+      "sha256": "5473d2e43bdd018ee124a4addba8091fd0a29894b121cbb741023af6549662b6",
+      "url": "https://antonsoo.github.io/sammu/fonts/NotoSerif-Regular.ttf",
+      "status": 200
+    },
+    {
+      "path": "index.html",
+      "bytes": 17795,
+      "sha256": "1ca370f265154c428f14aaee69e967b6ffa6bfafca4576de9b103947edb9f2d1",
+      "url": "https://antonsoo.github.io/sammu/index.html",
+      "status": 200
+    },
+    {
+      "path": "practice.html",
+      "bytes": 9561,
+      "sha256": "91960ea475104bbe0641a44d152f1ff8b9cbc8e01a96b60626b2023b381d8e0e",
+      "url": "https://antonsoo.github.io/sammu/practice.html",
+      "status": 200
+    },
+    {
+      "path": "sw.js",
+      "bytes": 3629,
+      "sha256": "f81c5a6dc36a9df03da75feb3aafea2593dafdba166a7887faa1e832bff2ccb7",
+      "url": "https://antonsoo.github.io/sammu/sw.js",
+      "status": 200
+    }
+  ],
+  "directoryAliasMatches": true,
+  "queryCacheBust": false,
+  "passed": true
+}

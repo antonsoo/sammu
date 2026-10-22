@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "family": "practice",
+      "file": "chromium-desktop-worksheet.html",
+      "offlineContext": true,
+      "fontsReady": true,
+      "decodedAudioDuration": 10.47,
+      "wordNotes": 9,
+      "sourceCases": 3,
+      "httpRequests": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "family": "workshop",
+      "file": "chromium-desktop-study.html",
+      "offlineContext": true,
+      "fontsReady": true,
+      "decodedAudioDuration": 3.87,
+      "wordNotes": 9,
+      "sourceCases": 3,
+      "httpRequests": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "chromium",
+      "layout": "phone",
+      "family": "practice",
+      "file": "chromium-phone-worksheet.html",
+      "offlineContext": true,
+      "fontsReady": true,
+      "decodedAudioDuration": 10.47,
+      "wordNotes": 9,
+      "sourceCases": 3,
+      "httpRequests": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "chromium",
+      "layout": "phone",
+      "family": "workshop",
+      "file": "chromium-phone-study.html",
+      "offlineContext": true,
+      "fontsReady": true,
+      "decodedAudioDuration": 3.87,
+      "wordNotes": 9,
+      "sourceCases": 3,
+      "httpRequests": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "firefox",
+      "layout": "desktop",
+      "family": "practice",
+      "file": "firefox-desktop-worksheet.html",
+      "offlineContext": true,
+      "fontsReady": true,
+      "decodedAudioDuration": 10.47,
+      "wordNotes": 9,
+      "sourceCases": 3,
+      "httpRequests": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "firefox",
+      "layout": "desktop",
+      "family": "workshop",
+      "file": "firefox-desktop-study.html",
+      "offlineContext": true,
+      "fontsReady": true,
+      "decodedAudioDuration": 3.87,
+      "wordNotes": 9,
+      "sourceCases": 3,
+      "httpRequests": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "firefox",
+      "layout": "phone",
+      "family": "practice",
+      "file": "firefox-phone-worksheet.html",
+      "offlineContext": true,
+      "fontsReady": true,
+      "decodedAudioDuration": 10.47,
+      "wordNotes": 9,
+      "sourceCases": 3,
+      "httpRequests": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "firefox",
+      "layout": "phone",
+      "family": "workshop",
+      "file": "firefox-phone-study.html",
+      "offlineContext": true,
+      "fontsReady": true,
+      "decodedAudioDuration": 3.87,
+      "wordNotes": 9,
+      "sourceCases": 3,
+      "httpRequests": [],
+      "pageErrors": []
+    }
+  ]
+}
