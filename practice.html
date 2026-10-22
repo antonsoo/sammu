@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#173441">
+    <meta
+      name="description"
+      content="Adjust one string by ear, compare the same pair before and after, and reveal the measurements in Sammû’s explicit modern realization of a Mesopotamian retuning procedure."
+    >
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; media-src 'self' blob:; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
+    >
+    <link rel="icon" href="/sammu/favicon.svg" type="image/svg+xml">
+    <title>Sammû · Find the alignment by ear</title>
+    <script type="module" crossorigin src="/sammu/assets/practice-C4hf9I29.js"></script>
+    <link rel="modulepreload" crossorigin href="/sammu/assets/study-BLHHzp9_.js">
+    <link rel="stylesheet" crossorigin href="/sammu/assets/study-DDuBUp75.css">
+    <link rel="stylesheet" crossorigin href="/sammu/assets/practice-DSOpFAys.css">
+  </head>
+  <body>
+    <a href="#practice" class="skip">Skip to the listening controls</a>
+    <header class="masthead wrap">
+      <a class="wordmark" href="./">sammû<span>an ancient tuning workshop</span></a>
+      <nav aria-label="Practice navigation">
+        <a id="return-top" href="./#bench">Back to the exact tuning</a
+        ><a id="source-link" href="./#evidence">Read the evidence</a>
+      </nav>
+    </header>
+    <main class="practice-page">
+      <div class="practice-intro wrap">
+        <p class="eyebrow">Listening practice · a modern numerical realization</p>
+        <h1>Find the alignment<br>by ear.</h1>
+        <p>
+          Adjust one string. Compare the pair before and after. Reveal the measurements when you
+          want to connect what you hear with the model’s answer.
+        </p>
+      </div>
+      <section
+        id="practice"
+        class="practice-workbench wrap"
+        aria-labelledby="practice-heading"
+        tabindex="-1"
+      >
+        <div class="section-label">
+          <span>One pair, one tentative adjustment</span><span id="base-summary"></span>
+        </div>
+        <p id="warnings" class="notice" hidden></p>
+        <div class="practice-layout">
+          <div class="practice-controls">
+            <p class="eyebrow">The current diagnostic pair</p>
+            <h2 id="practice-heading" lang="akk-Latn">qablītum · 5 + 2</h2>
+            <p id="instruction"></p>
+
+            <div class="actions">
+              <button type="button" id="listen" class="primary">Listen to your setting</button
+              ><button type="button" id="stop">Stop sound</button>
+            </div>
+            <fieldset class="practice-sounds">
+              <legend>What to listen to</legend>
+              <label
+                ><input type="radio" name="listen" id="pair" value="pair" checked>
+                Full pair · six partials</label
+              ><label
+                ><input type="radio" name="listen" id="partials" value="partials">
+                Two isolated partials</label
+              >
+            </fieldset>
+            <p class="sound-note small">
+              The full pair has six decaying sine partials. Isolated mode balances two selected
+              partial frequencies as steady tones.
+            </p>
+            <div class="adjustment-heading">
+              <label for="amount">Your adjustment</label
+              ><output id="amount-output" for="amount"></output>
+            </div>
+            <input
+              id="amount"
+              type="range"
+              min="0"
+              max="180"
+              step="any"
+              value="0"
+              aria-describedby="range-help"
+            >
+            <p id="range-help" class="small">
+              Drag to explore. Arrow keys adjust 0.1 cent; Shift + arrow adjusts 1; Page Up/Down
+              adjusts 10. Moving the control stops the sound.
+            </p>
+
+            <button type="button" id="compare" class="comparison-button">
+              Unchanged, then your setting
+            </button>
+            <p id="audio-status" class="audio-status" role="status">
+              Start at a comfortable volume. Each setting plays for five seconds.
+            </p>
+            <details class="practice-options">
+              <summary>Change the retuning direction</summary>
+              <label class="turn-label"
+                >Choose the retuning direction<select id="turn"></select></label
+              >
+            </details>
+            <button type="button" id="reset-preview" class="text-button">
+              Return to the unchanged pair
+            </button>
+            <div class="practice-reveal">
+              <button
+                type="button"
+                id="reveal"
+                class="secondary"
+                aria-expanded="false"
+                aria-controls="measurements"
+              >
+                Reveal the measurements
+              </button>
+              <p class="small">
+                This is an exploration, with no hearing score. 100 cents is one modern
+                equal-tempered semitone.
+              </p>
+            </div>
+          </div>
+          <div class="practice-inspection">
+            <aside id="listening-guide" class="listening-guide" aria-labelledby="guide-heading">
+              <h2 id="guide-heading">Follow the sound.</h2>
+              <ol>
+                <li>Listen to the unchanged pair, then move the control a little.</li>
+                <li>
+                  Compare the two settings. Try an adjustment on either side of where the sound
+                  seems to settle.
+                </li>
+                <li>
+                  Isolate the selected partials to hear their interaction directly, then return to
+                  the fuller sound.
+                </li>
+              </ol>
+              <p>
+                Changing one string changes several partial frequencies at once. A smooth patch in a
+                synthetic signal helps you explore that relationship; it does not recover an ancient
+                listener’s judgment.
+              </p>
+              <p class="small">
+                Your preview stays separate from the exact tuning. The model’s exact move is
+                available after you reveal the measurements.
+              </p>
+            </aside>
+            <section id="measurements" hidden aria-label="Revealed practice measurements">
+              <div id="practice-reading"></div>
+              <div class="actions">
+                <button type="button" id="target">Set the exact target</button
+                ><button type="button" id="hear-target">Hear the exact target</button>
+              </div>
+              <button type="button" id="apply-model" class="secondary">
+                Apply the model’s exact move
+              </button>
+              <p id="apply-note" class="small"></p>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="practice-save wrap" aria-labelledby="keep-heading">
+        <div class="section-label">
+          <span>Keep your experiment</span><span>Settings, sound, source notes</span>
+        </div>
+        <div class="save-grid">
+          <div>
+            <h2 id="keep-heading">Keep the adjustment,<br>and its explanation.</h2>
+            <p>
+              The worksheet records your tentative setting separately from the underlying exact
+              tuning. It includes the comparison audio, measurements, source notes and complete move
+              history.
+            </p>
+            <p class="small">
+              Saved worksheets include the measurements even while they are hidden here. The WAV
+              compares unchanged and adjusted settings, with a short silence between them.
+            </p>
+            <p id="offline-status" class="small" role="status">Checking offline availability…</p>
+          </div>
+          <div>
+            <div class="actions">
+              <button type="button" id="save-study" class="primary">
+                Save practice worksheet · HTML
+              </button><button type="button" id="save-wav">Save comparison · WAV</button
+              ><button type="button" id="save-json">Save practice record · JSON</button
+              ><button type="button" id="copy-link">Copy this practice link</button>
+            </div>
+            <p id="save-status" class="small" role="status"></p>
+            <p>
+              <a id="return-bottom" href="./#bench"
+                >Return to the exact tuning without applying the preview →</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="wrap footer">
+      <p>
+        Original modern listening exercise within Sammû’s fourths-and-fifths realization. Source
+        terms and exact ratios remain distinct.
+      </p>
+      <div>
+        <a href="https://github.com/antonsoo/sammu">Code, methods & review</a
+        ><a href="https://github.com/antonsoo/sammu/blob/main/docs/sources.md">Source ledger</a>
+      </div>
+      <small id="edition"></small>
+    </footer>
+    <noscript
+      ><p class="wrap">
+        The listening practice needs JavaScript to calculate and play a tentative adjustment.
+        <a href="./">Return to the workshop</a>.
+      </p></noscript
+    >
+  </body>
+</html>
