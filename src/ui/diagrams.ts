@@ -123,7 +123,7 @@ export function overtoneDiagram(session: Session): string {
               const x =
                 85 +
                 ((frequency(state, string, session.settings.reference) * p.harmonic) / maxHz) * 390;
-              return `<path d="M${x} ${y + 40 * row + 25}v${-16 - 22 * p.weight}" stroke="${row ? "#a23e26" : "#173441"}" stroke-width="2"/><text x="${x}" y="${y + 40 * row + 41}" text-anchor="middle" font-size="10">${p.harmonic}</text>`;
+              return `<path d="M${x} ${y + 40 * row + 25}v-24" stroke="${row ? "#a23e26" : "#173441"}" stroke-width="2"/><rect x="${x - 7}" y="${y + 40 * row + 30}" width="14" height="14" fill="#f4f1e9"/><text x="${x}" y="${y + 40 * row + 41}" text-anchor="middle" font-size="10">${p.harmonic}</text>`;
             })
             .join("");
           return `<text x="0" y="${y + 40 * row + 27}" font-size="12">String ${string}</text><path d="M80 ${y + 40 * row + 25}H480" stroke="#b6c1bd"/>${marks}`;

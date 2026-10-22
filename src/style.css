@@ -707,6 +707,8 @@ dd strong {
   margin-bottom: 24px;
 }
 .skip {
+  opacity: 0;
+  pointer-events: none;
   position: fixed;
   top: 10px;
   left: 15px;
@@ -716,6 +718,8 @@ dd strong {
   z-index: 10;
 }
 .skip:focus {
+  opacity: 1;
+  pointer-events: auto;
   transform: none;
 }
 [hidden] {

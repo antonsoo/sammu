@@ -168,6 +168,12 @@ try {
           stopPosition && stopPosition.y < firstPlay.y,
           "stop control should be within reach before playback",
         );
+        await page.keyboard.press("Tab");
+        assert.equal(await page.evaluate(() => document.activeElement.className), "skip");
+        assert.ok((await page.locator(".skip").boundingBox()).y >= 0);
+        await page.keyboard.press("Enter");
+        assert.equal(await page.evaluate(() => document.activeElement.id), "bench");
+        await page.evaluate(() => scrollTo(0, 0));
         const audits = [await audit(page, `${label}: initial`)];
         await shot(page, `${label}-initial.png`);
         // Exercise a real keyboard action, preserving focus when text changes.
@@ -280,6 +286,7 @@ try {
           await studyPage.pdf({
             path: path.join(directory, "sammu-study.pdf"),
             format: "A4",
+            tagged: true,
             printBackground: true,
           });
         assert.deepEqual(studyErrors, []);
