@@ -1,0 +1,64 @@
+{
+  "source": "4c4b299c51d658cc4fec6807c2eae57a115eaf6d",
+  "freshPublicClone": true,
+  "freshNpmCi": true,
+  "node": "24.21.0",
+  "npm": "11.19.0",
+  "command": "npm run dev",
+  "base": "http://127.0.0.1:4384/sammu/",
+  "passed": true,
+  "records": [
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "width": 1440,
+      "entryFromMainByKeyboard": true,
+      "fontsLoaded": true,
+      "listenAndSliderCancellation": true,
+      "exactOperationApplied": "LLL",
+      "correctResult": "pītum",
+      "developmentOfflineStatusAccurate": true,
+      "errors": [],
+      "external": []
+    },
+    {
+      "engine": "chromium",
+      "layout": "phone",
+      "width": 375,
+      "entryFromMainByKeyboard": true,
+      "fontsLoaded": true,
+      "listenAndSliderCancellation": true,
+      "exactOperationApplied": "LLL",
+      "correctResult": "pītum",
+      "developmentOfflineStatusAccurate": true,
+      "errors": [],
+      "external": []
+    },
+    {
+      "engine": "firefox",
+      "layout": "desktop",
+      "width": 1440,
+      "entryFromMainByKeyboard": true,
+      "fontsLoaded": true,
+      "listenAndSliderCancellation": true,
+      "exactOperationApplied": "LLL",
+      "correctResult": "pītum",
+      "developmentOfflineStatusAccurate": true,
+      "errors": [],
+      "external": []
+    },
+    {
+      "engine": "firefox",
+      "layout": "phone",
+      "width": 375,
+      "entryFromMainByKeyboard": true,
+      "fontsLoaded": true,
+      "listenAndSliderCancellation": true,
+      "exactOperationApplied": "LLL",
+      "correctResult": "pītum",
+      "developmentOfflineStatusAccurate": true,
+      "errors": [],
+      "external": []
+    }
+  ]
+}
