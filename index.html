@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#173441">
+    <meta
+      name="description"
+      content="A Mesopotamian retuning workshop. Hear how one altered string changes a named tuning, follow the surviving instructions, and investigate an audible mathematical model."
+    >
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; media-src 'self' blob:; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
+    >
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <title>Sammû · One string changes the tuning</title>
+  </head>
+  <body>
+    <a href="#bench" class="skip">Skip to the tuning bench</a>
+    <header class="masthead wrap">
+      <a class="wordmark" href="#top">sammû<span>an ancient tuning workshop</span></a>
+      <nav aria-label="On this page">
+        <a href="#bench">Listen & retune</a><a href="#cycle">Follow the cycle</a
+        ><a href="#evidence">Read the evidence</a>
+      </nav>
+    </header>
+    <main id="top">
+      <div class="intro wrap">
+        <p class="eyebrow">Mesopotamia · Old Babylonian instructions from Ur</p>
+        <h1>One altered string.<br>A different tuning.</h1>
+        <p class="lede">
+          A damaged clay text describes a practical procedure: test a pair of strings, change one,
+          and test again. Work through the seven named tunings, and hear what that procedure can do.
+        </p>
+        <p class="model-tag">
+          <span class="model-mark" aria-hidden="true">↳</span>
+          You are hearing a modern fourths-and-fifths realization.
+          <a href="#model">See its assumptions</a>.
+        </p>
+      </div>
+
+      <section id="bench" class="bench wrap" aria-labelledby="bench-heading" tabindex="-1">
+        <div class="section-label">
+          <span>01 / The tuning bench</span><span id="move-count">Starting arrangement</span>
+        </div>
+        <div id="warnings" class="notice" hidden></div>
+        <div class="bench-grid">
+          <div class="instruction">
+            <div class="current-heading">
+              <p class="eyebrow">Current tuning</p>
+              <button type="button" id="stop">Stop sound</button>
+            </div>
+            <h2 id="bench-heading"><span id="tuning-name" lang="akk-Latn">išartum</span></h2>
+            <p id="diagnosis" class="diagnosis"></p>
+            <div class="pair-list">
+              <button type="button" id="play-unclear" class="pair-control unclear">
+                <span class="play-symbol" aria-hidden="true">▶</span
+                ><span><b id="unclear-name"></b><small id="unclear-detail"></small></span>
+              </button>
+              <button type="button" id="play-named" class="pair-control clear">
+                <span class="play-symbol" aria-hidden="true">▶</span
+                ><span><b id="named-name"></b><small id="named-detail"></small></span>
+              </button>
+            </div>
+            <p class="eyebrow next-label">Choose an action</p>
+            <div class="actions">
+              <button type="button" id="loosen" class="primary"></button
+              ><button type="button" id="tighten" class="secondary"></button>
+            </div>
+            <p id="action-explanation" class="small"></p>
+            <div class="transport">
+              <button type="button" id="play-last" disabled>Hear last change</button>
+            </div>
+            <p id="audio-status" role="status" class="audio-status">
+              Press a play button to listen. Start at a comfortable volume.
+            </p>
+            <div class="history-controls">
+              <button type="button" id="undo" disabled>Undo last move</button
+              ><button type="button" id="reset" disabled>Start again</button>
+            </div>
+            <p id="session-status" role="status" class="session-status"></p>
+            <details class="overtones">
+              <summary>Inspect the last change’s overtones</summary>
+              <div id="overtone-diagram"></div>
+              <p class="small">
+                Each mark is a sine partial in the selected synthetic sound. A vertical guide joins
+                partials at exactly the same frequency. This explains the model’s ratios; it does
+                not establish the ancient meaning of “clear.”
+              </p>
+            </details>
+          </div>
+          <div class="instrument">
+            <div class="instrument-heading">
+              <h3>Nine strings, seven roles</h3>
+              <button type="button" id="strum">Play all nine</button>
+            </div>
+            <p class="small">
+              String position runs front to back. The pitch trace is a numerical schematic, not the
+              shape of an ancient instrument.
+            </p>
+            <div class="string-key">
+              <span><i class="dot current"></i> current pitch</span
+              ><span><i class="dot initial"></i> initial pitch</span
+              ><span><i class="dot changed"></i> last changed</span>
+            </div>
+            <div id="strings" class="strings"></div>
+            <p class="axis-caption">
+              Dots share one logarithmic pitch axis. Lower pitch ← → higher pitch.
+            </p>
+            <p id="companion-caption" class="companion-caption"></p>
+          </div>
+        </div>
+        <details class="settings">
+          <summary>Change the reference pitch, sound, or starting tuning</summary>
+          <div class="settings-grid">
+            <label>Initial tuning<select id="start"></select></label>
+            <label
+              >Initial string 1<select id="reference">
+                <option value="220">220 Hz</option>
+                <option value="330">330 Hz</option>
+                <option value="440" selected>440 Hz</option>
+              </select></label
+            >
+            <label
+              >Synthetic sound<select id="colour">
+                <option value="plucked">Six sine partials · decaying</option>
+                <option value="sine">One sine partial · steady</option>
+              </select></label
+            >
+            <label
+              >Strings 8 and 9<select id="companion">
+                <option value="octave">One octave below 1 and 2</option>
+                <option value="unison">Same pitch as 1 and 2</option>
+              </select></label
+            >
+          </div>
+          <p class="small">
+            Changing the initial tuning or companion model starts a new session. Reference pitch and
+            sound preserve your moves. Both companion choices are models; their exact historical
+            relationship is uncertain.
+          </p>
+        </details>
+        <details class="numbers">
+          <summary>Inspect exact pitches and the retuning log</summary>
+          <p class="small">
+            Every fraction is relative to the initial first string. No pitch is reset when a tuning
+            name changes.
+          </p>
+          <section class="table-scroll" aria-label="Current pitches in the numerical realization">
+            <table>
+              <caption>
+                Current pitches in the numerical realization
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">String</th>
+                  <th scope="col">Exact frequency ratio</th>
+                  <th scope="col">Hertz</th>
+                  <th scope="col">Shift from initial, cents</th>
+                </tr>
+              </thead>
+              <tbody id="pitch-table"></tbody>
+            </table>
+          </section>
+          <section class="table-scroll" aria-label="Every action in this session">
+            <table>
+              <caption>
+                Every action in this session
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Move</th>
+                  <th scope="col">Action</th>
+                  <th scope="col">Changed strings</th>
+                  <th scope="col">Resulting tuning</th>
+                </tr>
+              </thead>
+              <tbody id="move-table"></tbody>
+            </table>
+          </section>
+        </details>
+      </section>
+
+      <section id="cycle" class="cycle-section wrap" aria-labelledby="cycle-heading">
+        <div class="section-label">
+          <span>02 / Follow the procedure</span><span>Two directions, one network</span>
+        </div>
+        <div class="cycle-grid">
+          <div>
+            <h2 id="cycle-heading">Seven names form a cycle.<br>Do the pitches return too?</h2>
+            <p>
+              The reconstructed instructions pass through seven tunings. Loosening takes one
+              direction; tightening reverses it. Any other named tuning is at most three moves away.
+            </p>
+            <label class="goal-label">Go to a tuning<select id="goal"></select></label>
+            <p id="route-summary"></p>
+            <ol id="route" class="route"></ol>
+            <button type="button" id="apply-route" class="secondary">Apply the next move</button>
+            <div class="cycle-experiment">
+              <h3>Try the whole cycle</h3>
+              <p>
+                Make seven moves without resetting any pitch. Compare the first string with where it
+                began.
+              </p>
+              <div class="actions">
+                <button type="button" id="cycle-loosen">Loosen through seven</button
+                ><button type="button" id="cycle-tighten">Tighten through seven</button>
+              </div>
+              <p id="cycle-result" class="cycle-result"></p>
+              <button type="button" id="play-cycle">Hear initial, then current</button>
+              <p class="small">
+                The pitch shift is a consequence of this exact 4/3 and 3/2 realization. A returning
+                name does not establish an ancient absolute pitch standard.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div id="cycle-diagram"></div>
+            <p class="small diagram-caption">
+              Our diagram of the reconstructed tuning sequence. The lines represent retuning steps,
+              not an ancient drawing or a melody.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="evidence" class="evidence-section wrap" aria-labelledby="evidence-heading">
+        <div class="section-label">
+          <span>03 / Read the evidence</span><span>Text, reconstruction, realization</span>
+        </div>
+        <h2 id="evidence-heading">
+          A surviving instruction is not the same<br class="wide-only">
+          as a complete reconstruction.
+        </h2>
+        <div class="evidence-intro">
+          <p>
+            Two Old Babylonian manuscripts from Ur preserve parts of a tuning text. Later witnesses
+            supply named string pairs. Their combination lets scholars reconstruct a procedure; it
+            does not supply an ancient recording, a measured instrument, or exact pitch ratios.
+          </p>
+          <p>
+            The first three loosening cases show how preservation varies. These are our summaries of
+            the published translation. In an edition, <b>⟨ ⟩</b> marks a supplied omission;
+            <b>[ ]</b>
+            marks restoration across damage.
+          </p>
+        </div>
+        <div id="clauses" class="clauses"></div>
+        <details class="pair-table">
+          <summary>Show all seven tunings and their diagnostic pairs</summary>
+          <section
+            class="table-scroll"
+            aria-label="Reconstructed tuning sequence; pair ordering follows the sources"
+          >
+            <table>
+              <caption>
+                Reconstructed tuning sequence; pair ordering follows the sources
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Tuning</th>
+                  <th scope="col">Named pair, clear</th>
+                  <th scope="col">Diagnostic pair, unclear</th>
+                  <th scope="col">Loosen</th>
+                  <th scope="col">Tighten</th>
+                </tr>
+              </thead>
+              <tbody id="tuning-table"></tbody>
+            </table>
+          </section>
+        </details>
+        <h3 class="words-heading">Read a little Akkadian</h3>
+        <p>
+          Normalized romanization, not a cuneiform transcription or a claim about exact ancient
+          pronunciation. <i>š</i> is conventionally “sh”; <i>ḫ</i> is a velar fricative; marks over
+          vowels indicate length or contraction.
+        </p>
+        <dl id="words" class="words"></dl>
+        <details id="model" open class="model-details">
+          <summary>What this audible model assumes</summary>
+          <div class="model-copy">
+            <p id="model-statement"></p>
+            <p>
+              String numbers describe positions. In this realization, strings 1–7 descend in pitch.
+              A pair three string-steps apart is set to 4/3; one four steps apart is set to 3/2. The
+              six clear pairs fix all seven pitches relative to the initial first string. The
+              remaining pair is left unclear.
+            </p>
+            <p>
+              Retuning solves that unclear pair while holding its other string fixed. It changes
+              only the selected string and its companion, when present. There is no hidden rescaling
+              when the tuning name changes. Exact fractions remain exact; hertz and cents are modern
+              display units.
+            </p>
+            <p>
+              The decaying sound combines six sine partials. The steady sound uses one. Neither
+              reproduces an excavated instrument. Hearing roughness depends on spectrum, register,
+              listening conditions and the listener; the source word <i lang="akk-Latn">zakû</i> is
+              not a universal pleasantness score.
+            </p>
+          </div>
+        </details>
+        <h3 class="sources-heading">Follow the sources</h3>
+        <ol id="sources" class="sources"></ol>
+        <p class="small">
+          The original diagrams and synthesis here are our work. Modern article figures, tablet
+          photographs and recordings are not bundled. Source links need an internet connection; the
+          workshop and its source notes work offline.
+        </p>
+      </section>
+
+      <section id="save" class="save-section wrap" aria-labelledby="save-heading">
+        <div class="section-label">
+          <span>04 / Keep the experiment</span><span>Reproducible, local exports</span>
+        </div>
+        <div class="save-grid">
+          <div>
+            <h2 id="save-heading">Take the steps with you.</h2>
+            <p>
+              The study contains the initial and current pitches, every move, the model assumptions,
+              source links, a diagram and your selected audio. It is a standalone HTML file; open it
+              offline or print it to PDF.
+            </p>
+            <p id="offline-status" role="status" class="small">Checking offline availability…</p>
+          </div>
+          <div class="export-controls">
+            <label
+              >Audio to keep<select id="export-sound">
+                <option value="unclear">Current unclear pair</option>
+                <option value="named">Current named clear pair</option>
+                <option value="last">Last change, before then after</option>
+                <option value="cycle">Initial then current string 1</option>
+                <option value="strum">All nine strings</option>
+              </select></label
+            >
+            <div class="actions">
+              <button type="button" id="save-study" class="primary">Save a study · HTML</button
+              ><button type="button" id="save-wav">Download selected WAV</button>
+            </div>
+            <div class="actions compact">
+              <button type="button" id="save-csv">Pitch history · CSV</button
+              ><button type="button" id="save-json">Session · JSON</button
+              ><button type="button" id="save-svg">Diagram · SVG</button
+              ><button type="button" id="copy-link">Copy experiment link</button>
+            </div>
+            <p id="export-status" role="status" class="small"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="wrap footer">
+      <p>
+        Sammû · an open-source listening workshop by
+        <a href="https://github.com/antonsoo">Anton Soloviev</a>.
+      </p>
+      <div>
+        <a href="https://github.com/antonsoo/sammu">Code, methods & review</a
+        ><a href="https://antonsoo.github.io/pyknon/">Explore Greek tetrachords in Pyknon</a
+        ><a href="#top">Back to top</a>
+      </div>
+      <small id="edition"></small>
+    </footer>
+    <noscript
+      ><p class="wrap">
+        The tuning bench needs JavaScript for exact fractions and local audio. The source notes and
+        assumptions remain readable above; enable JavaScript to run the experiment.
+      </p></noscript
+    >
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
