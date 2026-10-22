@@ -61,5 +61,12 @@
       "sha256": "c32d6a7b6c6549b6544451441ac137ddfd6951564bee74bf0890ca99a46717d2"
     }
   ],
-  "byteIdenticalToWorkingBuild": true
+  "byteIdenticalToWorkingBuild": true,
+  "node24Compatibility": {
+    "node": "24.21.0",
+    "freshNpmCi": true,
+    "check": true,
+    "exactOracle": true,
+    "allNineOutputFilesByteIdentical": true
+  }
 }

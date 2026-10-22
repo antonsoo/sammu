@@ -12,7 +12,7 @@ The three neighboring source cases have different preservation: a supplied omiss
 
 Runtime source: `4209926913dc33626ccb69bf9ccb34901f50f0a4`. A fresh archive of that commit, a fresh `npm ci`, and its own production preview were used for the final local review. All nine production files are byte-identical to the working build. Later documentation and example files are outside the runtime edition inputs.
 
-Environment: Node.js 26.7.0, npm 12.0.1, Python 3.12.3, NumPy 2.4.4, WSL2 Linux 6.18.54.1. This is local evidence; it does not assert a remote CI run.
+Environment: Node.js 26.7.0, npm 12.0.1, Python 3.12.3, NumPy 2.4.4, WSL2 Linux 6.18.54.1. A second fresh installation under Node.js 24.21.0 passed the same complete check and exact oracle; all nine output files are byte-identical. This is local evidence; it does not assert a remote CI run.
 
 | Check                                 | Observed result                                                                                                                             | Receipt                                                  |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
