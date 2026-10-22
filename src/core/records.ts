@@ -1,5 +1,6 @@
 import { MODEL_STATEMENT, SOURCES } from "../content";
 import type { SoundPlan } from "./audio";
+import { type Practice, practiceLink, preview } from "./practice";
 import { queryFor } from "./query";
 import { cents, divide, ratioText } from "./rational";
 import { frequency, pitch, type Session, STRINGS, sequenceOf, tuningAt } from "./tuning";
@@ -27,7 +28,7 @@ export function snapshots(session: Session) {
   }));
 }
 
-export function record(session: Session, plan: SoundPlan, edition: string) {
+export function record(session: Session, plan: SoundPlan, edition: string, practice?: Practice) {
   return {
     format: "sammu-study-v1",
     edition,
@@ -44,6 +45,18 @@ export function record(session: Session, plan: SoundPlan, edition: string) {
         "Amplitude 0.13 per tone; one or six normalized sine partials; 12 ms attack, 40 ms release; six-partial colour decays exponentially.",
     },
     sources: SOURCES,
+    ...(practice
+      ? {
+          practice: {
+            settings: practice,
+            preview: preview(session, practice),
+            experiment: practiceLink(session, practice),
+            synthesis:
+              "The full practice pair has six decaying sine partials. Isolated mode balances two selected partial frequencies as steady sine tones.",
+            status: "Tentative modern listening setting; the underlying exact tuning is unchanged.",
+          },
+        }
+      : {}),
   };
 }
 

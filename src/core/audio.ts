@@ -15,6 +15,7 @@ export interface Note {
   readonly hz: number;
   readonly start: number;
   readonly duration: number;
+  readonly partial?: number;
 }
 export interface SoundPlan {
   readonly title: string;

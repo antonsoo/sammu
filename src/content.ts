@@ -30,6 +30,12 @@ export const SOURCES = [
     url: "https://cdli.earth/artifacts/254475",
     note: "Later witness for named string pairs. The catalogue checked on 22 October 2026 assigns Middle Babylonian, approximately 1400–1100 BCE; Mirelman (2013) used an older Neo-Babylonian dating. Combining witnesses is a scholarly reconstruction across time.",
   },
+  {
+    id: "hoyrup2017",
+    title: "Jens Høyrup · Algebra in Cuneiform, Appendix B (2017)",
+    url: "https://mprl-series.mpg.de/textbooks/2/12/index.html",
+    note: "Key to Vocabulary and Standard Translations: šumma, ‘if’. This is lexical support from a study of mathematical texts, not another witness to the musical procedure. The action verbs are discussed by Rahn (2022), paragraph 45.",
+  },
 ] as const;
 
 export const WORDS = [
@@ -62,6 +68,21 @@ export const WORDS = [
     "qablītum",
     "middle",
     "Names strings 5 + 2. In išartum tuning this is the diagnostic unclear pair; after loosening string 2 it is clear.",
+  ],
+  [
+    "nê'um",
+    "to loosen",
+    "Intact and partly preserved forms occur in the loosening chapter. They support the physical direction assigned to that action. See Rahn (2022), paragraph 45.",
+  ],
+  [
+    "nasāḫum",
+    "to remove / subtract; ‘tighten’ here",
+    "Editors restore the verb in the tightening instructions. A partly preserved concluding rubric supports this contextual interpretation. It does not mean ‘tighten’ in every Akkadian setting. See Rahn (2022), paragraph 45.",
+  ],
+  [
+    "šumma",
+    "if",
+    "Introduces a condition. In a procedural case, distinguish that condition from the instructed action and its result. Lexical support: Høyrup (2017), Appendix B; the tuning text’s conditional format is discussed by Mirelman (2013), pp. 49–50.",
   ],
 ] as const;
 

@@ -18,6 +18,9 @@ import numpy as np
 spec = importlib.util.spec_from_file_location('tuning_oracle', Path(__file__).with_name('tuning-oracle.py'))
 oracle = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(oracle)
+practice_spec = importlib.util.spec_from_file_location('practice_oracle', Path(__file__).with_name('practice-oracle.py'))
+practice_oracle = importlib.util.module_from_spec(practice_spec)
+practice_spec.loader.exec_module(practice_oracle)
 NAMED = [(2, 6), (6, 3), (3, 7), (7, 4), (4, 1), (1, 5), (5, 2)]
 
 def states(settings, moves):
@@ -89,7 +92,13 @@ def main():
     samples = 0
     for case in report['audio']:
         record = json.loads((directory / case['record']['file']).read_text())
-        notes, duration = plan_for(record, case['listening'])
+        if 'practice' in record:
+            notes, duration, colour, metadata = practice_oracle.expected_practice(record)
+            practice_oracle.check_metadata(record['practice']['preview'], metadata)
+        else:
+            notes, duration = plan_for(record, case['listening'])
+            colour = record['settings']['colour']
+        assert record['audio']['colour'] == colour
         assert len(notes) == len(record['audio']['notes'])
         for expected, actual in zip(notes, record['audio']['notes']):
             assert expected['string'] == actual['string']
@@ -100,7 +109,7 @@ def main():
             rate = audio.getframerate()
             assert rate == 48000
             pcm = np.frombuffer(audio.readframes(audio.getnframes()), dtype='<i2').astype(float) / 32767
-        expected = synthesize(notes, duration, record['settings']['colour'], rate)
+        expected = synthesize(notes, duration, colour, rate)
         assert len(pcm) == len(expected), (case, len(pcm), len(expected))
         error = float(np.max(np.abs(pcm - expected)))
         assert error < 2e-5, (case, error)
@@ -111,11 +120,20 @@ def main():
         if 'live' in case:
             live = case['live']
             pcm = np.fromfile(directory / live['file'], dtype='<f4').astype(float)
-            expected = synthesize(notes, duration, record['settings']['colour'], live['rate'])
+            expected = synthesize(notes, duration, colour, live['rate'])
             assert len(pcm) == len(expected) == live['length']
             error = float(np.max(np.abs(pcm - expected)))
             assert error < 1e-7, (case, error)
             live_results.append({'file': live['file'], 'sample_rate': live['rate'], 'samples': len(pcm), 'max_absolute_sample_error': error})
+        if 'targetLive' in case:
+            live = case['targetLive']
+            target_notes, target_duration, target_colour, _ = practice_oracle.expected_practice(record, 'target')
+            pcm = np.fromfile(directory / live['file'], dtype='<f4').astype(float)
+            expected = synthesize(target_notes, target_duration, target_colour, live['rate'])
+            assert len(pcm) == len(expected) == live['length']
+            error = float(np.max(np.abs(pcm - expected)))
+            assert error < 1e-7, (case, error)
+            live_results.append({'file': live['file'], 'sample_rate': live['rate'], 'samples': len(pcm), 'kind': 'exact model reference; tentative setting unchanged', 'max_absolute_sample_error': error})
     result = {'passed': True, 'wav_files': len(results), 'wav_samples': samples, 'live_buffers': len(live_results), 'max_wav_sample_error': max(r['max_absolute_sample_error'] for r in results), 'max_live_sample_error': max(r['max_absolute_sample_error'] for r in live_results), 'wav_tolerance': 2e-5, 'live_tolerance': 1e-7, 'method': 'Independent Fraction source fixture and NumPy whole-signal synthesis; played AudioBuffer samples, not speaker output', 'files': results, 'live': live_results}
     print(json.dumps(result, indent=2))
 

@@ -1216,3 +1216,11 @@ dd strong {
     font-size: 0.65rem;
   }
 }
+
+.practice-invite {
+  font-size: 0.9rem;
+  margin-block: 10px 16px;
+}
+.practice-invite a {
+  color: var(--rust);
+}

@@ -67,3 +67,11 @@ The vocabulary uses normalized romanization. No cuneiform signs, reconstructed a
 - CDLI images have rights belonging to the relevant institutions/authors and publication restrictions. Its general text-reuse permission is not treated as a blanket photograph license. [CDLI terms](https://cdli.earth/terms-of-use).
 - The pitch traces, overtone diagrams and tuning cycle drawing are original programmatic SVGs computed from the model. Their appearance does not reproduce a scholarly figure or the shape of an ancient object.
 - Atkinson Hyperlegible Next and Noto Serif are self-hosted with their SIL Open Font License notices. The full notices are embedded in standalone studies.
+
+## Action words and the saved learning packet
+
+The expanded word notes add `nê’um`, `nasāḫum` and `šumma`. Rahn (2022), paragraph 45, distinguishes intact/partly preserved loosening forms from the editorially restored tightening instructions and their partly preserved concluding rubric. The gloss of `nasāḫum` as tightening is kept contextual; it is not given as the verb’s universal dictionary meaning.
+
+For the ordinary meaning of `šumma`, ‘if’, we consulted Jens Høyrup, _Algebra in Cuneiform: Introduction to an Old Babylonian Geometrical Technique_ (2017), [Appendix B, Key to Vocabulary and Standard Translations](https://mprl-series.mpg.de/textbooks/2/12/index.html), DOI 10.34663/9783945561157-12. This is lexical support from a mathematical corpus, not an additional musical witness. Only the lemma and basic meaning are used; no book figure, page or transliterated mathematical text is reproduced. The publisher identifies CC BY-NC-SA 3.0 DE for the book itself.
+
+Current standalone studies include the three original case summaries with preservation notes and all nine word notes. They remain explanatory summaries and normalized lemmas, not a fresh edition of cuneiform text. The listening-practice worksheet records its tentative adjustment separately from its exact base state and identifies the isolated partials as balanced synthetic tones.

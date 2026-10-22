@@ -1,36 +1,18 @@
 import assert from "node:assert/strict";
-import { spawn } from "node:child_process";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import AxeBuilder from "@axe-core/playwright";
 import { chromium, firefox } from "playwright";
+import { reviewPreview } from "./review-preview.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const output = path.resolve(process.argv[2] ?? "/tmp/sammu-review/browser.json");
 const directory = path.dirname(output);
 await mkdir(directory, { recursive: true });
 const base = process.env.SAMMU_BASE ?? "http://127.0.0.1:4385/sammu/";
-const preview = process.env.SAMMU_BASE
-  ? null
-  : spawn(
-      process.execPath,
-      [
-        "node_modules/vite/bin/vite.js",
-        "preview",
-        "--host",
-        "127.0.0.1",
-        "--port",
-        "4385",
-        "--strictPort",
-      ],
-      { cwd: root, stdio: "pipe" },
-    );
-let previewErrors = "";
-preview?.stderr.on("data", (chunk) => {
-  previewErrors += chunk;
-});
+const preview = process.env.SAMMU_BASE ? null : reviewPreview(root, 4385);
 const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
 const names = ["išartum", "kitmum", "embūbum", "pītum", "nīd(i) qablim", "nīš tuḫrim", "qablītum"];
@@ -91,11 +73,12 @@ async function captureAudio(page, tag, listening, metadata) {
 }
 
 try {
+  if (preview) await preview.ready;
   for (let i = 0; i < 80; i++) {
     try {
       if ((await fetch(base)).ok) break;
     } catch {}
-    if (i === 79) throw new Error(`Preview did not become ready. ${previewErrors}`);
+    if (i === 79) throw new Error("The served review page did not become ready.");
     await pause(100);
   }
   for (const [browserName, browserType] of [
@@ -372,7 +355,7 @@ try {
   }
   report.passed = true;
 } finally {
-  preview?.kill("SIGTERM");
+  preview?.stop();
   await writeFile(output, `${JSON.stringify(report, null, 2)}\n`);
 }
 process.stdout.write(

@@ -42,6 +42,7 @@ import {
   trace,
 } from "./ui/diagrams";
 import { html } from "./ui/escape";
+import { saveFile } from "./ui/files";
 import { Player } from "./ui/player";
 import { study, studyFonts } from "./ui/study";
 
@@ -107,6 +108,8 @@ function render(): void {
   const last = session.moves.at(-1);
   const atLimit = session.moves.length >= MAX_MOVES;
   element("tuning-name").textContent = tuning.name;
+  element<HTMLAnchorElement>("practice-link").href =
+    `practice.html${queryFor(session.settings, sequenceOf(session))}`;
   element("diagnosis").innerHTML =
     `Test <b lang="akk-Latn">${html(tuning.unclear.name)}</b>, strings <b>${tuning.unclear.pair.join(" + ")}</b>. In this tuning, the pair is <em>lā zakû</em> — “not clear.”`;
   element("unclear-name").textContent = tuning.unclear.name;
@@ -217,12 +220,11 @@ function download(
   extension: string,
   snapshot = session,
 ): void {
-  const url = URL.createObjectURL(new Blob([content], { type }));
-  const link = document.createElement("a");
-  link.href = url;
-  link.download = `sammu-${tuningAt(snapshot.current.tuning).id}-${snapshot.moves.length}-moves.${extension}`;
-  link.click();
-  setTimeout(() => URL.revokeObjectURL(url), 4000);
+  saveFile(
+    content,
+    type,
+    `sammu-${tuningAt(snapshot.current.tuning).id}-${snapshot.moves.length}-moves.${extension}`,
+  );
 }
 
 const options = TUNINGS.map(
