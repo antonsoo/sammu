@@ -4,7 +4,7 @@
   "private": true,
   "description": "Follow an ancient Mesopotamian retuning procedure, one string at a time.",
   "type": "module",
-  "author": "Anton Soloviev <anton@praviel.com>",
+  "author": "Anthony Mercer <anthony@praviel.com>",
   "license": "MIT",
   "repository": {
     "type": "git",

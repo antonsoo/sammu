@@ -111,4 +111,4 @@ Please preserve the distinction between source text, scholarly reconstruction an
 
 ## License
 
-Original code, diagrams and synthesis: [MIT](LICENSE), © 2026 Anton Soloviev. Self-hosted fonts: SIL Open Font License 1.1, with notices in `public/fonts/` and in exported studies. Modern scholarship, photographs and recordings linked by the app retain their respective rights.
+Original code, diagrams and synthesis: [MIT](LICENSE), © 2026 Anthony Mercer. Self-hosted fonts: SIL Open Font License 1.1, with notices in `public/fonts/` and in exported studies. Modern scholarship, photographs and recordings linked by the app retain their respective rights.
