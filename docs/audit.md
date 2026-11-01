@@ -102,6 +102,13 @@ context alone is marked offline. The upgrade review separately holds a new
 entry, supplies an old HTTP-200 body and delays an older worker reply before
 checking takeover, readiness and offline navigation from the preceding build.
 
+An additional six-scenario run starts from the exact preceding published Pages
+snapshot `a57c8ea`, rather than the intervening local continuous-listening
+edition. Its [thirteen-file inventory](audit/preceding-public.json) comes from
+that committed Pages tree; all held-entry, substituted-body and delayed-reply
+[upgrade scenarios](audit/upgrade-public-predecessor.json) pass in both engines
+before offline listening, saved reading and navigation back to the bench.
+
 Workers identify their edition, instance and message sequence. Only the current
 controller can update a page's status, and an old open page cannot repair or
 invalidate a new worker using its old assumptions. Cache filenames alone are

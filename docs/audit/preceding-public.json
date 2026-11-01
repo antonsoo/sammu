@@ -1,0 +1,66 @@
+{
+  "pagesCommit": "a57c8ea2def38e6bda4415f8cb2b43b9399c5437",
+  "edition": "80387d6a91467cbf1cb37888655e94574aea4c313564b39c6fcac0a348de47de",
+  "files": [
+    {
+      "path": "assets/main-DfjZv9OU.js",
+      "bytes": 10268,
+      "sha256": "c4887c3fbbff62910ab0c277111a92cb4f7aa01d0aa4647be68c82fe8371f6e6"
+    },
+    {
+      "path": "assets/practice-C4hf9I29.js",
+      "bytes": 5561,
+      "sha256": "9425802416c7f2f2deca00cf959ca3e2585b145530631538f5a05debfcdcff06"
+    },
+    {
+      "path": "assets/practice-DSOpFAys.css",
+      "bytes": 5907,
+      "sha256": "3a2425020d87b80da80b1dd8a0dbdea939248649ceec9d90f02ff30acfe4481b"
+    },
+    {
+      "path": "assets/study-BLHHzp9_.js",
+      "bytes": 39202,
+      "sha256": "895b20ba8c492d3ee81b644875446c3c14066d70b072497df08b1b212e3a4450"
+    },
+    {
+      "path": "assets/study-DDuBUp75.css",
+      "bytes": 16136,
+      "sha256": "4833aa1cc081d7bcceb0952402e2d90407295591f50bac1389f7539351faf882"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 252,
+      "sha256": "7d2537517a21b00b09acab68534fadca8a86192aec5e1914accd3e1628303c67"
+    },
+    {
+      "path": "fonts/Atkinson-OFL.txt",
+      "bytes": 4431,
+      "sha256": "aca6a428580965d2297d1b718042dd427c2a9443ece3b0d02d758e161e0c4030"
+    },
+    {
+      "path": "fonts/AtkinsonHyperlegibleNext.ttf",
+      "bytes": 114552,
+      "sha256": "5a455d1cfa099b601ab70751bb9673e8fe1854dc4500c80e1a220d0d75e31745"
+    },
+    {
+      "path": "fonts/NotoSerif-OFL.txt",
+      "bytes": 4396,
+      "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a"
+    },
+    {
+      "path": "fonts/NotoSerif-Regular.ttf",
+      "bytes": 444064,
+      "sha256": "5473d2e43bdd018ee124a4addba8091fd0a29894b121cbb741023af6549662b6"
+    },
+    {
+      "path": "index.html",
+      "bytes": 17795,
+      "sha256": "1ca370f265154c428f14aaee69e967b6ffa6bfafca4576de9b103947edb9f2d1"
+    },
+    {
+      "path": "practice.html",
+      "bytes": 9561,
+      "sha256": "91960ea475104bbe0641a44d152f1ff8b9cbc8e01a96b60626b2023b381d8e0e"
+    }
+  ]
+}
