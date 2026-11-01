@@ -1,0 +1,28 @@
+{
+  "format": "sammu-live-capture-v1",
+  "description": "An uncut excerpt of actual continuous browser output, rounded from float32 to mono PCM16. This review recording is separate from the normal fixed-setting export. It begins while the tone is already sounding.",
+  "sampleRate": 44100,
+  "samples": 569344,
+  "seconds": 12.910294784580499,
+  "setup": "Two loosening moves from isartum; strings 6 + 3; isolated partials; 440 Hz initial reference. Live voice amplitudes 0.13 and 0.104.",
+  "events": [
+    {
+      "cents": 110,
+      "observedAtSeconds": 0.04643990929705222
+    },
+    {
+      "cents": 112,
+      "observedAtSeconds": 2.2639455782312927
+    },
+    {
+      "cents": 114,
+      "observedAtSeconds": 4.481451247165532
+    },
+    {
+      "cents": 120,
+      "observedAtSeconds": 10.739229024943311
+    }
+  ],
+  "wavSha256": "2f52cec4f50abfdd44cc9a9421884306e437a57332ed08fb26aa1929e9d10f92",
+  "runtimeSource": "e756a69cd9cd217c2ad22c4acb4cefc26b8ce5f9"
+}

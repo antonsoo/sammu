@@ -1,5 +1,7 @@
 # Retuning by ear and the saved reading packet
 
+This records the earlier fixed-setting practice edition. For the later continuous listening controls, see [the local live-audio review](live-review.md).
+
 ## Try the result
 
 [Open the listening practice](https://antonsoo.github.io/sammu/practice.html?moves=LL&listen=partials). Listen to the pair, move the adjustment, then reveal the measurements. The control changes the string prescribed by the reconstructed procedure; it leaves the underlying exact tuning untouched. The full pair uses six decaying partials. Isolated mode plays two selected partials as equally loud, steady sine tones.

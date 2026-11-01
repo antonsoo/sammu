@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Continuous retuning practice: move the string while the pair sounds, isolate partials without restarting, and hear the beats change through the alignment.
+- Finite, phase-continuous synthesis with quiet transitions, explicit stopping, interruption handling and a one-minute end.
+- Audio-thread output capture checked against independent tuning frequencies, with desktop/phone controls, startup races, offline operation and unchanged fixed-setting exports reviewed.
+
 - Retuning practice with a tentative string adjustment, hidden measurements, isolated shared partials, finite before/after playback and a model reference that preserves the attempt.
 - Shareable practice links and standalone worksheets carrying the attempt, exact base, audio, all nine Akkadian word notes and three source-preservation cases.
 - Offline readiness updates when a complete new edition takes control; delayed older inspection replies cannot replace the current result.

@@ -1,0 +1,66 @@
+{
+  "sourceBaseline": "f6794c6d874cfe93129655174c57a18d90f0021a",
+  "edition": "b734a556f49ddc2c0fed7e368c723c6097cf5f9a31e79534613b85e9a224305d",
+  "cleanNode": "24.22.1",
+  "cleanNpm": "11.19.1",
+  "otherNode": "26.7.0",
+  "byteIdenticalAcrossNodeVersions": true,
+  "files": {
+    "assets/main-BS86mIET.js": {
+      "bytes": 10263,
+      "sha256": "24b8a39bdc77ece94076b443f51708f37e3df3add32965b7cb3a9c4e6f452b3e"
+    },
+    "assets/practice-BEU9y9d2.js": {
+      "bytes": 9002,
+      "sha256": "165d2c52a3f61f96c9358e48a66cd61efd2daa1e543b176793c2654e36c67e64"
+    },
+    "assets/practice-CC_8shvY.css": {
+      "bytes": 6047,
+      "sha256": "a82578e2763570888723e94d5962e04e783d600dbad160d6fdf17e23fc11be32"
+    },
+    "assets/study-DDuBUp75.css": {
+      "bytes": 16136,
+      "sha256": "4833aa1cc081d7bcceb0952402e2d90407295591f50bac1389f7539351faf882"
+    },
+    "assets/study-doTZ1UpL.js": {
+      "bytes": 39689,
+      "sha256": "e1d1a798f7f42eb30e7cb0f1988cb9f5ddee3a4dc635915c86e67be002a6ad08"
+    },
+    "favicon.svg": {
+      "bytes": 252,
+      "sha256": "7d2537517a21b00b09acab68534fadca8a86192aec5e1914accd3e1628303c67"
+    },
+    "fonts/Atkinson-OFL.txt": {
+      "bytes": 4431,
+      "sha256": "aca6a428580965d2297d1b718042dd427c2a9443ece3b0d02d758e161e0c4030"
+    },
+    "fonts/AtkinsonHyperlegibleNext.ttf": {
+      "bytes": 114552,
+      "sha256": "5a455d1cfa099b601ab70751bb9673e8fe1854dc4500c80e1a220d0d75e31745"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4396,
+      "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a"
+    },
+    "fonts/NotoSerif-Regular.ttf": {
+      "bytes": 444064,
+      "sha256": "5473d2e43bdd018ee124a4addba8091fd0a29894b121cbb741023af6549662b6"
+    },
+    "index.html": {
+      "bytes": 17838,
+      "sha256": "28c617be959b277bc3d7fa08cdafc6e04d17a4b3ca2634c3ab6187bd3f6fc3c5"
+    },
+    "practice.html": {
+      "bytes": 9883,
+      "sha256": "c9af706f606b5f13b69d7f660ce30ef5fe05d2df2c14858cf22e23512c36d768"
+    },
+    "sw.js": {
+      "bytes": 3629,
+      "sha256": "ba6a7be37e294dbb8fd1c42995af54c3850a88ba0dba0eaf4f094d0317623adc"
+    }
+  },
+  "fileCount": 13,
+  "bytes": 680182,
+  "publication": "Local review only; no push or deployment",
+  "reviewedRuntimeSource": "e756a69cd9cd217c2ad22c4acb4cefc26b8ce5f9"
+}

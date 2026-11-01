@@ -1,0 +1,763 @@
+{
+  "base": "http://127.0.0.1:4391/sammu/",
+  "browsers": [
+    {
+      "engine": "firefox",
+      "layout": "desktop",
+      "adjustmentBottom": 851.433349609375,
+      "audits": [
+        {
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 0
+        },
+        {
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 0
+        }
+      ],
+      "offline": true,
+      "pendingEdit": true,
+      "pendingStop": true,
+      "interruption": true,
+      "errors": [],
+      "external": [],
+      "actualMinuteEnd": true
+    },
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "adjustmentBottom": 851.375,
+      "audits": [
+        {
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 0
+        },
+        {
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 0
+        }
+      ],
+      "offline": true,
+      "pendingEdit": true,
+      "pendingStop": true,
+      "interruption": true,
+      "errors": [],
+      "external": [],
+      "actualMinuteEnd": true
+    },
+    {
+      "engine": "firefox",
+      "layout": "phone",
+      "adjustmentBottom": 895,
+      "audits": [
+        {
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 0
+        },
+        {
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 0
+        }
+      ],
+      "offline": true,
+      "pendingEdit": true,
+      "pendingStop": true,
+      "interruption": true,
+      "errors": [],
+      "external": []
+    },
+    {
+      "engine": "chromium",
+      "layout": "phone",
+      "adjustmentBottom": 894.796875,
+      "audits": [
+        {
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 0
+        },
+        {
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 0
+        }
+      ],
+      "offline": true,
+      "pendingEdit": true,
+      "pendingStop": true,
+      "interruption": true,
+      "errors": [],
+      "external": []
+    }
+  ],
+  "signals": [
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "name": "initial-110",
+      "file": "chromium-desktop-initial-110.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "moves": "LL",
+        "listen": "partials",
+        "cents": "110"
+      }
+    },
+    {
+      "engine": "firefox",
+      "layout": "desktop",
+      "name": "initial-110",
+      "file": "firefox-desktop-initial-110.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "moves": "LL",
+        "listen": "partials",
+        "cents": "110"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "name": "adjusted-112",
+      "file": "chromium-desktop-adjusted-112.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "112",
+        "listen": "partials",
+        "reveal": "0"
+      }
+    },
+    {
+      "engine": "firefox",
+      "layout": "desktop",
+      "name": "adjusted-112",
+      "file": "firefox-desktop-adjusted-112.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "112",
+        "listen": "partials",
+        "reveal": "0"
+      }
+    },
+    {
+      "engine": "firefox",
+      "layout": "desktop",
+      "name": "full-112",
+      "file": "firefox-desktop-full-112.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "112",
+        "listen": "pair",
+        "reveal": "0"
+      }
+    },
+    {
+      "engine": "firefox",
+      "layout": "desktop",
+      "name": "target",
+      "file": "firefox-desktop-target.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "target",
+        "listen": "partials",
+        "reveal": "1"
+      }
+    },
+    {
+      "engine": "firefox",
+      "layout": "desktop",
+      "name": "stopped",
+      "file": "firefox-desktop-stopped.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "target",
+        "listen": "partials",
+        "reveal": "1"
+      }
+    },
+    {
+      "engine": "firefox",
+      "layout": "desktop",
+      "name": "pending-edit-10",
+      "file": "firefox-desktop-pending-edit-10.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "10",
+        "listen": "partials",
+        "reveal": "1"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "name": "continuous-110",
+      "file": "continuous-adjustment.f32",
+      "firstSample": 15278,
+      "lastSample": 95430,
+      "length": 80152,
+      "rate": 44100,
+      "continuousRenderFrames": true,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "110",
+        "listen": "partials",
+        "reveal": "0"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "name": "continuous-112",
+      "file": "continuous-adjustment.f32",
+      "firstSample": 113070,
+      "lastSample": 193222,
+      "length": 80152,
+      "rate": 44100,
+      "continuousRenderFrames": true,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "112",
+        "listen": "partials",
+        "reveal": "0"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "name": "continuous-114",
+      "file": "continuous-adjustment.f32",
+      "firstSample": 210862,
+      "lastSample": 469190,
+      "length": 258328,
+      "rate": 44100,
+      "continuousRenderFrames": true,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "114",
+        "listen": "partials",
+        "reveal": "0"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "name": "continuous-120",
+      "file": "continuous-adjustment.f32",
+      "firstSample": 486830,
+      "lastSample": 565957,
+      "length": 79127,
+      "rate": 44100,
+      "continuousRenderFrames": true,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "120",
+        "listen": "partials",
+        "reveal": "0"
+      }
+    },
+    {
+      "engine": "firefox",
+      "layout": "desktop",
+      "name": "tighten-10",
+      "file": "firefox-desktop-tighten-10.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "T",
+        "cents": "10",
+        "listen": "partials",
+        "reveal": "1"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "name": "full-112",
+      "file": "chromium-desktop-full-112.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "112",
+        "listen": "pair",
+        "reveal": "0"
+      }
+    },
+    {
+      "engine": "firefox",
+      "layout": "phone",
+      "name": "initial-110",
+      "file": "firefox-phone-initial-110.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "moves": "LL",
+        "listen": "partials",
+        "cents": "110"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "name": "target",
+      "file": "chromium-desktop-target.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "target",
+        "listen": "partials",
+        "reveal": "1"
+      }
+    },
+    {
+      "engine": "firefox",
+      "layout": "phone",
+      "name": "adjusted-112",
+      "file": "firefox-phone-adjusted-112.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "112",
+        "listen": "partials",
+        "reveal": "0"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "name": "stopped",
+      "file": "chromium-desktop-stopped.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "target",
+        "listen": "partials",
+        "reveal": "1"
+      }
+    },
+    {
+      "engine": "firefox",
+      "layout": "phone",
+      "name": "full-112",
+      "file": "firefox-phone-full-112.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "112",
+        "listen": "pair",
+        "reveal": "0"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "name": "pending-edit-10",
+      "file": "chromium-desktop-pending-edit-10.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "10",
+        "listen": "partials",
+        "reveal": "1"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "name": "tighten-10",
+      "file": "chromium-desktop-tighten-10.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "T",
+        "cents": "10",
+        "listen": "partials",
+        "reveal": "1"
+      }
+    },
+    {
+      "engine": "firefox",
+      "layout": "phone",
+      "name": "target",
+      "file": "firefox-phone-target.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "target",
+        "listen": "partials",
+        "reveal": "1"
+      }
+    },
+    {
+      "engine": "firefox",
+      "layout": "phone",
+      "name": "stopped",
+      "file": "firefox-phone-stopped.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "target",
+        "listen": "partials",
+        "reveal": "1"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "phone",
+      "name": "initial-110",
+      "file": "chromium-phone-initial-110.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "moves": "LL",
+        "listen": "partials",
+        "cents": "110"
+      }
+    },
+    {
+      "engine": "firefox",
+      "layout": "phone",
+      "name": "pending-edit-10",
+      "file": "firefox-phone-pending-edit-10.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "10",
+        "listen": "partials",
+        "reveal": "1"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "phone",
+      "name": "adjusted-112",
+      "file": "chromium-phone-adjusted-112.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "112",
+        "listen": "partials",
+        "reveal": "0"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "phone",
+      "name": "full-112",
+      "file": "chromium-phone-full-112.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "112",
+        "listen": "pair",
+        "reveal": "0"
+      }
+    },
+    {
+      "engine": "firefox",
+      "layout": "phone",
+      "name": "tighten-10",
+      "file": "firefox-phone-tighten-10.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "T",
+        "cents": "10",
+        "listen": "partials",
+        "reveal": "1"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "phone",
+      "name": "target",
+      "file": "chromium-phone-target.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "target",
+        "listen": "partials",
+        "reveal": "1"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "phone",
+      "name": "stopped",
+      "file": "chromium-phone-stopped.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "target",
+        "listen": "partials",
+        "reveal": "1"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "phone",
+      "name": "pending-edit-10",
+      "file": "chromium-phone-pending-edit-10.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "L",
+        "cents": "10",
+        "listen": "partials",
+        "reveal": "1"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "phone",
+      "name": "tighten-10",
+      "file": "chromium-phone-tighten-10.f32",
+      "continuousRenderFrames": true,
+      "length": 77824,
+      "rate": 44100,
+      "query": {
+        "start": "isartum",
+        "a": "440",
+        "companions": "octave",
+        "sound": "plucked",
+        "moves": "LL",
+        "turn": "T",
+        "cents": "10",
+        "listen": "partials",
+        "reveal": "1"
+      }
+    }
+  ],
+  "passed": true,
+  "performance": {
+    "file": "continuous-adjustment.f32",
+    "rate": 44100,
+    "length": 569344,
+    "firstFrame": 188928,
+    "events": [
+      {
+        "amount": 110,
+        "time": 4.330521541950113
+      },
+      {
+        "amount": 112,
+        "time": 6.548027210884354
+      },
+      {
+        "amount": 114,
+        "time": 8.765532879818593
+      },
+      {
+        "amount": 120,
+        "time": 15.023310657596372
+      }
+    ],
+    "end": 17.217596371882085,
+    "query": {
+      "start": "isartum",
+      "a": "440",
+      "companions": "octave",
+      "sound": "plucked",
+      "moves": "LL",
+      "turn": "L",
+      "cents": "120",
+      "listen": "partials",
+      "reveal": "0"
+    },
+    "continuousRenderFrames": true
+  }
+}
