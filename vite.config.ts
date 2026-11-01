@@ -2,6 +2,8 @@ import { createHash } from "node:crypto";
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { defineConfig } from "vite";
+import { offlineScript } from "./scripts/offline-template.ts";
+import { STUDY_ASSETS } from "./src/study-assets.ts";
 
 const base = "/sammu/";
 
@@ -18,12 +20,23 @@ async function filesIn(directory: string): Promise<string[]> {
 }
 
 export default defineConfig(async ({ command }) => {
+  for (const [name, expected] of Object.entries(STUDY_ASSETS)) {
+    const bytes = await readFile(path.join("public/fonts", name));
+    if (
+      bytes.length !== expected.bytes ||
+      createHash("sha256").update(bytes).digest("hex") !== expected.sha256
+    )
+      throw new Error(
+        `The retained study asset changed: ${name}. Review and update its byte identity.`,
+      );
+  }
   const inputFiles = [
     ...(await filesIn("src")),
     ...(await filesIn("public")),
     "index.html",
     "practice.html",
     "vite.config.ts",
+    "scripts/offline-template.ts",
     "tsconfig.json",
     "package.json",
     "package-lock.json",
@@ -59,42 +72,7 @@ export default defineConfig(async ({ command }) => {
               ]),
             ),
           );
-          await writeFile(
-            "dist/sw.js",
-            `/* Offline edition ${edition}. Generated from the complete build. */
-const CACHE = "sammu-${edition}";
-const EDITION = ${JSON.stringify(edition)};
-const BASE = ${JSON.stringify(base)};
-const FILES = ${JSON.stringify(urls)};
-const INTEGRITY = ${JSON.stringify(integrity)};
-self.addEventListener("install", event => {
-  // HTTP success does not establish edition identity. A stale entry page or
-  // substituted scan must fail the complete install before this worker activates.
-  const requests = FILES.map(url => new Request(url, { cache: "reload", integrity: INTEGRITY[url] }));
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(requests)).then(() => self.skipWaiting()));
-});
-self.addEventListener("activate", event => {
-  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith("sammu-") && key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim()));
-});
-self.addEventListener("message", event => {
-  if (event.data?.type !== "SAMMU_INSPECT" || !event.ports[0]) return;
-  event.waitUntil(caches.open(CACHE).then(cache => cache.keys()).then(keys => {
-    const saved = new Set(keys.map(request => new URL(request.url).pathname));
-    event.ports[0].postMessage({ type: "SAMMU_EDITION", edition: EDITION, complete: FILES.every(file => saved.has(file)) });
-  }).catch(() => event.ports[0].postMessage({ type: "SAMMU_EDITION", edition: EDITION, complete: false })));
-});
-self.addEventListener("fetch", event => {
-  const url = new URL(event.request.url);
-  if (event.request.method !== "GET" || url.origin !== self.location.origin || !url.pathname.startsWith(BASE)) return;
-  if (event.request.mode === "navigate") {
-    const page = url.pathname === BASE || url.pathname === BASE + "index.html" ? BASE + "index.html" : url.pathname;
-    if (FILES.includes(page)) event.respondWith(fetch(event.request).catch(() => caches.open(CACHE).then(cache => cache.match(page))));
-  } else if (FILES.includes(url.pathname)) {
-    event.respondWith(caches.open(CACHE).then(cache => cache.match(url.pathname)).then(cached => cached || fetch(event.request)));
-  }
-});
-`,
-          );
+          await writeFile("dist/sw.js", offlineScript({ edition, base, urls, integrity }));
         },
       },
     ],

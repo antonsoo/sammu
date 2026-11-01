@@ -327,6 +327,9 @@
               offline or print it to PDF.
             </p>
             <p id="offline-status" role="status" class="small">Checking offline availability…</p>
+            <button type="button" id="offline-repair" class="offline-action" hidden>
+              Check & repair offline copy
+            </button>
           </div>
           <div class="export-controls">
             <label
@@ -340,6 +343,7 @@
             >
             <div class="actions">
               <button type="button" id="save-study" class="primary">Save a study · HTML</button
+              ><button type="button" id="cancel-study" hidden>Cancel saving</button
               ><button type="button" id="save-wav">Download selected WAV</button>
             </div>
             <div class="actions compact">
@@ -356,7 +360,7 @@
     <footer class="wrap footer">
       <p>
         Sammû · an open-source listening workshop by
-        <a href="https://github.com/antonsoo">Anton Soloviev</a>.
+        <a href="https://github.com/antonsoo">Anthony Mercer</a>.
       </p>
       <div>
         <a href="https://github.com/antonsoo/sammu">Code, methods & review</a

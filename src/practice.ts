@@ -21,7 +21,8 @@ import { saveFile } from "./ui/files";
 import { LivePlayer } from "./ui/live-player";
 import { Player } from "./ui/player";
 import { practiceReading } from "./ui/practice-reading";
-import { study, studyFonts } from "./ui/study";
+import { study } from "./ui/study";
+import { StudyDownload } from "./ui/study-download";
 
 function element<T extends HTMLElement = HTMLElement>(id: string): T {
   const found = document.getElementById(id);
@@ -180,34 +181,23 @@ element("save-json").addEventListener("click", () => {
   element("save-status").textContent =
     "Saved your preview, the exact base session, and its audio plan.";
 });
-element("save-study").addEventListener("click", async () => {
+const studyDownload = new StudyDownload(
+  element<HTMLButtonElement>("save-study"),
+  element<HTMLButtonElement>("cancel-study"),
+  element("save-status"),
+);
+element("save-study").addEventListener("click", () => {
   const snapshot = session;
   const attempt = practice;
-  const button = element<HTMLButtonElement>("save-study");
-  button.disabled = true;
-  element("save-status").textContent =
-    "Embedding your practice, comparison audio, diagram, fonts and sources…";
-  try {
-    const fonts = await studyFonts();
-    saveFile(
-      study(
-        snapshot,
-        practicePlan(snapshot, attempt, "comparison"),
-        fonts,
-        __SAMMU_EDITION__,
-        attempt,
-      ),
-      "text/html;charset=utf-8",
-      "sammu-listening-practice.html",
-    );
-    element("save-status").textContent =
-      "Saved the complete practice worksheet. Open it offline or print it to PDF.";
-  } catch {
-    element("save-status").textContent =
-      "The worksheet could not embed its local fonts. Try again after reloading online; WAV and JSON are still available.";
-  } finally {
-    button.disabled = false;
-  }
+  void studyDownload.start("sammu-listening-practice.html", (fonts) =>
+    study(
+      snapshot,
+      practicePlan(snapshot, attempt, "comparison"),
+      fonts,
+      __SAMMU_EDITION__,
+      attempt,
+    ),
+  );
 });
 element("copy-link").addEventListener("click", async () => {
   const link = practiceLink(session, practice);

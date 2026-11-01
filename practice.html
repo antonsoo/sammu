@@ -173,12 +173,16 @@
               live movement. Its full pair decays; its isolated tones have equal levels.
             </p>
             <p id="offline-status" class="small" role="status">Checking offline availability…</p>
+            <button type="button" id="offline-repair" class="offline-action" hidden>
+              Check & repair offline copy
+            </button>
           </div>
           <div>
             <div class="actions">
               <button type="button" id="save-study" class="primary">
                 Save practice worksheet · HTML
-              </button><button type="button" id="save-wav">Save comparison · WAV</button
+              </button><button type="button" id="cancel-study" hidden>Cancel saving</button
+              ><button type="button" id="save-wav">Save comparison · WAV</button
               ><button type="button" id="save-json">Save practice record · JSON</button
               ><button type="button" id="copy-link">Copy this practice link</button>
             </div>

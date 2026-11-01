@@ -1224,3 +1224,11 @@ dd strong {
 .practice-invite a {
   color: var(--rust);
 }
+
+.offline-action {
+  padding-inline: 0;
+  border: 0;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}

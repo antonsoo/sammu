@@ -6,6 +6,7 @@ import { frequency, type Session, STRING_NAMES, STRINGS, tuningAt } from "../cor
 import { overtoneDiagram, pitchDiagram, trace } from "./diagrams";
 import { html } from "./escape";
 import { practiceReading } from "./practice-reading";
+import { studyFile } from "./study-file";
 
 export interface StudyFonts {
   readonly sans: string;
@@ -20,17 +21,12 @@ export function base64(bytes: Uint8Array): string {
   return btoa(binary);
 }
 
-export async function studyFonts(): Promise<StudyFonts> {
-  const fetchFile = async (name: string) => {
-    const response = await fetch(`${import.meta.env.BASE_URL}fonts/${name}`);
-    if (!response.ok) throw new Error("Unable to embed a local study font.");
-    return new Uint8Array(await response.arrayBuffer());
-  };
+export async function studyFonts(signal: AbortSignal): Promise<StudyFonts> {
   const [sans, serif, sansLicense, serifLicense] = await Promise.all([
-    fetchFile("AtkinsonHyperlegibleNext.ttf"),
-    fetchFile("NotoSerif-Regular.ttf"),
-    fetchFile("Atkinson-OFL.txt"),
-    fetchFile("NotoSerif-OFL.txt"),
+    studyFile("AtkinsonHyperlegibleNext.ttf", signal),
+    studyFile("NotoSerif-Regular.ttf", signal),
+    studyFile("Atkinson-OFL.txt", signal),
+    studyFile("NotoSerif-OFL.txt", signal),
   ]);
   return {
     sans: base64(sans),
@@ -162,7 +158,7 @@ ${CLAUSES.map((clause) => `<article class="study-clause"><h3 lang="akk-Latn">${h
 <pre>${html(fonts.licenses)}</pre>
 </details>
 </main>
-<footer>Original code, diagrams and synthesis © 2026 Anton Soloviev · MIT. Source articles and photographs are linked, not redistributed. Edition ${html(edition)}.</footer>
+<footer>Original code, diagrams and synthesis © 2026 Anthony Mercer · MIT. Source articles and photographs are linked, not redistributed. Edition ${html(edition)}.</footer>
 </body>
 </html>`;
 }

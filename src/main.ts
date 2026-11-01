@@ -44,7 +44,8 @@ import {
 import { html } from "./ui/escape";
 import { saveFile } from "./ui/files";
 import { Player } from "./ui/player";
-import { study, studyFonts } from "./ui/study";
+import { study } from "./ui/study";
+import { StudyDownload } from "./ui/study-download";
 
 function element<T extends HTMLElement = HTMLElement>(id: string): T {
   const found = document.getElementById(id);
@@ -314,28 +315,18 @@ element("save-wav").addEventListener("click", () => {
   download(wav(plan), "audio/wav", "wav");
   element("export-status").textContent = `Saved: ${plan.title}. Mono PCM16, 48 kHz.`;
 });
-element("save-study").addEventListener("click", async () => {
-  const button = element<HTMLButtonElement>("save-study");
+const studyDownload = new StudyDownload(
+  element<HTMLButtonElement>("save-study"),
+  element<HTMLButtonElement>("cancel-study"),
+  element("export-status"),
+);
+element("save-study").addEventListener("click", () => {
   const snapshot = session;
   const plan = selectedPlan(snapshot);
-  button.disabled = true;
-  element("export-status").textContent = "Embedding the diagram, audio, fonts and source notes…";
-  try {
-    const fonts = await studyFonts();
-    download(
-      study(snapshot, plan, fonts, __SAMMU_EDITION__),
-      "text/html;charset=utf-8",
-      "html",
-      snapshot,
-    );
-    element("export-status").textContent =
-      `Saved the ${snapshot.moves.length}-move study. Open it offline or print it to PDF.`;
-  } catch {
-    element("export-status").textContent =
-      "The study could not embed its local fonts. Try again after reloading online; CSV, JSON and WAV are still available.";
-  } finally {
-    button.disabled = false;
-  }
+  void studyDownload.start(
+    `sammu-${tuningAt(snapshot.current.tuning).id}-${snapshot.moves.length}-moves.html`,
+    (fonts) => study(snapshot, plan, fonts, __SAMMU_EDITION__),
+  );
 });
 element("copy-link").addEventListener("click", async () => {
   const link = experimentLink(session);
