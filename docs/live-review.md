@@ -127,6 +127,11 @@ It does not synthesize samples on behalf of the application. The analysis allows
 up to 0.002 Hz frequency error for engine arithmetic, amplitude error below
 0.0001, and residual RMS below 0.00005.
 
+The [development receipt](live/development.json) separately exercises styled
+continuous listening, mode changes, revealed measurements and stopping in both
+engines at both widths. Development reports the production-only offline boundary
+and registers no service worker.
+
 The separate fixed-setting oracle still reconstructs every sample in the actual
 WAV downloads and captured played buffers. The upgrade review begins with a
 build of the actual preceding source. It holds a new entry, substitutes an old
