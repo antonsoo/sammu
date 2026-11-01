@@ -22,7 +22,7 @@ _zakû_. The saved comparison is a fixed before/after experiment; it does not
 record the hand movement. The [original listening review](live-review.md)
 explains the numerical example and the signal model.
 
-**Save complete reading** embeds the current experiment, diagrams, audio,
+The HTML save buttons embed the current experiment, diagrams, audio,
 fonts and full license notices. It now checks all four retained font/license
 files against independently pinned lengths and SHA-256 digests. If a server or
 cache supplies different bytes with HTTP 200, saving fails visibly. A pending
