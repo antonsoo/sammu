@@ -17,7 +17,8 @@ export class LivePlayer {
   stop(message = "Stopped."): void {
     this.generation++;
     this.requested = undefined;
-    this.pair?.stop();
+    // A suspended clock must not retain a release tail that plays on resuming.
+    this.pair?.stop(this.context?.state !== "running");
     this.pair = undefined;
     this.report(message, false);
   }
@@ -35,7 +36,7 @@ export class LivePlayer {
     const generation = this.generation;
     this.report("Starting the sustained pair…", false);
     try {
-      if (!this.context) {
+      if (!this.context || this.context.state === "closed") {
         this.context = new AudioContext();
         this.context.addEventListener("statechange", () => {
           if (this.pair && this.context?.state !== "running")

@@ -97,10 +97,15 @@ export class SustainedPair {
       }
   }
 
-  stop(): void {
+  stop(immediate = false): void {
     if (this.ended) return;
     this.ended = true;
     const now = this.context.currentTime;
+    if (immediate) {
+      for (const nodes of this.voices) for (const { oscillator } of nodes) oscillator.stop(now);
+      this.disconnect();
+      return;
+    }
     // The scheduled attack and end-of-minute fade are both known, so this
     // avoids depending on cancelAndHoldAtTime support across audio engines.
     this.output.gain.cancelScheduledValues(now);
@@ -111,7 +116,7 @@ export class SustainedPair {
       ),
       now,
     );
-    this.output.gain.setTargetAtTime(0, now, LIVE_TRANSITION);
+    this.output.gain.linearRampToValueAtTime(0, now + RELEASE);
     for (const nodes of this.voices)
       for (const { oscillator } of nodes) oscillator.stop(now + RELEASE);
   }
@@ -120,6 +125,7 @@ export class SustainedPair {
     this.ended = true;
     for (const nodes of this.voices)
       for (const { oscillator, level } of nodes) {
+        oscillator.onended = null;
         oscillator.disconnect();
         level.disconnect();
       }
