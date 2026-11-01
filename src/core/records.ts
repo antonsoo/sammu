@@ -52,7 +52,7 @@ export function record(session: Session, plan: SoundPlan, edition: string, pract
             preview: preview(session, practice),
             experiment: practiceLink(session, practice),
             synthesis:
-              "The full practice pair has six decaying sine partials. Isolated mode balances two selected partial frequencies as steady sine tones.",
+              "This is a fixed before/after comparison, not a recording of live movement. The full comparison pair has six decaying sine partials. Isolated comparison tones have equal levels. Live listening sustains the pair with slightly unequal string levels.",
             status: "Tentative modern listening setting; the underlying exact tuning is unchanged.",
           },
         }

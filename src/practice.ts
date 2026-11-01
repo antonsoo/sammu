@@ -9,6 +9,7 @@ import {
   practicePlan,
   practiceQuery,
   preview,
+  sustainedPlan,
 } from "./core/practice";
 import { parseQuery, queryFor } from "./core/query";
 import { record } from "./core/records";
@@ -17,6 +18,7 @@ import { offline } from "./offline";
 import { actionStrings } from "./ui/diagrams";
 import { html } from "./ui/escape";
 import { saveFile } from "./ui/files";
+import { LivePlayer } from "./ui/live-player";
 import { Player } from "./ui/player";
 import { practiceReading } from "./ui/practice-reading";
 import { study, studyFonts } from "./ui/study";
@@ -32,9 +34,21 @@ let session = replay(baseQuery.settings, baseQuery.sequence);
 let parsed = parsePractice(location.search);
 let practice = parsed.practice;
 const player = new Player((message, playing) => {
+  audioStatus(message, playing, "comparison");
+});
+const live = new LivePlayer((message, playing) => audioStatus(message, playing, "live"));
+
+function audioStatus(message: string, playing: boolean, kind: "live" | "comparison"): void {
   element("audio-status").textContent = message;
   element("audio-status").dataset.playing = String(playing);
-});
+  element("audio-status").dataset.kind = kind;
+  element("listen").setAttribute("aria-pressed", String(kind === "live" && live.active));
+}
+
+function stopSound(message?: string): void {
+  player.stop();
+  live.stop(message);
+}
 
 function render(): void {
   const data = preview(session, practice);
@@ -82,9 +96,12 @@ function render(): void {
 }
 
 function update(change: Partial<Practice>): void {
-  if (change.amount !== undefined || change.direction !== undefined || change.listen !== undefined)
-    player.stop("Preview changed. Press Listen to hear this setting.");
+  if (change.direction !== undefined) stopSound("Direction changed. Press Listen to explore it.");
+  else if (!live.active && (change.amount !== undefined || change.listen !== undefined))
+    player.stop("Setting changed. Press Listen to hear it while adjusting.");
   practice = { ...practice, ...change };
+  if (change.amount !== undefined || change.listen !== undefined)
+    live.update(sustainedPlan(session, practice));
   history.replaceState(
     null,
     "",
@@ -121,21 +138,27 @@ element("amount").addEventListener("keydown", (event) => {
 for (const listen of ["pair", "partials"] as const)
   element(listen).addEventListener("change", () => update({ listen }));
 element("listen").addEventListener("click", () => {
-  void player.play(practicePlan(session, practice));
+  if (live.active) live.stop();
+  else {
+    player.stop();
+    void live.play(sustainedPlan(session, practice));
+  }
 });
 element("compare").addEventListener("click", () => {
+  live.stop();
   void player.play(practicePlan(session, practice, "comparison"));
 });
-element("stop").addEventListener("click", () => player.stop());
+element("stop").addEventListener("click", () => stopSound());
 element("reset-preview").addEventListener("click", () => update({ amount: 0 }));
 element("reveal").addEventListener("click", () => update({ revealed: !practice.revealed }));
 element("target").addEventListener("click", () => update({ amount: "target" }));
 element("hear-target").addEventListener("click", () => {
+  live.stop();
   void player.play(practicePlan(session, practice, "target"));
 });
 element("apply-model").addEventListener("click", () => {
   if (session.moves.length < MAX_MOVES) {
-    player.stop();
+    stopSound();
     location.assign(applyPractice(session, practice));
   }
 });
@@ -197,7 +220,7 @@ element("copy-link").addEventListener("click", async () => {
   }
 });
 window.addEventListener("popstate", () => {
-  player.stop();
+  stopSound();
   baseQuery = parseQuery(location.search);
   session = replay(baseQuery.settings, baseQuery.sequence);
   parsed = parsePractice(location.search);
@@ -206,7 +229,8 @@ window.addEventListener("popstate", () => {
   render();
 });
 document.addEventListener("visibilitychange", () => {
-  if (document.hidden) player.stop("Stopped while the practice is in the background.");
+  if (document.hidden) stopSound("Stopped while the practice is in the background.");
 });
+window.addEventListener("pagehide", () => stopSound());
 render();
 void offline(element("offline-status"));

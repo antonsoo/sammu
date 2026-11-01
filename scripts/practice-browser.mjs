@@ -160,17 +160,21 @@ try {
           assert.equal(await page.locator("#amount").inputValue(), "11.1");
           assert.equal(await page.evaluate(() => document.activeElement.id), "amount");
           await page.locator("#listen").click();
-          await page.waitForFunction(() => window.__buffers.length === 1);
+          await page.waitForFunction(
+            () => document.getElementById("audio-status").dataset.playing === "true",
+          );
           await page.locator("#amount").focus();
           await page.keyboard.press("End");
-          assert.equal(await page.locator("#audio-status").getAttribute("data-playing"), "false");
-          assert.equal(await page.evaluate(() => window.__buffers.length), 1);
+          assert.equal(await page.locator("#audio-status").getAttribute("data-playing"), "true");
+          assert.equal(await page.evaluate(() => window.__buffers.length), 0);
+          await page.locator("#stop").click();
+          await page.locator("#amount").focus();
           await page.keyboard.press("Home");
           for (let i = 0; i < 11; i++) await page.keyboard.press("PageUp");
           assert.equal(await page.locator("#amount").inputValue(), "110");
           await page.locator("#partials").check();
-          // Hold a real resume after audio is unlocked, then change the setting.
-          // Releasing that older request must not start an abandoned sound.
+          // Hold a real resume after audio is unlocked, then stop the request.
+          // Releasing it must not start an abandoned sound.
           await page.evaluate(() => {
             window.__holdResume = true;
           });
@@ -178,29 +182,31 @@ try {
           await page.waitForFunction(() => typeof window.__releaseResume === "function");
           await page.locator("#amount").focus();
           await page.keyboard.press("ArrowRight");
+          await page.locator("#stop").click();
           await page.evaluate(async () => {
             window.__holdResume = false;
             window.__releaseResume();
             await new Promise(requestAnimationFrame);
           });
-          assert.equal(await page.evaluate(() => window.__buffers.length), 1);
+          assert.equal(await page.evaluate(() => window.__buffers.length), 0);
           assert.equal(await page.locator("#audio-status").getAttribute("data-playing"), "false");
+          await page.locator("#amount").focus();
           await page.keyboard.press("ArrowLeft");
-          await page.locator("#listen").click();
-          await page.waitForFunction(() => window.__buffers.length === 2);
+          await page.locator("#compare").click();
+          await page.waitForFunction(() => window.__buffers.length === 1);
           await page.locator("#reveal").click();
           assert.equal(await page.locator("#audio-status").getAttribute("data-playing"), "true");
           assert.equal(await page.locator("#measurements").isVisible(), true);
           assert.equal(await page.evaluate(() => document.activeElement.id), "reveal");
           await page.locator("#stop").click();
           await page.locator("#compare").click();
-          await page.waitForFunction(() => window.__buffers.length === 3);
-          const captured = await live(page, 2, `${label}-comparison.f32`);
+          await page.waitForFunction(() => window.__buffers.length === 2);
+          const captured = await live(page, 1, `${label}-comparison.f32`);
           await page.locator("#stop").click();
           const urlBeforeTarget = page.url();
           await page.locator("#hear-target").click();
-          await page.waitForFunction(() => window.__buffers.length === 4);
-          const target = await live(page, 3, `${label}-target.f32`);
+          await page.waitForFunction(() => window.__buffers.length === 3);
+          const target = await live(page, 2, `${label}-target.f32`);
           assert.equal(page.url(), urlBeforeTarget);
           assert.equal(await page.locator("#amount").inputValue(), "110");
           await page.locator("#stop").click();

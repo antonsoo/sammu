@@ -1,4 +1,4 @@
-import type { Note, SoundPlan } from "./audio";
+import type { Note, SoundPlan, SustainedPlan } from "./audio";
 import { queryFor } from "./query";
 import { cents, ratioText } from "./rational";
 import {
@@ -112,6 +112,15 @@ export function practicePlan(
         ? [...notesFor(data.before, 0), ...notesFor(data.after, toneDuration + 0.35)]
         : notesFor(data.after, 0),
     duration: kind === "comparison" ? 2 * toneDuration + 0.35 + 0.12 : toneDuration + 0.12,
+  };
+}
+
+export function sustainedPlan(session: Session, practice: Practice): SustainedPlan {
+  const data = preview(session, practice);
+  return {
+    title: `Live adjustment: strings ${data.pair.join(" + ")}`,
+    fundamentals: data.after,
+    ...(practice.listen === "partials" ? { isolated: data.harmonic } : {}),
   };
 }
 

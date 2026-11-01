@@ -38,6 +38,13 @@
 .practice-controls > .actions .primary {
   flex: 1;
 }
+#listen[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+#audio-status[data-playing="true"][data-kind="live"] {
+  color: var(--rust);
+}
 .turn-label {
   max-width: 27rem;
 }

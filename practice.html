@@ -29,8 +29,8 @@
         <p class="eyebrow">Listening practice · a modern numerical realization</p>
         <h1>Find the alignment<br>by ear.</h1>
         <p>
-          Adjust one string. Compare the pair before and after. Reveal the measurements when you
-          want to connect what you hear with the model’s answer.
+          Keep the pair sounding as you turn one string. Hear its beats change, then reveal the
+          measurements to connect what you hear with the model’s answer.
         </p>
       </div>
       <section
@@ -50,22 +50,23 @@
             <p id="instruction"></p>
 
             <div class="actions">
-              <button type="button" id="listen" class="primary">Listen to your setting</button
-              ><button type="button" id="stop">Stop sound</button>
+              <button type="button" id="listen" class="primary" aria-pressed="false">
+                Listen while adjusting
+              </button><button type="button" id="stop">Stop sound</button>
             </div>
             <fieldset class="practice-sounds">
               <legend>What to listen to</legend>
               <label
                 ><input type="radio" name="listen" id="pair" value="pair" checked>
-                Full pair · six partials</label
+                Both strings · six partials</label
               ><label
                 ><input type="radio" name="listen" id="partials" value="partials">
                 Two isolated partials</label
               >
             </fieldset>
             <p class="sound-note small">
-              The full pair has six decaying sine partials. Isolated mode balances two selected
-              partial frequencies as steady tones.
+              Live sound is sustained. Isolated mode keeps just one partial from each string. Their
+              slightly unequal levels prevent complete cancellation when they match.
             </p>
             <div class="adjustment-heading">
               <label for="amount">Your adjustment</label
@@ -82,14 +83,14 @@
             >
             <p id="range-help" class="small">
               Drag to explore. Arrow keys adjust 0.1 cent; Shift + arrow adjusts 1; Page Up/Down
-              adjusts 10. Moving the control stops the sound.
+              adjusts 10. The sound follows your adjustment without restarting.
             </p>
 
             <button type="button" id="compare" class="comparison-button">
-              Unchanged, then your setting
+              Compare unchanged, then your setting · 5s each
             </button>
             <p id="audio-status" class="audio-status" role="status">
-              Start at a comfortable volume. Each setting plays for five seconds.
+              Start at a comfortable volume. Live sound ends after one minute; Stop ends it sooner.
             </p>
             <details class="practice-options">
               <summary>Change the retuning direction</summary>
@@ -120,20 +121,20 @@
             <aside id="listening-guide" class="listening-guide" aria-labelledby="guide-heading">
               <h2 id="guide-heading">Follow the sound.</h2>
               <ol>
-                <li>Listen to the unchanged pair, then move the control a little.</li>
+                <li>Press Listen, then move the adjustment while the pair keeps sounding.</li>
                 <li>
-                  Compare the two settings. Try an adjustment on either side of where the sound
-                  seems to settle.
+                  Listen for the beats slowing down, then speeding up again as you move past the
+                  alignment. Slow down near the place they seem to settle.
                 </li>
                 <li>
-                  Isolate the selected partials to hear their interaction directly, then return to
-                  the fuller sound.
+                  Isolate the selected partials without stopping. Compare with the unchanged setting
+                  when you want a fresh reference.
                 </li>
               </ol>
               <p>
-                Changing one string changes several partial frequencies at once. A smooth patch in a
-                synthetic signal helps you explore that relationship; it does not recover an ancient
-                listener’s judgment.
+                A match stops the isolated pair’s beats; its loudness still depends on phase. In the
+                fuller sound, several partials interact at once. This synthetic exercise does not
+                recover an ancient listener’s judgment.
               </p>
               <p class="small">
                 Your preview stays separate from the exact tuning. The model’s exact move is
@@ -168,7 +169,8 @@
             </p>
             <p class="small">
               Saved worksheets include the measurements even while they are hidden here. The WAV
-              compares unchanged and adjusted settings, with a short silence between them.
+              keeps two fixed settings, with a short silence between them; it does not record your
+              live movement. Its full pair decays; its isolated tones have equal levels.
             </p>
             <p id="offline-status" class="small" role="status">Checking offline availability…</p>
           </div>

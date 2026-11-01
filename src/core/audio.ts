@@ -23,6 +23,12 @@ export interface SoundPlan {
   readonly notes: readonly Note[];
   readonly duration: number;
 }
+export interface SustainedPlan {
+  readonly title: string;
+  readonly fundamentals: readonly [number, number];
+  /** Omit to hear all six partials; otherwise isolate these harmonic numbers. */
+  readonly isolated?: readonly [number, number];
+}
 export type Listening = "unclear" | "named" | "strum" | "last" | "cycle";
 
 const PAIR_DURATION = 1.7;
@@ -114,7 +120,7 @@ export function envelope(time: number, duration: number, colour: Colour): number
   return smooth * (colour === "plucked" ? Math.exp((-2.7 * time) / duration) : 1);
 }
 
-/** The live player and downloaded WAV share these exact finite samples. */
+/** The fixed-setting player and downloaded WAV share these exact finite samples. */
 export function renderPcm(plan: SoundPlan, sampleRate = 48000): Float32Array {
   if (
     !Number.isInteger(sampleRate) ||

@@ -34,7 +34,9 @@
     "verify:tuning": "node --import tsx scripts/tuning-cases.ts | python3 scripts/tuning-oracle.py",
     "test:browser": "node scripts/browser-review.mjs",
     "verify:practice": "node --import tsx scripts/practice-cases.ts | python3 scripts/practice-oracle.py",
-    "test:practice": "node scripts/practice-browser.mjs"
+    "test:practice": "node scripts/practice-browser.mjs",
+    "test:live": "node scripts/live-browser.mjs",
+    "verify:live-audio": "python3 scripts/live-audio-oracle.py"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",

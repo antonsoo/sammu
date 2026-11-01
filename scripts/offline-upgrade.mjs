@@ -27,9 +27,10 @@ async function inventory(root) {
 
 const oldFiles = await inventory(path.resolve(oldDirectory));
 const newFiles = await inventory(path.resolve("dist"));
-assert(!oldFiles.has("practice.html") && newFiles.has("practice.html"));
+assert(newFiles.has("practice.html"));
 const oldEdition = /const EDITION = "([a-f0-9]+)"/.exec(oldFiles.get("sw.js").toString())[1];
 const newEdition = /const EDITION = "([a-f0-9]+)"/.exec(newFiles.get("sw.js").toString())[1];
+assert.notEqual(oldEdition, newEdition, "Supply a different preceding edition");
 let served = oldFiles;
 let workerFiles = oldFiles;
 let fault = "none";
