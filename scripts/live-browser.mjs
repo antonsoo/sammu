@@ -5,6 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import AxeBuilder from "@axe-core/playwright";
 import { chromium, firefox } from "playwright";
+import { observe, tapSource } from "./audio-capture.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const output = path.resolve(process.argv[2] ?? "/tmp/sammu-live-review/browser.json");
@@ -45,96 +46,6 @@ const server = createServer(async (request, response) => {
 });
 const report = { base, browsers: [], signals: [], passed: false };
 
-const tapSource = `class Tap extends AudioWorkletProcessor {
-      constructor() { super(); this.samples = new Float32Array(4096); this.position = 0; this.frame = 0; }
-      process(inputs) {
-        const input = inputs[0]?.[0];
-        for (let i = 0; i < 128; i++) {
-          if (this.position === 0) this.frame = currentFrame + i;
-          this.samples[this.position++] = input?.[i] ?? 0;
-          if (this.position === 4096) {
-            this.port.postMessage({ samples: this.samples, frame: this.frame }, [this.samples.buffer]);
-            this.samples = new Float32Array(4096); this.position = 0;
-          }
-        }
-        return true;
-      }
-    }
-    registerProcessor('sammu-review-tap', Tap);`;
-
-async function observe(page) {
-  await page.addInitScript(() => {
-    window.__oscillators = [];
-    window.__stops = [];
-    window.__contexts = [];
-    window.__worklets = new WeakMap();
-    window.__buffers = 0;
-    window.__chunks = [];
-    window.__take = false;
-    window.__csp = [];
-    document.addEventListener("securitypolicyviolation", (e) =>
-      window.__csp.push(e.violatedDirective),
-    );
-    const create = AudioContext.prototype.createOscillator;
-    AudioContext.prototype.createOscillator = function () {
-      const node = create.call(this);
-      window.__oscillators.push(node);
-      return node;
-    };
-    const stop = OscillatorNode.prototype.stop;
-    OscillatorNode.prototype.stop = function (time) {
-      window.__stops.push({ node: window.__oscillators.indexOf(this), time });
-      return stop.call(this, time);
-    };
-    const resume = AudioContext.prototype.resume;
-    AudioContext.prototype.resume = function () {
-      if (!window.__contexts.includes(this)) window.__contexts.push(this);
-      const resumed = resume.call(this);
-      if (!navigator.onLine) return resumed;
-      if (!window.__worklets.has(this))
-        window.__worklets.set(
-          this,
-          this.audioWorklet.addModule(new URL("live-review-tap.js", location.href)),
-        );
-      const result = Promise.all([resumed, window.__worklets.get(this)]);
-      if (!window.__holdResume) return result;
-      return result.then(
-        () =>
-          new Promise((resolve) => {
-            window.__releaseResume = resolve;
-          }),
-      );
-    };
-    const start = AudioBufferSourceNode.prototype.start;
-    AudioBufferSourceNode.prototype.start = function (...args) {
-      window.__buffers++;
-      return start.apply(this, args);
-    };
-    const connect = AudioNode.prototype.connect;
-    AudioNode.prototype.connect = function (...args) {
-      const result = connect.apply(this, args);
-      if (
-        this instanceof GainNode &&
-        args[0] === this.context.destination &&
-        window.__worklets.has(this.context)
-      ) {
-        // A review-only audio-thread tap on the actual output. Its own output
-        // is silence. Messages carry render-frame indices to detect any gap.
-        window.__latestTap?.disconnect();
-        const recorder = new AudioWorkletNode(this.context, "sammu-review-tap");
-        window.__latestTap = recorder;
-        recorder.port.onmessage = (e) => {
-          if (window.__take && window.__latestTap === recorder)
-            window.__chunks.push({ frame: e.data.frame, samples: Array.from(e.data.samples) });
-        };
-        connect.call(this, recorder);
-        connect.call(recorder, this.context.destination);
-      }
-      return result;
-    };
-  });
-}
-
 async function signal(page, engine, layout, name) {
   // Discard the transition and collect the actual stationary output. The
   // independent oracle fits frequencies from the source fixture, not node values.
@@ -144,7 +55,7 @@ async function signal(page, engine, layout, name) {
     window.__take = true;
   });
   await page.waitForFunction(
-    () => window.__chunks.length * 4096 >= window.__contexts.at(-1).sampleRate * 1.7,
+    () => window.__chunks.length * 4096 >= window.__captureContext.sampleRate * 1.7,
   );
   const captured = await page.evaluate(() => {
     window.__take = false;
@@ -155,15 +66,19 @@ async function signal(page, engine, layout, name) {
       binary += String.fromCharCode(...bytes.subarray(i, i + 16384));
     return {
       frames: window.__chunks.map((c) => c.frame),
+      continuousQuanta: window.__chunks.every((c) =>
+        c.quantumFrames.every((f, i, a) => !i || f - a[i - 1] === 128),
+      ),
       data: btoa(binary),
       length: pcm.length,
-      rate: window.__contexts.at(-1).sampleRate,
+      rate: window.__captureContext.sampleRate,
     };
   });
   assert.ok(
     captured.frames.every((frame, i) => i === 0 || frame - captured.frames[i - 1] === 4096),
     "audio capture has a missing render quantum",
   );
+  assert.ok(captured.continuousQuanta, "capture skipped an audio render quantum");
   const file = `${engine}-${layout}-${name}.f32`;
   await writeFile(path.join(directory, file), Buffer.from(captured.data, "base64"));
   const query = Object.fromEntries(new URL(page.url()).searchParams);

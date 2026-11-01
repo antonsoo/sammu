@@ -52,6 +52,10 @@ function send(response, name, bytes) {
   response.end(bytes);
 }
 const server = http.createServer((request, response) => {
+  if (fault === "offline") {
+    request.socket.destroy();
+    return;
+  }
   const url = new URL(request.url, "http://localhost");
   if (!url.pathname.startsWith("/sammu/")) {
     response.writeHead(404).end();
@@ -243,6 +247,9 @@ try {
               "An older reply overwrote readiness for the current edition.",
             );
           }
+          // Firefox's service-worker network may outlive context.setOffline.
+          // Also remove the actual origin to make this an offline proof.
+          fault = "offline";
           await context.setOffline(true);
           await current.reload();
           await current.waitForFunction(
