@@ -6,5 +6,18 @@
   "pdfLeaf": 10,
   "visuallyChecked": "All seven figure-5 rows and figure-4 omission/restoration marks against current fixture and displayed preservation summaries. Exact audible ratios remain separate model choices.",
   "redistributed": false,
-  "reviewDate": "2026-10-31"
+  "reviewDate": "2026-10-31",
+  "additionalChecks": [
+    {
+      "url": "https://mtosmt.org/issues/mto.22.28.1/mto.22.28.1.rahn.html",
+      "location": "paragraph 45",
+      "sha256": "41d63685d305d7c4b76d951dd19b13ebb0466dba20f0ae77317af510a6715da4",
+      "checked": "Intact/partial loosening forms; reconstructed tightening; partially preserved rubric; contextual nasahum gloss."
+    },
+    {
+      "url": "https://mprl-series.mpg.de/textbooks/2/12/index.html",
+      "location": "Key to Vocabulary and Standard Translations",
+      "checked": "summa (with s-caron): if; lexical support from a mathematical corpus, not a musical witness."
+    }
+  ]
 }

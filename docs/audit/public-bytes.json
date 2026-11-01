@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "node": "v26.7.0",
+  "requestTimeoutMs": 10000,
+  "retryWindowMs": 240000,
+  "pollIntervalMs": 5000,
+  "concurrency": 6,
+  "baseURL": "https://antonsoo.github.io/sammu/",
+  "state": "verified",
+  "attempts": 4,
+  "startedAtUtc": "2026-11-01T03:26:30.834Z",
+  "checkedAtUtc": "2026-11-01T03:26:47.975Z",
+  "buildManifestSha256": "51055cc9eb7e7638a393e88b2c86dfacd6e4af2426e6309e5b7be8ca68e64231",
+  "expectedFileCount": 13,
+  "checkedFileCount": 13,
+  "verifiedFileCount": 13,
+  "rootBefore": {
+    "path": "index.html",
+    "bytes": 18089,
+    "sha256": "dae76ba4f278924552f4a4f462ead20cbbf7846400c4cf840c0244efcf0beee6",
+    "url": "https://antonsoo.github.io/sammu/",
+    "httpStatus": 200,
+    "observedBytes": 18089,
+    "observedSha256": "dae76ba4f278924552f4a4f462ead20cbbf7846400c4cf840c0244efcf0beee6",
+    "state": "verified"
+  },
+  "rootAfter": {
+    "path": "index.html",
+    "bytes": 18089,
+    "sha256": "dae76ba4f278924552f4a4f462ead20cbbf7846400c4cf840c0244efcf0beee6",
+    "url": "https://antonsoo.github.io/sammu/",
+    "httpStatus": 200,
+    "observedBytes": 18089,
+    "observedSha256": "dae76ba4f278924552f4a4f462ead20cbbf7846400c4cf840c0244efcf0beee6",
+    "state": "verified"
+  },
+  "files": [
+    {
+      "path": "assets/main-BbhlNGNd.js",
+      "bytes": 9949,
+      "sha256": "e04bcff61daebaaebed1013accce04f4484c4cab83b356eafd590c7bc5b61552",
+      "url": "https://antonsoo.github.io/sammu/assets/main-BbhlNGNd.js",
+      "httpStatus": 200,
+      "observedBytes": 9949,
+      "observedSha256": "e04bcff61daebaaebed1013accce04f4484c4cab83b356eafd590c7bc5b61552",
+      "state": "verified"
+    },
+    {
+      "path": "assets/practice-8SbswKJw.js",
+      "bytes": 8796,
+      "sha256": "b93714f5e29dab6c4c0c2702ac45e9f47e044483be1bcbe12f92042044f76d4a",
+      "url": "https://antonsoo.github.io/sammu/assets/practice-8SbswKJw.js",
+      "httpStatus": 200,
+      "observedBytes": 8796,
+      "observedSha256": "b93714f5e29dab6c4c0c2702ac45e9f47e044483be1bcbe12f92042044f76d4a",
+      "state": "verified"
+    },
+    {
+      "path": "assets/practice-CC_8shvY.css",
+      "bytes": 6047,
+      "sha256": "a82578e2763570888723e94d5962e04e783d600dbad160d6fdf17e23fc11be32",
+      "url": "https://antonsoo.github.io/sammu/assets/practice-CC_8shvY.css",
+      "httpStatus": 200,
+      "observedBytes": 6047,
+      "observedSha256": "a82578e2763570888723e94d5962e04e783d600dbad160d6fdf17e23fc11be32",
+      "state": "verified"
+    },
+    {
+      "path": "assets/study-download-B-RTLr-3.css",
+      "bytes": 16248,
+      "sha256": "0ff7854c625e770849ceca28ed7f57353070da3f6858277d5b26f8c9d625c93d",
+      "url": "https://antonsoo.github.io/sammu/assets/study-download-B-RTLr-3.css",
+      "httpStatus": 200,
+      "observedBytes": 16248,
+      "observedSha256": "0ff7854c625e770849ceca28ed7f57353070da3f6858277d5b26f8c9d625c93d",
+      "state": "verified"
+    },
+    {
+      "path": "assets/study-download-CejFGERR.js",
+      "bytes": 44553,
+      "sha256": "9aaaa3ccd177d47b041bd285a1d7a2f15542adb23899ae07ec6ff7f8bf910759",
+      "url": "https://antonsoo.github.io/sammu/assets/study-download-CejFGERR.js",
+      "httpStatus": 200,
+      "observedBytes": 44553,
+      "observedSha256": "9aaaa3ccd177d47b041bd285a1d7a2f15542adb23899ae07ec6ff7f8bf910759",
+      "state": "verified"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 252,
+      "sha256": "7d2537517a21b00b09acab68534fadca8a86192aec5e1914accd3e1628303c67",
+      "url": "https://antonsoo.github.io/sammu/favicon.svg",
+      "httpStatus": 200,
+      "observedBytes": 252,
+      "observedSha256": "7d2537517a21b00b09acab68534fadca8a86192aec5e1914accd3e1628303c67",
+      "state": "verified"
+    },
+    {
+      "path": "fonts/Atkinson-OFL.txt",
+      "bytes": 4431,
+      "sha256": "aca6a428580965d2297d1b718042dd427c2a9443ece3b0d02d758e161e0c4030",
+      "url": "https://antonsoo.github.io/sammu/fonts/Atkinson-OFL.txt",
+      "httpStatus": 200,
+      "observedBytes": 4431,
+      "observedSha256": "aca6a428580965d2297d1b718042dd427c2a9443ece3b0d02d758e161e0c4030",
+      "state": "verified"
+    },
+    {
+      "path": "fonts/AtkinsonHyperlegibleNext.ttf",
+      "bytes": 114552,
+      "sha256": "5a455d1cfa099b601ab70751bb9673e8fe1854dc4500c80e1a220d0d75e31745",
+      "url": "https://antonsoo.github.io/sammu/fonts/AtkinsonHyperlegibleNext.ttf",
+      "httpStatus": 200,
+      "observedBytes": 114552,
+      "observedSha256": "5a455d1cfa099b601ab70751bb9673e8fe1854dc4500c80e1a220d0d75e31745",
+      "state": "verified"
+    },
+    {
+      "path": "fonts/NotoSerif-OFL.txt",
+      "bytes": 4396,
+      "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+      "url": "https://antonsoo.github.io/sammu/fonts/NotoSerif-OFL.txt",
+      "httpStatus": 200,
+      "observedBytes": 4396,
+      "observedSha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+      "state": "verified"
+    },
+    {
+      "path": "fonts/NotoSerif-Regular.ttf",
+      "bytes": 444064,
+      "sha256": "5473d2e43bdd018ee124a4addba8091fd0a29894b121cbb741023af6549662b6",
+      "url": "https://antonsoo.github.io/sammu/fonts/NotoSerif-Regular.ttf",
+      "httpStatus": 200,
+      "observedBytes": 444064,
+      "observedSha256": "5473d2e43bdd018ee124a4addba8091fd0a29894b121cbb741023af6549662b6",
+      "state": "verified"
+    },
+    {
+      "path": "index.html",
+      "bytes": 18089,
+      "sha256": "dae76ba4f278924552f4a4f462ead20cbbf7846400c4cf840c0244efcf0beee6",
+      "url": "https://antonsoo.github.io/sammu/index.html",
+      "httpStatus": 200,
+      "observedBytes": 18089,
+      "observedSha256": "dae76ba4f278924552f4a4f462ead20cbbf7846400c4cf840c0244efcf0beee6",
+      "state": "verified"
+    },
+    {
+      "path": "practice.html",
+      "bytes": 10134,
+      "sha256": "3c32c43818a1fbd02fa885c50c15d4e4e59961839a83f2b4899c3ba4a2f81087",
+      "url": "https://antonsoo.github.io/sammu/practice.html",
+      "httpStatus": 200,
+      "observedBytes": 10134,
+      "observedSha256": "3c32c43818a1fbd02fa885c50c15d4e4e59961839a83f2b4899c3ba4a2f81087",
+      "state": "verified"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 7610,
+      "sha256": "361dc8cf3797818fb2ef4aa8acf6aaa5858f5d4f2358e92a864d07facbdbabcb",
+      "url": "https://antonsoo.github.io/sammu/sw.js",
+      "httpStatus": 200,
+      "observedBytes": 7610,
+      "observedSha256": "361dc8cf3797818fb2ef4aa8acf6aaa5858f5d4f2358e92a864d07facbdbabcb",
+      "state": "verified"
+    }
+  ],
+  "scope": "Compares canonical responses with this captured build inventory during the recorded pass. Extra hosted files, browser behavior, public source, registry releases and deployment provenance are not established."
+}

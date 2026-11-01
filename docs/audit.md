@@ -142,7 +142,25 @@ is `665af5ee1a0fa6ed90b70beebccaf693d61c1126665f85f2720abdf199c4ef3d`.
 [The source ledger](sources.md) identifies the paper and the limits of this
 interpretation. No scholarly page, figure or photograph is redistributed.
 
-Local build and browser evidence establish the behavior of the reviewed
-edition. Public source, canonical hosted bytes, actual public browser journeys
-and remote CI are separate checks. Publication receipts are added after those
-checks succeed; source or HTTP success alone does not establish them.
+The [publication receipt](audit/publication.json) records the source and Pages
+branch commits. All thirteen [canonical hosted files](audit/public-bytes.json)
+match the clean build, including both entry pages, the worker and retained
+fonts/licenses. The [post-browser comparison](audit/public-after-browser.json)
+confirms the same bytes after the public trials.
+
+The actual public bench and practice pages run in Chromium and Firefox at 1440
+and 375 pixels: eight workflows, with one hundred WAV exports and native saved
+readings. Their [practice](audit/public-practice.json) and
+[bench](audit/public-bench.json) receipts are separate from the local tests;
+independent [practice PCM](audit/public-practice-audio.json) and
+[bench PCM](audit/public-bench-audio.json) checks use the actual public downloads
+and played buffers. Public scripts use browser offline mode. The stronger
+origin-unavailable proof is local, on the byte-identical build, because Firefox
+service-worker networking can outlive that emulation.
+
+The branch-based Pages build and deployment completed with executed steps.
+Source CI and the source-triggered Pages workflow were reported as failures
+with empty step lists; neither establishes a successful remote check. The
+reviewed local checks, actual public behavior and matching hosted bytes are
+recorded independently. Physical speakers, mobile hardware and a complete
+screen-reader audit remain outside this review.

@@ -1,0 +1,117 @@
+{
+  "checkedAt": "2026-11-01T03:28:49.914158+00:00",
+  "runtimeSource": "3ce4352f00b9246e865eb6145860e4e1c7672ce7",
+  "sourceAtDeployment": "13c5d1f5e3809324b8e7a0449c401be9442192b3",
+  "deploymentCommit": "1e4685ae79b37336a69cb9416e5b147f4ffc513a",
+  "pages": {
+    "html_url": "https://antonsoo.github.io/sammu/",
+    "build_type": "legacy",
+    "source": {
+      "branch": "gh-pages",
+      "path": "/"
+    },
+    "status": "built"
+  },
+  "sourceCI": {
+    "url": "https://github.com/antonsoo/sammu/actions/runs/41269171977",
+    "head": "13c5d1f5e3809324b8e7a0449c401be9442192b3",
+    "status": "completed",
+    "conclusion": "failure",
+    "jobs": [
+      {
+        "name": "check",
+        "conclusion": "failure",
+        "steps": []
+      }
+    ]
+  },
+  "sourcePagesWorkflow": {
+    "url": "https://github.com/antonsoo/sammu/actions/runs/41269171984",
+    "head": "13c5d1f5e3809324b8e7a0449c401be9442192b3",
+    "status": "completed",
+    "conclusion": "failure",
+    "jobs": [
+      {
+        "name": "deploy",
+        "conclusion": "failure",
+        "steps": []
+      }
+    ]
+  },
+  "branchPagesDelivery": {
+    "url": "https://github.com/antonsoo/sammu/actions/runs/41269177698",
+    "head": "1e4685ae79b37336a69cb9416e5b147f4ffc513a",
+    "status": "completed",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "build",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success"
+          },
+          {
+            "name": "Upload artifact",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "report-build-status",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Report Build Status",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "deploy",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Deploy to GitHub Pages",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  "canonicalFilesMatched": 13,
+  "publicBrowserWorkflows": 8,
+  "publicPracticeWavs": 60,
+  "publicBenchWavs": 40,
+  "offlineBoundary": "Public scripts use browser offline mode. Local asset and upgrade trials additionally remove the actual origin; Firefox service-worker networking can outlive browser offline emulation.",
+  "signalBoundary": "Actual continuous PCM is measured locally on the byte-identical build. The public catalogue journey separately observes oscillator identity, clock advancement, controls and termination."
+}
