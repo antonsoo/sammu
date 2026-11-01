@@ -1,0 +1,1098 @@
+{
+  "base": "http://127.0.0.1:4390/sammu/",
+  "browsers": [
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "firstListenY": 559.609375,
+      "adjustmentBottom": 851.375,
+      "audits": [
+        {
+          "label": "chromium-desktop: hidden measurements",
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 0
+        },
+        {
+          "label": "chromium-desktop: revealed measurements",
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 0
+        },
+        {
+          "label": "chromium-desktop: native worksheet",
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 1
+        }
+      ],
+      "worksheet": {
+        "file": "chromium-desktop-worksheet.html",
+        "bytes": 2136240,
+        "sha256": "7a9304e2a0e2c3599a87cd053d3668588128c75fa6a91ef476efd5c463a98814"
+      },
+      "offline": true,
+      "errors": [],
+      "external": []
+    },
+    {
+      "engine": "chromium",
+      "layout": "phone",
+      "firstListenY": 574.171875,
+      "adjustmentBottom": 894.796875,
+      "audits": [
+        {
+          "label": "chromium-phone: hidden measurements",
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 0
+        },
+        {
+          "label": "chromium-phone: revealed measurements",
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 0
+        },
+        {
+          "label": "chromium-phone: native worksheet",
+          "violations": 0,
+          "passes": 39,
+          "incomplete": 0
+        }
+      ],
+      "worksheet": {
+        "file": "chromium-phone-worksheet.html",
+        "bytes": 2136240,
+        "sha256": "7a9304e2a0e2c3599a87cd053d3668588128c75fa6a91ef476efd5c463a98814"
+      },
+      "offline": true,
+      "errors": [],
+      "external": []
+    },
+    {
+      "engine": "firefox",
+      "layout": "desktop",
+      "firstListenY": 559.6500244140625,
+      "adjustmentBottom": 851.433349609375,
+      "audits": [
+        {
+          "label": "firefox-desktop: hidden measurements",
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 0
+        },
+        {
+          "label": "firefox-desktop: revealed measurements",
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 0
+        },
+        {
+          "label": "firefox-desktop: native worksheet",
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 1
+        }
+      ],
+      "worksheet": {
+        "file": "firefox-desktop-worksheet.html",
+        "bytes": 2136240,
+        "sha256": "7a9304e2a0e2c3599a87cd053d3668588128c75fa6a91ef476efd5c463a98814"
+      },
+      "offline": true,
+      "errors": [],
+      "external": []
+    },
+    {
+      "engine": "firefox",
+      "layout": "phone",
+      "firstListenY": 574.3333129882812,
+      "adjustmentBottom": 895,
+      "audits": [
+        {
+          "label": "firefox-phone: hidden measurements",
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 0
+        },
+        {
+          "label": "firefox-phone: revealed measurements",
+          "violations": 0,
+          "passes": 43,
+          "incomplete": 0
+        },
+        {
+          "label": "firefox-phone: native worksheet",
+          "violations": 0,
+          "passes": 39,
+          "incomplete": 0
+        }
+      ],
+      "worksheet": {
+        "file": "firefox-phone-worksheet.html",
+        "bytes": 2136240,
+        "sha256": "7a9304e2a0e2c3599a87cd053d3668588128c75fa6a91ef476efd5c463a98814"
+      },
+      "offline": true,
+      "errors": [],
+      "external": []
+    }
+  ],
+  "audio": [
+    {
+      "engine": "chromium",
+      "layout": "desktop",
+      "live": {
+        "file": "chromium-desktop-comparison.f32",
+        "rate": 44100,
+        "length": 461727
+      },
+      "targetLive": {
+        "file": "chromium-desktop-target.f32",
+        "rate": 44100,
+        "length": 225792
+      },
+      "listening": "comparison",
+      "record": {
+        "file": "chromium-desktop-practice.json",
+        "bytes": 11415,
+        "sha256": "43845815650fd83d012bed4978b222979f2ea1b0db57df608c284dcbe6325b2c"
+      },
+      "wav": {
+        "file": "chromium-desktop-practice.wav",
+        "bytes": 1005164,
+        "sha256": "4da33ab50e27250362af84b9054cd300b4cdeb7fa3024debf57836b73fa2f291"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "phone",
+      "live": {
+        "file": "chromium-phone-comparison.f32",
+        "rate": 44100,
+        "length": 461727
+      },
+      "targetLive": {
+        "file": "chromium-phone-target.f32",
+        "rate": 44100,
+        "length": 225792
+      },
+      "listening": "comparison",
+      "record": {
+        "file": "chromium-phone-practice.json",
+        "bytes": 11415,
+        "sha256": "43845815650fd83d012bed4978b222979f2ea1b0db57df608c284dcbe6325b2c"
+      },
+      "wav": {
+        "file": "chromium-phone-practice.wav",
+        "bytes": 1005164,
+        "sha256": "4da33ab50e27250362af84b9054cd300b4cdeb7fa3024debf57836b73fa2f291"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-0-L-pair-110.json",
+        "bytes": 13104,
+        "sha256": "5cb20cbc693ec8e745c72c30ab4ef2b87a635bce2b784f49757243ce83a841ca"
+      },
+      "wav": {
+        "file": "matrix-0-L-pair-110.wav",
+        "bytes": 1005164,
+        "sha256": "2443873526c5d134618e43a1eb9d6bf75e0a5aab5c0152c0ebfa9185b94ddd3b"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-0-L-pair-target.json",
+        "bytes": 13094,
+        "sha256": "6677c487e95932e15582941149ae99ff60e2935424fae9bd4cef08787be9fcd8"
+      },
+      "wav": {
+        "file": "matrix-0-L-pair-target.wav",
+        "bytes": 1005164,
+        "sha256": "a691ba1fdc526759dced692260e2c7a9638b920332e812b683308581095f6fb1"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-0-L-partials-110.json",
+        "bytes": 13200,
+        "sha256": "c6dd5908ef0423e5f4f1af0862a5862b389ee5ff02a0b118da522f2088a85ed6"
+      },
+      "wav": {
+        "file": "matrix-0-L-partials-110.wav",
+        "bytes": 1005164,
+        "sha256": "bbf1b249d90f632b74a567c02fa236ee5cd4cb05771b1dd81cb80b40101f4411"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-0-L-partials-target.json",
+        "bytes": 13175,
+        "sha256": "d057b19b362986343e3afd58eb6122f3f3ff0e6fe38d06687534c27a911b7284"
+      },
+      "wav": {
+        "file": "matrix-0-L-partials-target.wav",
+        "bytes": 1005164,
+        "sha256": "cb739458086eedaa36318b7073e8540404f9c9e0940e5bde5160123936505d57"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-0-T-pair-110.json",
+        "bytes": 13150,
+        "sha256": "f1f97414839de609f85ec1628a3c219946137baa1173ee4478045eff52d2b3b3"
+      },
+      "wav": {
+        "file": "matrix-0-T-pair-110.wav",
+        "bytes": 1005164,
+        "sha256": "1d87b5d6e211405c840e93957d5b44883122b7166bb1231a1c409c0ce25e8cf1"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-0-T-pair-target.json",
+        "bytes": 13136,
+        "sha256": "e01d44885629afbb99ecb63f9ed5b38ad6a0d3d34cbea54b67e6f5f1f09a2e8c"
+      },
+      "wav": {
+        "file": "matrix-0-T-pair-target.wav",
+        "bytes": 1005164,
+        "sha256": "bc59b49080f5e05ea4266f2b56b6ec4c2be25f7e7c423e614a91f53ac69dbf63"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-0-T-partials-110.json",
+        "bytes": 13246,
+        "sha256": "72c09907cdb27df2a2687226049decd8fc0ecb854fdb6da4b82f1a958e6eb1c2"
+      },
+      "wav": {
+        "file": "matrix-0-T-partials-110.wav",
+        "bytes": 1005164,
+        "sha256": "0c091440ba58d686617d56c150cf6fa8cd2ad49d87c4954571886cba3ce414f1"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-0-T-partials-target.json",
+        "bytes": 13231,
+        "sha256": "a42b49d71deec9e7761c76d8318eae271b960c15d37db499acf7db0dfc02c870"
+      },
+      "wav": {
+        "file": "matrix-0-T-partials-target.wav",
+        "bytes": 1005164,
+        "sha256": "b0bcf447c5e7cfd8afb5f2a0f128e790b332968baa2326ecbc0ee71b73013ad4"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-1-L-pair-110.json",
+        "bytes": 13068,
+        "sha256": "c02ccdbeaf49e9b94d9d80a41e2f6fb1b9126aa3623249de61942227cfb04a26"
+      },
+      "wav": {
+        "file": "matrix-1-L-pair-110.wav",
+        "bytes": 1005164,
+        "sha256": "22e3e9eeb5bfca829ff64d566008466c1bc73c12d661b1ef4afcfdf6a90efaac"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-1-L-pair-target.json",
+        "bytes": 13056,
+        "sha256": "bec2967c5fa2ea63e4b7e8f5501dc4c9bd5f5c06bfce254149e815b493101221"
+      },
+      "wav": {
+        "file": "matrix-1-L-pair-target.wav",
+        "bytes": 1005164,
+        "sha256": "755f70a217622fe573cf5233486f7f035025b22de12cef9d673dd916286cad5d"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-1-L-partials-110.json",
+        "bytes": 13164,
+        "sha256": "e37d4d4ab96678b6d35a875b89cbff092938751cfada590147a1273321840ad0"
+      },
+      "wav": {
+        "file": "matrix-1-L-partials-110.wav",
+        "bytes": 1005164,
+        "sha256": "f36e0026d6c5a5f8065dcf9513e98a80cc618d27911ea96d46f2b15db85ad3d2"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-1-L-partials-target.json",
+        "bytes": 13138,
+        "sha256": "142d2cc7e8c5da851c57966014f658b73b0c9bca7cfd3c3b83be0c5dc691e552"
+      },
+      "wav": {
+        "file": "matrix-1-L-partials-target.wav",
+        "bytes": 1005164,
+        "sha256": "5367f31cbac7e5f62a5b7e0ba5e278955c957c005df4c5c95b4ddd59223a5672"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-1-T-pair-110.json",
+        "bytes": 13085,
+        "sha256": "4c8d891eee5a8b85ae2439fac7eb3fd2fb0c4278be2da4d135ace89eb41a3ddb"
+      },
+      "wav": {
+        "file": "matrix-1-T-pair-110.wav",
+        "bytes": 1005164,
+        "sha256": "d64d310a7e49546d24b8062fff3cc935bdf9d3dfa1dbf8e80b3b0339eee25119"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-1-T-pair-target.json",
+        "bytes": 13071,
+        "sha256": "22f3534b34650fdd85b9fd175dc3171984d2a718f0a46e1e61598d0e7b3e10ef"
+      },
+      "wav": {
+        "file": "matrix-1-T-pair-target.wav",
+        "bytes": 1005164,
+        "sha256": "73ee546442c25485d7d2df395a0a6249b4d6fc2b339a432641b09712c3b62efd"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-1-T-partials-110.json",
+        "bytes": 13180,
+        "sha256": "a5170258480e1f0947c295682866977109c8d80270a3e5afb6c56c677d860878"
+      },
+      "wav": {
+        "file": "matrix-1-T-partials-110.wav",
+        "bytes": 1005164,
+        "sha256": "78cedc6b2c79acb121474e23c7d2653d045a274aaf77c06be5e3f93b9362943c"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-1-T-partials-target.json",
+        "bytes": 13165,
+        "sha256": "ec14d4d8c76f453e14509fa5a2d1f746145ca37d387d679f8cbb0673a6d46e63"
+      },
+      "wav": {
+        "file": "matrix-1-T-partials-target.wav",
+        "bytes": 1005164,
+        "sha256": "efe1c5e68c57e80ef83d62b5557f3816e4057cd39171527c9db5adc1f12187fd"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-2-L-pair-110.json",
+        "bytes": 13161,
+        "sha256": "ba959bad91f60abb234d973528af06969fbe55c88645e200a356c8224df655f9"
+      },
+      "wav": {
+        "file": "matrix-2-L-pair-110.wav",
+        "bytes": 1005164,
+        "sha256": "9d4288ca39b1d7477d4ba0dec249d8b0bce5771bfd5d387e2f7576657b3ab259"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-2-L-pair-target.json",
+        "bytes": 13161,
+        "sha256": "51ccb7309f510a4f7e70434ee0b988bae5960f597b0551598403319bb528779d"
+      },
+      "wav": {
+        "file": "matrix-2-L-pair-target.wav",
+        "bytes": 1005164,
+        "sha256": "6ff354f250e29482172a1bee322a463bdda3f09316fd02fbab493bc21c95c0fd"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-2-L-partials-110.json",
+        "bytes": 13256,
+        "sha256": "5c27a5218abcbb88e8661602b5801131277510693ab067077612e8e4c16eefa4"
+      },
+      "wav": {
+        "file": "matrix-2-L-partials-110.wav",
+        "bytes": 1005164,
+        "sha256": "f5ea4654ca16d7ba8dbb3898d0adf0a2e8b173bd9a25457db4f7917fd576fa26"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-2-L-partials-target.json",
+        "bytes": 13257,
+        "sha256": "2f793bf6babd1c4bd17c57c6e3ef6e7ed583f85ee8c9bce0851bd6741bc28877"
+      },
+      "wav": {
+        "file": "matrix-2-L-partials-target.wav",
+        "bytes": 1005164,
+        "sha256": "94972a2859a2f458a0988e5d26ff97deafc3853c316f0d64ac457fe6b6fdd000"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-2-T-pair-110.json",
+        "bytes": 13142,
+        "sha256": "f832e478082b2f568e73fa55e35c86c5e1142ffa8c52ef6010a81ca24b75f2e2"
+      },
+      "wav": {
+        "file": "matrix-2-T-pair-110.wav",
+        "bytes": 1005164,
+        "sha256": "3f07758aab544633290b2672d22156c21fa8bc440c3e81638c6d6f87925b868d"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-2-T-pair-target.json",
+        "bytes": 13119,
+        "sha256": "1f603d12ce59dbba58509c9685731600caddc6303b0a0ae463bde9674bcae962"
+      },
+      "wav": {
+        "file": "matrix-2-T-pair-target.wav",
+        "bytes": 1005164,
+        "sha256": "cccaf5142acb9914ed84c587c80f1f679f0f83cc7658880a43f8647f61dbea9a"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-2-T-partials-110.json",
+        "bytes": 13238,
+        "sha256": "0537169cfb3b09977acbac54680cbc1bbf4b1fe9a76cf706611bccf598edbcce"
+      },
+      "wav": {
+        "file": "matrix-2-T-partials-110.wav",
+        "bytes": 1005164,
+        "sha256": "8775cdc78907debcb4f64731c8a45b19c7616a8b4463f33a3ac41cb0791892a4"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-2-T-partials-target.json",
+        "bytes": 13214,
+        "sha256": "343d61cae11f83a98cfb261b3c457ab4c93cb106881cc44fa922e97d838e574e"
+      },
+      "wav": {
+        "file": "matrix-2-T-partials-target.wav",
+        "bytes": 1005164,
+        "sha256": "a56faa934931ff9fed5dacabc7e51d1b8a1815cadeeec743b303eb3fa17132a3"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-3-L-pair-110.json",
+        "bytes": 13231,
+        "sha256": "7ae95f32e20b60607d7b018f0a7fd84be4c9552d0db3148cf93d67eb5e83e911"
+      },
+      "wav": {
+        "file": "matrix-3-L-pair-110.wav",
+        "bytes": 1005164,
+        "sha256": "7e3a54a5499f95a26b92bebf9f462c30c2e0cb168525b11ac3e4699d0d7a15d1"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-3-L-pair-target.json",
+        "bytes": 13233,
+        "sha256": "743d7a387395e70307f28ea79e47a5fb56016eeb26f7e93cd7919e3288a72649"
+      },
+      "wav": {
+        "file": "matrix-3-L-pair-target.wav",
+        "bytes": 1005164,
+        "sha256": "e2331f901b2502ce54a8cca35a1a4cd4ac30ee3da934aac10f06f6cfe6643aac"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-3-L-partials-110.json",
+        "bytes": 13324,
+        "sha256": "0075df3fbeed66fe7d87ed67a9ac3af4a321b79d8c9ccc2f78f52b2370562268"
+      },
+      "wav": {
+        "file": "matrix-3-L-partials-110.wav",
+        "bytes": 1005164,
+        "sha256": "f77385641fe5e5478613d05bd0b25fc7bbdbeeafab5f473f3fed0cd31ef8af36"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-3-L-partials-target.json",
+        "bytes": 13326,
+        "sha256": "581e4adc3cfdf24039345161dd3d4831d243b03baf1aa432d4bbef0adced19d7"
+      },
+      "wav": {
+        "file": "matrix-3-L-partials-target.wav",
+        "bytes": 1005164,
+        "sha256": "0a36a2f0b480c6c089d5ccd6fa2be5c1896c9716c881c97fae19a1b1d440e7bf"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-3-T-pair-110.json",
+        "bytes": 13196,
+        "sha256": "4a23df53714e61ff708ad2fb82d2378cfa89e2b1ff8f4e5da6452cef4b693f42"
+      },
+      "wav": {
+        "file": "matrix-3-T-pair-110.wav",
+        "bytes": 1005164,
+        "sha256": "afda30d4980ff73bf798ad7761c710a188e021cb04ac7ec6e97cefb0ee004c93"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-3-T-pair-target.json",
+        "bytes": 13172,
+        "sha256": "a8c0efe56962536cb77ef3900461b6a5e44c1d00fe8c56648933ff4424893345"
+      },
+      "wav": {
+        "file": "matrix-3-T-pair-target.wav",
+        "bytes": 1005164,
+        "sha256": "fe1aea1574e18c561ce4a2e897ebede45224d26e87f40378da305d2f15f11c50"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-3-T-partials-110.json",
+        "bytes": 13291,
+        "sha256": "519277a64599915a2cde5c1d0a65f2aeedd65c6dcca74e90c33cff9ab6a0b770"
+      },
+      "wav": {
+        "file": "matrix-3-T-partials-110.wav",
+        "bytes": 1005164,
+        "sha256": "bf745d4d6f994a2a9ee7c8f906a0d69359e049ad0a0c64237edcbd1537a12d0e"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-3-T-partials-target.json",
+        "bytes": 13265,
+        "sha256": "8cc6dfce0a50b2000bddf97b0446afca550562007f6df975054343864ba9fc4b"
+      },
+      "wav": {
+        "file": "matrix-3-T-partials-target.wav",
+        "bytes": 1005164,
+        "sha256": "43ab6825a9ae831c09693035a108a4275596c947b426e07fd46a80dcaa1f3cf2"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-4-L-pair-110.json",
+        "bytes": 13264,
+        "sha256": "a135cae3a4fddea41a01cd3043a60c75c79802fd62171370690af8d364738f75"
+      },
+      "wav": {
+        "file": "matrix-4-L-pair-110.wav",
+        "bytes": 1005164,
+        "sha256": "c69f7af4c1efa4b8842e951ef896dab391b9f214fb0852beb398824bd3b6a5cd"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-4-L-pair-target.json",
+        "bytes": 13266,
+        "sha256": "e3c4da1c883d1eaafc2145fde7a3531f2135e885bb01df0a7848aeedfa0d4c1a"
+      },
+      "wav": {
+        "file": "matrix-4-L-pair-target.wav",
+        "bytes": 1005164,
+        "sha256": "10b2f5e53dafb5794a7d35290dee667478f10802adb18a2053c2e1f3aa49c998"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-4-L-partials-110.json",
+        "bytes": 13359,
+        "sha256": "a7c451c17be5b9b784d409e275e041a48cb498b2f3d36816ec5d650ec5647b2c"
+      },
+      "wav": {
+        "file": "matrix-4-L-partials-110.wav",
+        "bytes": 1005164,
+        "sha256": "f77385641fe5e5478613d05bd0b25fc7bbdbeeafab5f473f3fed0cd31ef8af36"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-4-L-partials-target.json",
+        "bytes": 13361,
+        "sha256": "d0095556ce3a41249681f95ac27f5e229576f901a03d7283730a1fd3a185688b"
+      },
+      "wav": {
+        "file": "matrix-4-L-partials-target.wav",
+        "bytes": 1005164,
+        "sha256": "0a36a2f0b480c6c089d5ccd6fa2be5c1896c9716c881c97fae19a1b1d440e7bf"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-4-T-pair-110.json",
+        "bytes": 13225,
+        "sha256": "98f9ba8d833b86e58027cb60fd24509ccf8ae4e612c0fa24c0666bcfa87fe27a"
+      },
+      "wav": {
+        "file": "matrix-4-T-pair-110.wav",
+        "bytes": 1005164,
+        "sha256": "0b7ce8b4386105799917ab17a3a54f6684d1f8bd77267b9f50728af703745190"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-4-T-pair-target.json",
+        "bytes": 13199,
+        "sha256": "5ce4a6cad33af252e7abecfd716e109db55a965fe670d46c1b89c8f5c987b528"
+      },
+      "wav": {
+        "file": "matrix-4-T-pair-target.wav",
+        "bytes": 1005164,
+        "sha256": "1384c37dea2beb96fba524ed06e897727abfebef9c34bd0be550fcabadc1e1a9"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-4-T-partials-110.json",
+        "bytes": 13321,
+        "sha256": "325482c7a7f886faa6a82aa4c8217dce2eed55009e69e6cdbb94665875e832bd"
+      },
+      "wav": {
+        "file": "matrix-4-T-partials-110.wav",
+        "bytes": 1005164,
+        "sha256": "bf745d4d6f994a2a9ee7c8f906a0d69359e049ad0a0c64237edcbd1537a12d0e"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-4-T-partials-target.json",
+        "bytes": 13294,
+        "sha256": "ab99d8b0fbe2a2b2669b48943f5bf8c496b9a6d1bc933fc512ab9b9867c02b78"
+      },
+      "wav": {
+        "file": "matrix-4-T-partials-target.wav",
+        "bytes": 1005164,
+        "sha256": "43ab6825a9ae831c09693035a108a4275596c947b426e07fd46a80dcaa1f3cf2"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-5-L-pair-110.json",
+        "bytes": 13441,
+        "sha256": "606a383018ac9619b71c0d88df2aa7fdc16eda5ad90846003cad0b3cb216e374"
+      },
+      "wav": {
+        "file": "matrix-5-L-pair-110.wav",
+        "bytes": 1005164,
+        "sha256": "6a2c989246382d3e2992ee2caa6c48ec4cb482711ebe2dea5c9623e2e97135dd"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-5-L-pair-target.json",
+        "bytes": 13444,
+        "sha256": "e36c9645a8422bdf256ef94c14e760828db4f1ed0e51fdc09ba7ee88f311a553"
+      },
+      "wav": {
+        "file": "matrix-5-L-pair-target.wav",
+        "bytes": 1005164,
+        "sha256": "b9bba259a3010e2f790758597692364d054e92b2be06d5c801c3a3cba365ddcb"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-5-L-partials-110.json",
+        "bytes": 13536,
+        "sha256": "2e2151626f5ff73e3f94c04321963f663a723cc7e631e2ff06e341cae69c30fa"
+      },
+      "wav": {
+        "file": "matrix-5-L-partials-110.wav",
+        "bytes": 1005164,
+        "sha256": "2d2afd846de4ca41a3908964e3f97c0f3ca5d5b3c059ce1119fdf6e8fb651ad7"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-5-L-partials-target.json",
+        "bytes": 13539,
+        "sha256": "d5fc87e4f9fd6696f7dbde6b0fe58603614526139b3566df768322a188764fc2"
+      },
+      "wav": {
+        "file": "matrix-5-L-partials-target.wav",
+        "bytes": 1005164,
+        "sha256": "727ed46b87ce36a5b348ee5c6340b89ba4acdefb305caabfb5d2c4252e9c72e6"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-5-T-pair-110.json",
+        "bytes": 13391,
+        "sha256": "875b38195bb7311eae9e47b19acfb7ffa325c8ee028bd3a9e797f3e66be0667c"
+      },
+      "wav": {
+        "file": "matrix-5-T-pair-110.wav",
+        "bytes": 1005164,
+        "sha256": "793f7e3eeb78cff63d2236b4c403d3fb704efc1975b0be843954e73789e11c48"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-5-T-pair-target.json",
+        "bytes": 13353,
+        "sha256": "0d71bcdee0e6c6d75131b5bb970d103b0d7c03c64895ddb4f218f002f36de618"
+      },
+      "wav": {
+        "file": "matrix-5-T-pair-target.wav",
+        "bytes": 1005164,
+        "sha256": "bd168e4d38eb9ff309f841c3be9f130d27a15f42373038ace5497df4e3c84307"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-5-T-partials-110.json",
+        "bytes": 13486,
+        "sha256": "c749756a455270c01e4a76ff93722ee4c9d8bc9441c03e3bd2c92e8f3ad94342"
+      },
+      "wav": {
+        "file": "matrix-5-T-partials-110.wav",
+        "bytes": 1005164,
+        "sha256": "fec760defa797211ea6e8fac2df2a86ceca13203f4a48f6b3a225b8a221aad0f"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-5-T-partials-target.json",
+        "bytes": 13447,
+        "sha256": "213dbbb006114f45eb3775b0410513f5eea029e8a1c94b87d3204f671ec8e7bc"
+      },
+      "wav": {
+        "file": "matrix-5-T-partials-target.wav",
+        "bytes": 1005164,
+        "sha256": "74419fcdb1ac871bdee97655d11888353549efd34bfadcd4a1d64981bb611831"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-6-L-pair-110.json",
+        "bytes": 13155,
+        "sha256": "cb20def3b8fefe0dc7f8d8d880ea7ee38ab3b98942ed955b79906c88a657de8b"
+      },
+      "wav": {
+        "file": "matrix-6-L-pair-110.wav",
+        "bytes": 1005164,
+        "sha256": "d82ace9ce4f5ce4b6c1efd299d489bb2b03c2cee0ae5fbf97c57ba3ee986921a"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-6-L-pair-target.json",
+        "bytes": 13113,
+        "sha256": "483ac70846b144f929d722f053e7a6afe846a1e61a6f8d48d5f0636be5713512"
+      },
+      "wav": {
+        "file": "matrix-6-L-pair-target.wav",
+        "bytes": 1005164,
+        "sha256": "29ce268501d086576d432638f7841740f92ecf020518b784788470a5bc73dcb3"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-6-L-partials-110.json",
+        "bytes": 13250,
+        "sha256": "d739c15b58ea2d2bb7d855fa2e79badc5ac41d8863e0fd60729eb2113d51e484"
+      },
+      "wav": {
+        "file": "matrix-6-L-partials-110.wav",
+        "bytes": 1005164,
+        "sha256": "1f67e6517f6f5545dd349dd0dd71056e6c4f42f5aa72afe545b3767aa38e8933"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-6-L-partials-target.json",
+        "bytes": 13209,
+        "sha256": "bbf9b63bdb1ceae19b3764d99563c94ee7b2b0877ef23c0768af00092d2c8143"
+      },
+      "wav": {
+        "file": "matrix-6-L-partials-target.wav",
+        "bytes": 1005164,
+        "sha256": "91c8e0dd5de4f16d9da4a602586c02e63852c8bcd8590d22e584c7eb5497d9d8"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-6-T-pair-110.json",
+        "bytes": 13175,
+        "sha256": "1a0b9d57da7f814655d6b94171b3b000b0e694f55fe934441180a24850ff34f4"
+      },
+      "wav": {
+        "file": "matrix-6-T-pair-110.wav",
+        "bytes": 1005164,
+        "sha256": "ea97c845847f9bca475c29f3ed20c341403dddf609ecc7c22c17ed1ce84db124"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-6-T-pair-target.json",
+        "bytes": 13170,
+        "sha256": "ef65514d0ae647124951c4ffbed9b17409e1af6700e0a3ae2011a03b09267681"
+      },
+      "wav": {
+        "file": "matrix-6-T-pair-target.wav",
+        "bytes": 1005164,
+        "sha256": "f5443a634031e87521cd17f2690b6ce9870145d23f71ec14fb5cd31be8d7d3af"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-6-T-partials-110.json",
+        "bytes": 13271,
+        "sha256": "562659bc23c91bdb353d3f3894c4f90f2a1c5d1828772f71dff9166337d88ccb"
+      },
+      "wav": {
+        "file": "matrix-6-T-partials-110.wav",
+        "bytes": 1005164,
+        "sha256": "30b655a7c95ce4ddec24880501a93f7ed15e16862e8bec2b482b0c23299ac99c"
+      }
+    },
+    {
+      "engine": "chromium",
+      "layout": "matrix",
+      "listening": "comparison",
+      "record": {
+        "file": "matrix-6-T-partials-target.json",
+        "bytes": 13264,
+        "sha256": "48ebbaa13a547eb6678e1aa2a81fa2c2c5796a8a444238cd57335a3a0f2db50f"
+      },
+      "wav": {
+        "file": "matrix-6-T-partials-target.wav",
+        "bytes": 1005164,
+        "sha256": "036ac9081a94060552fa8fb9cf626a15c138dee8636f1bee1cb56acde1324108"
+      }
+    },
+    {
+      "engine": "firefox",
+      "layout": "desktop",
+      "live": {
+        "file": "firefox-desktop-comparison.f32",
+        "rate": 44100,
+        "length": 461727
+      },
+      "targetLive": {
+        "file": "firefox-desktop-target.f32",
+        "rate": 44100,
+        "length": 225792
+      },
+      "listening": "comparison",
+      "record": {
+        "file": "firefox-desktop-practice.json",
+        "bytes": 11415,
+        "sha256": "43845815650fd83d012bed4978b222979f2ea1b0db57df608c284dcbe6325b2c"
+      },
+      "wav": {
+        "file": "firefox-desktop-practice.wav",
+        "bytes": 1005164,
+        "sha256": "4da33ab50e27250362af84b9054cd300b4cdeb7fa3024debf57836b73fa2f291"
+      }
+    },
+    {
+      "engine": "firefox",
+      "layout": "phone",
+      "live": {
+        "file": "firefox-phone-comparison.f32",
+        "rate": 44100,
+        "length": 461727
+      },
+      "targetLive": {
+        "file": "firefox-phone-target.f32",
+        "rate": 44100,
+        "length": 225792
+      },
+      "listening": "comparison",
+      "record": {
+        "file": "firefox-phone-practice.json",
+        "bytes": 11415,
+        "sha256": "43845815650fd83d012bed4978b222979f2ea1b0db57df608c284dcbe6325b2c"
+      },
+      "wav": {
+        "file": "firefox-phone-practice.wav",
+        "bytes": 1005164,
+        "sha256": "4da33ab50e27250362af84b9054cd300b4cdeb7fa3024debf57836b73fa2f291"
+      }
+    }
+  ],
+  "screenshots": [
+    "chromium-desktop-initial.png",
+    "chromium-desktop-revealed.png",
+    "chromium-desktop-worksheet.png",
+    "chromium-phone-initial.png",
+    "chromium-phone-revealed.png",
+    "chromium-phone-worksheet.png",
+    "firefox-desktop-initial.png",
+    "firefox-desktop-revealed.png",
+    "firefox-desktop-worksheet.png",
+    "firefox-phone-initial.png",
+    "firefox-phone-revealed.png",
+    "firefox-phone-worksheet.png"
+  ],
+  "passed": true
+}

@@ -1,5 +1,10 @@
 # Hear the string move
 
+This records the initial continuous-listening edition. The later
+[instrument audit](audit.md) corrects stopping, interruption, offline integrity
+and export recovery, and carries the current review. Publication statements
+below describe this earlier review's original local boundary.
+
 ## What changed
 
 The earlier practice room stopped playback on every adjustment. A learner could

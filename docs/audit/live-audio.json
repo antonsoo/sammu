@@ -1,0 +1,893 @@
+{
+  "passed": true,
+  "captures": 32,
+  "samples": 2676317,
+  "maximumResidualRms": 1.0562781561897033e-7,
+  "method": "Actual browser output; independent Fraction/Decimal pitches; free-phase least-squares harmonic fit; amplitude and stopped-silence checks",
+  "results": [
+    {
+      "file": "chromium-desktop-initial-110.f32",
+      "name": "initial-110",
+      "samples": 77824,
+      "peak": 0.23397913575172424,
+      "rms": 0.11851370836832752,
+      "residualRms": 7.196225276967406e-8,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.9630229253185,
+          "offsetHz": 5.996235540806083e-5,
+          "amplitude": 0.12999996545152595
+        },
+        {
+          "hz": 1045.1853187924858,
+          "measuredHz": 1045.185310206281,
+          "offsetHz": -8.586204785387963e-6,
+          "amplitude": 0.10399997765204717
+        }
+      ],
+      "independentPartialGapHz": 2.2223558295226984
+    },
+    {
+      "file": "firefox-desktop-initial-110.f32",
+      "name": "initial-110",
+      "samples": 77824,
+      "peak": 0.23398062586784363,
+      "rms": 0.11851396239131123,
+      "residualRms": 1.0526655604330399e-7,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.9633749664445,
+          "offsetHz": 0.0004120034814150131,
+          "amplitude": 0.12999998665982476
+        },
+        {
+          "hz": 1045.1853187924858,
+          "measuredHz": 1045.1856432289735,
+          "offsetHz": 0.000324436487744606,
+          "amplitude": 0.1039999952296395
+        }
+      ],
+      "independentPartialGapHz": 2.2223558295226984
+    },
+    {
+      "file": "chromium-desktop-adjusted-112.f32",
+      "name": "adjusted-112",
+      "samples": 77824,
+      "peak": 0.23399518430233002,
+      "rms": 0.12366469215086646,
+      "residualRms": 1.7665212988103758e-8,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.9630229124516,
+          "offsetHz": 5.994948855914117e-5,
+          "amplitude": 0.1299999661920799
+        },
+        {
+          "hz": 1043.9785705436777,
+          "measuredHz": 1043.9784703987084,
+          "offsetHz": -0.00010014496933763439,
+          "amplitude": 0.10399997874032352
+        }
+      ],
+      "independentPartialGapHz": 1.0156075807148697
+    },
+    {
+      "file": "firefox-desktop-adjusted-112.f32",
+      "name": "adjusted-112",
+      "samples": 77824,
+      "peak": 0.23399955034255981,
+      "rms": 0.12362561569904794,
+      "residualRms": 7.528183573970762e-8,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.9633748695603,
+          "offsetHz": 0.00041190659726453305,
+          "amplitude": 0.129999987506896
+        },
+        {
+          "hz": 1043.9785705436777,
+          "measuredHz": 1043.9784569385115,
+          "offsetHz": -0.0001136051662342652,
+          "amplitude": 0.10400001084518992
+        }
+      ],
+      "independentPartialGapHz": 1.0156075807148697
+    },
+    {
+      "file": "firefox-desktop-full-112.f32",
+      "name": "full-112",
+      "samples": 77824,
+      "peak": 0.14798614382743835,
+      "rms": 0.07031511083484866,
+      "residualRms": 6.724008480157066e-8,
+      "components": [
+        {
+          "hz": 260.74074074074076,
+          "measuredHz": 260.7410670148196,
+          "offsetHz": 0.0003262740788159135,
+          "amplitude": 0.07109697968990368
+        },
+        {
+          "hz": 521.4814814814815,
+          "measuredHz": 521.4813135389778,
+          "offsetHz": -0.00016794250370821828,
+          "amplitude": 0.025136665734076757
+        },
+        {
+          "hz": 782.2222222222223,
+          "measuredHz": 782.2223475258592,
+          "offsetHz": 0.00012530363687801582,
+          "amplitude": 0.013682600444084472
+        },
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.963374902282,
+          "offsetHz": 0.00041193931906491343,
+          "amplitude": 0.008887109465448118
+        },
+        {
+          "hz": 1303.703703703704,
+          "measuredHz": 1303.7031927038272,
+          "offsetHz": -0.0005109998767238721,
+          "amplitude": 0.006359114750549775
+        },
+        {
+          "hz": 1564.4444444444446,
+          "measuredHz": 1564.4446950499168,
+          "offsetHz": 0.0002506054722744011,
+          "amplitude": 0.004837537915972979
+        },
+        {
+          "hz": 347.9928568478926,
+          "measuredHz": 347.9928273892201,
+          "offsetHz": -2.9458672486271098e-5,
+          "amplitude": 0.05687760813092147
+        },
+        {
+          "hz": 695.9857136957852,
+          "measuredHz": 695.9856547800416,
+          "offsetHz": -5.891574357974605e-5,
+          "amplitude": 0.020109268902712092
+        },
+        {
+          "hz": 1043.9785705436777,
+          "measuredHz": 1043.9784568870793,
+          "offsetHz": -0.00011365659838702413,
+          "amplitude": 0.010946098512171562
+        },
+        {
+          "hz": 1391.9714273915704,
+          "measuredHz": 1391.971309560407,
+          "offsetHz": -0.00011783116337937827,
+          "amplitude": 0.007109700233979005
+        },
+        {
+          "hz": 1739.964284239463,
+          "measuredHz": 1739.9641369558922,
+          "offsetHz": -0.00014728357086823962,
+          "amplitude": 0.0050872870425772805
+        },
+        {
+          "hz": 2087.9571410873555,
+          "measuredHz": 2087.956913802592,
+          "offsetHz": -0.00022728476324118674,
+          "amplitude": 0.00387002937488239
+        }
+      ],
+      "independentPartialGapHz": 1.0156075807148697
+    },
+    {
+      "file": "firefox-desktop-target.f32",
+      "name": "target",
+      "samples": 77824,
+      "peak": 0.09453587234020233,
+      "rms": 0.0668474032821341,
+      "residualRms": 1.0562781561897033e-7,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.963374966237,
+          "offsetHz": 0.0004120032740502211,
+          "amplitude": 0.09453572509594065
+        }
+      ],
+      "independentPartialGapHz": 0.0
+    },
+    {
+      "file": "firefox-desktop-stopped.f32",
+      "samples": 77824,
+      "peak": 0.0,
+      "stopped": true
+    },
+    {
+      "file": "firefox-desktop-pending-edit-10.f32",
+      "name": "pending-edit-10",
+      "samples": 77824,
+      "peak": 0.23398983478546143,
+      "rms": 0.11771597177281833,
+      "residualRms": 1.0363584731948662e-7,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.9633749662398,
+          "offsetHz": 0.0004120032767787052,
+          "amplitude": 0.12999998660469583
+        },
+        {
+          "hz": 1107.3352720267933,
+          "measuredHz": 1107.3355795260459,
+          "offsetHz": 0.0003074992525853304,
+          "amplitude": 0.10399999613976739
+        }
+      ],
+      "independentPartialGapHz": 64.37230906383037
+    },
+    {
+      "file": "firefox-desktop-tighten-10.f32",
+      "name": "tighten-10",
+      "samples": 77824,
+      "peak": 0.23399579524993896,
+      "rms": 0.11777867340867049,
+      "residualRms": 4.7841759393046646e-8,
+      "components": [
+        {
+          "hz": 1049.0047859433612,
+          "measuredHz": 1049.0050465971044,
+          "offsetHz": 0.0002606537432257028,
+          "amplitude": 0.12999999880803054
+        },
+        {
+          "hz": 1113.75,
+          "measuredHz": 1113.74976650907,
+          "offsetHz": -0.0002334909299861465,
+          "amplitude": 0.10400000907740194
+        }
+      ],
+      "independentPartialGapHz": 64.74521405663879
+    },
+    {
+      "file": "continuous-adjustment.f32",
+      "name": "continuous-110",
+      "samples": 80152,
+      "peak": 0.23398908972740173,
+      "rms": 0.11737173046981386,
+      "residualRms": 1.6742901555924275e-8,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.963022924999,
+          "offsetHz": 5.996203594804683e-5,
+          "amplitude": 0.12999996434700284
+        },
+        {
+          "hz": 1045.1853187924858,
+          "measuredHz": 1045.1853102072275,
+          "offsetHz": -8.585258228777093e-6,
+          "amplitude": 0.10399997751687223
+        }
+      ],
+      "independentPartialGapHz": 2.2223558295226984
+    },
+    {
+      "file": "continuous-adjustment.f32",
+      "name": "continuous-112",
+      "samples": 80152,
+      "peak": 0.23399865627288818,
+      "rms": 0.11547129980074995,
+      "residualRms": 1.6746660161890653e-8,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.9630229247591,
+          "offsetHz": 5.996179606881924e-5,
+          "amplitude": 0.12999996431568037
+        },
+        {
+          "hz": 1043.9785705436777,
+          "measuredHz": 1043.9784703780135,
+          "offsetHz": -0.00010016566420745221,
+          "amplitude": 0.10399997744521886
+        }
+      ],
+      "independentPartialGapHz": 1.0156075807148697
+    },
+    {
+      "file": "continuous-adjustment.f32",
+      "name": "continuous-114",
+      "samples": 257303,
+      "peak": 0.23399658501148224,
+      "rms": 0.11734120372784447,
+      "residualRms": 1.6841320823920725e-8,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.963022924737,
+          "offsetHz": 5.996177401357272e-5,
+          "amplitude": 0.12999996437378417
+        },
+        {
+          "hz": 1042.7732155801657,
+          "measuredHz": 1042.7731912584102,
+          "offsetHz": -2.432175551803084e-5,
+          "amplitude": 0.10399997748293224
+        }
+      ],
+      "independentPartialGapHz": 0.1897473827972155
+    },
+    {
+      "file": "continuous-adjustment.f32",
+      "name": "continuous-120",
+      "samples": 79638,
+      "peak": 0.23399829864501953,
+      "rms": 0.11875600044219449,
+      "residualRms": 1.675482902605706e-8,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.9630229249724,
+          "offsetHz": 5.9962009345326805e-5,
+          "amplitude": 0.12999996434018588
+        },
+        {
+          "hz": 1039.1654943241192,
+          "measuredHz": 1039.1654860227598,
+          "offsetHz": -8.301359457618673e-6,
+          "amplitude": 0.10399997746124222
+        }
+      ],
+      "independentPartialGapHz": 3.7974686388437036
+    },
+    {
+      "file": "chromium-desktop-full-112.f32",
+      "name": "full-112",
+      "samples": 77824,
+      "peak": 0.1478930115699768,
+      "rms": 0.07023330914456645,
+      "residualRms": 1.1021541267915463e-8,
+      "components": [
+        {
+          "hz": 260.74074074074076,
+          "measuredHz": 260.74075573152226,
+          "offsetHz": 1.4990781494361727e-5,
+          "amplitude": 0.07109699198108764
+        },
+        {
+          "hz": 521.4814814814815,
+          "measuredHz": 521.4815114635485,
+          "offsetHz": 2.9982066962475074e-5,
+          "amplitude": 0.02513658214333767
+        },
+        {
+          "hz": 782.2222222222223,
+          "measuredHz": 782.2222055871827,
+          "offsetHz": -1.663503962845425e-5,
+          "amplitude": 0.01368262300192063
+        },
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.9630229231725,
+          "offsetHz": 5.9960209455312e-5,
+          "amplitude": 0.008887124005902962
+        },
+        {
+          "hz": 1303.703703703704,
+          "measuredHz": 1303.7036759768152,
+          "offsetHz": -2.7726888674806105e-5,
+          "amplitude": 0.00635910868490737
+        },
+        {
+          "hz": 1564.4444444444446,
+          "measuredHz": 1564.4444111742837,
+          "offsetHz": -3.3270160884057987e-5,
+          "amplitude": 0.004837537425586904
+        },
+        {
+          "hz": 347.9928568478926,
+          "measuredHz": 347.99286452990395,
+          "offsetHz": 7.682011357701413e-6,
+          "amplitude": 0.05687759581876444
+        },
+        {
+          "hz": 695.9857136957852,
+          "measuredHz": 695.9857290616751,
+          "offsetHz": 1.5365889908025565e-5,
+          "amplitude": 0.02010926687704493
+        },
+        {
+          "hz": 1043.9785705436777,
+          "measuredHz": 1043.978470377786,
+          "offsetHz": -0.00010016589180850133,
+          "amplitude": 0.010946098015072441
+        },
+        {
+          "hz": 1391.9714273915704,
+          "measuredHz": 1391.9714581220521,
+          "offsetHz": 3.0730481739738025e-5,
+          "amplitude": 0.007109699487491079
+        },
+        {
+          "hz": 1739.964284239463,
+          "measuredHz": 1739.9641994356864,
+          "offsetHz": -8.480377664454863e-5,
+          "amplitude": 0.005087286947952166
+        },
+        {
+          "hz": 2087.9571410873555,
+          "measuredHz": 2087.9569407571475,
+          "offsetHz": -0.00020033020791743184,
+          "amplitude": 0.00387003018052151
+        }
+      ],
+      "independentPartialGapHz": 1.0156075807148697
+    },
+    {
+      "file": "firefox-phone-initial-110.f32",
+      "name": "initial-110",
+      "samples": 77824,
+      "peak": 0.23398062586784363,
+      "rms": 0.11851396239131123,
+      "residualRms": 1.0526655604330399e-7,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.9633749664445,
+          "offsetHz": 0.0004120034814150131,
+          "amplitude": 0.12999998665982476
+        },
+        {
+          "hz": 1045.1853187924858,
+          "measuredHz": 1045.1856432289735,
+          "offsetHz": 0.000324436487744606,
+          "amplitude": 0.1039999952296395
+        }
+      ],
+      "independentPartialGapHz": 2.2223558295226984
+    },
+    {
+      "file": "firefox-phone-adjusted-112.f32",
+      "name": "adjusted-112",
+      "samples": 77824,
+      "peak": 0.2339983433485031,
+      "rms": 0.12191716250601577,
+      "residualRms": 7.110519098399468e-8,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.963374939454,
+          "offsetHz": 0.0004119764910228696,
+          "amplitude": 0.12999998697800505
+        },
+        {
+          "hz": 1043.9785705436777,
+          "measuredHz": 1043.9784569118003,
+          "offsetHz": -0.00011363187741153524,
+          "amplitude": 0.10400000271258794
+        }
+      ],
+      "independentPartialGapHz": 1.0156075807148697
+    },
+    {
+      "file": "chromium-desktop-target.f32",
+      "name": "target",
+      "samples": 77824,
+      "peak": 0.027355045080184937,
+      "rms": 0.019343101245498897,
+      "residualRms": 1.768640632797622e-8,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.9630229247464,
+          "offsetHz": 5.9961783335893415e-5,
+          "amplitude": 0.027355039372630605
+        }
+      ],
+      "independentPartialGapHz": 0.0
+    },
+    {
+      "file": "firefox-phone-full-112.f32",
+      "name": "full-112",
+      "samples": 77824,
+      "peak": 0.14787453413009644,
+      "rms": 0.07026324229576665,
+      "residualRms": 6.722534882345278e-8,
+      "components": [
+        {
+          "hz": 260.74074074074076,
+          "measuredHz": 260.7410670149788,
+          "offsetHz": 0.00032627423803432976,
+          "amplitude": 0.07109697975809051
+        },
+        {
+          "hz": 521.4814814814815,
+          "measuredHz": 521.4813135478623,
+          "offsetHz": -0.00016793361919553718,
+          "amplitude": 0.025136665672276137
+        },
+        {
+          "hz": 782.2222222222223,
+          "measuredHz": 782.2223475242725,
+          "offsetHz": 0.00012530205026450858,
+          "amplitude": 0.013682600364790184
+        },
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.9633749532297,
+          "offsetHz": 0.00041199026668437,
+          "amplitude": 0.0088871092852999
+        },
+        {
+          "hz": 1303.703703703704,
+          "measuredHz": 1303.7031927029848,
+          "offsetHz": -0.0005110007191433397,
+          "amplitude": 0.006359114753597988
+        },
+        {
+          "hz": 1564.4444444444446,
+          "measuredHz": 1564.4446950511099,
+          "offsetHz": 0.00025060666530407616,
+          "amplitude": 0.004837537939456601
+        },
+        {
+          "hz": 347.9928568478926,
+          "measuredHz": 347.9928273900101,
+          "offsetHz": -2.945788247643577e-5,
+          "amplitude": 0.05687760804321869
+        },
+        {
+          "hz": 695.9857136957852,
+          "measuredHz": 695.9856547813112,
+          "offsetHz": -5.891447403882921e-5,
+          "amplitude": 0.020109268946265187
+        },
+        {
+          "hz": 1043.9785705436777,
+          "measuredHz": 1043.978456883115,
+          "offsetHz": -0.00011366056264705549,
+          "amplitude": 0.010946098223490068
+        },
+        {
+          "hz": 1391.9714273915704,
+          "measuredHz": 1391.971309558838,
+          "offsetHz": -0.0001178327324851125,
+          "amplitude": 0.007109700259056865
+        },
+        {
+          "hz": 1739.964284239463,
+          "measuredHz": 1739.9641369487717,
+          "offsetHz": -0.0001472906913022598,
+          "amplitude": 0.005087287094964082
+        },
+        {
+          "hz": 2087.9571410873555,
+          "measuredHz": 2087.956913767424,
+          "offsetHz": -0.0002273199315823149,
+          "amplitude": 0.0038700288334290994
+        }
+      ],
+      "independentPartialGapHz": 1.0156075807148697
+    },
+    {
+      "file": "chromium-desktop-stopped.f32",
+      "samples": 77824,
+      "peak": 0.0,
+      "stopped": true
+    },
+    {
+      "file": "chromium-desktop-pending-edit-10.f32",
+      "name": "pending-edit-10",
+      "samples": 77824,
+      "peak": 0.2339906394481659,
+      "rms": 0.11771583475171953,
+      "residualRms": 6.819864167426112e-8,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.963022925537,
+          "offsetHz": 5.996257391416293e-5,
+          "amplitude": 0.12999996519960613
+        },
+        {
+          "hz": 1107.3352720267933,
+          "measuredHz": 1107.3353435845186,
+          "offsetHz": 7.155772527767112e-5,
+          "amplitude": 0.10399997672207856
+        }
+      ],
+      "independentPartialGapHz": 64.37230906383037
+    },
+    {
+      "file": "firefox-phone-target.f32",
+      "name": "target",
+      "samples": 77824,
+      "peak": 0.19970539212226868,
+      "rms": 0.14121192765113885,
+      "residualRms": 9.702535013926033e-8,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.963374966454,
+          "offsetHz": 0.00041200349096470745,
+          "amplitude": 0.19970536198593744
+        }
+      ],
+      "independentPartialGapHz": 0.0
+    },
+    {
+      "file": "chromium-desktop-tighten-10.f32",
+      "name": "tighten-10",
+      "samples": 77824,
+      "peak": 0.23399704694747925,
+      "rms": 0.11777851957366685,
+      "residualRms": 7.123942035900811e-8,
+      "components": [
+        {
+          "hz": 1049.0047859433612,
+          "measuredHz": 1049.0047791977938,
+          "offsetHz": -6.745567361576832e-6,
+          "amplitude": 0.12999996480017928
+        },
+        {
+          "hz": 1113.75,
+          "measuredHz": 1113.749945348601,
+          "offsetHz": -5.4651399068461615e-5,
+          "amplitude": 0.10399997865548191
+        }
+      ],
+      "independentPartialGapHz": 64.74521405663879
+    },
+    {
+      "file": "firefox-phone-stopped.f32",
+      "samples": 77824,
+      "peak": 0.0,
+      "stopped": true
+    },
+    {
+      "file": "firefox-phone-pending-edit-10.f32",
+      "name": "pending-edit-10",
+      "samples": 77824,
+      "peak": 0.23398983478546143,
+      "rms": 0.11771597177281833,
+      "residualRms": 1.0363584731948662e-7,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.9633749662398,
+          "offsetHz": 0.0004120032767787052,
+          "amplitude": 0.12999998660469583
+        },
+        {
+          "hz": 1107.3352720267933,
+          "measuredHz": 1107.3355795260459,
+          "offsetHz": 0.0003074992525853304,
+          "amplitude": 0.10399999613976739
+        }
+      ],
+      "independentPartialGapHz": 64.37230906383037
+    },
+    {
+      "file": "chromium-phone-initial-110.f32",
+      "name": "initial-110",
+      "samples": 77824,
+      "peak": 0.23397913575172424,
+      "rms": 0.11851370836832752,
+      "residualRms": 7.196225276967406e-8,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.9630229253185,
+          "offsetHz": 5.996235540806083e-5,
+          "amplitude": 0.12999996545152595
+        },
+        {
+          "hz": 1045.1853187924858,
+          "measuredHz": 1045.185310206281,
+          "offsetHz": -8.586204785387963e-6,
+          "amplitude": 0.10399997765204717
+        }
+      ],
+      "independentPartialGapHz": 2.2223558295226984
+    },
+    {
+      "file": "firefox-phone-tighten-10.f32",
+      "name": "tighten-10",
+      "samples": 77824,
+      "peak": 0.23399579524993896,
+      "rms": 0.11777867340867049,
+      "residualRms": 4.7841759393046646e-8,
+      "components": [
+        {
+          "hz": 1049.0047859433612,
+          "measuredHz": 1049.0050465971044,
+          "offsetHz": 0.0002606537432257028,
+          "amplitude": 0.12999999880803054
+        },
+        {
+          "hz": 1113.75,
+          "measuredHz": 1113.74976650907,
+          "offsetHz": -0.0002334909299861465,
+          "amplitude": 0.10400000907740194
+        }
+      ],
+      "independentPartialGapHz": 64.74521405663879
+    },
+    {
+      "file": "chromium-phone-adjusted-112.f32",
+      "name": "adjusted-112",
+      "samples": 77824,
+      "peak": 0.23399414122104645,
+      "rms": 0.12305477110726766,
+      "residualRms": 1.7166110002373577e-8,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.963022916891,
+          "offsetHz": 5.99539280301542e-5,
+          "amplitude": 0.12999996543863493
+        },
+        {
+          "hz": 1043.9785705436777,
+          "measuredHz": 1043.978470390958,
+          "offsetHz": -0.00010015271982410923,
+          "amplitude": 0.10399997820543791
+        }
+      ],
+      "independentPartialGapHz": 1.0156075807148697
+    },
+    {
+      "file": "chromium-phone-full-112.f32",
+      "name": "full-112",
+      "samples": 77824,
+      "peak": 0.14775697886943817,
+      "rms": 0.07028482137179681,
+      "residualRms": 1.075646760741697e-8,
+      "components": [
+        {
+          "hz": 260.74074074074076,
+          "measuredHz": 260.7407557309003,
+          "offsetHz": 1.4990159513672552e-5,
+          "amplitude": 0.07109699205821057
+        },
+        {
+          "hz": 521.4814814814815,
+          "measuredHz": 521.4815114616464,
+          "offsetHz": 2.9980164867993153e-5,
+          "amplitude": 0.025136582219501775
+        },
+        {
+          "hz": 782.2222222222223,
+          "measuredHz": 782.2222055865994,
+          "offsetHz": -1.6635622841931763e-5,
+          "amplitude": 0.01368262303985648
+        },
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.9630229218371,
+          "offsetHz": 5.995887408971612e-5,
+          "amplitude": 0.008887123993537159
+        },
+        {
+          "hz": 1303.703703703704,
+          "measuredHz": 1303.7036759798846,
+          "offsetHz": -2.7723819357561297e-5,
+          "amplitude": 0.00635910868580951
+        },
+        {
+          "hz": 1564.4444444444446,
+          "measuredHz": 1564.44441117314,
+          "offsetHz": -3.3271304573645466e-5,
+          "amplitude": 0.004837537436071
+        },
+        {
+          "hz": 347.9928568478926,
+          "measuredHz": 347.9928645305396,
+          "offsetHz": 7.682646980811114e-6,
+          "amplitude": 0.05687759585706865
+        },
+        {
+          "hz": 695.9857136957852,
+          "measuredHz": 695.9857290610585,
+          "offsetHz": 1.5365273270617763e-5,
+          "amplitude": 0.02010926687996749
+        },
+        {
+          "hz": 1043.9785705436777,
+          "measuredHz": 1043.97847037957,
+          "offsetHz": -0.0001001641078346438,
+          "amplitude": 0.010946098045217824
+        },
+        {
+          "hz": 1391.9714273915704,
+          "measuredHz": 1391.9714581220867,
+          "offsetHz": 3.073051630053669e-5,
+          "amplitude": 0.007109699515601865
+        },
+        {
+          "hz": 1739.964284239463,
+          "measuredHz": 1739.9641994394872,
+          "offsetHz": -8.479997586618993e-5,
+          "amplitude": 0.005087286964163116
+        },
+        {
+          "hz": 2087.9571410873555,
+          "measuredHz": 2087.9569407572217,
+          "offsetHz": -0.00020033013379361364,
+          "amplitude": 0.0038700301531037033
+        }
+      ],
+      "independentPartialGapHz": 1.0156075807148697
+    },
+    {
+      "file": "chromium-phone-target.f32",
+      "name": "target",
+      "samples": 77824,
+      "peak": 0.036229975521564484,
+      "rms": 0.025618416904479555,
+      "residualRms": 1.6841442788471012e-8,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.9630229252305,
+          "offsetHz": 5.9962267414448434e-5,
+          "amplitude": 0.03622994131547947
+        }
+      ],
+      "independentPartialGapHz": 0.0
+    },
+    {
+      "file": "chromium-phone-stopped.f32",
+      "samples": 77824,
+      "peak": 0.0,
+      "stopped": true
+    },
+    {
+      "file": "chromium-phone-pending-edit-10.f32",
+      "name": "pending-edit-10",
+      "samples": 77824,
+      "peak": 0.2339906394481659,
+      "rms": 0.11771583475171953,
+      "residualRms": 6.819864167426112e-8,
+      "components": [
+        {
+          "hz": 1042.962962962963,
+          "measuredHz": 1042.963022925537,
+          "offsetHz": 5.996257391416293e-5,
+          "amplitude": 0.12999996519960613
+        },
+        {
+          "hz": 1107.3352720267933,
+          "measuredHz": 1107.3353435845186,
+          "offsetHz": 7.155772527767112e-5,
+          "amplitude": 0.10399997672207856
+        }
+      ],
+      "independentPartialGapHz": 64.37230906383037
+    },
+    {
+      "file": "chromium-phone-tighten-10.f32",
+      "name": "tighten-10",
+      "samples": 77824,
+      "peak": 0.23399704694747925,
+      "rms": 0.11777851957366685,
+      "residualRms": 7.123942035900811e-8,
+      "components": [
+        {
+          "hz": 1049.0047859433612,
+          "measuredHz": 1049.0047791977938,
+          "offsetHz": -6.745567361576832e-6,
+          "amplitude": 0.12999996480017928
+        },
+        {
+          "hz": 1113.75,
+          "measuredHz": 1113.749945348601,
+          "offsetHz": -5.4651399068461615e-5,
+          "amplitude": 0.10399997865548191
+        }
+      ],
+      "independentPartialGapHz": 64.74521405663879
+    }
+  ]
+}

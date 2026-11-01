@@ -13,7 +13,7 @@ A tuning name tells you how strings relate; it does not fix their absolute pitch
 
 [Practice retuning by ear](https://antonsoo.github.io/sammu/practice.html): adjust the prescribed string while listening, then reveal the two partials that the model brings into alignment. Your tentative setting stays separate from the exact tuning. Keep the sound running as you move the slider or use the keyboard; switch to isolated partials without restarting. A fixed before/after comparison and a separately played model reference remain available. It does not assign a hearing score.
 
-The continuous controls are a local source improvement. [The current review](docs/live-review.md) separates the verified local edition from earlier public editions.
+The [current audit](docs/audit.md) records the listening exercise, audio interruption fixes, verified offline repair and portable-reading recovery, with separate source, build and public-delivery evidence.
 
 ## Start locally
 
@@ -42,7 +42,7 @@ npm run preview
 - Complete a seven-step cycle and hear the difference between a returning name and a returning frequency. No pitch is silently normalized between tunings.
 - Inspect every exact fraction and every action, or share a bounded URL containing the initial settings and complete move sequence.
 - Save a standalone HTML study with embedded fonts, audio, original diagrams, all intermediate pitches, nine Akkadian word notes, three source-preservation cases and font licenses. The practice worksheet also records your tentative adjustment separately. Print either to PDF, or download the individual records and audio.
-- Use the workshop offline after its complete edition has been saved. The external scholarly articles and museum records remain online links.
+- Use the workshop offline after its complete edition has been verified. Check or repair missing and damaged saved files without losing your experiment. External scholarly articles and museum records remain online links.
 
 ## How the realization works
 
@@ -80,7 +80,7 @@ opposite operation: restores the exact preceding pitches
 
 This is a consequence of the chosen ratio model. It is not a claim that ancient musicians measured these fractions, used a modern absolute pitch standard, or followed an entire same-direction cycle during a performance.
 
-`src/core/` contains the exact tuning, URL, audio-plan and export-record logic, separate from the DOM. Fractions use `BigInt`. Sessions are limited to 28 operations. The live player renders a finite `AudioBuffer`; downloaded mono PCM16 WAVs use the same synthesis at 48 kHz. The six-partial colour is an additive synthetic signal with a decaying envelope, not a sampled ancient instrument.
+`src/core/` contains the exact tuning, URL, audio-plan and export-record logic, separate from the DOM. Fractions use `BigInt`. Sessions are limited to 28 operations. Fixed comparisons render finite `AudioBuffer`s; downloaded mono PCM16 WAVs use the same synthesis at 48 kHz. Their six-partial colour is an additive synthetic signal with a decaying envelope. Continuous listening uses the separate sustained oscillator model described below.
 
 ## Evidence and interpretation
 
@@ -122,6 +122,9 @@ npm run verify:live-audio -- /tmp/sammu-live-review/browser.json
 python3 -m pip install -r scripts/requirements-audio.txt
 python3 scripts/audio-oracle.py /tmp/sammu-review/browser.json
 python3 scripts/audio-oracle.py /tmp/sammu-practice-review/browser.json
+npm run test:assets -- /tmp/sammu-assets/receipt.json
+npm run test:audio-lifecycle -- dist /tmp/sammu-lifecycle/receipt.json after
+npm run verify:audio-lifecycle -- /tmp/sammu-lifecycle/receipt.json
 ```
 
 The browser script uses Playwright’s installed Chromium and Firefox. On a new machine, install its browsers with `npx playwright install --with-deps chromium firefox` first. Python 3.12 and NumPy 2.4.4 are used for the audio review; the exact-ratio oracle needs only Python’s standard library. For an isolated Python environment, install the requirements in a venv rather than the system environment.

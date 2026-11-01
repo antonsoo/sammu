@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Verify retained font/license bytes before saving readings; cancellable preparation, finite deadline and retry on both entry pages.
+- Inspect actual offline bytes, withdraw stale readiness, and repair damaged/missing files or a failed first installation without discarding the experiment.
+- Release stopped audio to zero, disconnect interrupted graphs, and recover explicitly from closed contexts for continuous and fixed playback.
+- Correct main and saved-reading attribution to Anthony Mercer.
 - Continuous retuning practice: move the string while the pair sounds, isolate partials without restarting, and hear the beats change through the alignment.
 - Finite, phase-continuous synthesis with quiet transitions, explicit stopping, interruption handling and a one-minute end.
 - Audio-thread output capture checked against independent tuning frequencies, with desktop/phone controls, startup races, offline operation and unchanged fixed-setting exports reviewed.

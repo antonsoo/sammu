@@ -1,0 +1,82 @@
+{
+  "runtimeSource": "3ce4352f00b9246e865eb6145860e4e1c7672ce7",
+  "cleanInstall": true,
+  "node": "24.22.1",
+  "npm": "11.19.1",
+  "node26BuildByteIdentical": true,
+  "checks": [
+    "lint",
+    "strict TypeScript",
+    "13 focused tests",
+    "production build",
+    "812 exact tuning states",
+    "672 practice cases"
+  ],
+  "files": [
+    {
+      "path": "assets/main-BbhlNGNd.js",
+      "bytes": 9949,
+      "sha256": "e04bcff61daebaaebed1013accce04f4484c4cab83b356eafd590c7bc5b61552"
+    },
+    {
+      "path": "assets/practice-8SbswKJw.js",
+      "bytes": 8796,
+      "sha256": "b93714f5e29dab6c4c0c2702ac45e9f47e044483be1bcbe12f92042044f76d4a"
+    },
+    {
+      "path": "assets/practice-CC_8shvY.css",
+      "bytes": 6047,
+      "sha256": "a82578e2763570888723e94d5962e04e783d600dbad160d6fdf17e23fc11be32"
+    },
+    {
+      "path": "assets/study-download-B-RTLr-3.css",
+      "bytes": 16248,
+      "sha256": "0ff7854c625e770849ceca28ed7f57353070da3f6858277d5b26f8c9d625c93d"
+    },
+    {
+      "path": "assets/study-download-CejFGERR.js",
+      "bytes": 44553,
+      "sha256": "9aaaa3ccd177d47b041bd285a1d7a2f15542adb23899ae07ec6ff7f8bf910759"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 252,
+      "sha256": "7d2537517a21b00b09acab68534fadca8a86192aec5e1914accd3e1628303c67"
+    },
+    {
+      "path": "fonts/Atkinson-OFL.txt",
+      "bytes": 4431,
+      "sha256": "aca6a428580965d2297d1b718042dd427c2a9443ece3b0d02d758e161e0c4030"
+    },
+    {
+      "path": "fonts/AtkinsonHyperlegibleNext.ttf",
+      "bytes": 114552,
+      "sha256": "5a455d1cfa099b601ab70751bb9673e8fe1854dc4500c80e1a220d0d75e31745"
+    },
+    {
+      "path": "fonts/NotoSerif-OFL.txt",
+      "bytes": 4396,
+      "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a"
+    },
+    {
+      "path": "fonts/NotoSerif-Regular.ttf",
+      "bytes": 444064,
+      "sha256": "5473d2e43bdd018ee124a4addba8091fd0a29894b121cbb741023af6549662b6"
+    },
+    {
+      "path": "index.html",
+      "bytes": 18089,
+      "sha256": "dae76ba4f278924552f4a4f462ead20cbbf7846400c4cf840c0244efcf0beee6"
+    },
+    {
+      "path": "practice.html",
+      "bytes": 10134,
+      "sha256": "3c32c43818a1fbd02fa885c50c15d4e4e59961839a83f2b4899c3ba4a2f81087"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 7610,
+      "sha256": "361dc8cf3797818fb2ef4aa8acf6aaa5858f5d4f2358e92a864d07facbdbabcb"
+    }
+  ]
+}

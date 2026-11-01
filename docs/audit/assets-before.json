@@ -1,0 +1,37 @@
+{
+  "source": "e6e75e8",
+  "rows": [
+    {
+      "engine": "chromium",
+      "statusBefore": "Ready offline · workshop, practice, diagrams, fonts and source notes saved. External papers still need a connection.",
+      "wrongFontWorkerInspection": {
+        "type": "SAMMU_EDITION",
+        "edition": "b734a556f49ddc2c0fed7e368c723c6097cf5f9a31e79534613b85e9a224305d",
+        "complete": true
+      },
+      "wrongFontExported": true,
+      "missingInspection": {
+        "type": "SAMMU_EDITION",
+        "edition": "b734a556f49ddc2c0fed7e368c723c6097cf5f9a31e79534613b85e9a224305d",
+        "complete": false
+      },
+      "statusAfterCacheLoss": "Ready offline · workshop, practice, diagrams, fonts and source notes saved. External papers still need a connection."
+    },
+    {
+      "engine": "firefox",
+      "statusBefore": "Ready offline · workshop, practice, diagrams, fonts and source notes saved. External papers still need a connection.",
+      "wrongFontWorkerInspection": {
+        "type": "SAMMU_EDITION",
+        "edition": "b734a556f49ddc2c0fed7e368c723c6097cf5f9a31e79534613b85e9a224305d",
+        "complete": true
+      },
+      "wrongFontExported": true,
+      "missingInspection": {
+        "type": "SAMMU_EDITION",
+        "edition": "b734a556f49ddc2c0fed7e368c723c6097cf5f9a31e79534613b85e9a224305d",
+        "complete": false
+      },
+      "statusAfterCacheLoss": "Ready offline · workshop, practice, diagrams, fonts and source notes saved. External papers still need a connection."
+    }
+  ]
+}

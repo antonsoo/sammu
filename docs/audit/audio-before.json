@@ -1,0 +1,116 @@
+{
+  "phase": "before",
+  "engines": [
+    {
+      "engine": "chromium",
+      "stops": [
+        {
+          "file": "chromium-stop-0.f32",
+          "lastSampleMagnitude": 0.0009259171783924103,
+          "captureSha256": "5c74d58fb9a40c9fd7a56700ea3571e25ccb7bb8f20767fc07ecb7168db9935a",
+          "cutoffSamples": [
+            -0.0006867717602290213, -0.0008156911935657263, -0.0009259171783924103, 0.0, 0.0, 0.0,
+            0.0
+          ],
+          "linearReleaseBound": 0.0001346530612244898,
+          "withinBound": false,
+          "exactSilenceAfterCutoff": true
+        },
+        {
+          "file": "chromium-stop-1.f32",
+          "lastSampleMagnitude": 7.869334513088688e-5,
+          "captureSha256": "625a746eafdd05738d504ef38569c4778e454812070e6a8dcc9aae0c3bd1a570",
+          "cutoffSamples": [
+            -0.00037841079756617546, -0.0002306597598362714, -7.869334513088688e-5, 0.0, 0.0, 0.0,
+            0.0
+          ],
+          "linearReleaseBound": 0.0001346530612244898,
+          "withinBound": true,
+          "exactSilenceAfterCutoff": true
+        },
+        {
+          "file": "chromium-stop-2.f32",
+          "lastSampleMagnitude": 7.869334513088688e-5,
+          "captureSha256": "625a746eafdd05738d504ef38569c4778e454812070e6a8dcc9aae0c3bd1a570",
+          "cutoffSamples": [
+            -0.00037841079756617546, -0.0002306597598362714, -7.869334513088688e-5, 0.0, 0.0, 0.0,
+            0.0
+          ],
+          "linearReleaseBound": 0.0001346530612244898,
+          "withinBound": true,
+          "exactSilenceAfterCutoff": true
+        },
+        {
+          "file": "chromium-comparison-stop.f32",
+          "lastSampleMagnitude": 0.18063104152679443,
+          "captureSha256": "5ee190453be7e28e75c5f6f01069fc74c5b7ac42121014e2fe5041390cb3ce25",
+          "cutoffSamples": [
+            -0.20064854621887207, -0.19295725226402283, -0.18063104152679443, 0.0, 0.0, 0.0, 0.0
+          ],
+          "linearReleaseBound": 0.00029678458049886623,
+          "withinBound": false,
+          "exactSilenceAfterCutoff": true
+        }
+      ],
+      "resumedWithoutStartPeakAfter8ms": 0.06006157770752907,
+      "comparisonResumedWithoutStartPeakAfter8ms": null,
+      "explicitClosedContextRetry": false
+    },
+    {
+      "engine": "firefox",
+      "stops": [
+        {
+          "file": "firefox-stop-0.f32",
+          "lastSampleMagnitude": 0.0006375466473400593,
+          "captureSha256": "43bb99f6d9e12dd1aab8c26d4193e03f23893b57c77b3b33e477a023452cfdd5",
+          "cutoffSamples": [
+            -0.0003221879596821964, -0.00048568291822448373, -0.0006375466473400593, 0.0, 0.0, 0.0,
+            0.0
+          ],
+          "linearReleaseBound": 0.0001346530612244898,
+          "withinBound": false,
+          "exactSilenceAfterCutoff": true
+        },
+        {
+          "file": "firefox-stop-1.f32",
+          "lastSampleMagnitude": 0.0011126811150461435,
+          "captureSha256": "25d53643ec6e2703a333c470a806ae059eb628566c97056917c83c945c7557b1",
+          "cutoffSamples": [
+            -0.001093570259399712, -0.0011154600651934743, -0.0011126811150461435, 0.0, 0.0, 0.0,
+            0.0
+          ],
+          "linearReleaseBound": 0.0001346530612244898,
+          "withinBound": false,
+          "exactSilenceAfterCutoff": true
+        },
+        {
+          "file": "firefox-stop-2.f32",
+          "lastSampleMagnitude": 0.00044003507355228066,
+          "captureSha256": "f2d2f7aba5e427f4a714d645889808124b2b7955c3f24cd3146696c91f3170de",
+          "cutoffSamples": [
+            0.00015938679280225188, 0.0003034688998013735, 0.00044003507355228066, 0.0, 0.0, 0.0,
+            0.0
+          ],
+          "linearReleaseBound": 0.0001346530612244898,
+          "withinBound": false,
+          "exactSilenceAfterCutoff": true
+        },
+        {
+          "file": "firefox-comparison-stop.f32",
+          "lastSampleMagnitude": 0.03849693015217781,
+          "captureSha256": "b6c6e89aac118ab5b5864b347b0d3c6f57206422c4f84beb6ede6714d0f4ee15",
+          "cutoffSamples": [
+            0.049867894500494, 0.04459800198674202, 0.03849693015217781, 0.0, 0.0, 0.0, 0.0
+          ],
+          "linearReleaseBound": 0.00029678458049886623,
+          "withinBound": false,
+          "exactSilenceAfterCutoff": true
+        }
+      ],
+      "resumedWithoutStartPeakAfter8ms": 0.05966843664646149,
+      "comparisonResumedWithoutStartPeakAfter8ms": null,
+      "explicitClosedContextRetry": false
+    }
+  ],
+  "method": "Actual contiguous audio-thread samples; one-sample linear release bound; exact post-stop silence; resume probe after 8 ms; explicit retry"
+}

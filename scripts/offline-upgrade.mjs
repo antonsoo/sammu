@@ -36,6 +36,7 @@ let workerFiles = oldFiles;
 let fault = "none";
 let pending = [];
 let badResponses = [];
+let requests = [];
 const mime = {
   ".html": "text/html",
   ".js": "text/javascript",
@@ -62,6 +63,13 @@ const server = http.createServer((request, response) => {
     return;
   }
   const name = decodeURIComponent(url.pathname.slice("/sammu/".length)) || "index.html";
+  requests.push({
+    name,
+    at: Date.now(),
+    currentFiles: served === newFiles,
+    currentWorker: workerFiles === newFiles,
+    fault,
+  });
   const bytes = (name === "sw.js" ? workerFiles : served).get(name);
   if (!bytes) {
     response.writeHead(404).end();
@@ -146,6 +154,7 @@ try {
         fault = "none";
         pending = [];
         badResponses = [];
+        requests = [];
         const context = await browser.newContext();
         try {
           const oldPage = await context.newPage();
@@ -224,9 +233,19 @@ try {
             for (const item of pending.splice(0))
               if (!item.response.destroyed) send(item.response, item.name, item.bytes);
           }
+          let inspectionRetries = 0;
           await waitUntil(async () => {
-            const value = await inspect(current);
-            return value?.edition === newEdition && value.complete === true;
+            try {
+              const value = await inspect(current);
+              return value?.edition === newEdition && value.complete === true;
+            } catch (error) {
+              // An actual takeover can retire the worker addressed by this
+              // one inspection. Retry against the current controller; the
+              // final successful reply and visible state remain mandatory.
+              if (!String(error).includes("inspector timeout")) throw error;
+              inspectionRetries++;
+              return false;
+            }
           }, "The complete new worker never controlled the page.");
           const readyWorker = await inspect(current);
           if (phase === "after")
@@ -285,6 +304,7 @@ try {
             after,
             automaticallyAcknowledged: phase === "after",
             staleReplyIgnored: mode === "late",
+            inspectionRetries,
             wrongHttp200Responses: [...badResponses],
             expectedIntegrityConsoleErrors: consoleErrors,
             offlinePracticeAndMain: true,
@@ -293,6 +313,33 @@ try {
           process.stdout.write(
             `${engine}/${mode}: ${phase === "before" ? "stale readiness reproduced" : "readiness and offline upgrade verified"}.\n`,
           );
+        } catch (error) {
+          const pages = [];
+          for (const page of context.pages())
+            pages.push(
+              await page.evaluate(async () => {
+                const r = await navigator.serviceWorker.getRegistration();
+                const inventory = [];
+                for (const key of await caches.keys()) {
+                  const cache = await caches.open(key);
+                  inventory.push({ key, files: (await cache.keys()).map((r) => r.url) });
+                }
+                return {
+                  url: location.href,
+                  status: document.getElementById("offline-status")?.textContent,
+                  states: window.__workerStates,
+                  active: r?.active?.state,
+                  waiting: r?.waiting?.state,
+                  installing: r?.installing?.state,
+                  inventory,
+                };
+              }),
+            );
+          await writeFile(
+            path.join(path.dirname(output), `${engine}-${mode}-failure.json`),
+            JSON.stringify({ error: String(error), pages, requests }, null, 2),
+          );
+          throw error;
         } finally {
           await context.close();
         }

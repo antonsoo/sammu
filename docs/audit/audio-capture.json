@@ -1,0 +1,113 @@
+{
+  "phase": "after",
+  "rows": [
+    {
+      "engine": "chromium",
+      "resumed": {
+        "file": "chromium-resumed.f32",
+        "rate": 44100,
+        "firstFrame": 8704,
+        "samples": 24576,
+        "droppedStartupChunks": 0,
+        "resumeFrame": 11264
+      },
+      "stops": [
+        {
+          "file": "chromium-stop-0.f32",
+          "rate": 44100,
+          "firstFrame": 512,
+          "samples": 24576,
+          "droppedStartupChunks": 0,
+          "at": 0.22575963718820863
+        },
+        {
+          "file": "chromium-stop-1.f32",
+          "rate": 44100,
+          "firstFrame": 27136,
+          "samples": 24576,
+          "droppedStartupChunks": 0,
+          "at": 0.8991383219954648
+        },
+        {
+          "file": "chromium-stop-2.f32",
+          "rate": 44100,
+          "firstFrame": 53760,
+          "samples": 24576,
+          "droppedStartupChunks": 0,
+          "at": 1.4796371882086168
+        }
+      ],
+      "comparison": {
+        "file": "chromium-comparison-stop.f32",
+        "rate": 44100,
+        "firstFrame": 4096,
+        "samples": 24576,
+        "droppedStartupChunks": 0,
+        "at": 0.32185941043083904
+      },
+      "comparisonResumed": {
+        "file": "chromium-comparison-resumed.f32",
+        "rate": 44100,
+        "firstFrame": 36864,
+        "samples": 24576,
+        "droppedStartupChunks": 0,
+        "resumeFrame": 39424
+      },
+      "recoveredClosed": true
+    },
+    {
+      "engine": "firefox",
+      "resumed": {
+        "file": "firefox-resumed.f32",
+        "rate": 44100,
+        "firstFrame": 11008,
+        "samples": 24576,
+        "droppedStartupChunks": 0,
+        "resumeFrame": 12416
+      },
+      "stops": [
+        {
+          "file": "firefox-stop-0.f32",
+          "rate": 44100,
+          "firstFrame": 1920,
+          "samples": 24576,
+          "droppedStartupChunks": 0,
+          "at": 0.2721995464852608
+        },
+        {
+          "file": "firefox-stop-1.f32",
+          "rate": 44100,
+          "firstFrame": 30848,
+          "samples": 24576,
+          "droppedStartupChunks": 0,
+          "at": 0.9571882086167801
+        },
+        {
+          "file": "firefox-stop-2.f32",
+          "rate": 44100,
+          "firstFrame": 58368,
+          "samples": 24576,
+          "droppedStartupChunks": 0,
+          "at": 1.5841269841269843
+        }
+      ],
+      "comparison": {
+        "file": "firefox-comparison-stop.f32",
+        "rate": 44100,
+        "firstFrame": 4224,
+        "samples": 24576,
+        "droppedStartupChunks": 0,
+        "at": 0.33346938775510204
+      },
+      "comparisonResumed": {
+        "file": "firefox-comparison-resumed.f32",
+        "rate": 44100,
+        "firstFrame": 38528,
+        "samples": 24576,
+        "droppedStartupChunks": 0,
+        "resumeFrame": 41344
+      },
+      "recoveredClosed": true
+    }
+  ]
+}

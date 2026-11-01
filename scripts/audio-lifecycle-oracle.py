@@ -5,6 +5,7 @@ the maximum possible signal. A stop must leave exact digital silence. Capture
 coordinates come from render frames, not wall-clock guesses.
 """
 import array
+import hashlib
 import json
 import math
 from pathlib import Path
@@ -30,6 +31,8 @@ def inspect(source):
             bound = (.26 / .02 if comparison else .234 / .04) / entry['rate'] + 2e-6
             jump = abs(samples[cutoff - 1])
             stops.append({'file': entry['file'], 'lastSampleMagnitude': jump,
+                          'captureSha256': hashlib.sha256((source.parent / entry['file']).read_bytes()).hexdigest(),
+                          'cutoffSamples': list(samples[cutoff - 3:cutoff + 4]),
                           'linearReleaseBound': bound, 'withinBound': jump <= bound,
                           'exactSilenceAfterCutoff': True})
         entry = row['resumed']
