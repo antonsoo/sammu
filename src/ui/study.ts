@@ -158,7 +158,7 @@ ${CLAUSES.map((clause) => `<article class="study-clause"><h3 lang="akk-Latn">${h
 <pre>${html(fonts.licenses)}</pre>
 </details>
 </main>
-<footer>Original code, diagrams and synthesis © 2026 Anthony Mercer · MIT. Source articles and photographs are linked, not redistributed. Edition ${html(edition)}.</footer>
+<footer>Original code, diagrams and synthesis © 2026 Anthony Mercer · PolyForm Noncommercial. Source articles and photographs are linked, not redistributed. Edition ${html(edition)}.</footer>
 </body>
 </html>`;
 }

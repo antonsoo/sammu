@@ -2,7 +2,7 @@
 
 **Follow an ancient Mesopotamian retuning procedure, one string at a time.**
 
-[![MIT license](https://img.shields.io/badge/license-MIT-173441)](LICENSE)
+[![PolyForm Noncommercial license](https://img.shields.io/badge/license-PolyForm%20Noncommercial-173441)](LICENSE)
 [![Live workshop](https://img.shields.io/badge/listen-live-a23e26)](https://antonsoo.github.io/sammu/)
 
 A tuning name tells you how strings relate; it does not fix their absolute pitches. Sammû makes that distinction audible. Test a pair, loosen or tighten the prescribed string, compare the **same pair** before and after, and follow the reconstructed seven-tuning procedure from Old Babylonian manuscripts found at Ur.
@@ -137,4 +137,6 @@ Please preserve the distinction between source text, scholarly reconstruction an
 
 ## License
 
-Original code, diagrams and synthesis: [MIT](LICENSE), © 2026 Anthony Mercer. Self-hosted fonts: SIL Open Font License 1.1, with notices in `public/fonts/` and in exported studies. Modern scholarship, photographs and recordings linked by the app retain their respective rights.
+New versions are released under the [PolyForm Noncommercial License 1.0.0](LICENSE). It is free for any noncommercial purpose, including personal study, teaching and research, and for use by charities, schools, universities, research organizations and government institutions. Commercial use needs written permission from Anthony Mercer (anthony@praviel.com). Versions up to commit [`9f04dbf`](https://github.com/antonsoo/sammu/tree/9f04dbf) (2026-11-01) were released under the MIT License, and copies of those versions keep it.
+
+Original code, diagrams and synthesis: [PolyForm Noncommercial 1.0.0](LICENSE), © 2026 Anthony Mercer. Self-hosted fonts: SIL Open Font License 1.1, with notices in `public/fonts/` and in exported studies. Modern scholarship, photographs and recordings linked by the app retain their respective rights.
