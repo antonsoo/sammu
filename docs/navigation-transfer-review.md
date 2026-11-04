@@ -83,6 +83,12 @@ and repair fit the bounded transfer window. The illustrated-reading downloader
 uses the same policy, verifies retained font/license identities, and keeps a
 snapshot while the learner continues working.
 
+A subsequent hosted transport-cut check found that the older bench/practice
+readings named the project license but did not embed its complete terms. They
+now carry the same full original license as the route reading, alongside both
+complete font notices. This packaging correction changes the build edition;
+the initial corrected receipts below retain their actual earlier edition IDs.
+
 ## Operated verification
 
 ```sh

@@ -249,6 +249,15 @@ try {
           });
         await saved.screenshot({ path: path.join(directory, `${tag}-disk.png`), fullPage: true });
         assert.deepEqual(requests, []);
+        let canonicalEntrySha256 = null;
+        if (process.env.SAMMU_BASE) {
+          const expected = await readFile(path.join(root, "dist/index.html"));
+          const response = await fetch(base, { signal: AbortSignal.timeout(20000) });
+          assert.equal(response.status, 200);
+          const bytes = Buffer.from(await response.arrayBuffer());
+          assert.deepEqual(bytes, expected, "canonical entry changed after the hosted journey");
+          canonicalEntrySha256 = hash(bytes);
+        }
         report.journeys.push({
           browser: name,
           width,
@@ -257,6 +266,7 @@ try {
           offline: true,
           disk: true,
           pageErrors: errors,
+          canonicalEntrySha256,
         });
         await disk.close();
         await context.close();

@@ -46,7 +46,8 @@
     "test:navigation": "node scripts/navigation-audit.mjs",
     "test:transfers": "node scripts/transfer-audit.mjs",
     "test:saved-edition": "node scripts/saved-edition-audit.mjs",
-    "test:control-race": "node scripts/control-race-audit.mjs"
+    "test:control-race": "node scripts/control-race-audit.mjs",
+    "test:public-outage": "node scripts/public-outage.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",

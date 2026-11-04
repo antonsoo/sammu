@@ -1,3 +1,4 @@
+import license from "../../LICENSE?raw";
 import { CLAUSES, MODEL_STATEMENT, SOURCES, WORDS } from "../content";
 import { type SoundPlan, wav } from "../core/audio";
 import { type Practice, practiceLink } from "../core/practice";
@@ -157,8 +158,12 @@ ${CLAUSES.map((clause) => `<article class="study-clause"><h3 lang="akk-Latn">${h
 <summary>Embedded font licenses · SIL Open Font License 1.1</summary>
 <pre>${html(fonts.licenses)}</pre>
 </details>
+<details>
+<summary>License for original code, diagrams and synthesis</summary>
+<pre>${html(license)}</pre>
+</details>
 </main>
-<footer>Original code, diagrams and synthesis © 2026 Anthony Mercer · PolyForm Noncommercial. Source articles and photographs are linked, not redistributed. Edition ${html(edition)}.</footer>
+<footer>Original code, diagrams and synthesis © 2026 Anthony Mercer · PolyForm Noncommercial 1.0.0. Free for noncommercial use; commercial use needs permission from anthony@praviel.com. Source articles and photographs are linked, not redistributed. Edition ${html(edition)}.</footer>
 </body>
 </html>`;
 }
