@@ -1,11 +1,95 @@
+import { OFFLINE_OPERATION_MS, TRANSFER_IDLE_MS } from "./core/offline-policy";
+
 interface EditionState {
   type?: string;
   edition?: string;
   instance?: string;
   sequence?: number;
   complete?: boolean;
+  entries?: readonly string[];
   repairing?: boolean;
   failures?: readonly { path: string; reason: "missing" | "damaged" }[];
+}
+
+/** serviceWorker.ready never rejects when a first installation fails. */
+function activated(registration: ServiceWorkerRegistration, signal: AbortSignal): Promise<void> {
+  if (signal.aborted) return Promise.reject(signal.reason);
+  if (registration.active?.state === "activated") return Promise.resolve();
+  const worker = registration.installing ?? registration.waiting ?? registration.active;
+  if (!worker) return Promise.reject(new Error("No installing offline edition."));
+  return new Promise((resolve, reject) => {
+    const cleanup = () => {
+      worker.removeEventListener("statechange", check);
+      signal.removeEventListener("abort", abort);
+    };
+    const abort = () => {
+      cleanup();
+      reject(signal.reason);
+    };
+    const check = () => {
+      if (worker.state === "activated") {
+        cleanup();
+        resolve();
+      } else if (worker.state === "redundant") {
+        cleanup();
+        reject(new Error("Offline installation failed."));
+      }
+    };
+    worker.addEventListener("statechange", check);
+    signal.addEventListener("abort", abort, { once: true });
+    check();
+  });
+}
+
+/** A navigation can outlive activate's claim snapshot, notably in Firefox. */
+function connect(registration: ServiceWorkerRegistration, signal: AbortSignal): Promise<void> {
+  if (navigator.serviceWorker.controller) return Promise.resolve();
+  const worker = registration.active;
+  if (!worker) return Promise.reject(new Error("No active offline edition."));
+  return new Promise((resolve, reject) => {
+    const channel = new MessageChannel();
+    const cleanup = () => {
+      clearTimeout(timer);
+      channel.port1.close();
+      navigator.serviceWorker.removeEventListener("controllerchange", check);
+      signal.removeEventListener("abort", abort);
+    };
+    const check = () => {
+      if (navigator.serviceWorker.controller) {
+        cleanup();
+        resolve();
+      }
+    };
+    const abort = () => {
+      cleanup();
+      reject(signal.reason);
+    };
+    const timer = setTimeout(() => {
+      cleanup();
+      reject(new Error("Offline worker did not connect."));
+    }, 8000);
+    channel.port1.onmessage = (event: MessageEvent<EditionState>) => {
+      check();
+      // Legacy workers answer inspection but cannot perform this handshake.
+      if (!navigator.serviceWorker.controller && !event.data.entries) {
+        cleanup();
+        reject(new Error("Reload to connect the saved worker."));
+      }
+    };
+    navigator.serviceWorker.addEventListener("controllerchange", check);
+    signal.addEventListener("abort", abort, { once: true });
+    try {
+      worker.postMessage({ type: "SAMMU_INSPECT", edition: __SAMMU_EDITION__, claim: true }, [
+        channel.port2,
+      ]);
+    } catch (error) {
+      cleanup();
+      reject(error);
+    }
+
+    if (signal.aborted) abort();
+    else check();
+  });
 }
 
 export async function offline(status: HTMLElement): Promise<void> {
@@ -22,6 +106,7 @@ export async function offline(status: HTMLElement): Promise<void> {
   let busy = false;
   let requestedRepair = false;
   let installation: Promise<void> | undefined;
+  let reloadEdition = false;
   const unavailable = "Offline saving could not be checked. Reconnect and repair the offline copy.";
 
   function show(result: EditionState, worker: ServiceWorker): void {
@@ -34,10 +119,23 @@ export async function offline(status: HTMLElement): Promise<void> {
     const sequence = result.sequence ?? 0;
     if (sequence < lastSequence) return;
     lastSequence = sequence;
+    const entry =
+      location.pathname === import.meta.env.BASE_URL
+        ? `${import.meta.env.BASE_URL}index.html`
+        : location.pathname;
+    reloadEdition =
+      result.edition !== __SAMMU_EDITION__ &&
+      result.complete === true &&
+      result.entries?.includes(entry) === true;
     if (result.edition !== __SAMMU_EDITION__) {
-      status.textContent =
-        "This page and its saved edition differ. Save your experiment or copy its link, then reload online.";
-      if (repair) repair.hidden = true;
+      status.textContent = reloadEdition
+        ? "A different saved edition is ready. Reload it to keep your linked experiment and use its verified files."
+        : "This page and its saved edition differ. Keep a standalone reading or copy your experiment link, then reconnect and reload.";
+      if (repair) {
+        repair.hidden = !reloadEdition;
+        repair.disabled = false;
+        repair.textContent = "Reload saved edition";
+      }
       return;
     }
     busy = result.repairing === true;
@@ -82,7 +180,7 @@ export async function offline(status: HTMLElement): Promise<void> {
       const result = await new Promise<EditionState>((resolve, reject) => {
         timer = setTimeout(
           () => reject(new Error("Offline inspection timed out.")),
-          repairing ? 18000 : 8000,
+          repairing ? OFFLINE_OPERATION_MS : 8000,
         );
         channel.port1.onmessage = (event) => resolve(event.data);
         worker.postMessage(
@@ -118,30 +216,47 @@ export async function offline(status: HTMLElement): Promise<void> {
   async function install(): Promise<void> {
     if (installation) return installation;
     installation = (async () => {
-      let timer: ReturnType<typeof setTimeout> | undefined;
+      const controller = new AbortController();
+      const timer = setTimeout(
+        () => controller.abort(new Error("Offline install did not finish.")),
+        OFFLINE_OPERATION_MS,
+      );
+      let registrationTimer: ReturnType<typeof setTimeout> | undefined;
+      let registration: ServiceWorkerRegistration | undefined;
       if (repair) {
         repair.hidden = false;
         repair.disabled = true;
       }
       status.textContent = "Saving the offline edition… You can keep working.";
       try {
-        await Promise.race([
-          navigator.serviceWorker
-            .register(`${import.meta.env.BASE_URL}sw.js`)
-            .then(() => navigator.serviceWorker.ready),
+        registration = await Promise.race([
+          navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`, {
+            updateViaCache: "none",
+          }),
           new Promise<never>((_, reject) => {
-            timer = setTimeout(() => reject(new Error("Offline install did not finish.")), 12000);
+            registrationTimer = setTimeout(
+              () => reject(new Error("Offline worker did not arrive.")),
+              TRANSFER_IDLE_MS,
+            );
           }),
         ]);
+        clearTimeout(registrationTimer);
+        await activated(registration, controller.signal);
+        await connect(registration, controller.signal);
         await inspect();
       } catch {
         if (!navigator.serviceWorker.controller) {
-          status.textContent =
-            "Offline saving did not finish. Try saving it again online, or keep a standalone reading.";
-          if (repair) repair.textContent = "Try saving offline again";
+          reloadEdition = !!registration?.active;
+          status.textContent = reloadEdition
+            ? "An offline worker is active but has not connected to this page. Keep a reading or your experiment link, then reload online."
+            : "Offline saving did not finish. Try saving it again online, or keep a standalone reading.";
+          if (repair)
+            repair.textContent = reloadEdition ? "Reload page" : "Try saving offline again";
         }
       } finally {
         clearTimeout(timer);
+        clearTimeout(registrationTimer);
+        controller.abort();
         if (repair) repair.disabled = busy;
       }
     })().finally(() => {
@@ -150,10 +265,10 @@ export async function offline(status: HTMLElement): Promise<void> {
     return installation;
   }
 
-  repair?.addEventListener(
-    "click",
-    () => void (navigator.serviceWorker.controller ? inspect(true) : install()),
-  );
+  repair?.addEventListener("click", () => {
+    if (reloadEdition) location.reload();
+    else void (navigator.serviceWorker.controller ? inspect(true) : install());
+  });
   navigator.serviceWorker.addEventListener("controllerchange", () => void inspect());
   navigator.serviceWorker.addEventListener("message", (event: MessageEvent<EditionState>) => {
     const worker = navigator.serviceWorker.controller;

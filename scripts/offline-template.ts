@@ -1,9 +1,12 @@
+import { TRANSFER_IDLE_MS, TRANSFER_TOTAL_MS } from "../src/core/offline-policy.ts";
+
 /** Generate a classic worker whose own file is outside the retained inventory. */
 export function offlineScript(config: {
   edition: string;
   base: string;
   urls: readonly string[];
   integrity: Readonly<Record<string, string>>;
+  sizes: Readonly<Record<string, number>>;
 }): string {
   return (
     `/* Verified offline edition ${config.edition}. */
@@ -12,6 +15,9 @@ const EDITION = ${JSON.stringify(config.edition)};
 const BASE = ${JSON.stringify(config.base)};
 const FILES = ${JSON.stringify(config.urls)};
 const INTEGRITY = ${JSON.stringify(config.integrity)};
+const SIZES = ${JSON.stringify(config.sizes)};
+const TRANSFER_IDLE_MS = ${TRANSFER_IDLE_MS};
+const TRANSFER_TOTAL_MS = ${TRANSFER_TOTAL_MS};
 ` +
     `
 const INSTANCE = crypto.randomUUID();
@@ -27,6 +33,7 @@ async function valid(response, path) {
   if (!response || !response.ok) return false;
   try {
     const bytes = await response.clone().arrayBuffer();
+    if (bytes.byteLength !== SIZES[path]) return false;
     const digest = new Uint8Array(await crypto.subtle.digest("SHA-256", bytes));
     const value = "sha256-" + btoa(String.fromCharCode(...digest));
     return value === INTEGRITY[path];
@@ -40,6 +47,7 @@ async function publish(failures) {
     lastState = {
       type: "SAMMU_EDITION", edition: EDITION, instance: INSTANCE,
       sequence: ++sequence, complete: failures.length === 0, failures, repairing,
+      entries: FILES.filter(path => path.endsWith(".html")),
     };
     const clients = await self.clients.matchAll({ type: "window" });
     for (const client of clients) client.postMessage(lastState);
@@ -67,16 +75,53 @@ function audit() {
   return auditFlight;
 }
 
-async function networkFile(path) {
+async function networkFile(path, outerSignal) {
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 10000);
+  const abort = () => controller.abort(outerSignal.reason);
+  if (outerSignal?.aborted) abort();
+  else outerSignal?.addEventListener("abort", abort, { once: true });
+  let idle;
+  const progress = () => {
+    clearTimeout(idle);
+    idle = setTimeout(() => controller.abort(new Error("Offline transfer stopped progressing.")), TRANSFER_IDLE_MS);
+  };
+  const total = setTimeout(() => controller.abort(new Error("Offline transfer exceeded its total window.")), TRANSFER_TOTAL_MS);
+  let reader;
   try {
-    const response = await fetch(new Request(path, {
-      cache: "reload", integrity: INTEGRITY[path], signal: controller.signal,
-    }));
-    if (!await valid(response, path)) throw new Error("Unverified offline file: " + path);
-    return response;
-  } finally { clearTimeout(timer); }
+    progress();
+    // Native SRI can withhold the response until its entire body arrives. Read
+    // bounded chunks ourselves so active transfer and body inactivity differ.
+    const response = await fetch(new Request(path, { cache: "reload", signal: controller.signal }));
+    if (!response.ok || !response.body) throw new Error("Unavailable offline file: " + path);
+    reader = response.body.getReader();
+    const chunks = [];
+    let length = 0;
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      if (!value.length) continue;
+      length += value.length;
+      if (length > SIZES[path]) throw new Error("Oversized offline file: " + path);
+      chunks.push(value);
+      progress();
+    }
+    if (length !== SIZES[path]) throw new Error("Truncated offline file: " + path);
+    const bytes = new Uint8Array(length);
+    let offset = 0;
+    for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.length; }
+    const headers = new Headers(response.headers);
+    headers.delete("content-encoding");
+    headers.delete("content-length");
+    const verified = new Response(bytes, { status: response.status, statusText: response.statusText, headers });
+    if (!await valid(verified, path)) throw new Error("Unverified offline file: " + path);
+    return verified;
+  } finally {
+    clearTimeout(idle);
+    clearTimeout(total);
+    outerSignal?.removeEventListener("abort", abort);
+    controller.abort();
+    if (reader) { void reader.cancel().catch(() => {}); reader.releaseLock(); }
+  }
 }
 
 function repair() {
@@ -127,12 +172,21 @@ async function retained(path, allowNetwork) {
 
 self.addEventListener("install", event => {
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 10000);
-  const requests = FILES.map(url => new Request(url, {
-    cache: "reload", integrity: INTEGRITY[url], signal: controller.signal,
-  }));
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(requests))
-    .then(() => self.skipWaiting()).finally(() => clearTimeout(timer)));
+  const timer = setTimeout(() => controller.abort(), TRANSFER_TOTAL_MS);
+  event.waitUntil((async () => {
+    try {
+      // Publish no partial edition: every bounded response must verify before
+      // any entries are written, and a failed write removes the incomplete copy.
+      const responses = await Promise.all(FILES.map(path => networkFile(path, controller.signal)));
+      const cache = await caches.open(CACHE);
+      await Promise.all(FILES.map((path, i) => cache.put(path, responses[i])));
+      await self.skipWaiting();
+    } catch (error) {
+      controller.abort();
+      await caches.delete(CACHE);
+      throw error;
+    } finally { clearTimeout(timer); }
+  })());
 });
 
 self.addEventListener("activate", event => {
@@ -150,6 +204,7 @@ self.addEventListener("message", event => {
     // Old open pages may inspect the new worker, but cannot invalidate or
     // repair it using the previous edition's assumptions.
     const sameEdition = data.edition === EDITION;
+    if (data.claim) await self.clients.claim();
     if (sameEdition && data.invalidate) ++revision;
     const state = sameEdition && data.type === "SAMMU_REPAIR" ? await repair() : await audit();
     reply.postMessage(state);
@@ -165,15 +220,11 @@ self.addEventListener("fetch", event => {
   const path = url.pathname === BASE ? BASE + "index.html" : url.pathname;
   if (!FILES.includes(path)) return;
   if (event.request.mode === "navigate") {
-    event.respondWith((async () => {
-      // Live entry pages may belong to a newer edition. Keep them out of this
-      // cache; the new worker must install and verify its complete inventory.
-      try {
-        const response = await fetch(event.request);
-        if (response.ok) return response;
-      } catch { /* Use this worker's independently verified entry offline. */ }
-      return retained(path, false);
-    })());
+    // A controlled navigation belongs to this complete, verified edition.
+    // Network-first accepted maintenance bodies and could wait forever after
+    // headers or mid-body. Registering/updating sw.js installs the next edition;
+    // it must finish before its entry pages and asset hashes can be used together.
+    event.respondWith(retained(path, true));
   } else event.respondWith(retained(path, true));
 });
 `

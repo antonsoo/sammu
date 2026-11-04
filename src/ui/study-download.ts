@@ -1,3 +1,4 @@
+import { TRANSFER_TOTAL_MS } from "../core/offline-policy";
 import { saveFile } from "./files";
 import { type StudyFonts, studyFonts } from "./study";
 
@@ -24,7 +25,7 @@ export class StudyDownload {
     this.status.textContent = "Embedding this experiment, audio, fonts and license notices…";
     const timer = setTimeout(
       () => controller.abort(new DOMException("Font preparation timed out.", "TimeoutError")),
-      15000,
+      TRANSFER_TOTAL_MS,
     );
     try {
       const fonts = await studyFonts(controller.signal);
@@ -32,8 +33,8 @@ export class StudyDownload {
       saveFile(compose(fonts), "text/html;charset=utf-8", filename);
       this.status.textContent =
         "Saved the complete illustrated reading. Open it offline or print it to PDF.";
-    } catch {
-      const reason = controller.signal.reason;
+    } catch (error) {
+      const reason = controller.signal.reason ?? error;
       this.status.textContent =
         reason?.name === "AbortError"
           ? "Saving cancelled. Your experiment is unchanged."

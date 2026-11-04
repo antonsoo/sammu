@@ -48,6 +48,8 @@ const originalLink = () => `./${queryFor(state.session.settings, sequenceOf(stat
 function render(): void {
   const { session, comparison, listening } = state;
   el<HTMLAnchorElement>("bench-link").href = originalLink();
+  el<HTMLAnchorElement>("evidence-link").href =
+    `./${queryFor(session.settings, sequenceOf(session))}#evidence`;
   el("origin-description").innerHTML =
     `Your fork starts in <b lang="akk-Latn">${html(tuningAt(session.current.tuning).name)}</b>, after ${session.moves.length} bench moves. String 1 is ${(numeric(pitch(session.current, 1)) * session.settings.reference).toFixed(3)} Hz.`;
   el("fork-origin").textContent = tuningAt(session.current.tuning).name;

@@ -76,7 +76,20 @@ export default defineConfig(async ({ command }) => {
               ]),
             ),
           );
-          await writeFile("dist/sw.js", offlineScript({ edition, base, urls, integrity }));
+          await writeFile(
+            "dist/sw.js",
+            offlineScript({
+              edition,
+              base,
+              urls,
+              integrity,
+              sizes: Object.fromEntries(
+                await Promise.all(
+                  files.map(async (file, i) => [urls[i], (await readFile(file)).byteLength]),
+                ),
+              ),
+            }),
+          );
         },
       },
     ],
