@@ -42,7 +42,11 @@
     "verify:audio-lifecycle": "python3 scripts/audio-lifecycle-oracle.py",
     "verify:routes": "node --import tsx scripts/routes-cases.ts | python3 scripts/routes-oracle.py",
     "test:routes": "node scripts/routes-browser.mjs",
-    "verify:routes-audio": "python3 scripts/routes-audio-oracle.py"
+    "verify:routes-audio": "python3 scripts/routes-audio-oracle.py",
+    "test:navigation": "node scripts/navigation-audit.mjs",
+    "test:transfers": "node scripts/transfer-audit.mjs",
+    "test:saved-edition": "node scripts/saved-edition-audit.mjs",
+    "test:control-race": "node scripts/control-race-audit.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",

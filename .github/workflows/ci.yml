@@ -29,3 +29,6 @@ jobs:
       - run: python3 scripts/audio-oracle.py /tmp/sammu-practice-review/browser.json
       - run: npm run test:routes -- /tmp/sammu-routes-review
       - run: python3 scripts/routes-audio-oracle.py /tmp/sammu-routes-review/report.json
+      - run: npm run test:navigation
+      - run: npm run test:transfers
+      - run: npm run test:control-race

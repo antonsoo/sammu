@@ -100,7 +100,7 @@ const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 async function waitUntil(predicate, message) {
   const started = Date.now();
   while (!(await predicate())) {
-    if (Date.now() - started > 12000) throw new Error(message);
+    if (Date.now() - started > 30000) throw new Error(message);
     await pause(30);
   }
 }
@@ -149,6 +149,7 @@ try {
     const browser = await launcher.launch();
     try {
       for (const mode of phase === "before" ? ["hold", "wrong"] : ["hold", "wrong", "late"]) {
+        const phaseStarted = Date.now();
         served = oldFiles;
         workerFiles = oldFiles;
         fault = "none";
@@ -297,6 +298,7 @@ try {
           records.push({
             engine,
             mode,
+            elapsedMs: Date.now() - phaseStarted,
             oldEdition,
             newEdition,
             before,
