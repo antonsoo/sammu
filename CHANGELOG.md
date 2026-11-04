@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Embed complete original license terms in bench and practice readings, matching the route reading; preserve exact font notices and noncommercial-use contact offline.
+
 - Open controlled navigations from the verified edition; keep experiments through outages, slow transfers and an activation/navigation race, with bounded retries and an explicit supported-edition reload.
 
 - Compare opposite retuning routes from the same actual pitches: exact endpoint ledger, fixed shared ruler, raw/transposed listening, branch continuation and portable HTML/JSON/CSV/WAV records.

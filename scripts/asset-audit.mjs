@@ -207,9 +207,10 @@ try {
             pathToFileURL(path.join(directory, `${engine}-${width}-verified.html`)).href,
           );
           await native.evaluate(() => document.fonts.ready);
-          const licenseText = await native.locator("details").last().locator("pre").textContent();
+          const notices = await native.locator("details pre").allTextContents();
           for (const name of ["Atkinson-OFL.txt", "NotoSerif-OFL.txt"])
-            assert.ok(licenseText.includes(files.get(`fonts/${name}`).toString()));
+            assert.ok(notices.some((text) => text.includes(files.get(`fonts/${name}`).toString())));
+          assert.ok(notices.includes(await readFile("LICENSE", "utf8")));
           assert.deepEqual(remote, []);
           await native.close();
           // Entire cache loss is detected across both already-open pages and repaired.

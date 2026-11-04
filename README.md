@@ -158,6 +158,13 @@ npm run test:control-race
 npm run test:transfers
 ```
 
+After publishing a byte-matched build, `npm run test:public-outage` installs the
+actual HTTPS edition through an end-to-end TLS tunnel, cuts that connection,
+and refuses new tunnels while browser offline emulation stays disabled. Both
+engines and widths must still open all three rooms, preserve the experiments,
+save their readings, and reopen each file with exact fonts and full license
+notices. It separately rechecks the canonical public entry after each journey.
+
 The browser script uses Playwright’s installed Chromium and Firefox. On a new machine, install its browsers with `npx playwright install --with-deps chromium firefox` first. Python 3.12 and NumPy 2.4.4 are used for the audio review; the exact-ratio oracle needs only Python’s standard library. For an isolated Python environment, install the requirements in a venv rather than the system environment.
 
 The exact-ratio oracle uses Gaussian elimination on prime-exponent constraints, an independent source-order fixture, and breadth-first route search. It checks 812 states, 7,308 string pitches and all 49 shortest routes. A separate practice oracle checks 672 tentative settings against exact fractions and high-precision exponentials. Browser review exercises keyboard retuning, focus preservation, history navigation, source details, real downloads, native saved studies and offline operation in both engines at 1440 px and 375 px. The audio oracle independently reconstructs the expected notes and synthesizes every sample of downloaded WAVs and captured fixed-setting buffers. The continuous-signal review separately captures the actual browser output on the audio thread, then checks its frequencies, harmonic levels and stopped silence against the independent source fixture. [The original workshop review](docs/review.md) and [the practice review](docs/practice-review.md) give the measured results and their limits.
