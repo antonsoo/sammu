@@ -1,0 +1,295 @@
+{
+  "edition": "3d64040e6dcc16afa71feaebc1305aa67bde9b474641d5c8c97fbe1ff0cdc399",
+  "scope": "Real server faults after verified worker takeover; cached entry, exact experiment state and source journey",
+  "rows": [
+    {
+      "engine": "chromium",
+      "entry": "index.html",
+      "fault": "unavailable",
+      "elapsedMs": 368,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "practice.html",
+      "fault": "unavailable",
+      "elapsedMs": 148,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "routes.html",
+      "fault": "unavailable",
+      "elapsedMs": 143,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "index.html",
+      "fault": "maintenance",
+      "elapsedMs": 224,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "practice.html",
+      "fault": "maintenance",
+      "elapsedMs": 2275,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "routes.html",
+      "fault": "maintenance",
+      "elapsedMs": 161,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "index.html",
+      "fault": "wrong-room",
+      "elapsedMs": 174,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "practice.html",
+      "fault": "wrong-room",
+      "elapsedMs": 147,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "routes.html",
+      "fault": "wrong-room",
+      "elapsedMs": 155,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "index.html",
+      "fault": "header-stall",
+      "elapsedMs": 145,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "practice.html",
+      "fault": "header-stall",
+      "elapsedMs": 109,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "routes.html",
+      "fault": "header-stall",
+      "elapsedMs": 110,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "index.html",
+      "fault": "body-stall",
+      "elapsedMs": 145,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "practice.html",
+      "fault": "body-stall",
+      "elapsedMs": 146,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "routes.html",
+      "fault": "body-stall",
+      "elapsedMs": 120,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "index.html",
+      "fault": "disconnect",
+      "elapsedMs": 128,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "practice.html",
+      "fault": "disconnect",
+      "elapsedMs": 128,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "routes.html",
+      "fault": "disconnect",
+      "elapsedMs": 126,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "index.html",
+      "fault": "unavailable",
+      "elapsedMs": 298,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "practice.html",
+      "fault": "unavailable",
+      "elapsedMs": 276,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "routes.html",
+      "fault": "unavailable",
+      "elapsedMs": 191,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "index.html",
+      "fault": "maintenance",
+      "elapsedMs": 260,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "practice.html",
+      "fault": "maintenance",
+      "elapsedMs": 148,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "routes.html",
+      "fault": "maintenance",
+      "elapsedMs": 128,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "index.html",
+      "fault": "wrong-room",
+      "elapsedMs": 164,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "practice.html",
+      "fault": "wrong-room",
+      "elapsedMs": 144,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "routes.html",
+      "fault": "wrong-room",
+      "elapsedMs": 154,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "index.html",
+      "fault": "header-stall",
+      "elapsedMs": 133,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "practice.html",
+      "fault": "header-stall",
+      "elapsedMs": 158,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "routes.html",
+      "fault": "header-stall",
+      "elapsedMs": 146,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "index.html",
+      "fault": "body-stall",
+      "elapsedMs": 155,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "practice.html",
+      "fault": "body-stall",
+      "elapsedMs": 139,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "routes.html",
+      "fault": "body-stall",
+      "elapsedMs": 153,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "index.html",
+      "fault": "disconnect",
+      "elapsedMs": 156,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "practice.html",
+      "fault": "disconnect",
+      "elapsedMs": 151,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "routes.html",
+      "fault": "disconnect",
+      "elapsedMs": 143,
+      "experimentPreserved": true,
+      "verifiedCache": true
+    }
+  ],
+  "passed": true
+}

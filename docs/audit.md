@@ -1,5 +1,10 @@
 # Keep the experiment; repair the instrument
 
+This is the earlier audio and asset review. The subsequent [navigation and
+transfer audit](navigation-transfer-review.md) replaces its total download
+deadlines with separate body-inactivity and active-transfer limits. The old
+measurements and pinned runtime below remain historical evidence.
+
 The continuous-listening feature made the practice room usable as a tuning
 exercise. This audit found consequential failures around it: stopped audio could
 return after an interruption, a closed audio context could not recover, and a
@@ -26,7 +31,9 @@ The HTML save buttons embed the current experiment, diagrams, audio,
 fonts and full license notices. It now checks all four retained font/license
 files against independently pinned lengths and SHA-256 digests. If a server or
 cache supplies different bytes with HTTP 200, saving fails visibly. A pending
-save can be cancelled; it also has a 15-second deadline and a working retry.
+save can be cancelled and retried. The current reader allows active transfers
+for up to three minutes but stops an asset after fifteen seconds without body
+progress; see the subsequent transfer review.
 The experiment stays available during preparation.
 
 The footer's **Check offline copy** inspects the actual saved bytes. A missing

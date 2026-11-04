@@ -1,0 +1,66 @@
+[
+  {
+    "browser": "chromium",
+    "fault": "unavailable",
+    "ms": 74,
+    "error": null,
+    "heading": "Two roads,one tuning.",
+    "recovered": true
+  },
+  {
+    "browser": "chromium",
+    "fault": "maintenance",
+    "ms": 51,
+    "error": null,
+    "heading": "Maintenance",
+    "recovered": false
+  },
+  {
+    "browser": "chromium",
+    "fault": "header-stall",
+    "ms": 5005,
+    "error": "page.reload: Timeout 4500ms exceeded.",
+    "heading": null,
+    "recovered": false
+  },
+  {
+    "browser": "chromium",
+    "fault": "body-stall",
+    "ms": 5004,
+    "error": "page.reload: Timeout 4500ms exceeded.",
+    "heading": null,
+    "recovered": false
+  },
+  {
+    "browser": "firefox",
+    "fault": "unavailable",
+    "ms": 176,
+    "error": null,
+    "heading": "Two roads,one tuning.",
+    "recovered": true
+  },
+  {
+    "browser": "firefox",
+    "fault": "maintenance",
+    "ms": 167,
+    "error": null,
+    "heading": "Maintenance",
+    "recovered": false
+  },
+  {
+    "browser": "firefox",
+    "fault": "header-stall",
+    "ms": 4526,
+    "error": "page.reload: Timeout 4500ms exceeded.",
+    "heading": "Two roads,one tuning.",
+    "recovered": false
+  },
+  {
+    "browser": "firefox",
+    "fault": "body-stall",
+    "ms": 4997,
+    "error": "page.reload: Timeout 4500ms exceeded.",
+    "heading": null,
+    "recovered": false
+  }
+]

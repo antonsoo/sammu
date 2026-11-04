@@ -1,0 +1,257 @@
+[
+  {
+    "browser": "chromium",
+    "rate": 96000,
+    "ms": 13081,
+    "text": "Offline saving did not finish. Try saving it again online, or keep a standalone reading.",
+    "controller": false,
+    "bytesSent": 1197919,
+    "requests": [
+      {
+        "name": "routes.html",
+        "bytes": 10173,
+        "destination": "document"
+      },
+      {
+        "name": "assets/study-download-DFBtWXLd.css",
+        "bytes": 16302,
+        "destination": "style"
+      },
+      {
+        "name": "assets/routes-CChfZi6K.css",
+        "bytes": 4531,
+        "destination": "style"
+      },
+      {
+        "name": "assets/routes-DtBdw4Ze.js",
+        "bytes": 22684,
+        "destination": "script"
+      },
+      {
+        "name": "assets/study-download-BuQ4jgZy.js",
+        "bytes": 44648,
+        "destination": "script"
+      },
+      {
+        "name": "sw.js",
+        "bytes": 7956,
+        "destination": "serviceworker"
+      },
+      {
+        "name": "fonts/AtkinsonHyperlegibleNext.ttf",
+        "bytes": 114552,
+        "destination": "font"
+      },
+      {
+        "name": "fonts/NotoSerif-Regular.ttf",
+        "bytes": 444064,
+        "destination": "font"
+      },
+      {
+        "name": "assets/main-hpGJO7Mr.js",
+        "bytes": 10023,
+        "destination": "empty"
+      },
+      {
+        "name": "assets/practice-CC_8shvY.css",
+        "bytes": 6047,
+        "destination": "empty"
+      },
+      {
+        "name": "assets/practice-DiNPBVoP.js",
+        "bytes": 8796,
+        "destination": "empty"
+      },
+      {
+        "name": "assets/routes-CChfZi6K.css",
+        "bytes": 4531,
+        "destination": "empty"
+      },
+      {
+        "name": "assets/routes-DtBdw4Ze.js",
+        "bytes": 22684,
+        "destination": "empty"
+      },
+      {
+        "name": "assets/study-download-BuQ4jgZy.js",
+        "bytes": 44648,
+        "destination": "empty"
+      },
+      {
+        "name": "assets/study-download-DFBtWXLd.css",
+        "bytes": 16302,
+        "destination": "empty"
+      },
+      {
+        "name": "favicon.svg",
+        "bytes": 252,
+        "destination": "empty"
+      },
+      {
+        "name": "fonts/Atkinson-OFL.txt",
+        "bytes": 4431,
+        "destination": "empty"
+      },
+      {
+        "name": "fonts/AtkinsonHyperlegibleNext.ttf",
+        "bytes": 114552,
+        "destination": "empty"
+      },
+      {
+        "name": "fonts/NotoSerif-OFL.txt",
+        "bytes": 4396,
+        "destination": "empty"
+      },
+      {
+        "name": "fonts/NotoSerif-Regular.ttf",
+        "bytes": 444064,
+        "destination": "empty"
+      },
+      {
+        "name": "index.html",
+        "bytes": 18338,
+        "destination": "empty"
+      },
+      {
+        "name": "practice.html",
+        "bytes": 10134,
+        "destination": "empty"
+      },
+      {
+        "name": "routes.html",
+        "bytes": 10173,
+        "destination": "empty"
+      }
+    ]
+  },
+  {
+    "browser": "firefox",
+    "rate": 96000,
+    "ms": 15708,
+    "text": "Offline saving did not finish. Try saving it again online, or keep a standalone reading.",
+    "controller": false,
+    "bytesSent": 1231790,
+    "requests": [
+      {
+        "name": "routes.html",
+        "bytes": 10173,
+        "destination": "document"
+      },
+      {
+        "name": "assets/study-download-BuQ4jgZy.js",
+        "bytes": 44648,
+        "destination": "script"
+      },
+      {
+        "name": "assets/routes-CChfZi6K.css",
+        "bytes": 4531,
+        "destination": "style"
+      },
+      {
+        "name": "assets/routes-DtBdw4Ze.js",
+        "bytes": 22684,
+        "destination": "script"
+      },
+      {
+        "name": "assets/study-download-DFBtWXLd.css",
+        "bytes": 16302,
+        "destination": "style"
+      },
+      {
+        "name": "fonts/AtkinsonHyperlegibleNext.ttf",
+        "bytes": 114552,
+        "destination": "font"
+      },
+      {
+        "name": "fonts/NotoSerif-Regular.ttf",
+        "bytes": 444064,
+        "destination": "font"
+      },
+      {
+        "name": "sw.js",
+        "bytes": 7956,
+        "destination": "serviceworker"
+      },
+      {
+        "name": "favicon.svg",
+        "bytes": 252,
+        "destination": "image"
+      },
+      {
+        "name": "assets/main-hpGJO7Mr.js",
+        "bytes": 10023,
+        "destination": "empty"
+      },
+      {
+        "name": "assets/practice-CC_8shvY.css",
+        "bytes": 6047,
+        "destination": "empty"
+      },
+      {
+        "name": "assets/practice-DiNPBVoP.js",
+        "bytes": 8796,
+        "destination": "empty"
+      },
+      {
+        "name": "assets/routes-CChfZi6K.css",
+        "bytes": 4531,
+        "destination": "empty"
+      },
+      {
+        "name": "assets/routes-DtBdw4Ze.js",
+        "bytes": 22684,
+        "destination": "empty"
+      },
+      {
+        "name": "assets/study-download-BuQ4jgZy.js",
+        "bytes": 44648,
+        "destination": "empty"
+      },
+      {
+        "name": "assets/study-download-DFBtWXLd.css",
+        "bytes": 16302,
+        "destination": "empty"
+      },
+      {
+        "name": "favicon.svg",
+        "bytes": 252,
+        "destination": "empty"
+      },
+      {
+        "name": "fonts/Atkinson-OFL.txt",
+        "bytes": 4431,
+        "destination": "empty"
+      },
+      {
+        "name": "fonts/AtkinsonHyperlegibleNext.ttf",
+        "bytes": 114552,
+        "destination": "empty"
+      },
+      {
+        "name": "fonts/NotoSerif-OFL.txt",
+        "bytes": 4396,
+        "destination": "empty"
+      },
+      {
+        "name": "fonts/NotoSerif-Regular.ttf",
+        "bytes": 444064,
+        "destination": "empty"
+      },
+      {
+        "name": "index.html",
+        "bytes": 18338,
+        "destination": "empty"
+      },
+      {
+        "name": "routes.html",
+        "bytes": 10173,
+        "destination": "empty"
+      },
+      {
+        "name": "practice.html",
+        "bytes": 10134,
+        "destination": "empty"
+      }
+    ]
+  }
+]

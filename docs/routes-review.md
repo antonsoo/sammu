@@ -1,7 +1,9 @@
 # Two roads, one tuning
 
 Reviewed 3 November 2026. This is a local implementation and browser review;
-it is not a receipt for a deployed edition.
+it is not a receipt for a deployed edition. The later [navigation and transfer
+review](navigation-transfer-review.md) covers outage, progress and activation
+failures found during the follow-up audit.
 
 ## The learning gap
 

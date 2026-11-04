@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Open controlled navigations from the verified edition; keep experiments through outages, slow transfers and an activation/navigation race, with bounded retries and an explicit supported-edition reload.
+
 - Compare opposite retuning routes from the same actual pitches: exact endpoint ledger, fixed shared ruler, raw/transposed listening, branch continuation and portable HTML/JSON/CSV/WAV records.
 
 - Verify retained font/license bytes before saving readings; cancellable preparation, finite deadline and retry on both entry pages.

@@ -13,7 +13,7 @@ A tuning name tells you how strings relate; it does not fix their absolute pitch
 
 [Practice retuning by ear](https://antonsoo.github.io/sammu/practice.html): adjust the prescribed string while listening, then reveal the two partials that the model brings into alignment. Your tentative setting stays separate from the exact tuning. Keep the sound running as you move the slider or use the keyboard; switch to isolated partials without restarting. A fixed before/after comparison and a separately played model reference remain available. It does not assign a hearing score.
 
-The [current audit](docs/audit.md) records the listening exercise, audio interruption fixes, verified offline repair and portable-reading recovery, with separate source, build and public-delivery evidence.
+The [navigation and transfer audit](docs/navigation-transfer-review.md) checks saved lessons against maintenance pages, stalled bodies, slow first installs and portable-reading failures. The [earlier audio audit](docs/audit.md) records interruption and output checks. Source, build and public delivery remain separate claims.
 
 ## Take both roads to the same tuning
 
@@ -140,16 +140,22 @@ movement. This is a modern teaching signal, not a recovered ancient sound.
 npm run check
 npm run verify:tuning
 npm run verify:practice
+npm run verify:routes
 npm run test:browser -- /tmp/sammu-review/browser.json
 npm run test:practice -- /tmp/sammu-practice-review/browser.json
 npm run test:live -- /tmp/sammu-live-review/browser.json
-npm run verify:live-audio -- /tmp/sammu-live-review/browser.json
 python3 -m pip install -r scripts/requirements-audio.txt
+npm run verify:live-audio -- /tmp/sammu-live-review/browser.json
 python3 scripts/audio-oracle.py /tmp/sammu-review/browser.json
 python3 scripts/audio-oracle.py /tmp/sammu-practice-review/browser.json
 npm run test:assets -- /tmp/sammu-assets/receipt.json
 npm run test:audio-lifecycle -- dist /tmp/sammu-lifecycle/receipt.json after
 npm run verify:audio-lifecycle -- /tmp/sammu-lifecycle/receipt.json
+npm run test:routes
+npm run verify:routes-audio
+npm run test:navigation
+npm run test:control-race
+npm run test:transfers
 ```
 
 The browser script uses Playwright’s installed Chromium and Firefox. On a new machine, install its browsers with `npx playwright install --with-deps chromium firefox` first. Python 3.12 and NumPy 2.4.4 are used for the audio review; the exact-ratio oracle needs only Python’s standard library. For an isolated Python environment, install the requirements in a venv rather than the system environment.
