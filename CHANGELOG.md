@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Compare opposite retuning routes from the same actual pitches: exact endpoint ledger, fixed shared ruler, raw/transposed listening, branch continuation and portable HTML/JSON/CSV/WAV records.
+
 - Verify retained font/license bytes before saving readings; cancellable preparation, finite deadline and retry on both entry pages.
 - Inspect actual offline bytes, withdraw stale readiness, and repair damaged/missing files or a failed first installation without discarding the experiment.
 - Release stopped audio to zero, disconnect interrupted graphs, and recover explicitly from closed contexts for continuous and fixed playback.

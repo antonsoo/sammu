@@ -1,0 +1,700 @@
+{
+  "schema": "sammu-route-comparison-v1",
+  "sources": [
+    {
+      "id": "mirelman2013",
+      "title": "Sam Mirelman · Tuning Procedures in Ancient Iraq (2013)",
+      "url": "https://journal.iftawm.org/previous/vol2no2/mirelman/",
+      "note": "Analytical Approaches to World Music 2(2), 43–56. String names: p. 46; two manuscripts and uncertain instrument: pp. 47–48; preserved/restored clauses: pp. 49–52; seven tunings: fig. 5, p. 52; tightening: pp. 53–54."
+    },
+    {
+      "id": "rahn2022",
+      "title": "Jay Rahn · Was Mesopotamian Tuning Diatonic? A Parsimonious Answer (2022)",
+      "url": "https://mtosmt.org/issues/mto.22.28.1/mto.22.28.1.rahn.html",
+      "note": "Music Theory Online 28.1. DOI 10.30535/mto.28.1.7. Paragraphs 9–16 distinguish physical strings from later pitch concepts and explain the reversible seven-name network; later sections examine assumptions behind an audible reconstruction."
+    }
+  ],
+  "audioFormat": "Mono PCM16 WAV, 48000 Hz; A then B with 0.55 seconds between blocks.",
+  "edition": "9d214e484ac6498bf1f418656584d95d208955ab17591f3e32f818f07fa5e5ca",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "author": "Anthony Mercer",
+  "model": "Modern exact 4/3 and 3/2 realization. Numerical pitches and the optional transposition are not recorded on the tablets.",
+  "origin": {
+    "settings": {
+      "start": 0,
+      "reference": 440,
+      "companion": "octave",
+      "colour": "plucked"
+    },
+    "priorMoves": "LLLLLLL",
+    "tuning": "isartum",
+    "strings": [
+      {
+        "string": 1,
+        "ratioToInitialFirstString": "2048/2187",
+        "hertz": 412.0347508001829
+      },
+      {
+        "string": 2,
+        "ratioToInitialFirstString": "8/9",
+        "hertz": 391.1111111111111
+      },
+      {
+        "string": 3,
+        "ratioToInitialFirstString": "64/81",
+        "hertz": 347.6543209876543
+      },
+      {
+        "string": 4,
+        "ratioToInitialFirstString": "512/729",
+        "hertz": 309.02606310013715
+      },
+      {
+        "string": 5,
+        "ratioToInitialFirstString": "4096/6561",
+        "hertz": 274.6898338667886
+      },
+      {
+        "string": 6,
+        "ratioToInitialFirstString": "16/27",
+        "hertz": 260.7407407407407
+      },
+      {
+        "string": 7,
+        "ratioToInitialFirstString": "128/243",
+        "hertz": 231.7695473251029
+      },
+      {
+        "string": 8,
+        "ratioToInitialFirstString": "1024/2187",
+        "hertz": 206.01737540009145
+      },
+      {
+        "string": 9,
+        "ratioToInitialFirstString": "4/9",
+        "hertz": 195.55555555555554
+      }
+    ]
+  },
+  "target": "embubum",
+  "a": {
+    "direction": "L",
+    "moves": [
+      {
+        "step": 1,
+        "changed": [
+          2,
+          9
+        ],
+        "factor": "2048/2187",
+        "tuning": "kitmum",
+        "strings": [
+          {
+            "string": 1,
+            "ratioToInitialFirstString": "2048/2187",
+            "hertz": 412.0347508001829
+          },
+          {
+            "string": 2,
+            "ratioToInitialFirstString": "16384/19683",
+            "hertz": 366.25311182238477
+          },
+          {
+            "string": 3,
+            "ratioToInitialFirstString": "64/81",
+            "hertz": 347.6543209876543
+          },
+          {
+            "string": 4,
+            "ratioToInitialFirstString": "512/729",
+            "hertz": 309.02606310013715
+          },
+          {
+            "string": 5,
+            "ratioToInitialFirstString": "4096/6561",
+            "hertz": 274.6898338667886
+          },
+          {
+            "string": 6,
+            "ratioToInitialFirstString": "16/27",
+            "hertz": 260.7407407407407
+          },
+          {
+            "string": 7,
+            "ratioToInitialFirstString": "128/243",
+            "hertz": 231.7695473251029
+          },
+          {
+            "string": 8,
+            "ratioToInitialFirstString": "1024/2187",
+            "hertz": 206.01737540009145
+          },
+          {
+            "string": 9,
+            "ratioToInitialFirstString": "8192/19683",
+            "hertz": 183.12655591119238
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "changed": [
+          6
+        ],
+        "factor": "2048/2187",
+        "tuning": "embubum",
+        "strings": [
+          {
+            "string": 1,
+            "ratioToInitialFirstString": "2048/2187",
+            "hertz": 412.0347508001829
+          },
+          {
+            "string": 2,
+            "ratioToInitialFirstString": "16384/19683",
+            "hertz": 366.25311182238477
+          },
+          {
+            "string": 3,
+            "ratioToInitialFirstString": "64/81",
+            "hertz": 347.6543209876543
+          },
+          {
+            "string": 4,
+            "ratioToInitialFirstString": "512/729",
+            "hertz": 309.02606310013715
+          },
+          {
+            "string": 5,
+            "ratioToInitialFirstString": "4096/6561",
+            "hertz": 274.6898338667886
+          },
+          {
+            "string": 6,
+            "ratioToInitialFirstString": "32768/59049",
+            "hertz": 244.1687412149232
+          },
+          {
+            "string": 7,
+            "ratioToInitialFirstString": "128/243",
+            "hertz": 231.7695473251029
+          },
+          {
+            "string": 8,
+            "ratioToInitialFirstString": "1024/2187",
+            "hertz": 206.01737540009145
+          },
+          {
+            "string": 9,
+            "ratioToInitialFirstString": "8192/19683",
+            "hertz": 183.12655591119238
+          }
+        ]
+      }
+    ],
+    "end": {
+      "tuning": "embubum",
+      "strings": [
+        {
+          "string": 1,
+          "ratioToInitialFirstString": "2048/2187",
+          "hertz": 412.0347508001829
+        },
+        {
+          "string": 2,
+          "ratioToInitialFirstString": "16384/19683",
+          "hertz": 366.25311182238477
+        },
+        {
+          "string": 3,
+          "ratioToInitialFirstString": "64/81",
+          "hertz": 347.6543209876543
+        },
+        {
+          "string": 4,
+          "ratioToInitialFirstString": "512/729",
+          "hertz": 309.02606310013715
+        },
+        {
+          "string": 5,
+          "ratioToInitialFirstString": "4096/6561",
+          "hertz": 274.6898338667886
+        },
+        {
+          "string": 6,
+          "ratioToInitialFirstString": "32768/59049",
+          "hertz": 244.1687412149232
+        },
+        {
+          "string": 7,
+          "ratioToInitialFirstString": "128/243",
+          "hertz": 231.7695473251029
+        },
+        {
+          "string": 8,
+          "ratioToInitialFirstString": "1024/2187",
+          "hertz": 206.01737540009145
+        },
+        {
+          "string": 9,
+          "ratioToInitialFirstString": "8192/19683",
+          "hertz": 183.12655591119238
+        }
+      ]
+    }
+  },
+  "b": {
+    "direction": "T",
+    "moves": [
+      {
+        "step": 1,
+        "changed": [
+          5
+        ],
+        "factor": "2187/2048",
+        "tuning": "qablitum",
+        "strings": [
+          {
+            "string": 1,
+            "ratioToInitialFirstString": "2048/2187",
+            "hertz": 412.0347508001829
+          },
+          {
+            "string": 2,
+            "ratioToInitialFirstString": "8/9",
+            "hertz": 391.1111111111111
+          },
+          {
+            "string": 3,
+            "ratioToInitialFirstString": "64/81",
+            "hertz": 347.6543209876543
+          },
+          {
+            "string": 4,
+            "ratioToInitialFirstString": "512/729",
+            "hertz": 309.02606310013715
+          },
+          {
+            "string": 5,
+            "ratioToInitialFirstString": "2/3",
+            "hertz": 293.3333333333333
+          },
+          {
+            "string": 6,
+            "ratioToInitialFirstString": "16/27",
+            "hertz": 260.7407407407407
+          },
+          {
+            "string": 7,
+            "ratioToInitialFirstString": "128/243",
+            "hertz": 231.7695473251029
+          },
+          {
+            "string": 8,
+            "ratioToInitialFirstString": "1024/2187",
+            "hertz": 206.01737540009145
+          },
+          {
+            "string": 9,
+            "ratioToInitialFirstString": "4/9",
+            "hertz": 195.55555555555554
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "changed": [
+          1,
+          8
+        ],
+        "factor": "2187/2048",
+        "tuning": "nis-tuhrim",
+        "strings": [
+          {
+            "string": 1,
+            "ratioToInitialFirstString": "1/1",
+            "hertz": 440
+          },
+          {
+            "string": 2,
+            "ratioToInitialFirstString": "8/9",
+            "hertz": 391.1111111111111
+          },
+          {
+            "string": 3,
+            "ratioToInitialFirstString": "64/81",
+            "hertz": 347.6543209876543
+          },
+          {
+            "string": 4,
+            "ratioToInitialFirstString": "512/729",
+            "hertz": 309.02606310013715
+          },
+          {
+            "string": 5,
+            "ratioToInitialFirstString": "2/3",
+            "hertz": 293.3333333333333
+          },
+          {
+            "string": 6,
+            "ratioToInitialFirstString": "16/27",
+            "hertz": 260.7407407407407
+          },
+          {
+            "string": 7,
+            "ratioToInitialFirstString": "128/243",
+            "hertz": 231.7695473251029
+          },
+          {
+            "string": 8,
+            "ratioToInitialFirstString": "1/2",
+            "hertz": 220
+          },
+          {
+            "string": 9,
+            "ratioToInitialFirstString": "4/9",
+            "hertz": 195.55555555555554
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "changed": [
+          4
+        ],
+        "factor": "2187/2048",
+        "tuning": "nid-qablim",
+        "strings": [
+          {
+            "string": 1,
+            "ratioToInitialFirstString": "1/1",
+            "hertz": 440
+          },
+          {
+            "string": 2,
+            "ratioToInitialFirstString": "8/9",
+            "hertz": 391.1111111111111
+          },
+          {
+            "string": 3,
+            "ratioToInitialFirstString": "64/81",
+            "hertz": 347.6543209876543
+          },
+          {
+            "string": 4,
+            "ratioToInitialFirstString": "3/4",
+            "hertz": 330
+          },
+          {
+            "string": 5,
+            "ratioToInitialFirstString": "2/3",
+            "hertz": 293.3333333333333
+          },
+          {
+            "string": 6,
+            "ratioToInitialFirstString": "16/27",
+            "hertz": 260.7407407407407
+          },
+          {
+            "string": 7,
+            "ratioToInitialFirstString": "128/243",
+            "hertz": 231.7695473251029
+          },
+          {
+            "string": 8,
+            "ratioToInitialFirstString": "1/2",
+            "hertz": 220
+          },
+          {
+            "string": 9,
+            "ratioToInitialFirstString": "4/9",
+            "hertz": 195.55555555555554
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "changed": [
+          7
+        ],
+        "factor": "2187/2048",
+        "tuning": "pitum",
+        "strings": [
+          {
+            "string": 1,
+            "ratioToInitialFirstString": "1/1",
+            "hertz": 440
+          },
+          {
+            "string": 2,
+            "ratioToInitialFirstString": "8/9",
+            "hertz": 391.1111111111111
+          },
+          {
+            "string": 3,
+            "ratioToInitialFirstString": "64/81",
+            "hertz": 347.6543209876543
+          },
+          {
+            "string": 4,
+            "ratioToInitialFirstString": "3/4",
+            "hertz": 330
+          },
+          {
+            "string": 5,
+            "ratioToInitialFirstString": "2/3",
+            "hertz": 293.3333333333333
+          },
+          {
+            "string": 6,
+            "ratioToInitialFirstString": "16/27",
+            "hertz": 260.7407407407407
+          },
+          {
+            "string": 7,
+            "ratioToInitialFirstString": "9/16",
+            "hertz": 247.5
+          },
+          {
+            "string": 8,
+            "ratioToInitialFirstString": "1/2",
+            "hertz": 220
+          },
+          {
+            "string": 9,
+            "ratioToInitialFirstString": "4/9",
+            "hertz": 195.55555555555554
+          }
+        ]
+      },
+      {
+        "step": 5,
+        "changed": [
+          3
+        ],
+        "factor": "2187/2048",
+        "tuning": "embubum",
+        "strings": [
+          {
+            "string": 1,
+            "ratioToInitialFirstString": "1/1",
+            "hertz": 440
+          },
+          {
+            "string": 2,
+            "ratioToInitialFirstString": "8/9",
+            "hertz": 391.1111111111111
+          },
+          {
+            "string": 3,
+            "ratioToInitialFirstString": "27/32",
+            "hertz": 371.25
+          },
+          {
+            "string": 4,
+            "ratioToInitialFirstString": "3/4",
+            "hertz": 330
+          },
+          {
+            "string": 5,
+            "ratioToInitialFirstString": "2/3",
+            "hertz": 293.3333333333333
+          },
+          {
+            "string": 6,
+            "ratioToInitialFirstString": "16/27",
+            "hertz": 260.7407407407407
+          },
+          {
+            "string": 7,
+            "ratioToInitialFirstString": "9/16",
+            "hertz": 247.5
+          },
+          {
+            "string": 8,
+            "ratioToInitialFirstString": "1/2",
+            "hertz": 220
+          },
+          {
+            "string": 9,
+            "ratioToInitialFirstString": "4/9",
+            "hertz": 195.55555555555554
+          }
+        ]
+      }
+    ],
+    "end": {
+      "tuning": "embubum",
+      "strings": [
+        {
+          "string": 1,
+          "ratioToInitialFirstString": "1/1",
+          "hertz": 440
+        },
+        {
+          "string": 2,
+          "ratioToInitialFirstString": "8/9",
+          "hertz": 391.1111111111111
+        },
+        {
+          "string": 3,
+          "ratioToInitialFirstString": "27/32",
+          "hertz": 371.25
+        },
+        {
+          "string": 4,
+          "ratioToInitialFirstString": "3/4",
+          "hertz": 330
+        },
+        {
+          "string": 5,
+          "ratioToInitialFirstString": "2/3",
+          "hertz": 293.3333333333333
+        },
+        {
+          "string": 6,
+          "ratioToInitialFirstString": "16/27",
+          "hertz": 260.7407407407407
+        },
+        {
+          "string": 7,
+          "ratioToInitialFirstString": "9/16",
+          "hertz": 247.5
+        },
+        {
+          "string": 8,
+          "ratioToInitialFirstString": "1/2",
+          "hertz": 220
+        },
+        {
+          "string": 9,
+          "ratioToInitialFirstString": "4/9",
+          "hertz": 195.55555555555554
+        }
+      ]
+    }
+  },
+  "bOverA": "2187/2048",
+  "samePattern": true,
+  "listening": {
+    "string": "all",
+    "aligned": true,
+    "bMultiplier": "2048/2187"
+  },
+  "sound": {
+    "title": "Route A, then route B: nine strings; B transposed to match A on string 1",
+    "colour": "plucked",
+    "notes": [
+      {
+        "string": 1,
+        "hz": 412.0347508001829,
+        "start": 0,
+        "duration": 0.36
+      },
+      {
+        "string": 2,
+        "hz": 366.25311182238477,
+        "start": 0.44,
+        "duration": 0.36
+      },
+      {
+        "string": 3,
+        "hz": 347.6543209876543,
+        "start": 0.88,
+        "duration": 0.36
+      },
+      {
+        "string": 4,
+        "hz": 309.02606310013715,
+        "start": 1.32,
+        "duration": 0.36
+      },
+      {
+        "string": 5,
+        "hz": 274.6898338667886,
+        "start": 1.76,
+        "duration": 0.36
+      },
+      {
+        "string": 6,
+        "hz": 244.1687412149232,
+        "start": 2.2,
+        "duration": 0.36
+      },
+      {
+        "string": 7,
+        "hz": 231.7695473251029,
+        "start": 2.64,
+        "duration": 0.36
+      },
+      {
+        "string": 8,
+        "hz": 206.01737540009145,
+        "start": 3.08,
+        "duration": 0.36
+      },
+      {
+        "string": 9,
+        "hz": 183.12655591119238,
+        "start": 3.52,
+        "duration": 0.36
+      },
+      {
+        "string": 1,
+        "hz": 412.0347508001829,
+        "start": 4.43,
+        "duration": 0.36
+      },
+      {
+        "string": 2,
+        "hz": 366.25311182238477,
+        "start": 4.87,
+        "duration": 0.36
+      },
+      {
+        "string": 3,
+        "hz": 347.6543209876543,
+        "start": 5.31,
+        "duration": 0.36
+      },
+      {
+        "string": 4,
+        "hz": 309.02606310013715,
+        "start": 5.75,
+        "duration": 0.36
+      },
+      {
+        "string": 5,
+        "hz": 274.6898338667886,
+        "start": 6.1899999999999995,
+        "duration": 0.36
+      },
+      {
+        "string": 6,
+        "hz": 244.1687412149232,
+        "start": 6.63,
+        "duration": 0.36
+      },
+      {
+        "string": 7,
+        "hz": 231.7695473251029,
+        "start": 7.07,
+        "duration": 0.36
+      },
+      {
+        "string": 8,
+        "hz": 206.01737540009145,
+        "start": 7.51,
+        "duration": 0.36
+      },
+      {
+        "string": 9,
+        "hz": 183.12655591119238,
+        "start": 7.949999999999999,
+        "duration": 0.36
+      }
+    ],
+    "duration": 8.43
+  },
+  "reopen": "https://antonsoo.github.io/sammu/routes.html?start=isartum&a=440&companions=octave&sound=plucked&moves=LLLLLLL&target=embubum&listen=all&aligned=true"
+}

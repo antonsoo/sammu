@@ -15,6 +15,31 @@ A tuning name tells you how strings relate; it does not fix their absolute pitch
 
 The [current audit](docs/audit.md) records the listening exercise, audio interruption fixes, verified offline repair and portable-reading recovery, with separate source, build and public-delivery evidence.
 
+## Take both roads to the same tuning
+
+The [route comparison](https://antonsoo.github.io/sammu/routes.html) forks your
+actual bench pitches. Follow loosening in one branch and tightening in the other,
+then hear the same physical string in both endpoints. Both reach the same name;
+in this exact realization, every B pitch is **2187/2048 times A**, or about
+**113.685 cents** higher.
+
+Transpose B to match A on string 1. Every other string now matches too. The
+common pitch ruler stays fixed, and the raw A/B fractions remain in the table.
+Compare one string or all nine, continue either real route on the bench, share
+the comparison, or save a complete HTML reading with audio and native JSON/CSV/WAV
+downloads. The preview also works when a bench has reached its 28-move limit.
+
+![Two actual retuning routes, one destination and the same ruler for nine strings](docs/assets/routes-desktop.png)
+
+[Source, model and verification](docs/routes-review.md) ·
+[Standalone example](examples/routes/reading.html) ·
+[Printed example](examples/routes/reading.pdf) ·
+[Exact record](examples/routes/comparison.json)
+
+The network follows the scholarly reconstruction; its pitches, timbre and
+transposition are explicitly modern. This room adds a controlled comparison to
+the existing cycle, not a claim to recover ancient absolute pitch.
+
 ## Start locally
 
 Requires Node.js 24 or later.

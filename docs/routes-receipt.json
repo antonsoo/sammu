@@ -1,0 +1,188 @@
+{
+  "reviewed": "2026-11-03",
+  "boundary": "Local production preview only; no remote publication or CI result is asserted.",
+  "node": "24.22.1",
+  "edition": "9d214e484ac6498bf1f418656584d95d208955ab17591f3e32f818f07fa5e5ca",
+  "sourcePdfSha256": "665af5ee1a0fa6ed90b70beebccaf693d61c1126665f85f2720abdf199c4ef3d",
+  "journeys": [
+    {
+      "browser": "chromium",
+      "width": 1440,
+      "accessibility": 49,
+      "alignedAccessibility": 49,
+      "offline": true,
+      "disk": true,
+      "pageErrors": []
+    },
+    {
+      "browser": "chromium",
+      "width": 375,
+      "accessibility": 50,
+      "alignedAccessibility": 50,
+      "offline": true,
+      "disk": true,
+      "pageErrors": []
+    },
+    {
+      "browser": "firefox",
+      "width": 1440,
+      "accessibility": 49,
+      "alignedAccessibility": 49,
+      "offline": true,
+      "disk": true,
+      "pageErrors": []
+    },
+    {
+      "browser": "firefox",
+      "width": 375,
+      "accessibility": 50,
+      "alignedAccessibility": 50,
+      "offline": true,
+      "disk": true,
+      "pageErrors": []
+    }
+  ],
+  "scheduledAudioBuffers": [
+    {
+      "file": "chromium-1440-raw.f32",
+      "sampleRate": 44100
+    },
+    {
+      "file": "chromium-1440-aligned.f32",
+      "sampleRate": 44100
+    },
+    {
+      "file": "chromium-375-raw.f32",
+      "sampleRate": 44100
+    },
+    {
+      "file": "chromium-375-aligned.f32",
+      "sampleRate": 44100
+    },
+    {
+      "file": "firefox-1440-raw.f32",
+      "sampleRate": 44100
+    },
+    {
+      "file": "firefox-1440-aligned.f32",
+      "sampleRate": 44100
+    },
+    {
+      "file": "firefox-375-raw.f32",
+      "sampleRate": 44100
+    },
+    {
+      "file": "firefox-375-aligned.f32",
+      "sampleRate": 44100
+    }
+  ],
+  "examples": [
+    {
+      "path": "examples/routes/comparison.json",
+      "bytes": 17679,
+      "sha256": "a3de0c409cfa2c40d845e8b9bf483a390e60435330c971f4d90421f39c78b7a4"
+    },
+    {
+      "path": "examples/routes/comparison.wav",
+      "bytes": 809506,
+      "sha256": "19d7b50829998c6c1750dd7dc615f95a5cc328bee3e6ad15fe146de279ad93c6"
+    },
+    {
+      "path": "examples/routes/pitches.csv",
+      "bytes": 1226,
+      "sha256": "3bb23f0f765bbec6a7a85c62e1363f284d06ba9c97b9fccc2c93c57efb9e2210"
+    },
+    {
+      "path": "examples/routes/reading.html",
+      "bytes": 2979254,
+      "sha256": "7e92475b4e01bb06ff915d371a65020f8a61bc43374e7ee65a8a467a06a2fe3b"
+    },
+    {
+      "path": "examples/routes/reading.pdf",
+      "bytes": 115858,
+      "sha256": "266d6ea3882550381310f6cc9e0667eb68706ec5994f341dcc20896d1118fbc8"
+    }
+  ],
+  "served": [
+    {
+      "path": "assets/main-hpGJO7Mr.js",
+      "bytes": 10023,
+      "sha256": "9479f9ffb3745ab8e003c712f94bf987268875b5344d4e14921fa33e7de7f711"
+    },
+    {
+      "path": "assets/practice-CC_8shvY.css",
+      "bytes": 6047,
+      "sha256": "a82578e2763570888723e94d5962e04e783d600dbad160d6fdf17e23fc11be32"
+    },
+    {
+      "path": "assets/practice-DiNPBVoP.js",
+      "bytes": 8796,
+      "sha256": "2c6aa31e7f9bdeb633369bdc446a2aa59533250e5d85ce1d59ac138615bd2c81"
+    },
+    {
+      "path": "assets/routes-CChfZi6K.css",
+      "bytes": 4531,
+      "sha256": "83211422482f447ed96df1d7d8c0d580fb8510239fd154837538599313c68af5"
+    },
+    {
+      "path": "assets/routes-DtBdw4Ze.js",
+      "bytes": 22684,
+      "sha256": "9bcd3a7c056925de6c62ecea6858fd1b2c7adb821f1f5abae0ebd04547b5acd2"
+    },
+    {
+      "path": "assets/study-download-BuQ4jgZy.js",
+      "bytes": 44648,
+      "sha256": "c557f75f91e2159fb0fd6110f1d0cc6ddb0d311651adb5ac3c84b7ac62fb6fdf"
+    },
+    {
+      "path": "assets/study-download-DFBtWXLd.css",
+      "bytes": 16302,
+      "sha256": "6efac2b9e1c569e7496df7a49d033e9d5211f6b656b4529d807050f4b748ca2f"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 252,
+      "sha256": "7d2537517a21b00b09acab68534fadca8a86192aec5e1914accd3e1628303c67"
+    },
+    {
+      "path": "fonts/Atkinson-OFL.txt",
+      "bytes": 4431,
+      "sha256": "aca6a428580965d2297d1b718042dd427c2a9443ece3b0d02d758e161e0c4030"
+    },
+    {
+      "path": "fonts/AtkinsonHyperlegibleNext.ttf",
+      "bytes": 114552,
+      "sha256": "5a455d1cfa099b601ab70751bb9673e8fe1854dc4500c80e1a220d0d75e31745"
+    },
+    {
+      "path": "fonts/NotoSerif-OFL.txt",
+      "bytes": 4396,
+      "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a"
+    },
+    {
+      "path": "fonts/NotoSerif-Regular.ttf",
+      "bytes": 444064,
+      "sha256": "5473d2e43bdd018ee124a4addba8091fd0a29894b121cbb741023af6549662b6"
+    },
+    {
+      "path": "index.html",
+      "bytes": 18338,
+      "sha256": "038c8bd29890cc924f4355ddfc863aabc22fb7dbb03cd90cd1df5a5f512c9717"
+    },
+    {
+      "path": "practice.html",
+      "bytes": 10134,
+      "sha256": "11c53ff6ae3dd81c4c2fa6d7998764c7d62557fd83cf33f8ea59f39f4de5f697"
+    },
+    {
+      "path": "routes.html",
+      "bytes": 10173,
+      "sha256": "70afd0ad39116beffb7bfd9b9084042295b3a6f5ba1141fd52f5db7129f9ec16"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 7956,
+      "sha256": "d8b40f65731679da58fd8804a2ff9754882151b56f1eb0cee84cb27b242d975f"
+    }
+  ]
+}
