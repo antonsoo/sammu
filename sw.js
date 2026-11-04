@@ -1,9 +1,12 @@
-/* Verified offline edition 1a04219ecaf1df143e30cc607160608eac366201218023c406f3597d99b54d70. */
-const CACHE = "sammu-1a04219ecaf1df143e30cc607160608eac366201218023c406f3597d99b54d70";
-const EDITION = "1a04219ecaf1df143e30cc607160608eac366201218023c406f3597d99b54d70";
+/* Verified offline edition 3d64040e6dcc16afa71feaebc1305aa67bde9b474641d5c8c97fbe1ff0cdc399. */
+const CACHE = "sammu-3d64040e6dcc16afa71feaebc1305aa67bde9b474641d5c8c97fbe1ff0cdc399";
+const EDITION = "3d64040e6dcc16afa71feaebc1305aa67bde9b474641d5c8c97fbe1ff0cdc399";
 const BASE = "/sammu/";
-const FILES = ["/sammu/assets/main-BbhlNGNd.js","/sammu/assets/practice-8SbswKJw.js","/sammu/assets/practice-CC_8shvY.css","/sammu/assets/study-download-B-RTLr-3.css","/sammu/assets/study-download-CejFGERR.js","/sammu/favicon.svg","/sammu/fonts/Atkinson-OFL.txt","/sammu/fonts/AtkinsonHyperlegibleNext.ttf","/sammu/fonts/NotoSerif-OFL.txt","/sammu/fonts/NotoSerif-Regular.ttf","/sammu/index.html","/sammu/practice.html"];
-const INTEGRITY = {"/sammu/assets/main-BbhlNGNd.js":"sha256-4EvP9h2uuq6+0QE6zM4E9EhMTKuDs1bq/VkMe8W2FVI=","/sammu/assets/practice-8SbswKJw.js":"sha256-uTcU9eKdq2xMDCcCrEXp9H4ERIO+G8vhL5IEIET3bUo=","/sammu/assets/practice-CC_8shvY.css":"sha256-qCV44nY1cIiHI+lNWWLgTng9YA260WDW/fF+I/wRvjI=","/sammu/assets/study-download-B-RTLr-3.css":"sha256-D/eFTGJedwhJzsoo7X9XNTBw2j9oWCd9Wyb4ydYlyT0=","/sammu/assets/study-download-CejFGERR.js":"sha256-mqqjzNF31HsEG9KFodei8VVCrbI4ma4H7G/3+L+RB1k=","/sammu/favicon.svg":"sha256-fSU3UXohsAsJrKtoU0+tyoqGGSrsXhkUrM0+FigwPGc=","/sammu/fonts/Atkinson-OFL.txt":"sha256-rKakKFgJZdIpfRtxgELdQnwqlEPs47DQLXWOFh4MQDA=","/sammu/fonts/AtkinsonHyperlegibleNext.ttf":"sha256-WkVdHPoJm2AatwdRu5Zz6P4YVNxFAMgOGiINDXXjF0U=","/sammu/fonts/NotoSerif-OFL.txt":"sha256-zumJL58MyP6ILJ6VN+5qiWIdhu586vcLAuKyscJcBho=","/sammu/fonts/NotoSerif-Regular.ttf":"sha256-VHPS5DvdAY7hJKSt26gJH9CimJSxIcu3QQI69lSWYrY=","/sammu/index.html":"sha256-2udrpPJ4kkVS9KT0YurSDLv3hGQAxM+EDAJE788L7uY=","/sammu/practice.html":"sha256-PDLEOBih+9AvqIXFDBXU5OWZYYOag/K0iZw7pKL4EIc="};
+const FILES = ["/sammu/assets/main-Cdzm6v2v.js","/sammu/assets/practice-CC_8shvY.css","/sammu/assets/practice-iVDAqL_o.js","/sammu/assets/routes-CChfZi6K.css","/sammu/assets/routes-ksXPh3Ez.js","/sammu/assets/study-download-BkQzu_mh.js","/sammu/assets/study-download-DFBtWXLd.css","/sammu/favicon.svg","/sammu/fonts/Atkinson-OFL.txt","/sammu/fonts/AtkinsonHyperlegibleNext.ttf","/sammu/fonts/NotoSerif-OFL.txt","/sammu/fonts/NotoSerif-Regular.ttf","/sammu/index.html","/sammu/practice.html","/sammu/routes.html"];
+const INTEGRITY = {"/sammu/assets/main-Cdzm6v2v.js":"sha256-dwz1KId93tQu82TwxwgcXxNm8g0NlVrxNuF/59lMwxc=","/sammu/assets/practice-CC_8shvY.css":"sha256-qCV44nY1cIiHI+lNWWLgTng9YA260WDW/fF+I/wRvjI=","/sammu/assets/practice-iVDAqL_o.js":"sha256-jIFKF9kzPYkRYOc4tT9EJEImZkxzng1zNqLJRv4xG7g=","/sammu/assets/routes-CChfZi6K.css":"sha256-gyEUIkgvRH7ZbfHX2MDVgPuFECOf0VSDdThZkxPGivU=","/sammu/assets/routes-ksXPh3Ez.js":"sha256-v2q2E6q0TfWOdCHQ+8P2twUYkdNdBKP4Y0RBGvy7Tjk=","/sammu/assets/study-download-BkQzu_mh.js":"sha256-GnI3p0EJgqbMvySgkYxTPzeJrt1kpSUKmyK4pXRN7Js=","/sammu/assets/study-download-DFBtWXLd.css":"sha256-bvrCueHFaedJbfeknQM+nVIR9rZWtFKdgHBQ9LdIyi8=","/sammu/favicon.svg":"sha256-fSU3UXohsAsJrKtoU0+tyoqGGSrsXhkUrM0+FigwPGc=","/sammu/fonts/Atkinson-OFL.txt":"sha256-rKakKFgJZdIpfRtxgELdQnwqlEPs47DQLXWOFh4MQDA=","/sammu/fonts/AtkinsonHyperlegibleNext.ttf":"sha256-WkVdHPoJm2AatwdRu5Zz6P4YVNxFAMgOGiINDXXjF0U=","/sammu/fonts/NotoSerif-OFL.txt":"sha256-zumJL58MyP6ILJ6VN+5qiWIdhu586vcLAuKyscJcBho=","/sammu/fonts/NotoSerif-Regular.ttf":"sha256-VHPS5DvdAY7hJKSt26gJH9CimJSxIcu3QQI69lSWYrY=","/sammu/index.html":"sha256-2fPLVETZB+egqqqeI3L+Uh/3lngvTfAMoyB2sVf1GOo=","/sammu/practice.html":"sha256-Qk8PVee7KmWHblr5jJNrrSsvpYXaVemIcJHFBvyqafk=","/sammu/routes.html":"sha256-bMhMKtIcxFt6lBBGQl/W7+GWfENE0XrilaVazwXpjeI="};
+const SIZES = {"/sammu/assets/main-Cdzm6v2v.js":10023,"/sammu/assets/practice-CC_8shvY.css":6047,"/sammu/assets/practice-iVDAqL_o.js":8796,"/sammu/assets/routes-CChfZi6K.css":4531,"/sammu/assets/routes-ksXPh3Ez.js":22743,"/sammu/assets/study-download-BkQzu_mh.js":47548,"/sammu/assets/study-download-DFBtWXLd.css":16302,"/sammu/favicon.svg":252,"/sammu/fonts/Atkinson-OFL.txt":4431,"/sammu/fonts/AtkinsonHyperlegibleNext.ttf":114552,"/sammu/fonts/NotoSerif-OFL.txt":4396,"/sammu/fonts/NotoSerif-Regular.ttf":444064,"/sammu/index.html":18338,"/sammu/practice.html":10134,"/sammu/routes.html":10216};
+const TRANSFER_IDLE_MS = 15000;
+const TRANSFER_TOTAL_MS = 180000;
 
 const INSTANCE = crypto.randomUUID();
 let sequence = 0;
@@ -18,6 +21,7 @@ async function valid(response, path) {
   if (!response || !response.ok) return false;
   try {
     const bytes = await response.clone().arrayBuffer();
+    if (bytes.byteLength !== SIZES[path]) return false;
     const digest = new Uint8Array(await crypto.subtle.digest("SHA-256", bytes));
     const value = "sha256-" + btoa(String.fromCharCode(...digest));
     return value === INTEGRITY[path];
@@ -31,6 +35,7 @@ async function publish(failures) {
     lastState = {
       type: "SAMMU_EDITION", edition: EDITION, instance: INSTANCE,
       sequence: ++sequence, complete: failures.length === 0, failures, repairing,
+      entries: FILES.filter(path => path.endsWith(".html")),
     };
     const clients = await self.clients.matchAll({ type: "window" });
     for (const client of clients) client.postMessage(lastState);
@@ -58,16 +63,53 @@ function audit() {
   return auditFlight;
 }
 
-async function networkFile(path) {
+async function networkFile(path, outerSignal) {
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 10000);
+  const abort = () => controller.abort(outerSignal.reason);
+  if (outerSignal?.aborted) abort();
+  else outerSignal?.addEventListener("abort", abort, { once: true });
+  let idle;
+  const progress = () => {
+    clearTimeout(idle);
+    idle = setTimeout(() => controller.abort(new Error("Offline transfer stopped progressing.")), TRANSFER_IDLE_MS);
+  };
+  const total = setTimeout(() => controller.abort(new Error("Offline transfer exceeded its total window.")), TRANSFER_TOTAL_MS);
+  let reader;
   try {
-    const response = await fetch(new Request(path, {
-      cache: "reload", integrity: INTEGRITY[path], signal: controller.signal,
-    }));
-    if (!await valid(response, path)) throw new Error("Unverified offline file: " + path);
-    return response;
-  } finally { clearTimeout(timer); }
+    progress();
+    // Native SRI can withhold the response until its entire body arrives. Read
+    // bounded chunks ourselves so active transfer and body inactivity differ.
+    const response = await fetch(new Request(path, { cache: "reload", signal: controller.signal }));
+    if (!response.ok || !response.body) throw new Error("Unavailable offline file: " + path);
+    reader = response.body.getReader();
+    const chunks = [];
+    let length = 0;
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      if (!value.length) continue;
+      length += value.length;
+      if (length > SIZES[path]) throw new Error("Oversized offline file: " + path);
+      chunks.push(value);
+      progress();
+    }
+    if (length !== SIZES[path]) throw new Error("Truncated offline file: " + path);
+    const bytes = new Uint8Array(length);
+    let offset = 0;
+    for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.length; }
+    const headers = new Headers(response.headers);
+    headers.delete("content-encoding");
+    headers.delete("content-length");
+    const verified = new Response(bytes, { status: response.status, statusText: response.statusText, headers });
+    if (!await valid(verified, path)) throw new Error("Unverified offline file: " + path);
+    return verified;
+  } finally {
+    clearTimeout(idle);
+    clearTimeout(total);
+    outerSignal?.removeEventListener("abort", abort);
+    controller.abort();
+    if (reader) { void reader.cancel().catch(() => {}); reader.releaseLock(); }
+  }
 }
 
 function repair() {
@@ -118,12 +160,21 @@ async function retained(path, allowNetwork) {
 
 self.addEventListener("install", event => {
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 10000);
-  const requests = FILES.map(url => new Request(url, {
-    cache: "reload", integrity: INTEGRITY[url], signal: controller.signal,
-  }));
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(requests))
-    .then(() => self.skipWaiting()).finally(() => clearTimeout(timer)));
+  const timer = setTimeout(() => controller.abort(), TRANSFER_TOTAL_MS);
+  event.waitUntil((async () => {
+    try {
+      // Publish no partial edition: every bounded response must verify before
+      // any entries are written, and a failed write removes the incomplete copy.
+      const responses = await Promise.all(FILES.map(path => networkFile(path, controller.signal)));
+      const cache = await caches.open(CACHE);
+      await Promise.all(FILES.map((path, i) => cache.put(path, responses[i])));
+      await self.skipWaiting();
+    } catch (error) {
+      controller.abort();
+      await caches.delete(CACHE);
+      throw error;
+    } finally { clearTimeout(timer); }
+  })());
 });
 
 self.addEventListener("activate", event => {
@@ -141,6 +192,7 @@ self.addEventListener("message", event => {
     // Old open pages may inspect the new worker, but cannot invalidate or
     // repair it using the previous edition's assumptions.
     const sameEdition = data.edition === EDITION;
+    if (data.claim) await self.clients.claim();
     if (sameEdition && data.invalidate) ++revision;
     const state = sameEdition && data.type === "SAMMU_REPAIR" ? await repair() : await audit();
     reply.postMessage(state);
@@ -156,14 +208,10 @@ self.addEventListener("fetch", event => {
   const path = url.pathname === BASE ? BASE + "index.html" : url.pathname;
   if (!FILES.includes(path)) return;
   if (event.request.mode === "navigate") {
-    event.respondWith((async () => {
-      // Live entry pages may belong to a newer edition. Keep them out of this
-      // cache; the new worker must install and verify its complete inventory.
-      try {
-        const response = await fetch(event.request);
-        if (response.ok) return response;
-      } catch { /* Use this worker's independently verified entry offline. */ }
-      return retained(path, false);
-    })());
+    // A controlled navigation belongs to this complete, verified edition.
+    // Network-first accepted maintenance bodies and could wait forever after
+    // headers or mid-body. Registering/updating sw.js installs the next edition;
+    // it must finish before its entry pages and asset hashes can be used together.
+    event.respondWith(retained(path, true));
   } else event.respondWith(retained(path, true));
 });

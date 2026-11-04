@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#173441">
+    <meta
+      name="description"
+      content="Fork one Mesopotamian tuning experiment. Take two retuning routes to the same name; hear what a shared name leaves unspecified."
+    >
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; media-src 'self' blob:; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
+    >
+    <link rel="icon" href="/sammu/favicon.svg" type="image/svg+xml">
+    <title>Sammû · Two roads, one tuning</title>
+    <script type="module" crossorigin src="/sammu/assets/routes-ksXPh3Ez.js"></script>
+    <link rel="modulepreload" crossorigin href="/sammu/assets/study-download-BkQzu_mh.js">
+    <link rel="stylesheet" crossorigin href="/sammu/assets/study-download-DFBtWXLd.css">
+    <link rel="stylesheet" crossorigin href="/sammu/assets/routes-CChfZi6K.css">
+  </head>
+  <body>
+    <a href="#comparison" class="skip">Skip to the route comparison</a>
+    <header class="masthead wrap">
+      <a class="wordmark" id="bench-link" href="./"
+        >sammû<span>return to your tuning bench</span></a
+      >
+      <nav aria-label="On this page">
+        <a href="#comparison">Compare routes</a><a href="#numbers">Exact pitches</a
+        ><a href="#reading">Source &amp; model</a>
+      </nav>
+    </header>
+    <main class="wrap routes-main">
+      <div class="routes-intro">
+        <div>
+          <h1>Two roads,<br>one tuning.</h1>
+          <p class="lede">
+            Start with the same strings. Reach the same name. Do you arrive at the same pitches?
+          </p>
+          <p class="model-tag">
+            A modern fourths-and-fifths realization. <a href="#reading">Read the assumptions</a>.
+          </p>
+        </div>
+        <div class="origin-note">
+          <p id="origin-description"></p>
+          <p class="small">
+            This room forks your bench at its actual pitches. Earlier retuning moves stay in both
+            branches.
+          </p>
+          <a id="restart-link" href="routes.html">Try a fresh išartum start</a>
+        </div>
+      </div>
+      <p id="warnings" class="notice" hidden></p>
+      <section id="comparison" aria-labelledby="comparison-heading" tabindex="-1">
+        <div class="route-destination">
+          <h2 id="comparison-heading">Choose where the roads meet</h2>
+          <label>Destination tuning<select id="target"></select></label>
+        </div>
+        <div class="fork-origin">
+          <span id="fork-origin"></span><small>Identical starting pitches</small>
+        </div>
+        <div class="route-fork">
+          <section class="route-a" aria-labelledby="a-heading">
+            <div class="road-heading">
+              <h3 id="a-heading">A · Loosen</h3>
+              <span id="a-count"></span>
+            </div>
+            <ol id="a-steps"></ol>
+            <p id="a-end" class="road-end"></p>
+            <button type="button" id="take-a">Continue A on the bench</button>
+          </section>
+          <section class="route-b" aria-labelledby="b-heading">
+            <div class="road-heading">
+              <h3 id="b-heading">B · Tighten</h3>
+              <span id="b-count"></span>
+            </div>
+            <ol id="b-steps"></ol>
+            <p id="b-end" class="road-end"></p>
+            <button type="button" id="take-b">Continue B on the bench</button>
+          </section>
+        </div>
+        <p id="limit-note" class="small" hidden>
+          These previews still work. To continue a route beyond the bench's 28-move limit, undo some
+          earlier moves first.
+        </p>
+        <div class="route-result">
+          <h2 id="result-name">Same name. Different pitches.</h2>
+          <p id="result-description"></p>
+        </div>
+        <div class="route-listening">
+          <div>
+            <h3>Hear A, then B</h3>
+            <label
+              >Compare the same physical strings<select id="listen-string">
+                <option value="1">String 1</option>
+                <option value="all">All nine, in physical order</option>
+              </select></label
+            >
+            <fieldset>
+              <legend>Which B do you hear?</legend>
+              <label
+                ><input type="radio" name="alignment" value="raw" checked>
+                Pitches as retuned</label
+              ><label
+                ><input type="radio" name="alignment" value="aligned">
+                Transpose B to match A on string 1</label
+              >
+            </fieldset>
+            <p id="alignment-note"></p>
+            <div class="actions">
+              <button type="button" id="play" class="primary">Hear A, then B</button
+              ><button type="button" id="stop">Stop sound</button>
+            </div>
+            <p id="audio-status" role="status" class="audio-status">
+              Synthetic sound. Start at a comfortable volume.
+            </p>
+          </div>
+          <div>
+            <p class="plot-key">
+              <span class="a-key">Filled circle: A</span><span class="b-key">Diamond: heard B</span
+              ><span>Dashed tick: starting pitch</span>
+            </p>
+            <div id="pitch-plot"></div>
+            <p class="small">
+              Equal distances mean equal frequency ratios. All nine strings use the same ruler. The
+              sound control moves only the heard B marks.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="numbers" aria-labelledby="numbers-heading" class="routes-numbers">
+        <h2 id="numbers-heading">Check every string</h2>
+        <p>
+          The exact A and B columns always retain the retuned pitches. Fractions are relative to the
+          original session's initial string 1. “Heard B” follows the listening control.
+        </p>
+        <section class="table-scroll" aria-label="Exact route pitches">
+          <table>
+            <caption>
+              Same destination; pitches kept separately
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">String</th>
+                <th scope="col">A: exact ratio / Hz</th>
+                <th scope="col">B: exact ratio / Hz</th>
+                <th scope="col">B divided by A</th>
+                <th scope="col">Heard B</th>
+              </tr>
+            </thead>
+            <tbody id="route-table"></tbody>
+          </table>
+        </section>
+        <div class="route-exports">
+          <button type="button" id="save-study">Save illustrated reading</button
+          ><button type="button" id="cancel-study" hidden>Cancel saving</button
+          ><button type="button" id="save-json">Save JSON</button
+          ><button type="button" id="save-csv">Save CSV</button
+          ><button type="button" id="save-wav">Save comparison WAV</button
+          ><button type="button" id="copy-link">Copy comparison link</button>
+        </div>
+        <p id="export-status" role="status" class="small">
+          The HTML reading includes both routes, exact pitches, this listening comparison, fonts and
+          their licenses. It opens offline.
+        </p>
+      </section>
+      <section id="reading" aria-labelledby="reading-heading" class="routes-reading">
+        <div>
+          <h2 id="reading-heading">What returned?<br>What did we add?</h2>
+          <p>
+            The destination name identifies a pattern of clear and unclear string pairs in the
+            reconstructed procedure. It supplies no absolute frequency to restore when the name
+            returns.
+          </p>
+          <p>
+            In this workshop's exact fourths-and-fifths model, the two endpoints differ by one
+            common factor on every string. Transposing B by its reciprocal makes all nine
+            frequencies equal to A. The raw result stays in the table.
+          </p>
+        </div>
+        <div>
+          <h3>Text, reconstruction, calculation</h3>
+          <p>
+            <a href="https://journal.iftawm.org/previous/vol2no2/mirelman/"
+              >Sam Mirelman, <cite>Tuning Procedures in Ancient Iraq</cite> (2013)</a
+            >, figure 5 on p. 52 and pp. 53–55, presents the tuning network and discusses the limits
+            of a modern interpretation.
+          </p>
+          <p>
+            <a href="https://mtosmt.org/issues/mto.22.28.1/mto.22.28.1.rahn.html"
+              >Jay Rahn, <cite>Was Mesopotamian Tuning Diatonic?</cite> (2022)</a
+            >, paragraphs 11–16, discusses both directions and repeated cycles. Paragraph 45
+            explains the editorial basis of the tightening terminology.
+          </p>
+          <p>
+            <span lang="akk-Latn">nê’um</span>
+            means “loosen.” The contextual tightening reading is
+            <span lang="akk-Latn">nasāḫum</span>; its chapter is extensively restored. The words and
+            their preservation are part of the evidence, while the exact fractions are our
+            calculation.
+          </p>
+          <p class="model-tag">
+            The 4/3 and 3/2 frequency ratios, hertz reference, exact arithmetic, synthetic timbre
+            and comparison transposition are modern choices. Neither the numerical gap nor the
+            transposition is a measurement or prescription preserved on a tablet.
+          </p>
+          <a id="evidence-link" href="./#evidence"
+            >Read the preservation cases and Akkadian word notes</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="wrap">
+      <p id="offline-status" role="status">Checking this edition's offline copy…</p>
+      <button type="button" id="offline-repair" hidden>Check offline copy</button>
+      <p>
+        Original code, diagrams and synthesis © 2026 Anthony Mercer · PolyForm Noncommercial.
+        <a href="https://github.com/antonsoo/sammu">Source repository</a>
+      </p>
+      <p id="edition" class="small"></p>
+    </footer>
+  </body>
+</html>
