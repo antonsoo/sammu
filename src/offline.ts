@@ -49,7 +49,7 @@ export async function offline(status: HTMLElement): Promise<void> {
     if (busy) status.textContent = "Checking and repairing the offline copy… You can keep working.";
     else if (result.complete === true) {
       status.textContent =
-        "Ready offline · workshop, practice, diagrams, fonts and source notes verified. External papers still need a connection.";
+        "Ready offline · workshop, practice, route comparison, diagrams, fonts and source notes verified. External papers still need a connection.";
       status.dataset.checkedAt = String(Date.now());
     } else {
       const failures = result.failures ?? [];

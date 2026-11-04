@@ -1232,3 +1232,8 @@ dd strong {
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }
+
+.route-comparison-link {
+  margin-top: 22px;
+  max-width: 42ch;
+}

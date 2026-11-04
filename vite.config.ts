@@ -35,6 +35,8 @@ export default defineConfig(async ({ command }) => {
     ...(await filesIn("public")),
     "index.html",
     "practice.html",
+    "routes.html",
+    "LICENSE",
     "vite.config.ts",
     "scripts/offline-template.ts",
     "tsconfig.json",
@@ -50,7 +52,9 @@ export default defineConfig(async ({ command }) => {
   return {
     base,
     build: {
-      rollupOptions: { input: { main: "index.html", practice: "practice.html" } },
+      rollupOptions: {
+        input: { main: "index.html", practice: "practice.html", routes: "routes.html" },
+      },
     },
     define: { __SAMMU_EDITION__: JSON.stringify(edition) },
     plugins: [

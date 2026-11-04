@@ -102,6 +102,8 @@ function renderRoute(): void {
   element<HTMLButtonElement>("apply-route").disabled =
     steps.length === 0 || session.moves.length >= MAX_MOVES;
   element("cycle-diagram").innerHTML = cycleDiagram(session, goal);
+  element<HTMLAnchorElement>("routes-link").href =
+    `routes.html${queryFor(session.settings, sequenceOf(session))}&target=${tuningAt(goal).id}`;
 }
 
 function render(): void {
