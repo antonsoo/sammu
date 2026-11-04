@@ -159,3 +159,7 @@ probability for users.
 The accompanying receipts record the tested editions and actual observations.
 They must not be read as evidence for a future build merely because its tests
 have similar names.
+
+The [published follow-up](navigation-transfer-publication.md) records the final
+reading-license correction, exact hosted build, public discovery and real HTTPS
+transport-cut journeys separately from these initial audit snapshots.

@@ -1,0 +1,30 @@
+{
+  "rows": [
+    {
+      "record": "examples/retuning-study.json",
+      "reading": "examples/retuning-study.html",
+      "edition": "cf03122b7f3329e6403f1a6db987d0174479cda64c31f2fdff84998ca0d0b32c",
+      "embeddedRecordMatches": true,
+      "originalCaptureCommit": "c671f39ca9405933132831a0a2f88c4f568f47af",
+      "originalBytesMatch": true,
+      "readingSha256": "a1ffe6c849809aed70dd0610e713c90396d8eb2b4937ad736f13165f4eaa8dfd"
+    },
+    {
+      "record": "examples/practice-partials-110.json",
+      "reading": "examples/practice-partials-110.html",
+      "edition": "80387d6a91467cbf1cb37888655e94574aea4c313564b39c6fcac0a348de47de",
+      "embeddedRecordMatches": true,
+      "originalCaptureCommit": "b025186cf2cd6e36142a6822a4a78289b84abe62",
+      "originalBytesMatch": true,
+      "readingSha256": "8db5a9eb01cc705d7b09a9f98aacb4e8462cb6e66377535a18384b81594ff5d0"
+    },
+    {
+      "record": "examples/routes/comparison.json",
+      "reading": "examples/routes/reading.html",
+      "edition": "9d214e484ac6498bf1f418656584d95d208955ab17591f3e32f818f07fa5e5ca",
+      "embeddedRecordMatches": true
+    }
+  ],
+  "routeReceiptFilesMatch": true,
+  "liveCaptureMatches": true
+}

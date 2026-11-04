@@ -1,0 +1,41 @@
+{
+  "source": "d918e1ede1bbd402888d5b0b75838898a1ab4de7",
+  "checkedAtUtc": "2026-11-04T02:16:47.704Z",
+  "rows": [
+    {
+      "path": "src/ui/study.ts",
+      "url": "https://raw.githubusercontent.com/antonsoo/sammu/d918e1ede1bbd402888d5b0b75838898a1ab4de7/src/ui/study.ts",
+      "bytes": 11996,
+      "sha256": "226af0e1ce17995a53f7a1ca6fa2412ddbce13a003f7e5e60b7ac248d9d53820",
+      "verified": true
+    },
+    {
+      "path": "scripts/public-outage.mjs",
+      "url": "https://raw.githubusercontent.com/antonsoo/sammu/d918e1ede1bbd402888d5b0b75838898a1ab4de7/scripts/public-outage.mjs",
+      "bytes": 10575,
+      "sha256": "2804a72fa613d840fdc46abbad4a8ad8a3da86979ae1f87797af0ddb22360617",
+      "verified": true
+    },
+    {
+      "path": "docs/navigation-transfer-review.md",
+      "url": "https://raw.githubusercontent.com/antonsoo/sammu/d918e1ede1bbd402888d5b0b75838898a1ab4de7/docs/navigation-transfer-review.md",
+      "bytes": 9478,
+      "sha256": "ba7128cc2b76ee2faf6efb13c5568fb77f3990c493d78982d13f4ea392235091",
+      "verified": true
+    },
+    {
+      "path": "docs/routes-review.md",
+      "url": "https://raw.githubusercontent.com/antonsoo/sammu/d918e1ede1bbd402888d5b0b75838898a1ab4de7/docs/routes-review.md",
+      "bytes": 9994,
+      "sha256": "00ccfe7652e2dc8d933c19a178730b185fdafca353599e2f79bb578c6a34c631",
+      "verified": true
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/antonsoo/sammu/d918e1ede1bbd402888d5b0b75838898a1ab4de7/LICENSE",
+      "bytes": 4651,
+      "sha256": "9b1f2251da4b0a9b67c4067fdd10c6aea6b2bf55c87a0bcd7cef057398667a76",
+      "verified": true
+    }
+  ]
+}

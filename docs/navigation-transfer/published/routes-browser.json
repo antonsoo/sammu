@@ -1,0 +1,250 @@
+{
+  "base": "https://antonsoo.github.io/sammu/",
+  "journeys": [
+    {
+      "browser": "chromium",
+      "width": 1440,
+      "accessibility": 49,
+      "alignedAccessibility": 49,
+      "offline": true,
+      "disk": true,
+      "pageErrors": [],
+      "canonicalEntrySha256": "ef10fb44c60249e5fb7040ec36d39942bf1eddf61d80f0e1378b60f5bd872b50"
+    },
+    {
+      "browser": "chromium",
+      "width": 375,
+      "accessibility": 50,
+      "alignedAccessibility": 50,
+      "offline": true,
+      "disk": true,
+      "pageErrors": [],
+      "canonicalEntrySha256": "ef10fb44c60249e5fb7040ec36d39942bf1eddf61d80f0e1378b60f5bd872b50"
+    },
+    {
+      "browser": "firefox",
+      "width": 1440,
+      "accessibility": 49,
+      "alignedAccessibility": 49,
+      "offline": true,
+      "disk": true,
+      "pageErrors": [],
+      "canonicalEntrySha256": "ef10fb44c60249e5fb7040ec36d39942bf1eddf61d80f0e1378b60f5bd872b50"
+    },
+    {
+      "browser": "firefox",
+      "width": 375,
+      "accessibility": 50,
+      "alignedAccessibility": 50,
+      "offline": true,
+      "disk": true,
+      "pageErrors": [],
+      "canonicalEntrySha256": "ef10fb44c60249e5fb7040ec36d39942bf1eddf61d80f0e1378b60f5bd872b50"
+    }
+  ],
+  "downloads": [
+    {
+      "file": "chromium-1440-raw.json",
+      "bytes": 15694,
+      "sha256": "79e836c5f4a56415b753d7eae3a5b0ba841d3487145f0f29caad884894182be5"
+    },
+    {
+      "file": "chromium-1440-aligned.json",
+      "bytes": 17679,
+      "sha256": "04b7224846f2ca9eacf4e23ba4b75151d6d980ce39484c70ae5cb183718fdf66"
+    },
+    {
+      "file": "chromium-1440.csv",
+      "bytes": 1226,
+      "sha256": "3bb23f0f765bbec6a7a85c62e1363f284d06ba9c97b9fccc2c93c57efb9e2210"
+    },
+    {
+      "file": "chromium-1440.wav",
+      "bytes": 809506,
+      "sha256": "19d7b50829998c6c1750dd7dc615f95a5cc328bee3e6ad15fe146de279ad93c6"
+    },
+    {
+      "file": "chromium-1440.html",
+      "bytes": 2979254,
+      "sha256": "9fc6a1a0a48e8888c936261d4defca97c6a495f97387a8c3870971e8c184a730"
+    },
+    {
+      "file": "chromium-1440-offline.html",
+      "bytes": 2979254,
+      "sha256": "9fc6a1a0a48e8888c936261d4defca97c6a495f97387a8c3870971e8c184a730"
+    },
+    {
+      "file": "chromium-1440-embedded.json",
+      "bytes": 17679,
+      "sha256": "04b7224846f2ca9eacf4e23ba4b75151d6d980ce39484c70ae5cb183718fdf66"
+    },
+    {
+      "file": "chromium-1440-embedded.wav",
+      "bytes": 809506,
+      "sha256": "19d7b50829998c6c1750dd7dc615f95a5cc328bee3e6ad15fe146de279ad93c6"
+    },
+    {
+      "file": "chromium-375-raw.json",
+      "bytes": 15694,
+      "sha256": "79e836c5f4a56415b753d7eae3a5b0ba841d3487145f0f29caad884894182be5"
+    },
+    {
+      "file": "chromium-375-aligned.json",
+      "bytes": 17679,
+      "sha256": "04b7224846f2ca9eacf4e23ba4b75151d6d980ce39484c70ae5cb183718fdf66"
+    },
+    {
+      "file": "chromium-375.csv",
+      "bytes": 1226,
+      "sha256": "3bb23f0f765bbec6a7a85c62e1363f284d06ba9c97b9fccc2c93c57efb9e2210"
+    },
+    {
+      "file": "chromium-375.wav",
+      "bytes": 809506,
+      "sha256": "19d7b50829998c6c1750dd7dc615f95a5cc328bee3e6ad15fe146de279ad93c6"
+    },
+    {
+      "file": "chromium-375.html",
+      "bytes": 2979254,
+      "sha256": "9fc6a1a0a48e8888c936261d4defca97c6a495f97387a8c3870971e8c184a730"
+    },
+    {
+      "file": "chromium-375-offline.html",
+      "bytes": 2979254,
+      "sha256": "9fc6a1a0a48e8888c936261d4defca97c6a495f97387a8c3870971e8c184a730"
+    },
+    {
+      "file": "chromium-375-embedded.json",
+      "bytes": 17679,
+      "sha256": "04b7224846f2ca9eacf4e23ba4b75151d6d980ce39484c70ae5cb183718fdf66"
+    },
+    {
+      "file": "chromium-375-embedded.wav",
+      "bytes": 809506,
+      "sha256": "19d7b50829998c6c1750dd7dc615f95a5cc328bee3e6ad15fe146de279ad93c6"
+    },
+    {
+      "file": "firefox-1440-raw.json",
+      "bytes": 15694,
+      "sha256": "79e836c5f4a56415b753d7eae3a5b0ba841d3487145f0f29caad884894182be5"
+    },
+    {
+      "file": "firefox-1440-aligned.json",
+      "bytes": 17679,
+      "sha256": "04b7224846f2ca9eacf4e23ba4b75151d6d980ce39484c70ae5cb183718fdf66"
+    },
+    {
+      "file": "firefox-1440.csv",
+      "bytes": 1226,
+      "sha256": "3bb23f0f765bbec6a7a85c62e1363f284d06ba9c97b9fccc2c93c57efb9e2210"
+    },
+    {
+      "file": "firefox-1440.wav",
+      "bytes": 809506,
+      "sha256": "19d7b50829998c6c1750dd7dc615f95a5cc328bee3e6ad15fe146de279ad93c6"
+    },
+    {
+      "file": "firefox-1440.html",
+      "bytes": 2979254,
+      "sha256": "9fc6a1a0a48e8888c936261d4defca97c6a495f97387a8c3870971e8c184a730"
+    },
+    {
+      "file": "firefox-1440-offline.html",
+      "bytes": 2979254,
+      "sha256": "9fc6a1a0a48e8888c936261d4defca97c6a495f97387a8c3870971e8c184a730"
+    },
+    {
+      "file": "firefox-1440-embedded.json",
+      "bytes": 17679,
+      "sha256": "04b7224846f2ca9eacf4e23ba4b75151d6d980ce39484c70ae5cb183718fdf66"
+    },
+    {
+      "file": "firefox-1440-embedded.wav",
+      "bytes": 809506,
+      "sha256": "19d7b50829998c6c1750dd7dc615f95a5cc328bee3e6ad15fe146de279ad93c6"
+    },
+    {
+      "file": "firefox-375-raw.json",
+      "bytes": 15694,
+      "sha256": "79e836c5f4a56415b753d7eae3a5b0ba841d3487145f0f29caad884894182be5"
+    },
+    {
+      "file": "firefox-375-aligned.json",
+      "bytes": 17679,
+      "sha256": "04b7224846f2ca9eacf4e23ba4b75151d6d980ce39484c70ae5cb183718fdf66"
+    },
+    {
+      "file": "firefox-375.csv",
+      "bytes": 1226,
+      "sha256": "3bb23f0f765bbec6a7a85c62e1363f284d06ba9c97b9fccc2c93c57efb9e2210"
+    },
+    {
+      "file": "firefox-375.wav",
+      "bytes": 809506,
+      "sha256": "19d7b50829998c6c1750dd7dc615f95a5cc328bee3e6ad15fe146de279ad93c6"
+    },
+    {
+      "file": "firefox-375.html",
+      "bytes": 2979254,
+      "sha256": "9fc6a1a0a48e8888c936261d4defca97c6a495f97387a8c3870971e8c184a730"
+    },
+    {
+      "file": "firefox-375-offline.html",
+      "bytes": 2979254,
+      "sha256": "9fc6a1a0a48e8888c936261d4defca97c6a495f97387a8c3870971e8c184a730"
+    },
+    {
+      "file": "firefox-375-embedded.json",
+      "bytes": 17679,
+      "sha256": "04b7224846f2ca9eacf4e23ba4b75151d6d980ce39484c70ae5cb183718fdf66"
+    },
+    {
+      "file": "firefox-375-embedded.wav",
+      "bytes": 809506,
+      "sha256": "19d7b50829998c6c1750dd7dc615f95a5cc328bee3e6ad15fe146de279ad93c6"
+    }
+  ],
+  "audio": [
+    {
+      "file": "chromium-1440-raw.f32",
+      "sampleRate": 44100,
+      "record": "chromium-1440-raw.json"
+    },
+    {
+      "file": "chromium-1440-aligned.f32",
+      "sampleRate": 44100,
+      "record": "chromium-1440-aligned.json"
+    },
+    {
+      "file": "chromium-375-raw.f32",
+      "sampleRate": 44100,
+      "record": "chromium-375-raw.json"
+    },
+    {
+      "file": "chromium-375-aligned.f32",
+      "sampleRate": 44100,
+      "record": "chromium-375-aligned.json"
+    },
+    {
+      "file": "firefox-1440-raw.f32",
+      "sampleRate": 44100,
+      "record": "firefox-1440-raw.json"
+    },
+    {
+      "file": "firefox-1440-aligned.f32",
+      "sampleRate": 44100,
+      "record": "firefox-1440-aligned.json"
+    },
+    {
+      "file": "firefox-375-raw.f32",
+      "sampleRate": 44100,
+      "record": "firefox-375-raw.json"
+    },
+    {
+      "file": "firefox-375-aligned.f32",
+      "sampleRate": 44100,
+      "record": "firefox-375-aligned.json"
+    }
+  ],
+  "passed": true
+}

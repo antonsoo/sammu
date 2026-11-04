@@ -1,0 +1,490 @@
+{
+  "edition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+  "scope": "Real shared bandwidth, active slow bodies, headers/body inactivity, oversized files, cancellation and retry",
+  "rows": [
+    {
+      "engine": "chromium",
+      "scenario": "cold-install",
+      "bytesPerSecond": 96000,
+      "elapsedMs": 14681,
+      "bytesSent": 1393538,
+      "requests": [
+        {
+          "name": "routes.html",
+          "bytes": 10216,
+          "destination": "document"
+        },
+        {
+          "name": "assets/study-download-DFBtWXLd.css",
+          "bytes": 16302,
+          "destination": "style"
+        },
+        {
+          "name": "assets/routes-CChfZi6K.css",
+          "bytes": 4531,
+          "destination": "style"
+        },
+        {
+          "name": "assets/routes-2rb67apI.js",
+          "bytes": 18089,
+          "destination": "script"
+        },
+        {
+          "name": "assets/study-download-bruvpA-i.js",
+          "bytes": 52417,
+          "destination": "script"
+        },
+        {
+          "name": "sw.js",
+          "bytes": 10773,
+          "destination": "serviceworker"
+        },
+        {
+          "name": "fonts/AtkinsonHyperlegibleNext.ttf",
+          "bytes": 114552,
+          "destination": "font"
+        },
+        {
+          "name": "fonts/NotoSerif-Regular.ttf",
+          "bytes": 444064,
+          "destination": "font"
+        },
+        {
+          "name": "assets/main-CeZxHRVD.js",
+          "bytes": 10029,
+          "destination": "empty"
+        },
+        {
+          "name": "assets/practice-B5eJgjVP.js",
+          "bytes": 8796,
+          "destination": "empty"
+        },
+        {
+          "name": "assets/practice-CC_8shvY.css",
+          "bytes": 6047,
+          "destination": "empty"
+        },
+        {
+          "name": "assets/routes-2rb67apI.js",
+          "bytes": 18089,
+          "destination": "empty"
+        },
+        {
+          "name": "assets/routes-CChfZi6K.css",
+          "bytes": 4531,
+          "destination": "empty"
+        },
+        {
+          "name": "assets/study-download-DFBtWXLd.css",
+          "bytes": 16302,
+          "destination": "empty"
+        },
+        {
+          "name": "assets/study-download-bruvpA-i.js",
+          "bytes": 52417,
+          "destination": "empty"
+        },
+        {
+          "name": "favicon.svg",
+          "bytes": 252,
+          "destination": "empty"
+        },
+        {
+          "name": "fonts/Atkinson-OFL.txt",
+          "bytes": 4431,
+          "destination": "empty"
+        },
+        {
+          "name": "fonts/AtkinsonHyperlegibleNext.ttf",
+          "bytes": 114552,
+          "destination": "empty"
+        },
+        {
+          "name": "fonts/NotoSerif-OFL.txt",
+          "bytes": 4396,
+          "destination": "empty"
+        },
+        {
+          "name": "fonts/NotoSerif-Regular.ttf",
+          "bytes": 444064,
+          "destination": "empty"
+        },
+        {
+          "name": "index.html",
+          "bytes": 18338,
+          "destination": "empty"
+        },
+        {
+          "name": "practice.html",
+          "bytes": 10134,
+          "destination": "empty"
+        },
+        {
+          "name": "routes.html",
+          "bytes": 10216,
+          "destination": "empty"
+        }
+      ],
+      "completeVerifiedCache": true
+    },
+    {
+      "engine": "chromium",
+      "scenario": "stalled-first-install",
+      "retryVerified": true,
+      "experimentPreserved": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "index.html",
+      "scenario": "slow-export",
+      "bytesPerSecond": 24000,
+      "elapsedMs": 23868,
+      "fontsVerified": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "index.html",
+      "scenario": "header-stall",
+      "elapsedMs": 15047,
+      "partialDownload": false
+    },
+    {
+      "engine": "chromium",
+      "entry": "index.html",
+      "scenario": "body-stall",
+      "elapsedMs": 15064,
+      "partialDownload": false
+    },
+    {
+      "engine": "chromium",
+      "entry": "index.html",
+      "scenario": "oversized",
+      "elapsedMs": 66,
+      "partialDownload": false
+    },
+    {
+      "engine": "chromium",
+      "entry": "index.html",
+      "scenario": "cancel-and-retry",
+      "cancelledWithoutDownload": true,
+      "retryVerified": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "practice.html",
+      "scenario": "slow-export",
+      "bytesPerSecond": 24000,
+      "elapsedMs": 23942,
+      "fontsVerified": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "practice.html",
+      "scenario": "header-stall",
+      "elapsedMs": 15055,
+      "partialDownload": false
+    },
+    {
+      "engine": "chromium",
+      "entry": "practice.html",
+      "scenario": "body-stall",
+      "elapsedMs": 15060,
+      "partialDownload": false
+    },
+    {
+      "engine": "chromium",
+      "entry": "practice.html",
+      "scenario": "oversized",
+      "elapsedMs": 67,
+      "partialDownload": false
+    },
+    {
+      "engine": "chromium",
+      "entry": "practice.html",
+      "scenario": "cancel-and-retry",
+      "cancelledWithoutDownload": true,
+      "retryVerified": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "routes.html",
+      "scenario": "slow-export",
+      "bytesPerSecond": 24000,
+      "elapsedMs": 23840,
+      "fontsVerified": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "routes.html",
+      "scenario": "header-stall",
+      "elapsedMs": 15045,
+      "partialDownload": false
+    },
+    {
+      "engine": "chromium",
+      "entry": "routes.html",
+      "scenario": "body-stall",
+      "elapsedMs": 15064,
+      "partialDownload": false
+    },
+    {
+      "engine": "chromium",
+      "entry": "routes.html",
+      "scenario": "oversized",
+      "elapsedMs": 66,
+      "partialDownload": false
+    },
+    {
+      "engine": "chromium",
+      "entry": "routes.html",
+      "scenario": "cancel-and-retry",
+      "cancelledWithoutDownload": true,
+      "retryVerified": true
+    },
+    {
+      "engine": "firefox",
+      "scenario": "cold-install",
+      "bytesPerSecond": 96000,
+      "elapsedMs": 14756,
+      "bytesSent": 1393790,
+      "requests": [
+        {
+          "name": "routes.html",
+          "bytes": 10216,
+          "destination": "document"
+        },
+        {
+          "name": "assets/routes-2rb67apI.js",
+          "bytes": 18089,
+          "destination": "script"
+        },
+        {
+          "name": "assets/study-download-DFBtWXLd.css",
+          "bytes": 16302,
+          "destination": "style"
+        },
+        {
+          "name": "assets/study-download-bruvpA-i.js",
+          "bytes": 52417,
+          "destination": "script"
+        },
+        {
+          "name": "assets/routes-CChfZi6K.css",
+          "bytes": 4531,
+          "destination": "style"
+        },
+        {
+          "name": "fonts/AtkinsonHyperlegibleNext.ttf",
+          "bytes": 114552,
+          "destination": "font"
+        },
+        {
+          "name": "fonts/NotoSerif-Regular.ttf",
+          "bytes": 444064,
+          "destination": "font"
+        },
+        {
+          "name": "sw.js",
+          "bytes": 10773,
+          "destination": "serviceworker"
+        },
+        {
+          "name": "favicon.svg",
+          "bytes": 252,
+          "destination": "image"
+        },
+        {
+          "name": "assets/main-CeZxHRVD.js",
+          "bytes": 10029,
+          "destination": "empty"
+        },
+        {
+          "name": "assets/practice-B5eJgjVP.js",
+          "bytes": 8796,
+          "destination": "empty"
+        },
+        {
+          "name": "assets/practice-CC_8shvY.css",
+          "bytes": 6047,
+          "destination": "empty"
+        },
+        {
+          "name": "assets/routes-2rb67apI.js",
+          "bytes": 18089,
+          "destination": "empty"
+        },
+        {
+          "name": "assets/routes-CChfZi6K.css",
+          "bytes": 4531,
+          "destination": "empty"
+        },
+        {
+          "name": "assets/study-download-DFBtWXLd.css",
+          "bytes": 16302,
+          "destination": "empty"
+        },
+        {
+          "name": "assets/study-download-bruvpA-i.js",
+          "bytes": 52417,
+          "destination": "empty"
+        },
+        {
+          "name": "favicon.svg",
+          "bytes": 252,
+          "destination": "empty"
+        },
+        {
+          "name": "fonts/Atkinson-OFL.txt",
+          "bytes": 4431,
+          "destination": "empty"
+        },
+        {
+          "name": "fonts/AtkinsonHyperlegibleNext.ttf",
+          "bytes": 114552,
+          "destination": "empty"
+        },
+        {
+          "name": "fonts/NotoSerif-OFL.txt",
+          "bytes": 4396,
+          "destination": "empty"
+        },
+        {
+          "name": "fonts/NotoSerif-Regular.ttf",
+          "bytes": 444064,
+          "destination": "empty"
+        },
+        {
+          "name": "index.html",
+          "bytes": 18338,
+          "destination": "empty"
+        },
+        {
+          "name": "practice.html",
+          "bytes": 10134,
+          "destination": "empty"
+        },
+        {
+          "name": "routes.html",
+          "bytes": 10216,
+          "destination": "empty"
+        }
+      ],
+      "completeVerifiedCache": true
+    },
+    {
+      "engine": "firefox",
+      "scenario": "stalled-first-install",
+      "retryVerified": true,
+      "experimentPreserved": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "index.html",
+      "scenario": "slow-export",
+      "bytesPerSecond": 24000,
+      "elapsedMs": 23863,
+      "fontsVerified": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "index.html",
+      "scenario": "header-stall",
+      "elapsedMs": 15237,
+      "partialDownload": false
+    },
+    {
+      "engine": "firefox",
+      "entry": "index.html",
+      "scenario": "body-stall",
+      "elapsedMs": 15098,
+      "partialDownload": false
+    },
+    {
+      "engine": "firefox",
+      "entry": "index.html",
+      "scenario": "oversized",
+      "elapsedMs": 73,
+      "partialDownload": false
+    },
+    {
+      "engine": "firefox",
+      "entry": "index.html",
+      "scenario": "cancel-and-retry",
+      "cancelledWithoutDownload": true,
+      "retryVerified": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "practice.html",
+      "scenario": "slow-export",
+      "bytesPerSecond": 24000,
+      "elapsedMs": 23971,
+      "fontsVerified": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "practice.html",
+      "scenario": "header-stall",
+      "elapsedMs": 15091,
+      "partialDownload": false
+    },
+    {
+      "engine": "firefox",
+      "entry": "practice.html",
+      "scenario": "body-stall",
+      "elapsedMs": 15066,
+      "partialDownload": false
+    },
+    {
+      "engine": "firefox",
+      "entry": "practice.html",
+      "scenario": "oversized",
+      "elapsedMs": 71,
+      "partialDownload": false
+    },
+    {
+      "engine": "firefox",
+      "entry": "practice.html",
+      "scenario": "cancel-and-retry",
+      "cancelledWithoutDownload": true,
+      "retryVerified": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "routes.html",
+      "scenario": "slow-export",
+      "bytesPerSecond": 24000,
+      "elapsedMs": 23870,
+      "fontsVerified": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "routes.html",
+      "scenario": "header-stall",
+      "elapsedMs": 15066,
+      "partialDownload": false
+    },
+    {
+      "engine": "firefox",
+      "entry": "routes.html",
+      "scenario": "body-stall",
+      "elapsedMs": 15078,
+      "partialDownload": false
+    },
+    {
+      "engine": "firefox",
+      "entry": "routes.html",
+      "scenario": "oversized",
+      "elapsedMs": 69,
+      "partialDownload": false
+    },
+    {
+      "engine": "firefox",
+      "entry": "routes.html",
+      "scenario": "cancel-and-retry",
+      "cancelledWithoutDownload": true,
+      "retryVerified": true
+    }
+  ],
+  "passed": true
+}

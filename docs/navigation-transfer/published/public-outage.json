@@ -1,0 +1,144 @@
+{
+  "base": "https://antonsoo.github.io/sammu/",
+  "edition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+  "scope": "Actual public HTTPS bytes and worker; end-to-end TLS tunnels destroyed and refused after verified installation; browser offline emulation remains disabled",
+  "rows": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "edition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+      "browserOnline": true,
+      "offlineEmulation": false,
+      "refusedConnections": 1,
+      "probeFailure": "TypeError",
+      "verifiedFiles": 15,
+      "readings": [
+        {
+          "room": "bench",
+          "filename": "chromium-1440-bench.html",
+          "bytes": 1050706,
+          "sha256": "b85e3453849dbad1aca04ebe8cdcff8048e9f890969ff19ec62a41f465510ac3",
+          "elapsedMs": 540
+        },
+        {
+          "room": "practice",
+          "filename": "chromium-1440-practice.html",
+          "bytes": 2156078,
+          "sha256": "ac294e21e33f9474e3b7729cbb8212229265ebe9038d4ba6baab57053060b8cf",
+          "elapsedMs": 573
+        },
+        {
+          "room": "routes",
+          "filename": "chromium-1440-routes.html",
+          "bytes": 2979254,
+          "sha256": "9fc6a1a0a48e8888c936261d4defca97c6a495f97387a8c3870971e8c184a730",
+          "elapsedMs": 875
+        }
+      ],
+      "canonicalEntrySha256": "ef10fb44c60249e5fb7040ec36d39942bf1eddf61d80f0e1378b60f5bd872b50"
+    },
+    {
+      "engine": "chromium",
+      "width": 375,
+      "edition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+      "browserOnline": true,
+      "offlineEmulation": false,
+      "refusedConnections": 1,
+      "probeFailure": "TypeError",
+      "verifiedFiles": 15,
+      "readings": [
+        {
+          "room": "bench",
+          "filename": "chromium-375-bench.html",
+          "bytes": 1050706,
+          "sha256": "b85e3453849dbad1aca04ebe8cdcff8048e9f890969ff19ec62a41f465510ac3",
+          "elapsedMs": 560
+        },
+        {
+          "room": "practice",
+          "filename": "chromium-375-practice.html",
+          "bytes": 2156078,
+          "sha256": "ac294e21e33f9474e3b7729cbb8212229265ebe9038d4ba6baab57053060b8cf",
+          "elapsedMs": 504
+        },
+        {
+          "room": "routes",
+          "filename": "chromium-375-routes.html",
+          "bytes": 2979254,
+          "sha256": "9fc6a1a0a48e8888c936261d4defca97c6a495f97387a8c3870971e8c184a730",
+          "elapsedMs": 803
+        }
+      ],
+      "canonicalEntrySha256": "ef10fb44c60249e5fb7040ec36d39942bf1eddf61d80f0e1378b60f5bd872b50"
+    },
+    {
+      "engine": "firefox",
+      "width": 1440,
+      "edition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+      "browserOnline": true,
+      "offlineEmulation": false,
+      "refusedConnections": 3,
+      "probeFailure": "TypeError",
+      "verifiedFiles": 15,
+      "readings": [
+        {
+          "room": "bench",
+          "filename": "firefox-1440-bench.html",
+          "bytes": 1050706,
+          "sha256": "b85e3453849dbad1aca04ebe8cdcff8048e9f890969ff19ec62a41f465510ac3",
+          "elapsedMs": 704
+        },
+        {
+          "room": "practice",
+          "filename": "firefox-1440-practice.html",
+          "bytes": 2156078,
+          "sha256": "ac294e21e33f9474e3b7729cbb8212229265ebe9038d4ba6baab57053060b8cf",
+          "elapsedMs": 908
+        },
+        {
+          "room": "routes",
+          "filename": "firefox-1440-routes.html",
+          "bytes": 2979254,
+          "sha256": "9fc6a1a0a48e8888c936261d4defca97c6a495f97387a8c3870971e8c184a730",
+          "elapsedMs": 1315
+        }
+      ],
+      "canonicalEntrySha256": "ef10fb44c60249e5fb7040ec36d39942bf1eddf61d80f0e1378b60f5bd872b50"
+    },
+    {
+      "engine": "firefox",
+      "width": 375,
+      "edition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+      "browserOnline": true,
+      "offlineEmulation": false,
+      "refusedConnections": 3,
+      "probeFailure": "TypeError",
+      "verifiedFiles": 15,
+      "readings": [
+        {
+          "room": "bench",
+          "filename": "firefox-375-bench.html",
+          "bytes": 1050706,
+          "sha256": "b85e3453849dbad1aca04ebe8cdcff8048e9f890969ff19ec62a41f465510ac3",
+          "elapsedMs": 747
+        },
+        {
+          "room": "practice",
+          "filename": "firefox-375-practice.html",
+          "bytes": 2156078,
+          "sha256": "ac294e21e33f9474e3b7729cbb8212229265ebe9038d4ba6baab57053060b8cf",
+          "elapsedMs": 887
+        },
+        {
+          "room": "routes",
+          "filename": "firefox-375-routes.html",
+          "bytes": 2979254,
+          "sha256": "9fc6a1a0a48e8888c936261d4defca97c6a495f97387a8c3870971e8c184a730",
+          "elapsedMs": 1224
+        }
+      ],
+      "canonicalEntrySha256": "ef10fb44c60249e5fb7040ec36d39942bf1eddf61d80f0e1378b60f5bd872b50"
+    }
+  ],
+  "passed": true
+}

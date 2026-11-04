@@ -1,0 +1,120 @@
+{
+  "scope": "Real service workers, Cache Storage mutations, font/license byte checks, offline reload, network faults and actual export deadlines",
+  "rows": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "wrongFontAndLicenseRefused": true,
+      "missingScriptDetected": true,
+      "bothTabsInvalidated": true,
+      "repairedRequests": [
+        "assets/practice-B5eJgjVP.js",
+        "fonts/NotoSerif-OFL.txt",
+        "fonts/NotoSerif-Regular.ttf"
+      ],
+      "verifiedFiles": 15,
+      "nativeFontsAndLicensesMatch": true,
+      "offlineLiveAdjustment": true,
+      "wholeCacheRecovery": true,
+      "a11yViolations": 0
+    },
+    {
+      "engine": "chromium",
+      "width": 375,
+      "wrongFontAndLicenseRefused": true,
+      "missingScriptDetected": true,
+      "bothTabsInvalidated": true,
+      "repairedRequests": [
+        "assets/practice-B5eJgjVP.js",
+        "fonts/NotoSerif-OFL.txt",
+        "fonts/NotoSerif-Regular.ttf"
+      ],
+      "verifiedFiles": 15,
+      "nativeFontsAndLicensesMatch": true,
+      "offlineLiveAdjustment": true,
+      "wholeCacheRecovery": true,
+      "a11yViolations": 0
+    },
+    {
+      "engine": "chromium",
+      "failedInitialInstall": true,
+      "explicitInstallRetry": true,
+      "attemptPreserved": true,
+      "offlineReload": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "index.html",
+      "http200WrongBodyRefused": true,
+      "cancelledWithoutDownload": true,
+      "actualTimeout": true,
+      "retrySucceeded": true
+    },
+    {
+      "engine": "chromium",
+      "entry": "practice.html",
+      "http200WrongBodyRefused": true,
+      "cancelledWithoutDownload": true,
+      "actualTimeout": true,
+      "retrySucceeded": true
+    },
+    {
+      "engine": "firefox",
+      "width": 1440,
+      "wrongFontAndLicenseRefused": true,
+      "missingScriptDetected": true,
+      "bothTabsInvalidated": true,
+      "repairedRequests": [
+        "assets/practice-B5eJgjVP.js",
+        "fonts/NotoSerif-OFL.txt",
+        "fonts/NotoSerif-Regular.ttf"
+      ],
+      "verifiedFiles": 15,
+      "nativeFontsAndLicensesMatch": true,
+      "offlineLiveAdjustment": true,
+      "wholeCacheRecovery": true,
+      "a11yViolations": 0
+    },
+    {
+      "engine": "firefox",
+      "width": 375,
+      "wrongFontAndLicenseRefused": true,
+      "missingScriptDetected": true,
+      "bothTabsInvalidated": true,
+      "repairedRequests": [
+        "assets/practice-B5eJgjVP.js",
+        "fonts/NotoSerif-OFL.txt",
+        "fonts/NotoSerif-Regular.ttf"
+      ],
+      "verifiedFiles": 15,
+      "nativeFontsAndLicensesMatch": true,
+      "offlineLiveAdjustment": true,
+      "wholeCacheRecovery": true,
+      "a11yViolations": 0
+    },
+    {
+      "engine": "firefox",
+      "failedInitialInstall": true,
+      "explicitInstallRetry": true,
+      "attemptPreserved": true,
+      "offlineReload": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "index.html",
+      "http200WrongBodyRefused": true,
+      "cancelledWithoutDownload": true,
+      "actualTimeout": true,
+      "retrySucceeded": true
+    },
+    {
+      "engine": "firefox",
+      "entry": "practice.html",
+      "http200WrongBodyRefused": true,
+      "cancelledWithoutDownload": true,
+      "actualTimeout": true,
+      "retrySucceeded": true
+    }
+  ],
+  "passed": true
+}

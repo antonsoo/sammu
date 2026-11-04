@@ -1,0 +1,175 @@
+{
+  "phase": "after",
+  "oldFileCount": 20,
+  "newFileCount": 16,
+  "records": [
+    {
+      "engine": "chromium",
+      "mode": "hold",
+      "elapsedMs": 2605,
+      "oldEdition": "1a04219ecaf1df143e30cc607160608eac366201218023c406f3597d99b54d70",
+      "newEdition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+      "before": "This page and its saved edition differ. Keep a standalone reading or copy your experiment link, then reconnect and reload.",
+      "workerAfter": {
+        "type": "SAMMU_EDITION",
+        "edition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+        "instance": "7e1ed4e7-2b66-484a-95ed-97cf72fab74a",
+        "sequence": 1,
+        "complete": true,
+        "failures": [],
+        "repairing": false,
+        "entries": ["/sammu/index.html", "/sammu/practice.html", "/sammu/routes.html"]
+      },
+      "after": "Ready offline · workshop, practice, route comparison, diagrams, fonts and source notes verified. External papers still need a connection.",
+      "automaticallyAcknowledged": true,
+      "staleReplyIgnored": false,
+      "inspectionRetries": 0,
+      "wrongHttp200Responses": [],
+      "expectedIntegrityConsoleErrors": [],
+      "offlinePracticeAndMain": true,
+      "offlineWorksheetSaved": true
+    },
+    {
+      "engine": "chromium",
+      "mode": "wrong",
+      "elapsedMs": 2186,
+      "oldEdition": "1a04219ecaf1df143e30cc607160608eac366201218023c406f3597d99b54d70",
+      "newEdition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+      "before": "This page and its saved edition differ. Keep a standalone reading or copy your experiment link, then reconnect and reload.",
+      "workerAfter": {
+        "type": "SAMMU_EDITION",
+        "edition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+        "instance": "3bd199d1-f124-411b-a42c-e2528a096c3a",
+        "sequence": 1,
+        "complete": true,
+        "failures": [],
+        "repairing": false,
+        "entries": ["/sammu/index.html", "/sammu/practice.html", "/sammu/routes.html"]
+      },
+      "after": "Ready offline · workshop, practice, route comparison, diagrams, fonts and source notes verified. External papers still need a connection.",
+      "automaticallyAcknowledged": true,
+      "staleReplyIgnored": false,
+      "inspectionRetries": 0,
+      "wrongHttp200Responses": [
+        {
+          "url": "/sammu/practice.html",
+          "status": 200,
+          "oldEntryInsteadOfNewPractice": true
+        }
+      ],
+      "expectedIntegrityConsoleErrors": [],
+      "offlinePracticeAndMain": true,
+      "offlineWorksheetSaved": true
+    },
+    {
+      "engine": "chromium",
+      "mode": "late",
+      "elapsedMs": 2078,
+      "oldEdition": "1a04219ecaf1df143e30cc607160608eac366201218023c406f3597d99b54d70",
+      "newEdition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+      "before": "This page and its saved edition differ. Keep a standalone reading or copy your experiment link, then reconnect and reload.",
+      "workerAfter": {
+        "type": "SAMMU_EDITION",
+        "edition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+        "instance": "b0ecfc2e-3994-4555-985c-b4984df8b8c1",
+        "sequence": 1,
+        "complete": true,
+        "failures": [],
+        "repairing": false,
+        "entries": ["/sammu/index.html", "/sammu/practice.html", "/sammu/routes.html"]
+      },
+      "after": "Ready offline · workshop, practice, route comparison, diagrams, fonts and source notes verified. External papers still need a connection.",
+      "automaticallyAcknowledged": true,
+      "staleReplyIgnored": true,
+      "inspectionRetries": 0,
+      "wrongHttp200Responses": [],
+      "expectedIntegrityConsoleErrors": [],
+      "offlinePracticeAndMain": true,
+      "offlineWorksheetSaved": true
+    },
+    {
+      "engine": "firefox",
+      "mode": "hold",
+      "elapsedMs": 3232,
+      "oldEdition": "1a04219ecaf1df143e30cc607160608eac366201218023c406f3597d99b54d70",
+      "newEdition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+      "before": "This page and its saved edition differ. Keep a standalone reading or copy your experiment link, then reconnect and reload.",
+      "workerAfter": {
+        "type": "SAMMU_EDITION",
+        "edition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+        "instance": "aa297a00-8b39-4a16-9e58-5534ae10c094",
+        "sequence": 1,
+        "complete": true,
+        "failures": [],
+        "repairing": false,
+        "entries": ["/sammu/index.html", "/sammu/practice.html", "/sammu/routes.html"]
+      },
+      "after": "Ready offline · workshop, practice, route comparison, diagrams, fonts and source notes verified. External papers still need a connection.",
+      "automaticallyAcknowledged": true,
+      "staleReplyIgnored": false,
+      "inspectionRetries": 0,
+      "wrongHttp200Responses": [],
+      "expectedIntegrityConsoleErrors": [],
+      "offlinePracticeAndMain": true,
+      "offlineWorksheetSaved": true
+    },
+    {
+      "engine": "firefox",
+      "mode": "wrong",
+      "elapsedMs": 2720,
+      "oldEdition": "1a04219ecaf1df143e30cc607160608eac366201218023c406f3597d99b54d70",
+      "newEdition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+      "before": "This page and its saved edition differ. Keep a standalone reading or copy your experiment link, then reconnect and reload.",
+      "workerAfter": {
+        "type": "SAMMU_EDITION",
+        "edition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+        "instance": "2ba50ae6-ab6e-4c4c-ba34-865c5125f685",
+        "sequence": 1,
+        "complete": true,
+        "failures": [],
+        "repairing": false,
+        "entries": ["/sammu/index.html", "/sammu/practice.html", "/sammu/routes.html"]
+      },
+      "after": "Ready offline · workshop, practice, route comparison, diagrams, fonts and source notes verified. External papers still need a connection.",
+      "automaticallyAcknowledged": true,
+      "staleReplyIgnored": false,
+      "inspectionRetries": 0,
+      "wrongHttp200Responses": [
+        {
+          "url": "/sammu/practice.html",
+          "status": 200,
+          "oldEntryInsteadOfNewPractice": true
+        }
+      ],
+      "expectedIntegrityConsoleErrors": [],
+      "offlinePracticeAndMain": true,
+      "offlineWorksheetSaved": true
+    },
+    {
+      "engine": "firefox",
+      "mode": "late",
+      "elapsedMs": 2662,
+      "oldEdition": "1a04219ecaf1df143e30cc607160608eac366201218023c406f3597d99b54d70",
+      "newEdition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+      "before": "This page and its saved edition differ. Keep a standalone reading or copy your experiment link, then reconnect and reload.",
+      "workerAfter": {
+        "type": "SAMMU_EDITION",
+        "edition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+        "instance": "cb06220a-b05a-42f5-ba41-82b0188dfedc",
+        "sequence": 1,
+        "complete": true,
+        "failures": [],
+        "repairing": false,
+        "entries": ["/sammu/index.html", "/sammu/practice.html", "/sammu/routes.html"]
+      },
+      "after": "Ready offline · workshop, practice, route comparison, diagrams, fonts and source notes verified. External papers still need a connection.",
+      "automaticallyAcknowledged": true,
+      "staleReplyIgnored": true,
+      "inspectionRetries": 0,
+      "wrongHttp200Responses": [],
+      "expectedIntegrityConsoleErrors": [],
+      "offlinePracticeAndMain": true,
+      "offlineWorksheetSaved": true
+    }
+  ]
+}

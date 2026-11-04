@@ -1,0 +1,70 @@
+{
+  "source": "8d7244eb6e7eb75264914793a628cf29745f3f68",
+  "cleanBuildIdentical": true,
+  "files": {
+    "assets/main-CeZxHRVD.js": {
+      "bytes": 10029,
+      "sha256": "05e18d7062301f0b31c4ca68391ba25b9fa396491156188fb601cfd799451332"
+    },
+    "assets/practice-B5eJgjVP.js": {
+      "bytes": 8796,
+      "sha256": "39216a1cd3cda0b4c18d574dd54121f413edc947a57c60dac6eda8af4ad6989c"
+    },
+    "assets/practice-CC_8shvY.css": {
+      "bytes": 6047,
+      "sha256": "a82578e2763570888723e94d5962e04e783d600dbad160d6fdf17e23fc11be32"
+    },
+    "assets/routes-2rb67apI.js": {
+      "bytes": 18089,
+      "sha256": "cd1b49027700d23092f56bba780dd2e77d2aaaae224f026ca8605d797318672a"
+    },
+    "assets/routes-CChfZi6K.css": {
+      "bytes": 4531,
+      "sha256": "83211422482f447ed96df1d7d8c0d580fb8510239fd154837538599313c68af5"
+    },
+    "assets/study-download-DFBtWXLd.css": {
+      "bytes": 16302,
+      "sha256": "6efac2b9e1c569e7496df7a49d033e9d5211f6b656b4529d807050f4b748ca2f"
+    },
+    "assets/study-download-bruvpA-i.js": {
+      "bytes": 52417,
+      "sha256": "ad775f6a8ffcf19eecf33a7ef9e0c167d975dbeeb9a86d54ae4cb52c45ff36bf"
+    },
+    "favicon.svg": {
+      "bytes": 252,
+      "sha256": "7d2537517a21b00b09acab68534fadca8a86192aec5e1914accd3e1628303c67"
+    },
+    "fonts/Atkinson-OFL.txt": {
+      "bytes": 4431,
+      "sha256": "aca6a428580965d2297d1b718042dd427c2a9443ece3b0d02d758e161e0c4030"
+    },
+    "fonts/AtkinsonHyperlegibleNext.ttf": {
+      "bytes": 114552,
+      "sha256": "5a455d1cfa099b601ab70751bb9673e8fe1854dc4500c80e1a220d0d75e31745"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4396,
+      "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a"
+    },
+    "fonts/NotoSerif-Regular.ttf": {
+      "bytes": 444064,
+      "sha256": "5473d2e43bdd018ee124a4addba8091fd0a29894b121cbb741023af6549662b6"
+    },
+    "index.html": {
+      "bytes": 18338,
+      "sha256": "ef10fb44c60249e5fb7040ec36d39942bf1eddf61d80f0e1378b60f5bd872b50"
+    },
+    "practice.html": {
+      "bytes": 10134,
+      "sha256": "e390b7ef1e701f912c3348255d6b0fb2e636025ab05875905f8c17b6093f4ce3"
+    },
+    "routes.html": {
+      "bytes": 10216,
+      "sha256": "9d8daca7b8e4eb7a748f571e639c2ac20e3fc71894be36db38024e2468760e1d"
+    },
+    "sw.js": {
+      "bytes": 10773,
+      "sha256": "e5f47c25e37990489e44e0adf48ed4e08c97cc7bcd9f666edf64d4fcfcc49fb7"
+    }
+  }
+}

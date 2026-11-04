@@ -1,0 +1,29 @@
+{
+  "source": "d918e1ede1bbd402888d5b0b75838898a1ab4de7",
+  "checkedAtUtc": "2026-11-04T02:21:49.665Z",
+  "scope": "Job status and executed steps only; no remote check success is inferred",
+  "rows": [
+    {
+      "runId": 41759393833,
+      "jobs": [
+        {
+          "name": "check",
+          "status": "completed",
+          "conclusion": "failure",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "runId": 41759393885,
+      "jobs": [
+        {
+          "name": "deploy",
+          "status": "completed",
+          "conclusion": "failure",
+          "steps": []
+        }
+      ]
+    }
+  ]
+}

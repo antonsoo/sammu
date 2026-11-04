@@ -1,0 +1,38 @@
+{
+  "fixture": "Two real builds with the same runtime and a deliberately different index title; not a public release",
+  "rows": [
+    {
+      "engine": "chromium",
+      "previousEdition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+      "nextEdition": "5c63a9d1741fa12acbe3aa1060eff16f23daa72ff27146d1d97b3044eed09a3d",
+      "bothTabsOfferReload": true,
+      "originUnavailableDuringReload": true,
+      "exactForkAndAttemptPreserved": true,
+      "verifiedFiles": 15
+    },
+    {
+      "engine": "chromium",
+      "legacyEdition": "1a04219ecaf1df143e30cc607160608eac366201218023c406f3597d99b54d70",
+      "currentEdition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+      "unavailableLegacyRoomDoesNotOfferSavedReload": true,
+      "newRoomInstallsAndKeepsExperiment": true
+    },
+    {
+      "engine": "firefox",
+      "previousEdition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+      "nextEdition": "5c63a9d1741fa12acbe3aa1060eff16f23daa72ff27146d1d97b3044eed09a3d",
+      "bothTabsOfferReload": true,
+      "originUnavailableDuringReload": true,
+      "exactForkAndAttemptPreserved": true,
+      "verifiedFiles": 15
+    },
+    {
+      "engine": "firefox",
+      "legacyEdition": "1a04219ecaf1df143e30cc607160608eac366201218023c406f3597d99b54d70",
+      "currentEdition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
+      "unavailableLegacyRoomDoesNotOfferSavedReload": true,
+      "newRoomInstallsAndKeepsExperiment": true
+    }
+  ],
+  "passed": true
+}

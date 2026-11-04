@@ -36,6 +36,9 @@ downloads. The preview also works when a bench has reached its 28-move limit.
 [Printed example](examples/routes/reading.pdf) ·
 [Exact record](examples/routes/comparison.json)
 
+These examples retain their [captured editions](examples/README.md); current
+public downloads are recorded separately in the published audit.
+
 The network follows the scholarly reconstruction; its pitches, timbre and
 transposition are explicitly modern. This room adds a controlled comparison to
 the existing cycle, not a claim to recover ancient absolute pitch.
@@ -164,6 +167,9 @@ and refuses new tunnels while browser offline emulation stays disabled. Both
 engines and widths must still open all three rooms, preserve the experiments,
 save their readings, and reopen each file with exact fonts and full license
 notices. It separately rechecks the canonical public entry after each journey.
+
+[The published audit](docs/navigation-transfer-publication.md) retains the exact
+build, hosted bytes, public source checks and final browser/failure receipts.
 
 The browser script uses Playwright’s installed Chromium and Firefox. On a new machine, install its browsers with `npx playwright install --with-deps chromium firefox` first. Python 3.12 and NumPy 2.4.4 are used for the audio review; the exact-ratio oracle needs only Python’s standard library. For an isolated Python environment, install the requirements in a venv rather than the system environment.
 
