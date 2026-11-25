@@ -21,7 +21,7 @@
         {
           "label": "chromium-desktop: standalone study",
           "violations": 0,
-          "passes": 41,
+          "passes": 43,
           "incomplete": 1
         }
       ],
@@ -39,8 +39,8 @@
       },
       "study": {
         "file": "chromium-desktop-study.html",
-        "bytes": 1287476,
-        "sha256": "a1ffe6c849809aed70dd0610e713c90396d8eb2b4937ad736f13165f4eaa8dfd",
+        "bytes": 1298578,
+        "sha256": "67d4f6c02b78d8a9151c0f0112018e6bac8477bf6bfeab320de64d6508dd8f8d",
         "suggestedFilename": "sammu-nis-tuhrim-2-moves.html"
       },
       "offline": true,
@@ -68,7 +68,7 @@
         {
           "label": "chromium-phone: standalone study",
           "violations": 0,
-          "passes": 41,
+          "passes": 43,
           "incomplete": 1
         }
       ],
@@ -86,8 +86,8 @@
       },
       "study": {
         "file": "chromium-phone-study.html",
-        "bytes": 1287476,
-        "sha256": "a1ffe6c849809aed70dd0610e713c90396d8eb2b4937ad736f13165f4eaa8dfd",
+        "bytes": 1298578,
+        "sha256": "67d4f6c02b78d8a9151c0f0112018e6bac8477bf6bfeab320de64d6508dd8f8d",
         "suggestedFilename": "sammu-nis-tuhrim-2-moves.html"
       },
       "offline": true,
@@ -115,7 +115,7 @@
         {
           "label": "firefox-desktop: standalone study",
           "violations": 0,
-          "passes": 41,
+          "passes": 43,
           "incomplete": 1
         }
       ],
@@ -133,8 +133,8 @@
       },
       "study": {
         "file": "firefox-desktop-study.html",
-        "bytes": 1287476,
-        "sha256": "a1ffe6c849809aed70dd0610e713c90396d8eb2b4937ad736f13165f4eaa8dfd",
+        "bytes": 1298578,
+        "sha256": "67d4f6c02b78d8a9151c0f0112018e6bac8477bf6bfeab320de64d6508dd8f8d",
         "suggestedFilename": "sammu-nis-tuhrim-2-moves.html"
       },
       "offline": true,
@@ -162,7 +162,7 @@
         {
           "label": "firefox-phone: standalone study",
           "violations": 0,
-          "passes": 41,
+          "passes": 43,
           "incomplete": 1
         }
       ],
@@ -180,8 +180,8 @@
       },
       "study": {
         "file": "firefox-phone-study.html",
-        "bytes": 1287476,
-        "sha256": "a1ffe6c849809aed70dd0610e713c90396d8eb2b4937ad736f13165f4eaa8dfd",
+        "bytes": 1298578,
+        "sha256": "67d4f6c02b78d8a9151c0f0112018e6bac8477bf6bfeab320de64d6508dd8f8d",
         "suggestedFilename": "sammu-nis-tuhrim-2-moves.html"
       },
       "offline": true,
@@ -202,8 +202,8 @@
       "listening": "last",
       "record": {
         "file": "chromium-desktop-last-plucked.json",
-        "bytes": 7401,
-        "sha256": "e8dec647d8183e254ce61a79239a62d4ac82ce15f76bbc075d7a440deeb09d31",
+        "bytes": 7829,
+        "sha256": "bbe8b8726f03ceb497196ede0713d1662873858aa597af252645ffc6c37f8fd0",
         "suggestedFilename": "sammu-kitmum-1-moves.json"
       },
       "wav": {
@@ -219,8 +219,8 @@
       "listening": "last",
       "record": {
         "file": "chromium-desktop-study-audio.json",
-        "bytes": 9343,
-        "sha256": "0ac5da8a13da5f3dd7c281b4178ef9bdd309bf9cf9439988ee5e54120f5148e5",
+        "bytes": 9771,
+        "sha256": "526a3e4268b55283c0f02a347572290edaba5a2bf3c00418fd0f6462edf9fab2",
         "suggestedFilename": "sammu-nis-tuhrim-2-moves.json"
       },
       "wav": {
@@ -236,8 +236,8 @@
       "listening": "last",
       "record": {
         "file": "chromium-desktop-last-sine.json",
-        "bytes": 9357,
-        "sha256": "924727c843b25755b8a529a61a3a05ce8fb6372cbc91a40d973ab7e62410cd15",
+        "bytes": 9785,
+        "sha256": "69ed53f3f58fb40a8aa1050ad06e4227f5955f2855d5448f1b7e8003604b6c4c",
         "suggestedFilename": "sammu-nis-tuhrim-2-moves.json"
       },
       "wav": {
@@ -258,8 +258,8 @@
       "listening": "last",
       "record": {
         "file": "chromium-phone-last-plucked.json",
-        "bytes": 7401,
-        "sha256": "e8dec647d8183e254ce61a79239a62d4ac82ce15f76bbc075d7a440deeb09d31",
+        "bytes": 7829,
+        "sha256": "bbe8b8726f03ceb497196ede0713d1662873858aa597af252645ffc6c37f8fd0",
         "suggestedFilename": "sammu-kitmum-1-moves.json"
       },
       "wav": {
@@ -275,8 +275,8 @@
       "listening": "last",
       "record": {
         "file": "chromium-phone-study-audio.json",
-        "bytes": 9343,
-        "sha256": "0ac5da8a13da5f3dd7c281b4178ef9bdd309bf9cf9439988ee5e54120f5148e5",
+        "bytes": 9771,
+        "sha256": "526a3e4268b55283c0f02a347572290edaba5a2bf3c00418fd0f6462edf9fab2",
         "suggestedFilename": "sammu-nis-tuhrim-2-moves.json"
       },
       "wav": {
@@ -292,8 +292,8 @@
       "listening": "last",
       "record": {
         "file": "chromium-phone-last-sine.json",
-        "bytes": 9357,
-        "sha256": "924727c843b25755b8a529a61a3a05ce8fb6372cbc91a40d973ab7e62410cd15",
+        "bytes": 9785,
+        "sha256": "69ed53f3f58fb40a8aa1050ad06e4227f5955f2855d5448f1b7e8003604b6c4c",
         "suggestedFilename": "sammu-nis-tuhrim-2-moves.json"
       },
       "wav": {
@@ -309,8 +309,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-0-sine-L.json",
-        "bytes": 7358,
-        "sha256": "5c7fb1ce1c2479a3f88838aacafe033bbba0ebcccf5a3f5d2893c691c5414312",
+        "bytes": 7786,
+        "sha256": "54369b04c29c4b805546c21cb3b75c606c4450dcb0b9c36606e1c914ed7f1b75",
         "suggestedFilename": "sammu-kitmum-1-moves.json"
       },
       "wav": {
@@ -326,8 +326,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-0-sine-T.json",
-        "bytes": 7343,
-        "sha256": "3524c85e36025221b2657fe47c6ffddf6541996b8c34a893736b996f836680ba",
+        "bytes": 7771,
+        "sha256": "4bda2c7ea71b6c82d3539613e0aa538af92c7c300caf98929d8554e1a7b9f810",
         "suggestedFilename": "sammu-qablitum-1-moves.json"
       },
       "wav": {
@@ -343,8 +343,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-0-plucked-L.json",
-        "bytes": 7367,
-        "sha256": "bac9a8c35bfa580cf0c85b59c7ae2eaf506b869728b3310186f37625d6f618ba",
+        "bytes": 7795,
+        "sha256": "1e04cf99b9b59c8e8dacaba7b241418998fa3aa1e64071d83704bd9f095258ad",
         "suggestedFilename": "sammu-kitmum-1-moves.json"
       },
       "wav": {
@@ -360,8 +360,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-0-plucked-T.json",
-        "bytes": 7352,
-        "sha256": "cb21bc6f1f11b84681e2c717cc35bdbd282d95f3d8c7a0eb80eeae52a31f2ec9",
+        "bytes": 7780,
+        "sha256": "fb8f3c00ca5f696b676daedfceebcfba7dda500f65d8404e9854642a3a663813",
         "suggestedFilename": "sammu-qablitum-1-moves.json"
       },
       "wav": {
@@ -377,8 +377,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-1-sine-L.json",
-        "bytes": 7361,
-        "sha256": "3bd8b5d2ba2dc8088dd680dbfdb50fd7e800b1deec4d7757a7e9ccdfd7e68650",
+        "bytes": 7789,
+        "sha256": "96534370cbef2ec6aacf411f0a872c328a818e0ac20319e0d0fb683d9b283b36",
         "suggestedFilename": "sammu-embubum-1-moves.json"
       },
       "wav": {
@@ -394,8 +394,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-1-sine-T.json",
-        "bytes": 7370,
-        "sha256": "e660ecabb234818f608fce0a35353d2658e9ddc75400f7f86e00bcbcb7cfb5b9",
+        "bytes": 7798,
+        "sha256": "c3b4393468ae806cdd12b0f5cbd2046914ec7c07f5795e4309e8fa17da4cf192",
         "suggestedFilename": "sammu-isartum-1-moves.json"
       },
       "wav": {
@@ -411,8 +411,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-1-plucked-L.json",
-        "bytes": 7370,
-        "sha256": "fa550f0e6254f68302f2763712dad6351c4278dd0100394b266ad02a344fb241",
+        "bytes": 7798,
+        "sha256": "ca300e4e09b66aeab4cdf98f2ea4ac0a2d7926307c9edaf4683e8d46311ddfdd",
         "suggestedFilename": "sammu-embubum-1-moves.json"
       },
       "wav": {
@@ -428,8 +428,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-1-plucked-T.json",
-        "bytes": 7379,
-        "sha256": "c8eb6f71089179e0ee99cbd8211fb50260986593698652febf85a4c85a2a831f",
+        "bytes": 7807,
+        "sha256": "e1c6a237b9f47f22ecd53c95543134b4ac9076b6220dc7e23ba1bd98d6b2c228",
         "suggestedFilename": "sammu-isartum-1-moves.json"
       },
       "wav": {
@@ -445,8 +445,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-2-sine-L.json",
-        "bytes": 7376,
-        "sha256": "af921723af1263b76ee2f24a76f586a0f74c091004a5e8329cdfde550d6983c1",
+        "bytes": 7804,
+        "sha256": "bb67974e021cb91028232d6137b82524b0d5c6fedf81257454fe350e7ddb446c",
         "suggestedFilename": "sammu-pitum-1-moves.json"
       },
       "wav": {
@@ -462,8 +462,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-2-sine-T.json",
-        "bytes": 7344,
-        "sha256": "d8a10efe3a5c197ad8aa96bba2e00d5bc6485334ab4e477fe38f2f23b28949ff",
+        "bytes": 7772,
+        "sha256": "c1ab5e87abf66ef000c227e9c3cf4bee06df4c69005cb4a669cb6504361e53f9",
         "suggestedFilename": "sammu-kitmum-1-moves.json"
       },
       "wav": {
@@ -479,8 +479,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-2-plucked-L.json",
-        "bytes": 7385,
-        "sha256": "d5e97fd4545d76c6567b162490f1a2ead9e7d0d8d35555de1fd23221c52c5043",
+        "bytes": 7813,
+        "sha256": "dd7c75e598feecbd45e13f1a774abfdb1c91ac8349ef9126e2eede4530e6edae",
         "suggestedFilename": "sammu-pitum-1-moves.json"
       },
       "wav": {
@@ -496,8 +496,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-2-plucked-T.json",
-        "bytes": 7353,
-        "sha256": "6652f81332112a3cebba8cfc935d349d91209a85ac3990ede2dbba65f123333d",
+        "bytes": 7781,
+        "sha256": "83931d41c0fe15a4237ab420735d8b1bbfecb326816e869c625388e2808db9c4",
         "suggestedFilename": "sammu-kitmum-1-moves.json"
       },
       "wav": {
@@ -513,8 +513,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-3-sine-L.json",
-        "bytes": 7404,
-        "sha256": "1289994faa9d892e3ed2fb0195821882dcbd22a7f2d9ef96a3b4b2d9e010df37",
+        "bytes": 7832,
+        "sha256": "79973288f803094616bde409b7676975fbe9605588a10fd6353a1be7dff7d9db",
         "suggestedFilename": "sammu-nid-qablim-1-moves.json"
       },
       "wav": {
@@ -530,8 +530,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-3-sine-T.json",
-        "bytes": 7352,
-        "sha256": "56d0892048f799a9fe8bfe0196a12c26298e3021f0948b8b1779e0730549cd1e",
+        "bytes": 7780,
+        "sha256": "665d03ed4b742063496e57d0a5bf75df7fe6a496ff67b64eac793a877585eba1",
         "suggestedFilename": "sammu-embubum-1-moves.json"
       },
       "wav": {
@@ -547,8 +547,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-3-plucked-L.json",
-        "bytes": 7413,
-        "sha256": "3fd4eca776d2840e18bf9b7e2108f8ac3f3b02d35c447b19769b5341669ab2a3",
+        "bytes": 7841,
+        "sha256": "cbe4788b3badb3cbf13cb595976b6dbbf843ec6459111b18d10daebe38d7ad6d",
         "suggestedFilename": "sammu-nid-qablim-1-moves.json"
       },
       "wav": {
@@ -564,8 +564,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-3-plucked-T.json",
-        "bytes": 7361,
-        "sha256": "a326b41e2a7bd435bf0cf8f98721db8e194fb3ef22950e4a24f52e06fd623aa2",
+        "bytes": 7789,
+        "sha256": "525da98b4ec87e478f1c4e5223f717a2ebabf4a12719fdd373b45abcf647fac1",
         "suggestedFilename": "sammu-embubum-1-moves.json"
       },
       "wav": {
@@ -581,8 +581,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-4-sine-L.json",
-        "bytes": 7453,
-        "sha256": "be5ad427184f721433d31467f99da562c0dc6f8cadd981c2769037956db375ec",
+        "bytes": 7881,
+        "sha256": "7e5bb42cb21d6fc3847cb56b0aa894597551befeaef7d9116b239da02f5e872a",
         "suggestedFilename": "sammu-nis-tuhrim-1-moves.json"
       },
       "wav": {
@@ -598,8 +598,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-4-sine-T.json",
-        "bytes": 7385,
-        "sha256": "a1d77bfb775a6a2ef20f3f17ac972a29ea78a653041c6663844dd01ab9114947",
+        "bytes": 7813,
+        "sha256": "e744e9bc95064cd89b7209152343569676ae80e91f592ef9e4d23b34f153db2f",
         "suggestedFilename": "sammu-pitum-1-moves.json"
       },
       "wav": {
@@ -615,8 +615,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-4-plucked-L.json",
-        "bytes": 7462,
-        "sha256": "17b3175dbb6a99142903635a147c42a0a4c845926b618d5c8d4301dd0e0c14d4",
+        "bytes": 7890,
+        "sha256": "9e11e88ea1eb22a3c12931adab010d5e4a7a5a0c2302d6079ca1f288d068ecf2",
         "suggestedFilename": "sammu-nis-tuhrim-1-moves.json"
       },
       "wav": {
@@ -632,8 +632,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-4-plucked-T.json",
-        "bytes": 7394,
-        "sha256": "615af03179e18d471e0d17a2a768336229b89fbb88d631ab1c766cc491ba9412",
+        "bytes": 7822,
+        "sha256": "5f88a099dcaaa474296705e4fa9cbd83934a3a107e84fdeca231c59b4426c21d",
         "suggestedFilename": "sammu-pitum-1-moves.json"
       },
       "wav": {
@@ -649,8 +649,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-5-sine-L.json",
-        "bytes": 7538,
-        "sha256": "700a1649bccabecd48c461f35c97b896c4f514aab08d433b715ea7db128a7969",
+        "bytes": 7966,
+        "sha256": "bceacc7b032f5765f0c4b65dadbd481ebea82b36408d899be6142e8746668cb2",
         "suggestedFilename": "sammu-qablitum-1-moves.json"
       },
       "wav": {
@@ -666,8 +666,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-5-sine-T.json",
-        "bytes": 7423,
-        "sha256": "099cc687d5650d1ca92d98460258025a41c21d38755e9fed0c93fd36b9439401",
+        "bytes": 7851,
+        "sha256": "f6def82c507f32a9a6721327d39d054d7eb797c9eda5dcfc7c593f29c4e5063f",
         "suggestedFilename": "sammu-nid-qablim-1-moves.json"
       },
       "wav": {
@@ -683,8 +683,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-5-plucked-L.json",
-        "bytes": 7547,
-        "sha256": "f887496c79e12f6b425470a6f2fb4511e2be39172c833f0c11e4e662b675cb3c",
+        "bytes": 7975,
+        "sha256": "ae096da7040325e143a35e803076150a5af0687d6cb4de914cd53631710dfb40",
         "suggestedFilename": "sammu-qablitum-1-moves.json"
       },
       "wav": {
@@ -700,8 +700,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-5-plucked-T.json",
-        "bytes": 7432,
-        "sha256": "12580e5f4ee294a96dcf8e44b5993528d6de85c07bafe34db72da612624321d0",
+        "bytes": 7860,
+        "sha256": "0875c6ca1de9356a392d82da9b9063ebfd109f1526deb91cdd67f0b094ab75f3",
         "suggestedFilename": "sammu-nid-qablim-1-moves.json"
       },
       "wav": {
@@ -717,8 +717,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-6-sine-L.json",
-        "bytes": 7328,
-        "sha256": "ac47c5474bd721596dda2cb70fbd71136d3c7952d39bae6112354fcda8f48bd0",
+        "bytes": 7756,
+        "sha256": "c1279cbb0919d101294c7189145aefdba8a418607e3341d11658397f5e2bf5bb",
         "suggestedFilename": "sammu-isartum-1-moves.json"
       },
       "wav": {
@@ -734,8 +734,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-6-sine-T.json",
-        "bytes": 7442,
-        "sha256": "3b6fccf7a3e08ba0891d2472b8bcc2ebb53353637f4403e5f9b2c175949d263b",
+        "bytes": 7870,
+        "sha256": "7656f69898e74af680d88b293cf0f52470c1e67a78d082b2fb7b4adab63d5ab4",
         "suggestedFilename": "sammu-nis-tuhrim-1-moves.json"
       },
       "wav": {
@@ -751,8 +751,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-6-plucked-L.json",
-        "bytes": 7337,
-        "sha256": "5dc026a2cff1e1a2c2925d3d3ab658f16e5eed79f5d5820be26c8073b2eb27ef",
+        "bytes": 7765,
+        "sha256": "0c3f5de6e958edcffb9596153e6abd33b029f6047d9e8cf903d92afd15fc6a5a",
         "suggestedFilename": "sammu-isartum-1-moves.json"
       },
       "wav": {
@@ -768,8 +768,8 @@
       "listening": "last",
       "record": {
         "file": "matrix-6-plucked-T.json",
-        "bytes": 7451,
-        "sha256": "773b9368cfd4139b793bc22fc8053fb1f1c955e0a73e8e32242c36148fd8e7eb",
+        "bytes": 7879,
+        "sha256": "3f6e39c7d64a2f47608715947f39feb083034a5c090e53d80d73cb5ce477b9ea",
         "suggestedFilename": "sammu-nis-tuhrim-1-moves.json"
       },
       "wav": {
@@ -790,8 +790,8 @@
       "listening": "last",
       "record": {
         "file": "firefox-desktop-last-plucked.json",
-        "bytes": 7401,
-        "sha256": "e8dec647d8183e254ce61a79239a62d4ac82ce15f76bbc075d7a440deeb09d31",
+        "bytes": 7829,
+        "sha256": "bbe8b8726f03ceb497196ede0713d1662873858aa597af252645ffc6c37f8fd0",
         "suggestedFilename": "sammu-kitmum-1-moves.json"
       },
       "wav": {
@@ -807,8 +807,8 @@
       "listening": "last",
       "record": {
         "file": "firefox-desktop-study-audio.json",
-        "bytes": 9343,
-        "sha256": "0ac5da8a13da5f3dd7c281b4178ef9bdd309bf9cf9439988ee5e54120f5148e5",
+        "bytes": 9771,
+        "sha256": "526a3e4268b55283c0f02a347572290edaba5a2bf3c00418fd0f6462edf9fab2",
         "suggestedFilename": "sammu-nis-tuhrim-2-moves.json"
       },
       "wav": {
@@ -824,8 +824,8 @@
       "listening": "last",
       "record": {
         "file": "firefox-desktop-last-sine.json",
-        "bytes": 9357,
-        "sha256": "924727c843b25755b8a529a61a3a05ce8fb6372cbc91a40d973ab7e62410cd15",
+        "bytes": 9785,
+        "sha256": "69ed53f3f58fb40a8aa1050ad06e4227f5955f2855d5448f1b7e8003604b6c4c",
         "suggestedFilename": "sammu-nis-tuhrim-2-moves.json"
       },
       "wav": {
@@ -846,8 +846,8 @@
       "listening": "last",
       "record": {
         "file": "firefox-phone-last-plucked.json",
-        "bytes": 7401,
-        "sha256": "e8dec647d8183e254ce61a79239a62d4ac82ce15f76bbc075d7a440deeb09d31",
+        "bytes": 7829,
+        "sha256": "bbe8b8726f03ceb497196ede0713d1662873858aa597af252645ffc6c37f8fd0",
         "suggestedFilename": "sammu-kitmum-1-moves.json"
       },
       "wav": {
@@ -863,8 +863,8 @@
       "listening": "last",
       "record": {
         "file": "firefox-phone-study-audio.json",
-        "bytes": 9343,
-        "sha256": "0ac5da8a13da5f3dd7c281b4178ef9bdd309bf9cf9439988ee5e54120f5148e5",
+        "bytes": 9771,
+        "sha256": "526a3e4268b55283c0f02a347572290edaba5a2bf3c00418fd0f6462edf9fab2",
         "suggestedFilename": "sammu-nis-tuhrim-2-moves.json"
       },
       "wav": {
@@ -880,8 +880,8 @@
       "listening": "last",
       "record": {
         "file": "firefox-phone-last-sine.json",
-        "bytes": 9357,
-        "sha256": "924727c843b25755b8a529a61a3a05ce8fb6372cbc91a40d973ab7e62410cd15",
+        "bytes": 9785,
+        "sha256": "69ed53f3f58fb40a8aa1050ad06e4227f5955f2855d5448f1b7e8003604b6c4c",
         "suggestedFilename": "sammu-nis-tuhrim-2-moves.json"
       },
       "wav": {

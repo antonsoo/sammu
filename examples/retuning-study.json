@@ -1,6 +1,6 @@
 {
   "format": "sammu-study-v1",
-  "edition": "cf03122b7f3329e6403f1a6db987d0174479cda64c31f2fdff84998ca0d0b32c",
+  "edition": "f18c535e5bafc0ed1b95c306c1c868a89475b94177a237b4ce1715bdac577e69",
   "experiment": "https://antonsoo.github.io/sammu/?start=isartum&a=440&companions=octave&sound=plucked&moves=TT#bench",
   "model": "An audible fourths-and-fifths realization, not a recovered ancient performance. Six designated pairs are set to frequency ratios 4/3 or 3/2. Reference pitch, numerical precision, sound colour and the companion-string octave/unison choice are modern settings. The tablets do not record frequencies in hertz or these fractions.",
   "settings": {
@@ -321,6 +321,12 @@
       "title": "CDLI P254475 · CBS 10996",
       "url": "https://cdli.earth/artifacts/254475",
       "note": "Later witness for named string pairs. The catalogue checked on 22 October 2026 assigns Middle Babylonian, approximately 1400–1100 BCE; Mirelman (2013) used an older Neo-Babylonian dating. Combining witnesses is a scholarly reconstruction across time."
+    },
+    {
+      "id": "hoyrup2017",
+      "title": "Jens Høyrup · Algebra in Cuneiform, Appendix B (2017)",
+      "url": "https://mprl-series.mpg.de/textbooks/2/12/index.html",
+      "note": "Key to Vocabulary and Standard Translations: šumma, ‘if’. This is lexical support from a study of mathematical texts, not another witness to the musical procedure. The action verbs are discussed by Rahn (2022), paragraph 45."
     }
   ]
 }
