@@ -13,7 +13,8 @@ export function reviewPreview(root, port) {
       String(port),
       "--strictPort",
     ],
-    { cwd: root, stdio: "pipe" },
+    // CI=true makes vite color its output, which splits "Local:" with escape codes.
+    { cwd: root, stdio: "pipe", env: { ...process.env, NO_COLOR: "1" } },
   );
   let output = "";
   const ready = new Promise((resolve, reject) => {
